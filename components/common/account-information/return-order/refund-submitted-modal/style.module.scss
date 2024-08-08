@@ -1,0 +1,86 @@
+@import "/styles/variables.scss";
+
+.refund-modal {
+  padding: 24px;
+  border-radius: 0;
+
+  @media (min-width: $breakPoint-desktop) {
+    border-radius: 8px;
+  }
+
+  .refund-top-bar {
+    margin: 0 !important;
+  }
+
+  &.courier-submit,
+  &.gift-card,
+  &.tabby,
+  &.paypal,
+  &.cod {
+    @media (min-width: $breakPoint-desktop) {
+      padding: 40px;
+      border-radius: 8px;
+    }
+  }
+
+  &.store-dropoff {
+    @media (min-width: $breakPoint-desktop) {
+      padding: 40px 40px 52px 40px;
+      border-radius: 8px;
+    }
+  }
+}
+
+.heading {
+  margin: 0;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28.8px;
+  letter-spacing: 0em;
+  text-align: start;
+  color: $black-color;
+
+  @media (min-width: $breakPoint-desktop) {
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+}
+
+.refund-content {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15.6px;
+  letter-spacing: 0em;
+  text-align: start;
+
+  @media (min-width: $breakPoint-desktop) {
+    font-size: 14px;
+    line-height: 16.8px;
+  }
+
+  .price-note {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.8px;
+    letter-spacing: 0em;
+    text-align: start;
+
+    @media (min-width: $breakPoint-desktop) {
+      font-size: 15px;
+      line-height: 18px;
+    }
+  }
+}
+
+.close-refund-modal {
+  margin-top: 40px;
+  text-align: center;
+
+  @media (min-width: $breakPoint-desktop) {
+    margin-top: 24px;
+    text-align: end;
+  }
+}

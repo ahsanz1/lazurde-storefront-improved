@@ -1,0 +1,93 @@
+@import "/styles/variables.scss";
+
+.main-wrapper {
+  display: block;
+  width: 100%;
+
+  .main-heading {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+    color: #000000;
+  }
+
+  .div-dis-applied {
+    display: flex;
+    width: 100%;
+    margin-block-start: 24px;
+    background: rgba(0, 0, 0, 0.02);
+
+    .dis-code {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 24px 12px;
+      gap: 24px;
+      width: 100%;
+      height: 41px;
+
+      p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 120%;
+        color: rgba(0, 0, 0, 0.8);
+      }
+    }
+    .div-remove-button {
+      display: flex;
+      padding-top: 3px;
+      margin: auto;
+
+      @media (min-width: $breakPoint-desktop) {
+        display: flex;
+        width: 20%;
+        margin: auto;
+        justify-content: center;
+      }
+      .code-remove-btn {
+        background: rgba(0, 0, 0, 0.001);
+
+        @media (max-width: $breakPoint-mobile) {
+          width: 80px;
+        }
+      }
+    }
+  }
+  .div-discount-box {
+    display: flex;
+    width: 100%;
+    padding: 24px 0;
+
+    .discount-input {
+      display: flex;
+      flex-direction: column;
+      width: 88%;
+      padding: 0 8px 0 0;
+
+      p {
+        margin: 0 0 0 14px;
+        font-size: 11px;
+        color: red;
+      }
+    }
+    .discount-btn {
+      display: flex;
+      align-items: center;
+      margin: 20px 0px;
+
+      .apply-btn {
+        font-size: 15px;
+      }
+    }
+  }
+  .link-box {
+    display: block;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    cursor: pointer;
+    text-decoration-line: underline;
+  }
+}

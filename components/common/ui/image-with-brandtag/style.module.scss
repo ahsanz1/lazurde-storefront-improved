@@ -1,0 +1,33 @@
+@import "/styles/variables.scss";
+
+.img-wrapper {
+  position: relative;
+
+  .image_tag {
+    margin: 0;
+    z-index: 1;
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 15px;
+
+    &.bg {
+      &_missl {
+        background-color: #dde8db;
+      }
+
+      &_lazurde {
+        background-color: #f2f2f2;
+      }
+
+      &_waves {
+        background-color: $waves-color;
+      }
+    }
+  }
+}

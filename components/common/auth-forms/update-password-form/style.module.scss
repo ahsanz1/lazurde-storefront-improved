@@ -1,0 +1,100 @@
+@import "/styles/variables.scss";
+
+.update_password_modal {
+  // @media (min-width: $breakPoint-desktop) {
+  //   padding: 0 38px;
+  // }
+}
+
+.reset {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28.8px;
+  color: #000000;
+  margin-bottom: 32px;
+  margin-top: 0px;
+  padding-top: 0;
+}
+
+.update_password_form {
+  input {
+    &::placeholder {
+      color: rgba(0, 0, 0, 0.4);
+      padding-top: 5px;
+    }
+  }
+}
+
+.input1 {
+  margin-bottom: 24px;
+  @media (max-width: $breakPoint-desktop) {
+    margin-bottom: 22px;
+  }
+  .pasword-input {
+    .toggle-password {
+      cursor: pointer;
+      pointer-events: all;
+    }
+  }
+}
+.input2 {
+  margin-bottom: 24px;
+  @media (max-width: $breakPoint-desktop) {
+    margin-bottom: 22px;
+  }
+  .pasword-input {
+    .toggle-password {
+      cursor: pointer;
+      pointer-events: all;
+    }
+  }
+}
+.input3 {
+  margin-bottom: 60px;
+  @media (max-width: $breakPoint-desktop) {
+    margin-bottom: 30px;
+  }
+  .pasword-input {
+    .toggle-password {
+      cursor: pointer;
+      pointer-events: all;
+    }
+  }
+}
+.password_req {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  color: #000000;
+  margin-top: 36px;
+  margin-left: 8px;
+  margin-right: 8px;
+  @media (max-width: $breakPoint-desktop) {
+    margin-top: 6px;
+    font-size: 13px;
+  }
+  p {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+}
+.update_password_div {
+  text-align: end;
+  margin-top: 32px;
+  @media (max-width: $breakPoint-desktop) {
+    margin-top: 76px;
+    text-align: center;
+    padding-bottom: 223px;
+  }
+}
+.update_password {
+  padding: 16px;
+  width: 200px;
+  height: 51px;
+  background: #000000;
+  border-radius: 100px;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+}

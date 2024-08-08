@@ -1,0 +1,229 @@
+@import "/styles/variables.scss";
+
+.payment-form-wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  position: relative;
+  margin-block-start: 16px;
+}
+
+.frames-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.div-form-heading {
+  display: flex;
+  // align-self: center;
+  margin-bottom: 40px;
+
+  h2 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+  }
+
+  @media (min-width: $breakPoint-desktop) {
+    margin-bottom: 24px;
+    h2 {
+      margin-block-end: 8px;
+    }
+  }
+}
+
+.row-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.input-wrapper {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  .label {
+    font-size: 12px;
+    line-height: 130%;
+    color: rgba(0, 0, 0, 0.6);
+    margin-left: 20px;
+    display: inline-block;
+    margin-bottom: 4px;
+  }
+  iframe {
+    max-height: 39px !important;
+    padding-inline: 1px !important;
+  }
+
+  .card-number,
+  .exp,
+  .cvv {
+    font-family: "Roboto" !important;
+  }
+
+  .error-msg {
+    position: absolute;
+    top: 100%;
+    margin-top: 5px;
+    width: 100%;
+    display: block;
+    padding-inline-start: 20px;
+    color: red;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15.6px;
+    pointer-events: none;
+    display: none;
+
+    &[data-show-error="true"] {
+      display: block;
+    }
+  }
+
+  .tooltip-button {
+    position: absolute;
+    top: 100%;
+    margin-top: 4px;
+    width: unset;
+    height: 13px;
+    text-align: start;
+    font-size: 11px;
+    line-height: 120%;
+    color: rgba(0, 0, 0, 0.4);
+    align-self: flex-end;
+  }
+}
+
+.div-top {
+  flex: 1;
+  overflow: auto;
+
+  @media (min-width: $breakPoint-desktop) {
+    padding-bottom: 5px;
+    padding-inline-end: 2px;
+
+    &.delete-form {
+      padding-bottom: 0;
+    }
+  }
+
+  & > div {
+    margin-bottom: 40px;
+
+    @media (min-width: $breakPoint-desktop) {
+      margin-bottom: 24px;
+    }
+  }
+
+  .message-text {
+    font-size: 14px;
+  }
+
+  .div-cvv {
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-end;
+
+    button {
+      margin-top: 4px;
+      width: unset;
+      height: 13px;
+      text-align: start;
+      font-size: 11px;
+      line-height: 120%;
+      color: rgba(0, 0, 0, 0.4);
+    }
+  }
+}
+
+.div-bottom {
+  z-index: 3;
+  overflow: hidden;
+
+  @media (min-width: $breakPoint-desktop) {
+    // box-shadow: 0px -10px 30px 10px white;
+
+    &.delete-form {
+      box-shadow: none;
+    }
+  }
+
+  .main-checkbox {
+    margin-block: 42px 40px;
+
+    @media (min-width: $breakPoint-desktop) {
+      margin-block: 48px 24px;
+    }
+  }
+
+  .div-button {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    row-gap: 16px;
+
+    @media (min-width: $breakPoint-desktop) {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+  }
+}
+
+.payment-form-wrapper {
+  &[data-show-data="true"] {
+    opacity: 1;
+  }
+
+  &[data-show-data="false"] {
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.cvv-field-card {
+  svg {
+    position: absolute;
+    inset-inline-end: 16px;
+    top: 50%;
+  }
+}
+
+.cvv-field-card-ar {
+  svg {
+    position: absolute;
+    inset-inline-end: 16px;
+    top: 30%;
+  }
+}
+
+.cvv-field {
+  svg {
+    position: absolute;
+    inset-inline-end: 16px;
+    top: 52%;
+  }
+}
+
+.dummy-input {
+  display: block;
+  font-size: 14px;
+  font-family: "Roboto, sans-serif";
+  background: #fafafa;
+  pointer-events: none;
+}
+
+.dummy-input::placeholder {
+  font-size: 12px;
+}

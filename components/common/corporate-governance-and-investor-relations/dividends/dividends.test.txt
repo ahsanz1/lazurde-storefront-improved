@@ -1,0 +1,58 @@
+import React from "react";
+import Dividends from "./index";
+import { render, screen, fireEvent } from "@testing-library/react";
+import ContextProvider, { AppContext } from "lib/context";
+
+const currentObject = {
+  dividend: [
+    {
+      heading: "heading",
+      text: "text",
+      dividendHistory: [
+        {
+          heading: "div-heading",
+          year: "year",
+          value: "value",
+        },
+      ],
+      content: "content",
+    },
+  ],
+};
+
+const renderComponent = () => {
+  render(
+    <ContextProvider>
+      <Dividends currentObject={currentObject} />
+    </ContextProvider>
+  );
+};
+
+const renderComponentAR = () => {
+  render(
+    <AppContext.Provider value={{ appState: { lang: "ar" } }}>
+      <Dividends />
+    </AppContext.Provider>
+  );
+};
+
+describe("Dividends TESTING", () => {
+  test("Dividends Page testing", () => {
+    renderComponent();
+
+    const dividendHeading = screen.getAllByRole("dividend-heading");
+    expect(dividendHeading[0]).toBeInTheDocument();
+    const dividendText = screen.getAllByRole("dividend-text");
+    expect(dividendText[0]).toBeInTheDocument();
+    const dividendGrid = screen.getAllByRole("dividend-grid");
+    expect(dividendGrid[0]).toBeInTheDocument();
+
+    const subscribeButton = screen.getByText("Subscribe");
+    expect(subscribeButton).toBeInTheDocument();
+    fireEvent.click(subscribeButton);
+  });
+
+  test("Dividends arabic testing", () => {
+    renderComponentAR();
+  });
+});

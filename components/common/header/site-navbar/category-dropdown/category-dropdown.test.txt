@@ -1,0 +1,78 @@
+import { render, screen, fireEvent, act } from "@testing-library/react";
+import React from "react";
+import ContextProvider, { AppContext } from "lib/context";
+import CategoryDropDown from "./index";
+
+const mockIntersectionObserver = jest.fn();
+mockIntersectionObserver.mockReturnValue({
+  observe: (): any => null,
+  unobserve: (): any => null,
+  disconnect: (): any => null,
+});
+window.IntersectionObserver = mockIntersectionObserver;
+
+describe("", () => {
+  const siteUrl = "/modal.png";
+  const id = "1122";
+  const image = {
+    url: "/",
+    altText: "alt-image",
+  };
+
+  const catObject: any = {
+    dropdownData: [
+      {
+        title: "title",
+        getName: () => "asdfas",
+        catArr: [
+          {
+            title: "title",
+            url: "/",
+            isBold: false,
+            getName: () => "asdfas",
+          },
+        ],
+        categoryLinks: [
+          {
+            linkHeading: "heading",
+            linkTitle: [
+              {
+                title: "heading",
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  };
+
+  const openFunc = jest.fn();
+
+  const renderComponentAR = () => {
+    render(
+      <AppContext.Provider value={{ appState: { lang: "ar" } }}>
+        <CategoryDropDown categoryData={catObject} setIsOpened={openFunc} />
+      </AppContext.Provider>
+    );
+  };
+
+  test("Site navbar", () => {
+    act(() => {
+      render(
+        <CategoryDropDown categoryData={catObject} setIsOpened={openFunc} />
+      );
+      const dropDownDiv = screen.getByTestId("dropdown-div");
+      expect(screen.getByTestId("dropdown-div")).toBeInTheDocument();
+      fireEvent.mouseOver(dropDownDiv);
+      fireEvent.mouseLeave(dropDownDiv);
+      // screen.debug()
+    });
+  });
+
+  test("render arabic version", () => {
+    act(() => {
+      renderComponentAR();
+    });
+    // screen.debug()
+  });
+});

@@ -1,0 +1,363 @@
+@import "/styles/variables.scss";
+
+.insta-post-modal {
+  padding: 16px 16px 22px;
+
+  @media (min-width: $breakPoint-desktop) {
+    padding: 48px;
+  }
+
+  &.notify-modal {
+    padding: 24px;
+
+    @media (min-width: $breakPoint-desktop) {
+      padding: 40px;
+    }
+  }
+
+  .top-close-bar {
+    @media (max-width: $breakPoint-mobile) {
+      margin-bottom: 24px !important;
+    }
+  }
+
+  .insta-modal-body {
+    @media (max-width: $breakPoint-mobile) {
+      height: 100%;
+    }
+  }
+}
+
+.insta-modal-body-wrapper {
+  overflow: hidden !important;
+}
+
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.intsa_modal_wrapper {
+  display: flex;
+  flex-direction: column;
+  column-gap: 16px;
+
+  &[data-open="false"] {
+    display: none;
+  }
+
+  @media (min-width: $breakPoint-desktop) {
+    flex-direction: row;
+    padding-top: 24px;
+  }
+
+  .left_side {
+    position: relative;
+
+    img {
+      object-fit: cover;
+    }
+  }
+
+  .left_side,
+  .right_side {
+    flex: 1;
+  }
+
+  &.no_product {
+    .left_side {
+      width: 100%;
+      margin: 0 auto;
+      flex: unset;
+
+      @media (min-width: $breakPoint-desktop) {
+        width: 50%;
+      }
+    }
+  }
+
+  .right_side {
+    position: relative;
+    margin-top: 8px;
+
+    @media (min-width: $breakPoint-desktop) {
+      height: 575px;
+      overflow: auto;
+      margin-top: 0;
+      padding-bottom: 5px;
+    }
+
+    &:hover::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    &::-webkit-scrollbar {
+      width: 3px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: $white-color;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $white-color;
+
+      outline: 0;
+    }
+
+    .product_img {
+      position: relative;
+
+      .exclusive_tag {
+        z-index: 1;
+        position: absolute;
+        top: auto;
+        bottom: 0;
+        width: 100%;
+        margin: 0;
+        padding: 4px 0;
+        background-color: $primary-color;
+        color: $black-color;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 15.6px;
+        letter-spacing: 0em;
+        text-align: center;
+        text-transform: uppercase;
+
+        @media (min-width: $breakPoint-desktop) {
+          padding: 4px 0 5px 0;
+          font-size: 14px;
+          line-height: 16.8px;
+        }
+      }
+    }
+  }
+
+  .product_detail {
+    margin-top: 16px;
+
+    .title-div {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      .outofstock-tag {
+        margin: 0;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16.8px;
+        letter-spacing: 0em;
+        color: #ff0000;
+
+        @media (min-width: $breakPoint-desktop) {
+          font-size: 15px;
+          line-height: 18px;
+        }
+      }
+    }
+
+    .title {
+      width: 80%;
+      margin: 0;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 16.8px;
+      letter-spacing: 0em;
+      text-align: start;
+      color: $black-color;
+      text-transform: capitalize;
+
+      @media (min-width: $breakPoint-desktop) {
+        font-size: 15px;
+        line-height: 18px;
+      }
+    }
+
+    .content {
+      margin: 0;
+      margin-top: 16px;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 15.6px;
+      letter-spacing: 0em;
+      text-align: start;
+
+      @media (min-width: $breakPoint-desktop) {
+        font-size: 14px;
+        line-height: 16.8px;
+      }
+    }
+
+    .addtocart_btn {
+      margin-top: 16px;
+      text-align: center;
+    }
+  }
+
+  .tag_line {
+    margin: 0;
+    margin-top: 16px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.4);
+  }
+
+  .social_icon {
+    width: 100%;
+    margin-top: 22px;
+  }
+
+  .price-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+
+    .base-price {
+      margin: 0;
+      margin-inline-end: 4px;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 16.8px;
+      letter-spacing: 0em;
+      color: $black-color;
+
+      &.line-through {
+        text-decoration: line-through;
+      }
+    }
+
+    .discount {
+      margin: 0;
+      margin-inline-end: 4px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16.8px;
+      letter-spacing: 0em;
+      color: $black-color;
+    }
+
+    .discounted-price {
+      margin: 0;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 18px;
+      letter-spacing: 0em;
+      color: #da0059;
+    }
+  }
+}
+
+.no-item-found {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  p {
+    font-weight: 600;
+  }
+}
+
+.pointers-wrapper {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  .single-pointer-wrapper {
+    position: absolute;
+  }
+
+  .single-pointer {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    padding-inline-start: 1px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: center;
+    background-color: $white-color;
+    color: $black-color;
+    border-radius: 100px;
+    box-shadow: 0 0 2px #ccc;
+  }
+
+  .tooltip {
+    height: auto;
+    opacity: 1;
+  }
+
+  .single-pointer:hover .tooltip {
+    height: auto;
+    opacity: 1;
+  }
+}
+
+.single-pointer {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip {
+  width: fit-content;
+  min-width: 150px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 135%;
+  left: 50%;
+  margin-left: -75px;
+  transition: opacity 0.3s;
+}
+
+.single-pointer .tooltip::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #555 transparent;
+}
+
+.product_img {
+  position: relative;
+
+  &:hover {
+    .wishlist-icon {
+      @media (min-width: $breakPoint-desktop) {
+        display: block;
+      }
+    }
+  }
+}
+
+.wishlist-icon {
+  position: absolute;
+  top: 10px;
+  inset-inline-end: 11px;
+  inset-inline-start: auto;
+  z-index: 2;
+  cursor: pointer;
+
+  @media (min-width: $breakPoint-desktop) {
+    display: none;
+  }
+}

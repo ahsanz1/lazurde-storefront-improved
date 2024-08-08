@@ -1,0 +1,53 @@
+@import "/styles/variables.scss";
+
+.icons {
+  &__container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    @media (max-width: $breakPoint-mobile) {
+      row-gap: 10px;
+      justify-content: flex-start;
+    }
+
+    li {
+      list-style: none;
+      margin-inline-end: 28px;
+
+      &:last-child {
+        margin-inline-end: 0;
+      }
+
+      a {
+        color: $white-color;
+
+        span, span img {
+          position: static!important;
+          // width: 100% !important;
+          height: auto!important;
+        }
+      }
+    }
+  }
+}
+
+.footer-payment-icon {
+  pointer-events: none;
+}
+.copy-rights {
+  text-align: end;
+  opacity: 0.5;
+  margin-top: 32px;
+  @media (max-width: $breakPoint-mobile) {
+    text-align: center;
+    margin-top: 24px;
+  }
+}
+.icons_wrapper {
+  margin-top: 8px;
+  @media (max-width: $breakPoint-mobile) {
+    margin-top: 0px;
+  }
+}

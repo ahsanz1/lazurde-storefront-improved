@@ -1,0 +1,3175 @@
+{
+  "alreadyInUse": "already in use",
+  "DeleteWishListItem": "Delete Wish List Item",
+  "DeleteWishListContent": "Are you sure you want to delete this item? This action cannot be undone.",
+  "resetPwSessionExpireContent": "Your reset password session has expired",
+  "registeredCustomers": "Registered Customers",
+  "guestNewCustomers": "Guest & New Customers",
+  "Invalid expiry date": "Invalid expiry date",
+  "Invalid cvv": "Invalid cvv",
+  "Invalid card number": "Invalid card number",
+  "Card has expired": "Card has expired",
+  "dateOfBirth": "Date of Birth",
+  "Confirm New Password": "Confirm New Password",
+  "newsletterText": "Sign up for newsletter",
+  "alreadyAmember": "Already a member?",
+  "confirmPassword": "Password entered must match new password",
+  "New here?": "New here?",
+  "Send Password Reset Link": "Send Password Reset Link",
+  "input": "Input",
+  "Please enter your email address": "Please enter your email address below to receive a password reset link.",
+  "Reset Password": "Reset Password",
+  "required": "Required",
+  "forgetPassword": "Forgot Password?",
+  "emailNumberErrorMsg": "Please enter a valid email address",
+  "Email or Phone": "Email or Phone",
+  "deliveryAddress": "Delivery Address",
+  "We’ve Sent It!": "We’ve Sent It",
+  "We’re Processing!": "We’re Processing It",
+  "We’ve Cancelled!": "We’ve Cancelled It",
+  "Status": "Status",
+  "Delivered": "Delivered",
+  "Accepted": "Accepted",
+  "Dispatched": "Dispatched",
+  "Cancelled": "Cancelled",
+  "CancelledCustomerRequest": "Cancelled Customer Request",
+  "CancelledOutofStock": "Cancelled Out of Stock",
+  "loadingShippingAdd": "Loading Shipping Address",
+  "registerModalText": "In order to add items to your wishlist you must sign up or sign in",
+  "404Title": "Whoops, our bad :(",
+  "404notFoundContent": "The content you requested was not found.",
+  "404goback": "Go Back",
+  "MonthlyArchive": "Monthly Archive",
+  "404previousPage": "to the previous page.",
+  "404linkDetail": "Follow these links to get you back on track!",
+  "404StoreHome": "Store Home",
+  "instagram": "Instagram",
+  "PostalCode": "Postal Code",
+  "city": "City",
+  "Governorate": "Governorate",
+  "Area": "Area",
+  "Country": "Country",
+  "lastName": "Last Name",
+  "firstName": "First Name",
+  "Password": "Password",
+  "MyDetails": "My Details",
+  "Subscribe": "Subscribe",
+  "Year": "Year",
+  "TamaraTabby": "tamara & tabby",
+  "productUnavailable": "The product is currently unavailable. Please call customer service for more information",
+  "30 day return": "30 day return",
+  "daysReturn": "Day Returns",
+  "Available": "Available",
+  "Click and collect": "Click and collect",
+  "Expected Delivery": "Expected Delivery",
+  "valUNotificationOne": "Choose valU as a payment method from the list of payment options.",
+  "valUNotificationTwo": "Enter your registered phone number on your valU account.",
+  "valUNotificationThree": "You will receive a SMS with an OTP to confirm the purchase.",
+  "valUNotificationFour": "Choose the suitable installment plan for you and click on “Buy”.",
+  "FreeDelivery": "Free Delivery on All Orders",
+  "NextDeliveryCairo": "Next Day Delivery is only available in Cairo, and if you pay using any of our digital payment methods",
+  "NextDeliveryUAE": "Next day delivery option is available for orders placed before 11am in Dubai, Sharjah and Abu Dhabi.",
+  "NextDeliveryRiyadh": "Next day delivery option is available for orders placed before 11am in Riyadh only.",
+  "DeliveryWeekendNotification": "No deliveries are made on weekends or public holidays.",
+  "BuyNowPayLater": "Buy Now, Pay Later with",
+  "UAEregion": "Dubai, Sharjah and Abu Dhabi",
+  "returnNotificationOneSA": "You can return any item(s) to L’azurde within 15 days from the date of receiving it.",
+  "retrunNotificationFour": "If the item(s) you’re returning was a part of a promotional bundle, the entire bundle must be returned in order to process the refund.",
+  "retrunNotificationThree": "The item(s) must be accompanied with any accessories that came along with it and the original invoice.",
+  "retrunNotificationTwo": "Please ensure the item(s) you return is in a perfect, unused condition and in its original box and packaging with tags and labels intact.",
+  "retrunNotificationFive": "There is no return or refund for the Coins and the Gold Bars.",
+  "returnNotificanOneEG": "You can return any item(s) to L’azurde within 30 days from the date of receiving it.",
+  "BuyNowPayLaterTamara": "Tamara lets you split your purchases into 3 interest-free payments, Tamara payments are applicable on orders with a maximum value of SAR 4000.",
+  "BuyNowPayLaterTabby": "Tabby lets you split your purchases into 4 interest-free payments, Tabby payments are applicable on orders with a maximum value of SAR 5000.",
+  "OrdersWeekendNotification": "No orders are delivered on weekends or public holidays.",
+  "RandomOrdersDeliveryNotification": "Orders will be delivered from Saturday to Thursday after order confirmation.",
+  "StandardOrdersDeliveryNotification": "Standard orders will be delivered within 2 to 5 working days.",
+  "SameDayFreeDelivery": "Free Same Day Delivery in",
+  "NextDayFreeDeliveryae": "Free <b>Next Day Delivery</b> in",
+  "NextDayFreeDelivery": "Free Next Day Delivery in",
+  "customer reviews": "customer reviews",
+  "rating": "rating",
+  "write a review": "Write a Review",
+  "Style Number": "Style Number",
+  "statusPending": "Status: Pending Courier Collection",
+  "statusReturned": "Status: Returned",
+  "statusDelivered": "Status: Delivered",
+  "statusReturnedFailed": "Status: Return Failed",
+  "Tracking Number": "Tracking Number",
+  "Total": "Total",
+  "Delivery": "Delivery",
+  "Discount": "Discount",
+  "Sub-Total": "Sub-Total",
+  "sub-totalVAT": "Sub-Total (Inc VAT)",
+  "Order Total": "Order Total",
+  "Payment Details": "Payment Details",
+  "Delivery Date": "Delivery Date",
+  "Estimated Collection": "Estimated Collection",
+  "We’ve Delivered It!": "We’ve Delivered It",
+  "Click & Collect Order": "Click & Collect Order",
+  "Delivery Address": "Delivery Address",
+  "Return Order": "Return Order",
+  "View Digital Receipt & Warranty": "View Digital Receipt & Warranty",
+  "Order Date": "Order Date",
+  "Order No": "Order No",
+  "Order Details": "Order Details",
+  "notFound": "No matches found",
+  "loadingDetails": "Loading My Details",
+  "search": "Search",
+  "Quantity": "Quantity",
+  "Size": "Size",
+  "ChooseGiftAmount": "Choose a Gift Amount",
+  "Color": "Color",
+  "AskAnExpert": "Ask an Expert",
+  "shopAll": "Shop All",
+  "haveAQuestion": "Have a question?",
+  "sampleTranslationText": "This text demonstrates language translation when locale is changed. This is not XM generated text, XM does not support multi-language pages as of yet.",
+  "promoBarTitle": " ",
+  "promoBarLinkTitle": " ",
+  "footerHeading": "",
+  "footerSubHeading": "",
+  "signUpBtnText": "Join Us",
+  "subscriptionText": "",
+  "socialIconText": "",
+  "userNavBarTitle": "Shop By Brand",
+  "NavbarLangSelectorTitle": "Select your preferred language and location",
+  "textShow": "Showing",
+  "textOf": "of",
+  "textViewAll": "View All",
+  "arabicfooterLinks": "",
+  "Delete": "Delete",
+  "Save": "Save",
+  "Posting": "Posting",
+  "Cancel": "Cancel",
+  "Add": "Add",
+  "Edit": "Edit",
+  "bestSellers": "Best Sellers",
+  "AddNewAddress": "Add New Address",
+  "CustomerAlsoBuy": "Customers Also Buy",
+  "YouWillAlsoLike": "You Will Also Like",
+  "YouMightAlsoLike": "You Might Also Like",
+  "AddNewMethod": "Add New Method",
+  "YouMayAlsoLike": "You May Also Like",
+  "NoMethodMessage": "You currently don’t have any saved payment methods. Add a payment method here to be prefilled for quicker checkout.",
+  "AddressBook": "Address Book",
+  "PaymentMethods": "Payment Methods",
+  "CheckBoxShipping": "Make this my default shipping address",
+  "CheckBoxPayment": "Make this my default payment method",
+  "DeleteAddressMessage": "Are you sure you want to delete this address? This action cannot be undone.",
+  "DeletePaymentMessage": "Are you sure you want to delete this payment method? This action cannot be undone.",
+  "signOut": "Sign Out",
+  "signIn": "Sign In",
+  "bag": "Bag",
+  "summary": "Summary",
+  "signUp": "Sign Up",
+  "RegisterForNewsletter": "Register for Newsletter",
+  "whatIsThis": "What is This?",
+  "cvvToolTip": "The CVV Number on your credit card or debit card is a 3 digit number on VISA, MasterCard, and Discover branded credit and debit cards. On your American Express branded credit or debit card it is a 4 digit numeric code.",
+  "cvvError": "Enter cvv",
+  "expDateMatchError": "Invalid expiration date",
+  "loadingPaymentMethods": "Loading Payment Methods",
+  "noAddressesMessage": " You currently don’t have any saved delivery addresses. Add an address here to be prefilled for quicker checkout.",
+  "loadingAddresses": "Loading Addresses",
+  "giftMessage": "All purchases come with a blank gift message card and envelope.",
+  "Change": "Change",
+  "orderConfirmMain": "Congratulations! Your order is confirmed.",
+  "savedDetails": "Save your details for faster checkout",
+  "Checkout": "Checkout",
+  "backToBag": "Back To Bag",
+  "shippingAddress": "Shipping Address",
+  "postalAddress": "Postal Address",
+  "clickCollect": "Click & Collect",
+  "shippingMethod": "Shipping Method",
+  "paymant": "Payment",
+  "giftCardVoucherPromoCode": "Gift Card, Voucher, Or Promo Code",
+  "giftMessageHeading": "Gift Message",
+  "contactInfo": "Contact Info",
+  "Free": "FREE",
+  "continueWith": "Continue With",
+  "CreditCard": "Credit Card",
+  "PayInInstallements": "Pay In Installements",
+  "CashOnDelivery": "Cash On Delivery",
+  "customiseMyGiftMsg": "Customise My Gift Message",
+  "contactInfoText": "We need your contact info so we can send you order updates",
+  "accCreateText": "Create an account to save your information",
+  "signUpText": "Sign up to receive our exclusive emails",
+  "Remove": "Remove",
+  "estimatedShippingHandeling": "Estimated Shipping & Handling",
+  "taxVat": "VAT Tax",
+  "totalToPay": "Total to Pay",
+  "totalPaid": "Total Paid",
+  "standardBussinessDay": "Standard (7-14 Business Days)",
+  "estimatedDelivery": "Estimated Delivery: Feb 22, 2022 - Feb 29, 2022",
+  "Estimated Delivery": "Estimated Delivery",
+  "creditCardChargeMsg": "Your credit card will be charged when your order is shipped.",
+  "completePurchase": "Complete Purchase",
+  "Email": "Email",
+  "dataUnavailable": "Data isn't available",
+  "acceptTermsCondition": "Accept Terms & Conditions",
+  "termsAndConditions": "Terms and Conditions",
+  "cardNumPlaceHolder": "Enter your card number",
+  "Apply": "Apply",
+  "Loading Shipping Data": "Loading Shipping Data",
+  "Enter first name": "Enter first name",
+  "Enter last name": "Enter last name",
+  "Invalid email": "Invalid email",
+  "Enter valid email": "Enter email address",
+  "Phone number is not valid": "Phone number is not valid",
+  "Enter card number": "Enter card number",
+  "Enter expiration date": "Enter expiration date",
+  "needHelp": "Need Help?",
+  "personal data": "We treat your personal data with care view our",
+  "helpCenter": "Help Center",
+  "dummyText": "Lorem ipsum dolor sit",
+  "Privacy Notice Here.": " Privacy Notice Here.",
+  "yourWishList": "Your Wishlist",
+  "loading": "Loading...",
+  "Processing": "Processing",
+  "loading images": "loading images...",
+  "View All Saved Products": "View All Saved Products",
+  "no items found": "no items found",
+  "noCartDataFound": "No Cart Data Found!",
+  "noWishlistItemsFound": "No Wishlist Items Found!",
+  "CODNote": "Note: Drivers carry less than $20 in change and checks are NOT accepted for online orders. Feeling generous? You can tip at the door.",
+  "freeShipping": "Free Shipping for Members",
+  "becomeMember": "Become a L'azurde member for fast and free shipping",
+  "Quantity:": "Quantity: ",
+  "Enter feedback": "Enter feedback",
+  "Enter phone #": "Enter phone number",
+  "Please Add Rating": "Please add a rating",
+  "Sort By": "Sort By",
+  "giftMsgNotice": "You may add a gift message for each item in your order",
+  "addMsgBtn": "Add Message",
+  "removeMsgBtn": "Remove Message",
+  "giftMsgLabel": "Enter your gift Message",
+  "textAreaNotice": "Messages are limited to 8 lines of text with 35 characters per line",
+  "Removing": "Removing...",
+  "receiptNotice": "You’ll receive an email with the receipt shortly",
+  "shippingTo": "Shipping to",
+  "purchaseWith": "Purchase With",
+  "whatNext": "What Next",
+  "GoHomePageBtnText": "Back To Homepage",
+  "accountPage": "My Account",
+  "managePaymentPreference": "Manage your payment preferences",
+  "createAddressBook": "Create an address book",
+  "bookAppointment": "Book Appointment",
+  "joinTheShow": "Join The Show",
+  "orderStatusView": "View your order status",
+  "createAccBtn": "Create An Account",
+  "savePaymentDetails": "Save payment details",
+  "accBrands": "One Account. Three Brands.",
+  "ThankYou": "Thank You",
+  "accCreatedMsg": "You have created a L’azurde account.Please check your email to activate your account.",
+  "defaultShippingAdd": "Default Shipping Address",
+  "defaultPaymentMethod": "Default Payment Method",
+  "collectionText": "Available tomorrow for collection. We’ll send an email when your item is available for collection.",
+  "subTotal": "Subtotal (Inc VAT)",
+  "subTotalForEgypt": "Subtotal",
+  "outOfStock": "Item out of stock",
+  "outOfStockk": "Out of Stock",
+  "outOfStockkk": "Out of Stock",
+  "nowOutOfStock": "Now Out of Stock",
+  "onlyFewLeftTag" : "Only a Few Left",
+  "addToCart": "Add To Cart",
+  "buyNow": "Buy Now",
+  "added": "Added",
+  "buying": "Buying",
+  "notifyMeWhenAvailable": "Notify me when available",
+  "designerNote": "Designer’s Notes",
+  "productDetailsH": "Design Details",
+  "metal": "metal",
+  "diamond": "Diamond",
+  "Enter address": "Enter address",
+  "Enter phone number": "Enter phone number",
+  "stone": "stone",
+  "Select title": "Select title",
+  "Enter city": "Enter city",
+  "Select governorate": "Select governorate",
+  "Select country": "Select country",
+  "Enter postal code": "Enter postal code",
+  "Enter nick name": "Enter nick name",
+  "Pendant Size": "Pendant Size",
+  "charm Size": "Charm Size",
+  "Chain Length": "Chain Length",
+  "Ring Size": "Ring Size",
+  "Earring Size": "Earring Size",
+  "Bracelet Size": "Bracelet Size",
+  "Anklet Size": "Anklet Size",
+  "collection": "Collection",
+  "Brand": "Brand",
+  "home": "Home",
+  "off": "off",
+  "adding": "Adding",
+  "shopTheLook": "Shop the Look",
+  "phoneNumber": "Phone Number",
+  "send": "Send",
+  "feedback": "Feedback",
+  "customerCareText": "Customer Care",
+  "storeLocatorText": "Store Locator",
+  "View All Stores": "View All Stores",
+  "Input Address": "Input Address",
+  "Collection Point Details": "Collection Point Details",
+  "Find a Collection Point": "Find a Collection Point",
+  "Search by Address": "Search by Address",
+  "NewPassword": "New Password",
+  "Popular Search Terms": "Popular Search Terms",
+  "Popular Search Products": "Most searched products",
+  "Jewelry": "Jewelry",
+  "LoadMore": "Load More",
+  "of": "of",
+  "Riyadh": "Riyadh",
+  "Cairo": "Cairo",
+  "product": "Products",
+  "Rings": "Rings",
+  "My Orders": "My Orders",
+  "Displaying": "Displaying",
+  "Orders": "Orders",
+  "Track Parcel": "Track Parcel",
+  "Order Number": "Order Number",
+  "agree": "I agree to receive one SMS message to verify my device, and to L’azurde",
+  "Continue": "Continue",
+  "Newsletter Subscriptions": "Newsletter Subscriptions",
+  "All Subscriptions": "All Subscriptions",
+  "subscribeForNewsletter": "Subscribe to Newsletter",
+  "L’azurde Subscriptions": "L’azurde Subscriptions",
+  "Miss L ‘ Subscriptions": "Miss L ‘ Subscriptions",
+  "wavesSubscriptions": "wavesSubscriptions",
+  "InStyle Subscriptions": "InStyle Subscriptions",
+  "phoneNumberr": "Mobile Number",
+  "sendCode": "Send Code",
+  "EnterCode": "Enter Code",
+  "verifyInformation": "You will receive your code momentarily. You may experience a delay if there are issues with your wireless provider. Msg&Data rates may apply. If you’ve previously unsubscribed, reply START to 73067 to opt back in to mobile verification.",
+  "welcome": "Welcome to your account",
+  "requirements": "Password requirements:",
+  "Minimum": "Minimum of 8 characters",
+  "Uppercase": "Uppercase, lowercase letters, and one number",
+  "verify": "Verify Your Mobile Number",
+  "security": "For added security, we need to send you a one-time verification code to better ensure our product lands in the hands of our consumers.",
+  "View Order": "View Order",
+  "Back To My Account": "Back To My Account",
+  "Hi": "Hi",
+  "validPassword": "Password is incorrect",
+  "Password changed": "Password changed successfully",
+  "View": "View",
+  "noItemFound": "no item found",
+  "onlineExclusiveTag": "online exclusive",
+  "EditPassword": "Edit Password",
+  "CurrentPassword": "Current Password",
+  "Gold": "Gold",
+  "Waves": "Waves",
+  "Filter": "Filter",
+  "Clear All Filters": "Clear All",
+  "Shop": "Shop",
+  "translateToArabic": "Translate to Arabic",
+  "translateToEnglish": "Translate to English",
+  "Back to L’azurde": "Back to L’azurde",
+  "Start Shopping": "Start Shopping",
+  "phone  number is not valid": "phone  number is not valid",
+  "addToCartBtnText": "add to cart",
+  "Enter reviews": "Write a review",
+  "Overall rating": "Overall rating",
+  "Contact Us ": "Contact Us ",
+  "lazurdeStory": "The Story of L’azurde",
+  "BestSeller": "Best Seller",
+  "InThePress": "In The Press",
+  "Days": "Days",
+  "Hours": "Hours",
+  "Minutes": "Minutes",
+  "Seconds": "Seconds",
+  "Customer Service ": "or call Customer Service at 800 843 3269ا  ",
+  "back": "back",
+  "any items ": "You currently don’t have any items on the wish list.",
+  "No stores found": "No stores found",
+  "select": "Select",
+  "setDate": "Set Date",
+  "or": "or",
+  "passwordChanged": "Password has been reset successfully",
+  "passwordResetFailed": "Password reset failed!",
+  "accountReviewData": {
+    "myReviewHeading": "My Reviews",
+    "yourNextReviewHeading": "Your Next Review Awaits",
+    "myPastReviews": "my past reviews"
+  },
+  "write review": "write review",
+  "miniCartArabicData": {
+    "addToBag": "Add to Bag",
+    "ShoppingBag": "Shopping Bag",
+    "YourShoppingBagIsEmpty": "Your shopping bag is empty",
+    "checkoutBtnText": "Checkout",
+    "totalText": "Total",
+    "viewBag": "View Bag",
+    "signOut": "Sign Out",
+    "signUp": "Sign Up",
+    "signIn": "Sign In",
+    "removeAll": "Remove All"
+  },
+  "removeAll": "Remove All",
+  "titleOptions": [
+    {
+      "label": "Mr.",
+      "value": "Mr."
+    },
+    {
+      "label": "Mrs.",
+      "value": "Mrs."
+    }
+  ],
+
+  "countryOptions": [
+    {
+      "label": "Saudi Arabia",
+      "value": "SA"
+    },
+    {
+      "label": "UAE",
+      "value": "AE"
+    },
+    {
+      "label": "Egypt",
+      "value": "EG"
+    }
+  ],
+
+  "formHeadings": {
+    "NickName": "Nick Name",
+    "Title": "Title",
+    "FirstName": "First Name",
+    "LastName": "Last Name",
+    "StreetAddress": "Street Address",
+    "City": "City",
+    "Area": "Area",
+    "Governorate": "Governorate",
+    "Country": "Country",
+    "PostalCode": "Postal Code",
+    "phoneNumber": "Phone Number"
+  },
+
+  "paymentFormHeadings": {
+    "title": "Title",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "cardNumber": "Card Number",
+    "creditCardNumber": "Credit Card Number",
+    "expDate": "Expiration Date",
+    "cvv": "cvv"
+  },
+
+  "checkoutUseFormHeadings": {
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "dateOfBirth": "Date of Birth",
+    "anniversaryDate": "Anniversary Date (Optional)"
+  },
+
+  "addressBookHeading": {
+    "add": "Add New Address",
+    "edit": "Edit Address",
+    "delete": "Delete Delivery Address"
+  },
+
+  "paymentModalHeading": {
+    "add": "Add New Payment Method",
+    "edit": "Edit Payment Method",
+    "delete": "Delete Payment Method"
+  },
+
+  "sortingFilter": [
+    {
+      "label": "Most Viewed",
+      "value": "most_viewed"
+    },
+    {
+      "label": "Price - Low to High",
+      "value": "price-asc"
+    },
+    {
+      "label": "Price - High to Low",
+      "value": "price-desc"
+    },
+    {
+      "label": "Best Seller",
+      "value": "best_seller"
+    },
+    {
+      "label": "New In",
+      "value": "new_in"
+    },
+    {
+      "label": "Biggest Saving",
+      "value": "biggest_saving"
+    }
+  ],
+
+  "noOrderNote": "You currently don't have any orders. You can find the orders here after you complete a purchase.",
+  "Start shopping": "Start shopping",
+  "SelectStore": "Select Store",
+  "dropOfDate": "Drop-Off Date",
+  "pickUpDate": "Pick Up Date",
+  "close": "Close",
+  "seeMore": "See More",
+  "submit": "Submit",
+  "order": "Order",
+  "return": "return",
+  "Scheduled": "Scheduled",
+  "Reschedule": "Reschedule",
+  "My Returns": "My Returns",
+  "return all": "return all",
+  "Returned": "Returned",
+  "ReturnedIt": "We've Returned It",
+  "ReturnInitiated": "Return Initiated",
+  "PendingReturn": "Pending Return",
+  "PartialReturn": "Partial Return",
+  "InitiatedtheReturn": "We've Initiated the Return",
+  "read more": "read more",
+  "Need Help?": "Need Help?",
+  "toLazurde Store:": "to L’azurde Store:",
+  "Attempted Collection:": "Attempted Collection:",
+  "Reschedule Return Date": "Reschedule Return Date",
+  "What would you like to return?": "What would you like to return?",
+  "Voucher Applied:": "Voucher Applied:",
+  "Promo Applied:": "Promo Applied:",
+  "Reason for Return": "Reason for Return",
+  "How do you want to return this item?": "How do you want to return this item?",
+  "Courier Collection": "Courier Collection",
+  "CourierSubPara": "Schedule a courier pick up date",
+  "orderReturnFailedNote": "Order was returned but not accepted. Upon inspection, the item was found to not retain the same condition as sent. Your order will be shipped back to you within the next 10 business days free of charge.",
+  "orderColelctionFailedNote": "Return courier collection failed because no one was home. Reschedule a date below.",
+  "timeFrameOutNote": "Returns timeframe for this order has now passed.",
+  "Store Drop-Off": "Store Drop-Off",
+  "storedropoffSubPara": "Select a store and schedule a store drop-off date",
+  "Exit Returns": "Exit Returns",
+  "ExitDetail": "Are you sure you want to exit this return page? All changes will be lost.",
+  "exit": "exit",
+  "modalHeading": "Refund Request is Submitted",
+  "pricenote": "will go back to your account",
+  "storeDropOfModalContent": "Please return the original item(s) back to the respective store on the drop-off date. When we complete processing your return,",
+  "courierModalContent": "After the carrier receives your item, it can take up to two weeks for us to receive your return. We typically process returns within 3-5 business days after the carrier delivers the item to our Returns Center. When we complete processing your return,",
+  "tabbyModalContent": "After the carrier receives your item, it can take up to two weeks for us to receive your return. We typically process returns within 3-5 business days after the carrier delivers the item to our Returns Center. Your order was purchased with Tabby. When we complete processing your return,",
+  "paypalModalConten": "After the carrier receives your item, it can take up to two weeks for us to receive your return. We typically process returns within 3-5 business days after the carrier delivers the item to our Returns Center. Your order was purchased with PayPal. When we complete processing your return,",
+  "codModalContent": "After the carrier receives your item, it can take up to two weeks for us to receive your return. We typically process returns within 3-5 business days after the carrier delivers the item to our Returns Center. When we complete processing your return, you will receive",
+  "itemNotAvailabletag": "This product is not available in your region",
+  "thanksForOrderNote": "Thanks for your order! Check out the details below.",
+  "Contact our customer service": "Contact our customer service",
+  "returnData": "We hope you will be happy with your purchase from L’azurde. However, if you’re not completely satisfied, lazurde offers complimentary returns for unused items in an original condition within",
+  "payment": "Payment",
+  "tamaraPoint": "Pay in 3 interest-free payments with",
+  "tabbyPoint": "Pay in 4 interest free payments with",
+  "valuPoint": "Choose the suitable instalment plan for you and click",
+  "Buy with": "Buy with",
+  "verifyEmail": "You must verify your email address before signing in!",
+  "unableCreateCustomer": "Unable to create customer. Please try again later.",
+  "emailVerified": "Email succesfully verified!",
+  "verificationLinkSent": "A verification link has been sent to your email address. Please click on the link to verify your email and continue the registration process.",
+  "verificationLinkExpired": "Verification link has expired!",
+  "click": "Click",
+  "here": "Here",
+  "resendVerificationEmail": "to resend the verification email.",
+  "invalidCredentials": "Credentials are invalid. Please try again",
+  "quantityExceeds": "It seems the item you wanted to purchase is currently unavailable",
+  "oneOutOfStockNow": "It seems the item you wanted to purchase is currently unavailable",
+  "emailDoesnotExist": "Email does not exist. Please try again",
+  "manyOutOfStockNow": "These items are now out of stock",
+  "LGDlearn": "Learn about Lab Grown Diamonds",
+  "LGD": "Lab Grown Diamonds",
+  "learnMore": "Learn More",
+  "shopNow": "Shop Now",
+  "eterna": "Eterna",
+  "price": "Price",
+
+  "SaudiGovernorate": [
+    {
+      "label": "Al-Bahah",
+      "value": "Al-Bahah"
+    },
+    {
+      "label": "Al-Jawf",
+      "value": "Al-Jawf"
+    },
+    {
+      "label": "Al-Qassim",
+      "value": "Al-Qassim"
+    },
+    {
+      "label": "Asir",
+      "value": "Asir"
+    },
+    {
+      "label": "Eastern",
+      "value": "Eastern"
+    },
+    {
+      "label": "Hail",
+      "value": "Hail"
+    },
+    {
+      "label": "Jazan",
+      "value": "Jazan"
+    },
+    {
+      "label": "Madinah",
+      "value": "Madinah"
+    },
+    {
+      "label": "Makkah",
+      "value": "Makkah"
+    },
+    {
+      "label": "Najran",
+      "value": "Najran"
+    },
+    {
+      "label": "Northern Borders",
+      "value": "Northern Borders"
+    },
+    {
+      "label": "Riyadh",
+      "value": "Riyadh"
+    },
+    {
+      "label": "Tabuk",
+      "value": "Tabuk"
+    }
+  ],
+
+  "UAEGovernorate": [
+    {
+      "label": "Abu Dhabi",
+      "value": "Abu Dhabi"
+    },
+    {
+      "label": "Ajman",
+      "value": "Ajman"
+    },
+    {
+      "label": "Dubai",
+      "value": "Dubai"
+    },
+    {
+      "label": "Fujairah",
+      "value": "Fujairah"
+    },
+    {
+      "label": "Sharjah",
+      "value": "Sharjah"
+    },
+    {
+      "label": "Umm Al Quwain",
+      "value": "Umm Al Quwain"
+    },
+    {
+      "label": "Ras Al Khaimah",
+      "value": "Ras Al Khaimah"
+    }
+  ],
+
+  "EgyptGovernorate": [
+    {
+      "label": "Alexandria",
+      "value": "Alexandria"
+    },
+    {
+      "label": "Aswan",
+      "value": "Aswan"
+    },
+    {
+      "label": "Assiut",
+      "value": "Assiut"
+    },
+    {
+      "label": "Beheira",
+      "value": "Beheira"
+    },
+    {
+      "label": "Beni Suef",
+      "value": "Beni Suef"
+    },
+    {
+      "label": "Cairo",
+      "value": "Cairo"
+    },
+    {
+      "label": "Dakahlia",
+      "value": "Dakahlia"
+    },
+    {
+      "label": "Damietta",
+      "value": "Damietta"
+    },
+    {
+      "label": "Fayoum",
+      "value": "Fayoum"
+    },
+    {
+      "label": "Gharbiya",
+      "value": "Gharbiya"
+    },
+    {
+      "label": "Giza",
+      "value": "Giza"
+    },
+    {
+      "label": "Ismailia",
+      "value": "Ismailia"
+    },
+    {
+      "label": "Kafr Al Sheikh",
+      "value": "Kafr Al Sheikh"
+    },
+    {
+      "label": "Luxor",
+      "value": "Luxor"
+    },
+    {
+      "label": "Matrouh",
+      "value": "Matrouh"
+    },
+    {
+      "label": "Minya",
+      "value": "Minya"
+    },
+    {
+      "label": "Menofia",
+      "value": "Menofia"
+    },
+    {
+      "label": "New Valley",
+      "value": "New Valley"
+    },
+    {
+      "label": "North Sinai",
+      "value": "North Sinai"
+    },
+    {
+      "label": "Port Said",
+      "value": "Port Said"
+    },
+    {
+      "label": "Qaliubiya",
+      "value": "Qaliubiya"
+    },
+    {
+      "label": "Qena",
+      "value": "Qena"
+    },
+    {
+      "label": "Red Sea",
+      "value": "Red Sea"
+    },
+    {
+      "label": "Sharkia",
+      "value": "Sharkia"
+    },
+    {
+      "label": "Sohag",
+      "value": "Sohag"
+    },
+    {
+      "label": "South Sinai",
+      "value": "South Sinai"
+    },
+    {
+      "label": "Suez",
+      "value": "Suez"
+    }
+  ],
+
+  "SaudiCityData": {
+    "Al-Bahah": [
+      {
+        "label": "Al Bahah",
+        "value": "Al Bahah"
+      },
+      {
+        "label": "Baljurashi",
+        "value": "Baljurashi"
+      },
+      {
+        "label": "Al Mandaq",
+        "value": "Al Mandaq"
+      },
+      {
+        "label": "Al Makhwah",
+        "value": "Al Makhwah"
+      },
+      {
+        "label": "Al Aqiq",
+        "value": "Al Aqiq"
+      },
+      {
+        "label": "Qilwah",
+        "value": "Qilwah"
+      },
+      {
+        "label": "Al Qara",
+        "value": "Al Qara"
+      }
+    ],
+    "Makkah": [
+      {
+        "label": "Makkah",
+        "value": "Makkah"
+      },
+      {
+        "label": "Jeddah",
+        "value": "Jeddah"
+      },
+      {
+        "label": "Ta'if",
+        "value": "Ta'if"
+      },
+      {
+        "label": "Al Qunfudhah",
+        "value": "Al Qunfudhah"
+      },
+      {
+        "label": "Al Qunfudhah",
+        "value": "Al Qunfudhah"
+      },
+      {
+        "label": "Rabigh",
+        "value": "Rabigh"
+      },
+      {
+        "label": "Al Jumum",
+        "value": "Al Jumum"
+      },
+      {
+        "label": "Khulays",
+        "value": "Khulays"
+      },
+      {
+        "label": "Al Kamil",
+        "value": "Al Kamil"
+      },
+      {
+        "label": "Al Khurmah",
+        "value": "Al Khurmah"
+      },
+      {
+        "label": "Ranyah",
+        "value": "Ranyah"
+      },
+      {
+        "label": "Turubah",
+        "value": "Turubah"
+      }
+    ],
+    "Riyadh": [
+      {
+        "label": "Riyadh",
+        "value": "Riyadh"
+      },
+      {
+        "label": "Diriyah",
+        "value": "Diriyah"
+      },
+      {
+        "label": "Al-Kharj",
+        "value": "Al-Kharj"
+      },
+      {
+        "label": "Dawadmi",
+        "value": "Dawadmi"
+      },
+      {
+        "label": "Al Majma'ah",
+        "value": "Al Majma'ah"
+      },
+      {
+        "label": "Al-Quway'iyah",
+        "value": "Al-Quway'iyah"
+      },
+      {
+        "label": "Wadi ad-Dawasir",
+        "value": "Wadi ad-Dawasir"
+      },
+      {
+        "label": "Al Aflaj",
+        "value": "Al Aflaj"
+      },
+      {
+        "label": "Al Zulfi",
+        "value": "Al Zulfi"
+      },
+      {
+        "label": "Shaqraa",
+        "value": "Shaqraa"
+      },
+      {
+        "label": "Hotat Bani Tamim",
+        "value": "Hotat Bani Tamim"
+      },
+      {
+        "label": "Afif",
+        "value": "Afif"
+      },
+      {
+        "label": "As Sulayyil",
+        "value": "As Sulayyil"
+      },
+      {
+        "label": "Dhurma",
+        "value": "Dhurma"
+      },
+      {
+        "label": "Al-Muzahmiyya",
+        "value": "Al-Muzahmiyya"
+      },
+      {
+        "label": "Rumah",
+        "value": "Rumah"
+      },
+      {
+        "label": "Thadig",
+        "value": "Thadig"
+      },
+      {
+        "label": "Huraymila",
+        "value": "Huraymila"
+      },
+      {
+        "label": "Al Hariq",
+        "value": "Al Hariq"
+      },
+      {
+        "label": "Al-Ghat",
+        "value": "Al-Ghat"
+      }
+    ],
+    "Eastern": [
+      {
+        "label": "Dammam",
+        "value": "Dammam"
+      },
+      {
+        "label": "Al Ahsa",
+        "value": "Al Ahsa"
+      },
+      {
+        "label": "Hafar al-Batin",
+        "value": "Hafar al-Batin"
+      },
+      {
+        "label": "Jubail",
+        "value": "Jubail"
+      },
+      {
+        "label": "Qatif",
+        "value": "Qatif"
+      },
+      {
+        "label": "Khobar",
+        "value": "Khobar"
+      },
+      {
+        "label": "Khafji",
+        "value": "Khafji"
+      },
+      {
+        "label": "Ras Tanura",
+        "value": "Ras Tanura"
+      },
+      {
+        "label": "Abqaiq",
+        "value": "Abqaiq"
+      },
+      {
+        "label": "Al Nairyah",
+        "value": "Al Nairyah"
+      },
+      {
+        "label": "Qaryat al-Ulya",
+        "value": "Qaryat al-Ulya"
+      }
+    ],
+    "Asir": [
+      {
+        "label": "Abha",
+        "value": "Abha"
+      },
+      {
+        "label": "Khamis Mushait",
+        "value": "Khamis Mushait"
+      },
+      {
+        "label": "Bisha",
+        "value": "Bisha"
+      },
+      {
+        "label": "Al-Namas",
+        "value": "Al-Namas"
+      },
+      {
+        "label": "Muhayil",
+        "value": "Muhayil"
+      },
+      {
+        "label": "Sarat Abidah",
+        "value": "Sarat Abidah"
+      },
+      {
+        "label": "Tathlith",
+        "value": "Tathlith"
+      },
+      {
+        "label": "Rojal",
+        "value": "Rojal"
+      },
+      {
+        "label": "Ahad Rafidah",
+        "value": "Ahad Rafidah"
+      },
+      {
+        "label": "Dhahran Al Janub",
+        "value": "Dhahran Al Janub"
+      },
+      {
+        "label": "Balqarn",
+        "value": "Balqarn"
+      },
+      {
+        "label": "Al Majaridah",
+        "value": "Al Majaridah"
+      }
+    ],
+    "Jazan": [
+      {
+        "label": "Jizan",
+        "value": "Jizan"
+      },
+      {
+        "label": "Sabya",
+        "value": "Sabya"
+      },
+      {
+        "label": "Abu `Arish",
+        "value": "Abu `Arish"
+      },
+      {
+        "label": "Al Harth",
+        "value": "Al Harth"
+      },
+      {
+        "label": "Damad",
+        "value": "Damad"
+      },
+      {
+        "label": "Al Reeth",
+        "value": "Al Reeth"
+      },
+      {
+        "label": "Baish",
+        "value": "Baish"
+      },
+      {
+        "label": "Farasan",
+        "value": "Farasan"
+      },
+      {
+        "label": "Al Dayer",
+        "value": "Al Dayer"
+      },
+      {
+        "label": "Ahad al Masarihah",
+        "value": "Ahad al Masarihah"
+      },
+      {
+        "label": "Al Edabi",
+        "value": "Al Edabi"
+      },
+      {
+        "label": "Al Aridhah",
+        "value": "Al Aridhah"
+      },
+      {
+        "label": "Al Darb",
+        "value": "Al Darb"
+      }
+    ],
+    "Madinah": [
+      {
+        "label": "Madinah",
+        "value": "Madinah"
+      },
+      {
+        "label": "Yanbu",
+        "value": "Yanbu"
+      },
+      {
+        "label": "Al-'Ula",
+        "value": "Al-'Ula"
+      },
+      {
+        "label": "Mahd adh Dhahab",
+        "value": "Mahd adh Dhahab"
+      },
+      {
+        "label": "Badr",
+        "value": "Badr"
+      },
+      {
+        "label": "Khaybar",
+        "value": "Khaybar"
+      },
+      {
+        "label": "Al Hinakiyah",
+        "value": "Al Hinakiyah"
+      }
+    ],
+    "Al-Qassim": [
+      {
+        "label": "Buraidah",
+        "value": "Buraidah"
+      },
+      {
+        "label": "Unaizah",
+        "value": "Unaizah"
+      },
+      {
+        "label": "Ar Rass",
+        "value": "Ar Rass"
+      },
+      {
+        "label": "Al Mithnab",
+        "value": "Al Mithnab"
+      },
+      {
+        "label": "Al Bukayriyah",
+        "value": "Al Bukayriyah"
+      },
+      {
+        "label": "Al Badayea",
+        "value": "Al Badayea"
+      },
+      {
+        "label": "Al Nabhaniyah",
+        "value": "Al Nabhaniyah"
+      },
+      {
+        "label": "Uyun AlJiwa",
+        "value": "Uyun AlJiwa"
+      },
+      {
+        "label": "Riyadh Al Khabra",
+        "value": "Riyadh Al Khabra"
+      },
+      {
+        "label": "Al Shimasiyah",
+        "value": "Al Shimasiyah"
+      }
+    ],
+    "Tabuk": [
+      {
+        "label": "Tabuk",
+        "value": "Tabuk"
+      },
+      {
+        "label": "Al Wajh",
+        "value": "Al Wajh"
+      },
+      {
+        "label": "Duba",
+        "value": "Duba"
+      },
+      {
+        "label": "Tayma",
+        "value": "Tayma"
+      },
+      {
+        "label": "Umluj",
+        "value": "Umluj"
+      },
+      {
+        "label": "Haql",
+        "value": "Haql"
+      }
+    ],
+    "Hail": [
+      {
+        "label": "Ha'il",
+        "value": "Ha'il"
+      },
+      {
+        "label": "Baqaa",
+        "value": "Baqaa"
+      },
+      {
+        "label": "Al Khazaiah",
+        "value": "Al Khazaiah"
+      },
+      {
+        "label": "Al Shinan",
+        "value": "Al Shinan"
+      }
+    ],
+    "Najran": [
+      {
+        "label": "Najran",
+        "value": "Najran"
+      },
+      {
+        "label": "Sharurah",
+        "value": "Sharurah"
+      },
+      {
+        "label": "Hubuna",
+        "value": "Hubuna"
+      },
+      {
+        "label": "Badr Al Janub",
+        "value": "Badr Al Janub"
+      },
+      {
+        "label": "Yadamah",
+        "value": "Yadamah"
+      },
+      {
+        "label": "Thar",
+        "value": "Thar"
+      },
+      {
+        "label": "Khubash",
+        "value": "Khubash"
+      },
+      {
+        "label": "Al Kharkhir",
+        "value": "Al Kharkhir"
+      }
+    ],
+    "Al-Jawf": [
+      {
+        "label": "Sakakah",
+        "value": "Sakakah"
+      },
+      {
+        "label": "Qurayyat",
+        "value": "Qurayyat"
+      },
+      {
+        "label": "Dumat al-Jandal",
+        "value": "Dumat al-Jandal"
+      }
+    ],
+    "Northern Borders": [
+      {
+        "label": "Arar",
+        "value": "Arar"
+      },
+      {
+        "label": "Rafha",
+        "value": "Rafha"
+      },
+      {
+        "label": "Turaif",
+        "value": "Turaif"
+      }
+    ],
+    "Abu Dhabi": [
+      {
+        "label": "Abu Dhabi ",
+        "value": "Abu Dhabi "
+      },
+      {
+        "label": "Al Ain ",
+        "value": "Al Ain "
+      },
+      {
+        "label": "Madinat Zayed ",
+        "value": "Madinat Zayed "
+      },
+      {
+        "label": "Ruwais ",
+        "value": "Ruwais "
+      },
+      {
+        "label": "Liwa Oasis ",
+        "value": "Liwa Oasis "
+      },
+      {
+        "label": "Ghayathi",
+        "value": "Ghayathi"
+      }
+    ],
+    "Dubai": [
+      {
+        "label": "Dubai",
+        "value": "Dubai"
+      },
+      {
+        "label": "Jebel Ali",
+        "value": "Jebel Ali"
+      },
+      {
+        "label": "Hatta",
+        "value": "Hatta"
+      }
+    ],
+    "Sharjah": [
+      {
+        "label": "Sharjah",
+        "value": "Sharjah"
+      },
+      {
+        "label": "Khor Fakkan",
+        "value": "Khor Fakkan"
+      },
+      {
+        "label": "Kalba",
+        "value": "Kalba"
+      },
+      {
+        "label": "Dhaid",
+        "value": "Dhaid"
+      },
+      {
+        "label": "Dibba Al-Hisn",
+        "value": "Dibba Al-Hisn"
+      },
+      {
+        "label": "Al Madam",
+        "value": "Al Madam"
+      }
+    ],
+    "Ajman": [
+      {
+        "label": "Ajman",
+        "value": "Ajman"
+      }
+    ],
+    "Umm Al Quwain": [
+      {
+        "label": "Umm al-Quwain",
+        "value": "Umm al-Quwain"
+      }
+    ],
+    "Ras Al Khaimah": [
+      {
+        "label": "Ras Al Khaimah",
+        "value": "Ras Al Khaimah"
+      },
+      {
+        "label": "Ar-Rams",
+        "value": "Ar-Rams"
+      }
+    ],
+    "Fujairah": [
+      {
+        "label": "Fujairah",
+        "value": "Fujairah"
+      },
+      {
+        "label": "Dibba Al-Fujairah",
+        "value": "Dibba Al-Fujairah"
+      }
+    ],
+    "Cairo": [
+      {
+        "label": "15th of May",
+        "value": "15th of May"
+      },
+      {
+        "label": "Al Azbakeyah",
+        "value": "Al Azbakeyah"
+      },
+      {
+        "label": "Al Basatin",
+        "value": "Al Basatin"
+      },
+      {
+        "label": "Tebin",
+        "value": "Tebin"
+      },
+      {
+        "label": "El-Khalifa",
+        "value": "El-Khalifa"
+      },
+
+      {
+        "label": "El darrasa",
+        "value": "El darrasa"
+      },
+      {
+        "label": "Aldarb Alahmar",
+        "value": "Aldarb Alahmar"
+      },
+      {
+        "label": "Zawya al-Hamra",
+        "value": "Zawya al-Hamra"
+      },
+
+      {
+        "label": "El-Zaytoun",
+        "value": "El-Zaytoun"
+      },
+
+      {
+        "label": "Sahel",
+        "value": "Sahel"
+      },
+      {
+        "label": "El Salam",
+        "value": "El Salam"
+      },
+      {
+        "label": "Sayeda Zeinab",
+        "value": "Sayeda Zeinab"
+      },
+      {
+        "label": "El Sharabeya",
+        "value": "El Sharabeya"
+      },
+
+      {
+        "label": "Shorouk",
+        "value": "Shorouk"
+      },
+
+      {
+        "label": "El Daher",
+        "value": "El Daher"
+      },
+      {
+        "label": "Ataba",
+        "value": "Ataba"
+      },
+      {
+        "label": "New Cairo",
+        "value": "New Cairo"
+      },
+      {
+        "label": "El Marg",
+        "value": "El Marg"
+      },
+      {
+        "label": "Ezbet el Nakhl",
+        "value": "Ezbet el Nakhl"
+      },
+      {
+        "label": "Matareya",
+        "value": "Matareya"
+      },
+
+      {
+        "label": "Maadi",
+        "value": "Maadi"
+      },
+
+      {
+        "label": "Maasara",
+        "value": "Maasara"
+      },
+
+      {
+        "label": "Mokattam",
+        "value": "Mokattam"
+      },
+      {
+        "label": "Manyal",
+        "value": "Manyal"
+      },
+
+      {
+        "label": "Mosky",
+        "value": "Mosky"
+      },
+
+      {
+        "label": "Nozha",
+        "value": "Nozha"
+      },
+
+      {
+        "label": "Waily",
+        "value": "Waily"
+      },
+      {
+        "label": "Bab al-Shereia",
+        "value": "Bab al-Shereia"
+      },
+      {
+        "label": "Bolaq",
+        "value": "Bolaq"
+      },
+      {
+        "label": "Garden City",
+        "value": "Garden City"
+      },
+      {
+        "label": "Hadayek El-Kobba",
+        "value": "Hadayek El-Kobba"
+      },
+      {
+        "label": "Helwan",
+        "value": "Helwan"
+      },
+      {
+        "label": "Dar Al Salam",
+        "value": "Dar Al Salam"
+      },
+      {
+        "label": "Shubra",
+        "value": "Shubra"
+      },
+
+      {
+        "label": "Tura",
+        "value": "Tura"
+      },
+      {
+        "label": "Abdeen",
+        "value": "Abdeen"
+      },
+      {
+        "label": "Abaseya",
+        "value": "Abaseya"
+      },
+      {
+        "label": "Ain Shams",
+        "value": "Ain Shams"
+      },
+      {
+        "label": "Nasr City",
+        "value": "Nasr City"
+      },
+
+      {
+        "label": "New Heliopolis",
+        "value": "New Heliopolis"
+      },
+      {
+        "label": "Masr Al Qadima",
+        "value": "Masr Al Qadima"
+      },
+      {
+        "label": "Mansheya Nasir",
+        "value": "Mansheya Nasir"
+      },
+      {
+        "label": "Badr City",
+        "value": "Badr City"
+      },
+      {
+        "label": "Obour City",
+        "value": "Obour City"
+      },
+      {
+        "label": "Cairo Downtown",
+        "value": "Cairo Downtown"
+      },
+      {
+        "label": "Zamalek",
+        "value": "Zamalek"
+      },
+      {
+        "label": "Kasr El Nile",
+        "value": "Kasr El Nile"
+      },
+      {
+        "label": "Rehab",
+        "value": "Rehab"
+      },
+      {
+        "label": "Katameya",
+        "value": "Katameya"
+      },
+      {
+        "label": "Madinty",
+        "value": "Madinty"
+      },
+      {
+        "label": "Rod Alfarag",
+        "value": "Rod Alfarag"
+      },
+
+      {
+        "label": "Sheraton",
+        "value": "Sheraton"
+      },
+
+      {
+        "label": "El-Gamaleya",
+        "value": "El-Gamaleya"
+      },
+      {
+        "label": "10th of Ramadan City",
+        "value": "10th of Ramadan City"
+      },
+      {
+        "label": "Helmeyat Alzaytoun",
+        "value": "Helmeyat Alzaytoun"
+      },
+      {
+        "label": "New Nozha",
+        "value": "New Nozha"
+      },
+
+      {
+        "label": "Capital New",
+        "value": "Capital New"
+      }
+    ],
+    "Giza": [
+      {
+        "label": "Giza",
+        "value": "Giza"
+      },
+      {
+        "label": "Sixth of October",
+        "value": "Sixth of October"
+      },
+      {
+        "label": "Cheikh Zayed",
+        "value": "Cheikh Zayed"
+      },
+      {
+        "label": "Hawamdiyah",
+        "value": "Hawamdiyah"
+      },
+      {
+        "label": "Al Badrasheen",
+        "value": "Al Badrasheen"
+      },
+      {
+        "label": "Saf",
+        "value": "Saf"
+      },
+      {
+        "label": "Atfih",
+        "value": "Atfih"
+      },
+      {
+        "label": "Al Ayat",
+        "value": "Al Ayat"
+      },
+      {
+        "label": "Al-Bawaiti",
+        "value": "Al-Bawaiti"
+      },
+      {
+        "label": "ManshiyetAl Qanater",
+        "value": "ManshiyetAl Qanater"
+      },
+
+      {
+        "label": "Oaseem",
+        "value": "Oaseem"
+      },
+
+      {
+        "label": "Kerdasa",
+        "value": "Kerdasa"
+      },
+      {
+        "label": "Abu Nomros",
+        "value": "Abu Nomros"
+      },
+      {
+        "label": "Kafr Ghati",
+        "value": "Kafr Ghati"
+      },
+      {
+        "label": "Manshiyet Al Bakari",
+        "value": "Manshiyet Al Bakari"
+      },
+      {
+        "label": "Dokki",
+        "value": "Dokki"
+      },
+      {
+        "label": "Agouza",
+        "value": "Agouza"
+      },
+      {
+        "label": "Haram",
+        "value": "Haram"
+      },
+      {
+        "label": "Warraq",
+        "value": "Warraq"
+      },
+      {
+        "label": "Imbaba",
+        "value": "Imbaba"
+      },
+      {
+        "label": "Boulaq Dakrour",
+        "value": "Boulaq Dakrour"
+      },
+      {
+        "label": "Al Wahat Al Baharia",
+        "value": "Al Wahat Al Baharia"
+      },
+      {
+        "label": "Omraneya",
+        "value": "Omraneya"
+      },
+      {
+        "label": "Moneeb",
+        "value": "Moneeb"
+      },
+      {
+        "label": "Bin Alsarayat",
+        "value": "Bin Alsarayat"
+      },
+      {
+        "label": "Kit Kat",
+        "value": "Kit Kat"
+      },
+      {
+        "label": "Mohandessin",
+        "value": "Mohandessin"
+      },
+      {
+        "label": "Faisal",
+        "value": "Faisal"
+      },
+      {
+        "label": "Abu Rawash",
+        "value": "Abu Rawash"
+      },
+
+      {
+        "label": "Hadayek Alahram",
+        "value": "Hadayek Alahram"
+      },
+      {
+        "label": "Haraneya",
+        "value": "Haraneya"
+      },
+      {
+        "label": "Hadayek October",
+        "value": "Hadayek October"
+      },
+      {
+        "label": "Saft Allaban",
+        "value": "Saft Allaban"
+      },
+      {
+        "label": "Smart Village",
+        "value": "Smart Village"
+      },
+      {
+        "label": "Ard Ellwaa",
+        "value": "Ard Ellwaa"
+      }
+    ],
+    "Alexandria": [
+      {
+        "label": "Abu Qir",
+        "value": "Abu Qir"
+      },
+      {
+        "label": "Al Ibrahimeyah",
+        "value": "Al Ibrahimeyah"
+      },
+      {
+        "label": "Azarita",
+        "value": "Azarita"
+      },
+      {
+        "label": "Anfoushi",
+        "value": "Anfoushi"
+      },
+      {
+        "label": "Dekheila",
+        "value": "Dekheila"
+      },
+      {
+        "label": "El Soyof",
+        "value": "El Soyof"
+      },
+      {
+        "label": "Ameria",
+        "value": "Ameria"
+      },
+      {
+        "label": "El Labban",
+        "value": "El Labban"
+      },
+      {
+        "label": "Al Mafrouza",
+        "value": "Al Mafrouza"
+      },
+      {
+        "label": "El Montaza",
+        "value": "El Montaza"
+      },
+      {
+        "label": "Mansheya",
+        "value": "Mansheya"
+      },
+      {
+        "label": "Naseria",
+        "value": "Naseria"
+      },
+      {
+        "label": "Ambrozo",
+        "value": "Ambrozo"
+      },
+      {
+        "label": "Bab Sharq",
+        "value": "Bab Sharq"
+      },
+      {
+        "label": "Bourj Alarab",
+        "value": "Bourj Alarab"
+      },
+      {
+        "label": "Stanley",
+        "value": "Stanley"
+      },
+      {
+        "label": "Smouha",
+        "value": "Smouha"
+      },
+      {
+        "label": "Sidi Bishr",
+        "value": "Sidi Bishr"
+      },
+      {
+        "label": "Shads",
+        "value": "Shads"
+      },
+      {
+        "label": "Gheet Alenab",
+        "value": "Gheet Alenab"
+      },
+      {
+        "label": "Fleming",
+        "value": "Fleming"
+      },
+      {
+        "label": "Victoria",
+        "value": "Victoria"
+      },
+      {
+        "label": "Camp Shizar",
+        "value": "Camp Shizar"
+      },
+      {
+        "label": "Karmooz",
+        "value": "Karmooz"
+      },
+      {
+        "label": "Mahta Alraml",
+        "value": "Mahta Alraml"
+      },
+      {
+        "label": "Mina El-Basal",
+        "value": "Mina El-Basal"
+      },
+      {
+        "label": "Asafra",
+        "value": "Asafra"
+      },
+      {
+        "label": "Agamy",
+        "value": "Agamy"
+      },
+      {
+        "label": "Bakos",
+        "value": "Bakos"
+      },
+      {
+        "label": "Boulkly",
+        "value": "Boulkly"
+      },
+      {
+        "label": "Cleopatra",
+        "value": "Cleopatra"
+      },
+      {
+        "label": "Glim",
+        "value": "Glim"
+      },
+      {
+        "label": "Al Mamurah",
+        "value": "Al Mamurah"
+      },
+      {
+        "label": "Al Mandara",
+        "value": "Al Mandara"
+      },
+      {
+        "label": "Moharam Bek",
+        "value": "Moharam Bek"
+      },
+      {
+        "label": "Elshatby",
+        "value": "Elshatby"
+      },
+      {
+        "label": "Sidi Gaber",
+        "value": "Sidi Gaber"
+      },
+      {
+        "label": "North Coast/sahel",
+        "value": "North Coast/sahel"
+      },
+      {
+        "label": "Alhadra",
+        "value": "Alhadra"
+      },
+      {
+        "label": "Alattarin",
+        "value": "Alattarin"
+      },
+      {
+        "label": "Sidi Kerir",
+        "value": "Sidi Kerir"
+      },
+      {
+        "label": "Elgomrok",
+        "value": "Elgomrok"
+      },
+      {
+        "label": "Al Max",
+        "value": "Al Max"
+      },
+      {
+        "label": "Marina",
+        "value": "Marina"
+      }
+    ],
+    "Dakahlia": [
+      {
+        "label": "Mansoura",
+        "value": "Mansoura"
+      },
+      {
+        "label": "Talkha",
+        "value": "Talkha"
+      },
+      {
+        "label": "Mitt Ghamr",
+        "value": "Mitt Ghamr"
+      },
+      {
+        "label": "Dekernes",
+        "value": "Dekernes"
+      },
+      {
+        "label": "Aga",
+        "value": "Aga"
+      },
+      {
+        "label": "Menia El Nasr",
+        "value": "Menia El Nasr"
+      },
+      {
+        "label": "Sinbillawin",
+        "value": "Sinbillawin"
+      },
+      {
+        "label": "El Kurdi",
+        "value": "El Kurdi"
+      },
+      {
+        "label": "Bani Ubaid",
+        "value": "Bani Ubaid"
+      },
+      {
+        "label": "Al Manzala",
+        "value": "Al Manzala"
+      },
+      {
+        "label": "Tami al'amdid",
+        "value": "Tami al'amdid"
+      },
+      {
+        "label": "Aljamalia",
+        "value": "Aljamalia"
+      },
+      {
+        "label": "Sherbin",
+        "value": "Sherbin"
+      },
+      {
+        "label": "Mataria",
+        "value": "Mataria"
+      },
+      {
+        "label": "Belqas",
+        "value": "Belqas"
+      },
+      {
+        "label": "Meet Salsil",
+        "value": "Meet Salsil"
+      },
+      {
+        "label": "Gamasa",
+        "value": "Gamasa"
+      },
+      {
+        "label": "Mahalat Damana",
+        "value": "Mahalat Damana"
+      },
+      {
+        "label": "Nabroh",
+        "value": "Nabroh"
+      }
+    ],
+    "Red Sea": [
+      {
+        "label": "Hurghada",
+        "value": "Hurghada"
+      },
+      {
+        "label": "Ras Ghareb",
+        "value": "Ras Ghareb"
+      },
+      {
+        "label": "Safaga",
+        "value": "Safaga"
+      },
+      {
+        "label": "El Qusiar",
+        "value": "El Qusiar"
+      },
+      {
+        "label": "Marsa Alam",
+        "value": "Marsa Alam"
+      },
+      {
+        "label": "Shalatin",
+        "value": "Shalatin"
+      },
+      {
+        "label": "Halaib",
+        "value": "Halaib"
+      },
+      {
+        "label": "Aldahar",
+        "value": "Aldahar"
+      }
+    ],
+    "Beheira": [
+      {
+        "label": "Damanhour",
+        "value": "Damanhour"
+      },
+      {
+        "label": "Kafr El Dawar",
+        "value": "Kafr El Dawar"
+      },
+      {
+        "label": "Rashid",
+        "value": "Rashid"
+      },
+      {
+        "label": "Edco",
+        "value": "Edco"
+      },
+      {
+        "label": "Abu al-Matamir",
+        "value": "Abu al-Matamir"
+      },
+      {
+        "label": "Abu Homs",
+        "value": "Abu Homs"
+      },
+      {
+        "label": "Delengat",
+        "value": "Delengat"
+      },
+      {
+        "label": "Mahmoudiyah",
+        "value": "Mahmoudiyah"
+      },
+      {
+        "label": "Rahmaniyah",
+        "value": "Rahmaniyah"
+      },
+      {
+        "label": "Itai Baroud",
+        "value": "Itai Baroud"
+      },
+      {
+        "label": "Housh Eissa",
+        "value": "Housh Eissa"
+      },
+      {
+        "label": "Shubrakhit",
+        "value": "Shubrakhit"
+      },
+      {
+        "label": "Kom Hamada",
+        "value": "Kom Hamada"
+      },
+      {
+        "label": "Badr",
+        "value": "Badr"
+      },
+      {
+        "label": "Wadi Natrun",
+        "value": "Wadi Natrun"
+      },
+      {
+        "label": "New Nubaria",
+        "value": "New Nubaria"
+      },
+      {
+        "label": "Alnoubareya",
+        "value": "Alnoubareya"
+      }
+    ],
+    "Fayoum": [
+      {
+        "label": "Fayoum",
+        "value": "Fayoum"
+      },
+      {
+        "label": "Fayoum El Gedida",
+        "value": "Fayoum El Gedida"
+      },
+      {
+        "label": "Tamiya",
+        "value": "Tamiya"
+      },
+      {
+        "label": "Snores",
+        "value": "Snores"
+      },
+      {
+        "label": "Etsa",
+        "value": "Etsa"
+      },
+      {
+        "label": "Epschway",
+        "value": "Epschway"
+      },
+      {
+        "label": "Yusuf El Sediaq",
+        "value": "Yusuf El Sediaq"
+      },
+      {
+        "label": "Hadqa",
+        "value": "Hadqa"
+      },
+      {
+        "label": "Atsa",
+        "value": "Atsa"
+      },
+      {
+        "label": "Algamaa",
+        "value": "Algamaa"
+      },
+      {
+        "label": "Sayala",
+        "value": "Sayala"
+      }
+    ],
+    "Gharbiya": [
+      {
+        "label": "Tanta",
+        "value": "Tanta"
+      },
+      {
+        "label": "Al Mahalla Al Kobra",
+        "value": "Al Mahalla Al Kobra"
+      },
+      {
+        "label": "Kafr El Zayat",
+        "value": "Kafr El Zayat"
+      },
+      {
+        "label": "Zefta",
+        "value": "Zefta"
+      },
+      {
+        "label": "El Santa",
+        "value": "El Santa"
+      },
+      {
+        "label": "Qutour",
+        "value": "Qutour"
+      },
+      {
+        "label": "Basion",
+        "value": "Basion"
+      },
+      {
+        "label": "Samannoud",
+        "value": "Samannoud"
+      }
+    ],
+    "Ismailia": [
+      {
+        "label": "Ismailia",
+        "value": "Ismailia"
+      },
+      {
+        "label": "Fayed",
+        "value": "Fayed"
+      },
+      {
+        "label": "Qantara Sharq",
+        "value": "Qantara Sharq"
+      },
+      {
+        "label": "Qantara Gharb",
+        "value": "Qantara Gharb"
+      },
+      {
+        "label": "El Tal El Kabier",
+        "value": "El Tal El Kabier"
+      },
+      {
+        "label": "Abu Sawir",
+        "value": "Abu Sawir"
+      },
+      {
+        "label": "Kasasien El Gedida",
+        "value": "Kasasien El Gedida"
+      },
+      {
+        "label": "Nefesha",
+        "value": "Nefesha"
+      },
+      {
+        "label": "Sheikh Zayed",
+        "value": "Sheikh Zayed"
+      }
+    ],
+    "Menofia": [
+      {
+        "label": "Shbeen El Koom",
+        "value": "Shbeen El Koom"
+      },
+      {
+        "label": "Sadat City",
+        "value": "Sadat City"
+      },
+      {
+        "label": "Menouf",
+        "value": "Menouf"
+      },
+      {
+        "label": "Sars El-Layan",
+        "value": "Sars El-Layan"
+      },
+      {
+        "label": "Ashmon",
+        "value": "Ashmon"
+      },
+      {
+        "label": "Al Bagor",
+        "value": "Al Bagor"
+      },
+      {
+        "label": "Quesna",
+        "value": "Quesna"
+      },
+      {
+        "label": "Berkat El Saba",
+        "value": "Berkat El Saba"
+      },
+      {
+        "label": "Tala",
+        "value": "Tala"
+      },
+      {
+        "label": "Al Shohada",
+        "value": "Al Shohada"
+      }
+    ],
+    "Minya": [
+      {
+        "label": "Minya",
+        "value": "Minya"
+      },
+      {
+        "label": "Minya El Gedida",
+        "value": "Minya El Gedida"
+      },
+      {
+        "label": "El Adwa",
+        "value": "El Adwa"
+      },
+      {
+        "label": "Magagha",
+        "value": "Magagha"
+      },
+      {
+        "label": "Bani Mazar",
+        "value": "Bani Mazar"
+      },
+      {
+        "label": "Mattay",
+        "value": "Mattay"
+      },
+      {
+        "label": "Samalut",
+        "value": "Samalut"
+      },
+      {
+        "label": "Madinat El Fekria",
+        "value": "Madinat El Fekria"
+      },
+      {
+        "label": "Meloy",
+        "value": "Meloy"
+      },
+      {
+        "label": "Deir Mawas",
+        "value": "Deir Mawas"
+      },
+      {
+        "label": "Abu Qurqas",
+        "value": "Abu Qurqas"
+      },
+      {
+        "label": "Ard Sultan",
+        "value": "Ard Sultan"
+      }
+    ],
+    "Qaliubiya": [
+      {
+        "label": "Banha",
+        "value": "Banha"
+      },
+      {
+        "label": "Qalyub",
+        "value": "Qalyub"
+      },
+      {
+        "label": "Shubra Al Khaimah",
+        "value": "Shubra Al Khaimah"
+      },
+      {
+        "label": "Al Qanater Charity",
+        "value": "Al Qanater Charity"
+      },
+      {
+        "label": "Khanka",
+        "value": "Khanka"
+      },
+      {
+        "label": "Kafr Shukr",
+        "value": "Kafr Shukr"
+      },
+      {
+        "label": "Tukh",
+        "value": "Tukh"
+      },
+      {
+        "label": "Qaha",
+        "value": "Qaha"
+      },
+      {
+        "label": "Obour",
+        "value": "Obour"
+      },
+      {
+        "label": "Khosous",
+        "value": "Khosous"
+      },
+      {
+        "label": "Shibin Al Qanater",
+        "value": "Shibin Al Qanater"
+      },
+      {
+        "label": "Mostorod",
+        "value": "Mostorod"
+      }
+    ],
+    "New Valley": [
+      {
+        "label": "El Kharga",
+        "value": "El Kharga"
+      },
+      {
+        "label": "Paris",
+        "value": "Paris"
+      },
+      {
+        "label": "Mout",
+        "value": "Mout"
+      },
+      {
+        "label": "Farafra",
+        "value": "Farafra"
+      },
+      {
+        "label": "Balat",
+        "value": "Balat"
+      },
+      {
+        "label": "Dakhla",
+        "value": "Dakhla"
+      }
+    ],
+    "Suez": [
+      {
+        "label": "Suez",
+        "value": "Suez"
+      },
+      {
+        "label": "Alganayen",
+        "value": "Alganayen"
+      },
+      {
+        "label": "Ataqah",
+        "value": "Ataqah"
+      },
+      {
+        "label": "Ain Sokhna",
+        "value": "Ain Sokhna"
+      },
+      {
+        "label": "Faysal",
+        "value": "Faysal"
+      }
+    ],
+    "Aswan": [
+      {
+        "label": "Aswan",
+        "value": "Aswan"
+      },
+      {
+        "label": "Aswan El Gedida",
+        "value": "Aswan El Gedida"
+      },
+      {
+        "label": "Drau",
+        "value": "Drau"
+      },
+      {
+        "label": "Kom Ombo",
+        "value": "Kom Ombo"
+      },
+      {
+        "label": "Nasr Al Nuba",
+        "value": "Nasr Al Nuba"
+      },
+      {
+        "label": "Kalabsha",
+        "value": "Kalabsha"
+      },
+      {
+        "label": "Edfu",
+        "value": "Edfu"
+      },
+      {
+        "label": "Al-Radisiyah",
+        "value": "Al-Radisiyah"
+      },
+      {
+        "label": "Al Basilia",
+        "value": "Al Basilia"
+      },
+      {
+        "label": "Al Sibaeia",
+        "value": "Al Sibaeia"
+      },
+      {
+        "label": "Abo Simbl Al Siyahia",
+        "value": "Abo Simbl Al Siyahia"
+      },
+      {
+        "label": "Marsa Alam",
+        "value": "Marsa Alam"
+      }
+    ],
+    "Assiut": [
+      {
+        "label": "Assiut",
+        "value": "Assiut"
+      },
+      {
+        "label": "Assiut El Gedida",
+        "value": "Assiut El Gedida"
+      },
+      {
+        "label": "Dayrout",
+        "value": "Dayrout"
+      },
+      {
+        "label": "Manfalut",
+        "value": "Manfalut"
+      },
+      {
+        "label": "Qusiya",
+        "value": "Qusiya"
+      },
+      {
+        "label": "Abnoub",
+        "value": "Abnoub"
+      },
+      {
+        "label": "Abu Tig",
+        "value": "Abu Tig"
+      },
+      {
+        "label": "El Ghanaim",
+        "value": "El Ghanaim"
+      },
+      {
+        "label": "Sahel Selim",
+        "value": "Sahel Selim"
+      },
+      {
+        "label": "El Badari",
+        "value": "El Badari"
+      },
+      {
+        "label": "Sidfa",
+        "value": "Sidfa"
+      }
+    ],
+    "Beni Suef": [
+      {
+        "label": "Bani Sweif",
+        "value": "Bani Sweif"
+      },
+      {
+        "label": "Beni Suef El Gedida",
+        "value": "Beni Suef El Gedida"
+      },
+      {
+        "label": "Al Wasta",
+        "value": "Al Wasta"
+      },
+      {
+        "label": "Naser",
+        "value": "Naser"
+      },
+      {
+        "label": "Ehnasia",
+        "value": "Ehnasia"
+      },
+      {
+        "label": "Beba",
+        "value": "Beba"
+      },
+      {
+        "label": "Fashn",
+        "value": "Fashn"
+      },
+      {
+        "label": "Somasta",
+        "value": "Somasta"
+      },
+      {
+        "label": "Alabbaseri",
+        "value": "Alabbaseri"
+      },
+      {
+        "label": "Mokbel",
+        "value": "Mokbel"
+      }
+    ],
+    "Port Said": [
+      {
+        "label": "PorSaid",
+        "value": "PorSaid"
+      },
+      {
+        "label": "Port Fouad",
+        "value": "Port Fouad"
+      },
+      {
+        "label": "Alarab",
+        "value": "Alarab"
+      },
+      {
+        "label": "Zohour",
+        "value": "Zohour"
+      },
+      {
+        "label": "Alsharq",
+        "value": "Alsharq"
+      },
+      {
+        "label": "Aldawahi",
+        "value": "Aldawahi"
+      },
+      {
+        "label": "Almanakh",
+        "value": "Almanakh"
+      },
+      {
+        "label": "Mubarak",
+        "value": "Mubarak"
+      }
+    ],
+    "Damietta": [
+      {
+        "label": "Damietta",
+        "value": "Damietta"
+      },
+      {
+        "label": "New Damietta",
+        "value": "New Damietta"
+      },
+      {
+        "label": "Ras El Bar",
+        "value": "Ras El Bar"
+      },
+      {
+        "label": "Faraskour",
+        "value": "Faraskour"
+      },
+      {
+        "label": "Zarqa",
+        "value": "Zarqa"
+      },
+      {
+        "label": "Alsaru",
+        "value": "Alsaru"
+      },
+      {
+        "label": "Alruwda",
+        "value": "Alruwda"
+      },
+      {
+        "label": "Kafr El-Batikh",
+        "value": "Kafr El-Batikh"
+      },
+      {
+        "label": "Azbet Al Burg",
+        "value": "Azbet Al Burg"
+      },
+      {
+        "label": "Meet Abou Ghalib",
+        "value": "Meet Abou Ghalib"
+      },
+      {
+        "label": "Kafr Saad",
+        "value": "Kafr Saad"
+      }
+    ],
+    "Sharkia": [
+      {
+        "label": "Zagazig",
+        "value": "Zagazig"
+      },
+      {
+        "label": "Al Ashr Men Ramadan",
+        "value": "Al Ashr Men Ramadan"
+      },
+      {
+        "label": "Minya Al Qamh",
+        "value": "Minya Al Qamh"
+      },
+      {
+        "label": "Belbeis",
+        "value": "Belbeis"
+      },
+      {
+        "label": "Mashtoul El Souq",
+        "value": "Mashtoul El Souq"
+      },
+      {
+        "label": "Qenaiat",
+        "value": "Qenaiat"
+      },
+      {
+        "label": "Abu Hammad",
+        "value": "Abu Hammad"
+      },
+      {
+        "label": "El Qurain",
+        "value": "El Qurain"
+      },
+      {
+        "label": "Hehia",
+        "value": "Hehia"
+      },
+      {
+        "label": "Abu Kabir",
+        "value": "Abu Kabir"
+      },
+      {
+        "label": "Faccus",
+        "value": "Faccus"
+      },
+      {
+        "label": "El Salihia El Gedida",
+        "value": "El Salihia El Gedida"
+      },
+      {
+        "label": "Al Ibrahimiyah",
+        "value": "Al Ibrahimiyah"
+      },
+      {
+        "label": "Deirb Negm",
+        "value": "Deirb Negm"
+      },
+      {
+        "label": "Kafr Saqr",
+        "value": "Kafr Saqr"
+      },
+      {
+        "label": "Awlad Saqr",
+        "value": "Awlad Saqr"
+      },
+      {
+        "label": "Husseiniya",
+        "value": "Husseiniya"
+      },
+      {
+        "label": "San Alhajar Alqablia",
+        "value": "San Alhajar Alqablia"
+      },
+      {
+        "label": "Manshayat Abu Omar",
+        "value": "Manshayat Abu Omar"
+      }
+    ],
+    "South Sinai": [
+      {
+        "label": "Al Toor",
+        "value": "Al Toor"
+      },
+      {
+        "label": "Sharm El-Shaikh",
+        "value": "Sharm El-Shaikh"
+      },
+      {
+        "label": "Dahab",
+        "value": "Dahab"
+      },
+      {
+        "label": "Nuweiba",
+        "value": "Nuweiba"
+      },
+      {
+        "label": "Taba",
+        "value": "Taba"
+      },
+      {
+        "label": "Saint Catherine",
+        "value": "Saint Catherine"
+      },
+      {
+        "label": "Abu Redis",
+        "value": "Abu Redis"
+      },
+      {
+        "label": "Abu Zenaima",
+        "value": "Abu Zenaima"
+      },
+      {
+        "label": "Ras Sidr",
+        "value": "Ras Sidr"
+      }
+    ],
+    "Kafr Al Sheikh": [
+      {
+        "label": "Kafr El Sheikh",
+        "value": "Kafr El Sheikh"
+      },
+      {
+        "label": "Kafr El Sheikh Downtown",
+        "value": "Kafr El Sheikh Downtown"
+      },
+      {
+        "label": "Desouq",
+        "value": "Desouq"
+      },
+      {
+        "label": "Fooh",
+        "value": "Fooh"
+      },
+      {
+        "label": "Metobas",
+        "value": "Metobas"
+      },
+      {
+        "label": "Burg Al Burullus",
+        "value": "Burg Al Burullus"
+      },
+      {
+        "label": "Baltim",
+        "value": "Baltim"
+      },
+      {
+        "label": "Masief Baltim",
+        "value": "Masief Baltim"
+      },
+      {
+        "label": "Hamol",
+        "value": "Hamol"
+      },
+      {
+        "label": "Bella",
+        "value": "Bella"
+      },
+      {
+        "label": "Riyadh",
+        "value": "Riyadh"
+      },
+      {
+        "label": "Sidi Salm",
+        "value": "Sidi Salm"
+      },
+      {
+        "label": "Qellen",
+        "value": "Qellen"
+      },
+      {
+        "label": "Sidi Ghazi",
+        "value": "Sidi Ghazi"
+      }
+    ],
+    "Matrouh": [
+      {
+        "label": "Marsa Matrouh",
+        "value": "Marsa Matrouh"
+      },
+      {
+        "label": "El Hamam",
+        "value": "El Hamam"
+      },
+      {
+        "label": "Alamein",
+        "value": "Alamein"
+      },
+      {
+        "label": "Dabaa",
+        "value": "Dabaa"
+      },
+      {
+        "label": "Al-Nagila",
+        "value": "Al-Nagila"
+      },
+      {
+        "label": "Sidi Brani",
+        "value": "Sidi Brani"
+      },
+      {
+        "label": "Salloum",
+        "value": "Salloum"
+      },
+      {
+        "label": "Siwa",
+        "value": "Siwa"
+      },
+      {
+        "label": "Marina",
+        "value": "Marina"
+      },
+      {
+        "label": "North Coast",
+        "value": "North Coast"
+      }
+    ],
+    "Luxor": [
+      {
+        "label": "Luxor",
+        "value": "Luxor"
+      },
+      {
+        "label": "New Luxor",
+        "value": "New Luxor"
+      },
+      {
+        "label": "Esna",
+        "value": "Esna"
+      },
+      {
+        "label": "New Tiba",
+        "value": "New Tiba"
+      },
+      {
+        "label": "Al Ziynia",
+        "value": "Al Ziynia"
+      },
+      {
+        "label": "Al Bayadieh",
+        "value": "Al Bayadieh"
+      },
+      {
+        "label": "Al Qarna",
+        "value": "Al Qarna"
+      },
+      {
+        "label": "Armant",
+        "value": "Armant"
+      },
+      {
+        "label": "Al Tud",
+        "value": "Al Tud"
+      }
+    ],
+    "Qena": [
+      {
+        "label": "Qena",
+        "value": "Qena"
+      },
+      {
+        "label": "New Qena",
+        "value": "New Qena"
+      },
+      {
+        "label": "Abu Tesht",
+        "value": "Abu Tesht"
+      },
+      {
+        "label": "Nag Hammadi",
+        "value": "Nag Hammadi"
+      },
+      {
+        "label": "Deshna",
+        "value": "Deshna"
+      },
+      {
+        "label": "Alwaqf",
+        "value": "Alwaqf"
+      },
+      {
+        "label": "Qaft",
+        "value": "Qaft"
+      },
+      {
+        "label": "Naqada",
+        "value": "Naqada"
+      },
+      {
+        "label": "Farshout",
+        "value": "Farshout"
+      },
+      {
+        "label": "Quos",
+        "value": "Quos"
+      }
+    ],
+    "North Sinai": [
+      {
+        "label": "Arish",
+        "value": "Arish"
+      },
+      {
+        "label": "Sheikh Zowaid",
+        "value": "Sheikh Zowaid"
+      },
+      {
+        "label": "Nakhl",
+        "value": "Nakhl"
+      },
+      {
+        "label": "Rafah",
+        "value": "Rafah"
+      },
+      {
+        "label": "Bir al-Abed",
+        "value": "Bir al-Abed"
+      },
+      {
+        "label": "Al Hasana",
+        "value": "Al Hasana"
+      }
+    ],
+    "Sohag": [
+      {
+        "label": "Sohag",
+        "value": "Sohag"
+      },
+      {
+        "label": "Sohag El Gedida",
+        "value": "Sohag El Gedida"
+      },
+      {
+        "label": "Akhmeem",
+        "value": "Akhmeem"
+      },
+      {
+        "label": "Akhmim El Gedida",
+        "value": "Akhmim El Gedida"
+      },
+      {
+        "label": "Albalina",
+        "value": "Albalina"
+      },
+      {
+        "label": "El Maragha",
+        "value": "El Maragha"
+      },
+      {
+        "label": "Almunsha'a",
+        "value": "Almunsha'a"
+      },
+      {
+        "label": "Dar AISalaam",
+        "value": "Dar AISalaam"
+      },
+      {
+        "label": "Gerga",
+        "value": "Gerga"
+      },
+      {
+        "label": "Jahina Al Gharbia",
+        "value": "Jahina Al Gharbia"
+      },
+      {
+        "label": "Saqilatuh",
+        "value": "Saqilatuh"
+      },
+      {
+        "label": "Tama",
+        "value": "Tama"
+      },
+      {
+        "label": "Tahta",
+        "value": "Tahta"
+      },
+      {
+        "label": "Alkawthar",
+        "value": "Alkawthar"
+      }
+    ]
+  },
+
+  "signUpFormFields": [
+    {
+      "label": "Title",
+      "name": "title",
+      "type": "select",
+      "dropdown": true,
+      "masked": false,
+      "hasIcon": false
+    },
+    {
+      "label": "First Name",
+      "name": "fName",
+      "type": "text",
+      "placeholder": "",
+      "dropdown": false,
+      "masked": false,
+      "hasIcon": false
+    },
+    {
+      "label": "Last Name",
+      "name": "lName",
+      "type": "text",
+      "placeholder": "",
+      "dropdown": false,
+      "masked": false,
+      "hasIcon": false
+    },
+    {
+      "label": "Date of Birth",
+      "name": "dob",
+      "type": "date",
+      "placeholder": "11-16-96",
+      "dropdown": false,
+      "masked": false,
+      "hasIcon": true,
+      "icon": "calendar"
+    },
+    {
+      "label": "Mobile Phone",
+      "name": "phoneNumber",
+      "type": "number",
+      "placeholder": "",
+      "dropdown": false,
+      "masked": false
+    },
+    {
+      "label": "Email",
+      "name": "email",
+      "type": "email",
+      "placeholder": "jane@gmail.com",
+      "dropdown": false,
+      "masked": false
+    },
+    {
+      "label": "Password",
+      "name": "password",
+      "type": "password",
+      "placeholder": "••••••••••••",
+      "dropdown": false,
+      "masked": false,
+      "hasIcon": true,
+      "icon": "password",
+      "onIconClick": true
+    },
+    {
+      "label": "Confirm Password",
+      "name": "confirmPassword",
+      "type": "password",
+      "placeholder": "••••••••••••",
+      "dropdown": false,
+      "masked": false,
+      "hasIcon": true,
+      "icon": "password",
+      "onIconClick": true
+    },
+    {
+      "label": "Anniversary Date (Optional)",
+      "name": "anniversaryDate",
+      "type": "date",
+      "placeholder": "11-16-96",
+      "dropdown": false,
+      "masked": false,
+      "hasIcon": true,
+      "icon": "calendar"
+    }
+  ],
+  "reviewFormData": {
+    "reviewLabel": "Review",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "email",
+    "phoneNumber": "mobile phone",
+    "submitBtnText": "post review"
+  },
+  "resetEmailSentNote": "An email with password reset instructions has been sent to your email address.",
+  "errorMessage": {
+    "name": "Please enter a valid name",
+    "dateOfBirth": "Please enter a valid date of birth",
+    "email": "Please enter a valid email address",
+    "phone": "Please enter a valid phone number",
+    "anniversaryDate": "Please enter a valid anniversary date",
+    "postalCode": "Please input a valid postal code",
+    "password": "Password is incorrect",
+    "passwordMinChars": "Password must be minimum 8 characters",
+    "passwordSameAsConfirm": "Password entered must match new password",
+    "passwordMatch": "Password must be contain both alphabetic and numeric characters",
+    "passwordContainNumber": "Password must contain a number",
+    "passwordContainLowercaseLetter": "Password must contain a lowercase letter",
+    "passwordContainUppercaseLetter": "Password must contain an uppercase letter",
+    "passwordIsInvalid": "Please enter a valid password"
+  },
+  "olduserMessage": "Welcome to your new online store from L’azurde. Since we've made a few changes to our website, we request you to reset your password to continue to your account. Click on Reset Password under to change your password.",
+  "customeFieldsPDP": {
+    "Brand": "Brand",
+    "Collection": "Collection",
+    "Metal": "Metal",
+    "Diamond": "Diamond",
+    "Ring Size": "Ring Size",
+    "Stone": "Stone",
+    "Chain Length": "Chain Length",
+    "Bracelet Size": "Bracelet Size",
+    "Bracelet Length": "Bracelet Length",
+    "Earring Size": "Earring Size",
+    "Pendant Size": "Pendant Size",
+    "Charm Size": "Charm Size",
+    "Gold": "Weight"
+  },
+  "Help the community decide": "Help the community decide",
+  "continueShopping": "Your shopping bag is empty.",
+  "toContinue": "to continue shopping",
+  "width": "width",
+  "depth": "depth",
+  "length": "Length",
+  "Pendant Dimensions": "Pendant Dimensions",
+  "Earring Dimensions": "Earring Dimensions",
+  "Chain Dimensions": "Chain Dimensions",
+  "Ring Dimensions": "Ring Dimensions",
+  "Bracelet Dimensions": "Bracelet Dimensions",
+  "Dimensions": "Dimensions",
+  "Popular Categories": "Popular Categories",
+  "language": "Language",
+  "Buy": "Buy",
+  "onlinein": "online in",
+  "pdpSeoDesc": "Shop with free delivery, free returns & options to buy now & pay later.",
+  "returnnote": "We hope you will be happy with your purchase from L’azurde. However, if you’re not completely satisfied, L’azurde offers complimentary returns for unused items in an original condition within 15 Day Returns",
+  "more": "More",
+  "less": "Less",
+  "mobilePhone": "mobile phone",
+  "feedbackSubmitSuccess": "Feedback submitted successfully",
+  "somethingWentWrong": "Something Went Wrong",
+  "sendFeedbackHeading": "Send Feedback"
+}

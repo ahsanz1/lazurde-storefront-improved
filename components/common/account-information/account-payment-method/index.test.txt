@@ -1,0 +1,255 @@
+import React from "react";
+import {
+  screen,
+  render,
+  fireEvent,
+  act,
+  waitFor,
+} from "@testing-library/react";
+import ContextProvider, { AppContext } from "lib/context";
+import PaymentMethod from "./index";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+
+const paymentData = [
+  {
+    id: "123",
+    title: "Test Title",
+    firstName: "John",
+    lastName: "Doe",
+    cardNumber: "4242424242424242",
+    expDate: "04/2044",
+    cvv: "100",
+    checkbox: true,
+  },
+  {
+    id: "123",
+    title: "Test Title 2",
+    firstName: "Jane",
+    lastName: "Doe",
+    cardNumber: "4242424242424242",
+    expDate: "04/2044",
+    cvv: "100",
+    checkbox: true,
+  },
+];
+const queryClient = new QueryClient();
+// let mockStorage: { [key: string]: string } = {};
+// let itemSet: any = global.Storage.prototype.setItem;
+// let itemGet: any = global.Storage.prototype.getItem;
+
+// beforeAll(() => {
+//   itemSet = jest.fn((key, value) => {
+//     mockStorage[key] = value;
+//   });
+//   itemGet = jest.fn((key) => mockStorage[key]);
+// });
+
+// beforeEach(() => {
+//   mockStorage = {};
+// });
+
+// afterEach(() => {
+//   itemSet.mockReset();
+//   itemGet.mockReset();
+// });
+
+jest.mock("lib/identity", () => ({
+  fetchCustomerProfile: jest.fn(),
+}));
+
+jest.mock("lib/api/payment", () => ({
+  getCheckoutCustomerDetails: jest.fn(),
+  getCheckoutPaymentToken: jest
+    .fn()
+    .mockReturnValueOnce(true)
+    .mockReturnValueOnce(false),
+  createCheckoutPaymentInstrument: jest
+    .fn()
+    .mockReturnValueOnce(true)
+    .mockReturnValueOnce({ error_codes: ["error"] }),
+  updateCheckoutPaymentInstrument: jest
+    .fn()
+    .mockReturnValueOnce(true)
+    .mockReturnValueOnce({ error_codes: ["error"] }),
+  removeCheckoutPaymentInstrument: jest
+    .fn()
+    .mockReturnValueOnce(true)
+    .mockReturnValueOnce(false),
+}));
+
+const payload: any = {
+  createdAt: "2022-07-01T08:04:52.000Z",
+  deletedAt: null,
+  email: "swash99@gmail.com",
+  firstName: "wasif",
+  id: "dd216d60-96cd-4d11-bf5c-d6b95eb87d3e",
+  isStaffUserFederated: false,
+  lastName: "hussain",
+  loginId: "swash99@gmail.com",
+  meta: { fabricBirthDate: "1", fabricAnniversaryDate: "2" },
+  orgId: "6d1b44c8-7cec-4eee-81a0-a2c86c9b7653",
+  primaryContact: null,
+  status: "active",
+  type: "customer",
+  updatedAt: null,
+};
+
+const accessToken = {
+  access_token:
+    "eyJraWQiOiJYbkZOc1ZiTWp4cUo5bHV6UWotWkdidWNxdGxTX0V6aTNKaXdzd0VJd0JzIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULjdCZW1JNHRadEJMUmNVSFExT24wZ0NpMGxNVl9NenJRRnFvZWktNGJGeDAub2FyNnIzc2Z5MkF6UjJvb2U2OTYiLCJpc3MiOiJodHRwczovL2Rldi1zZWN1cmUubGF6dXJkZS5jb20vb2F1dGgyL2RlZmF1bHQiLCJhdWQiOiJhcGk6Ly9kZWZhdWx0IiwiaWF0IjoxNjYwMjE4MjA4LCJleHAiOjE2NjAyMjE4MDgsImNpZCI6IjBvYXI5NTBteU9YZnFKVFZDNjk2IiwidWlkIjoiMDB1MWdwanZ6bWNVMW1Tang2OTciLCJzY3AiOlsib2ZmbGluZV9hY2Nlc3MiLCJlbWFpbCIsInByb2ZpbGUiLCJvcGVuaWQiXSwiYXV0aF90aW1lIjoxNjYwMjEwMzgwLCJmYWJyaWNVc2VySWQiOiJkZDIxNmQ2MC05NmNkLTRkMTEtYmY1Yy1kNmI5NWViODdkM2UiLCJzdWIiOiJzd2FzaDk5QGdtYWlsLmNvbSIsInVzZXJUeXBlIjoiY3VzdG9tZXIiLCJhY2NvdW50cyI6IntcIjYxYTUxMGZhMzdiYjY0MDAwOWFjZjU1ZVwiOntcInJvbGVzXCI6W10sXCJpZFwiOlwiNjFhNTEwZmEzN2JiNjQwMDA5YWNmNTVlXCIsXCJuYW1lXCI6XCJsYXp1cmRlIHN0b3JlZnJvbnRcIixcInRlbmFudElkXCI6XCI2MWE1MTBmYTM3YmI2NDAwMDlhY2Y1NWVcIixcImxvZ29VcmxcIjpudWxsfX0iLCJpZGVudGl0eVZlcnNpb24iOiJ2MiJ9.jxPzucHZP4qylU-T4D7gam9tOQzTwE1iL3DXPZlH669Fk8Y4dUwCP7Cc05EfJ3KjQF3ihQdpQF22XS7oXmbgWofDrNDzhgkJ_C7HMi_2LVxmLUWm1zGOzr11vcf00h49_uk3_BB_ecuIHfgy-lZhAKHtL_Y2oYgqV_q3wk0bp-HP0I0saGFh2JQcYJtbL74uWsUxitk7VD-BU93lboTMT4gqYjuwBZk5tLYo4wtVRXVrV6Y85reDrRmNGz7BDHaSrUhjGVa7H5QO9BDRVp_4B2qXstltYiyG_QlP13FKqW_546utskeNW9QsgJybgkJfsxaJs2T_x35iz0FK_S8GCQ",
+  expires_in: 3600,
+  id_token:
+    "eyJraWQiOiJYbkZOc1ZiTWp4cUo5bHV6UWotWkdidWNxdGxTX0V6aTNKaXdzd0VJd0JzIiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiIwMHUxZ3BqdnptY1UxbVNqeDY5NyIsIm5hbWUiOiJ3YXNpZiBodXNzYWluIiwiZW1haWwiOiJzd2FzaDk5QGdtYWlsLmNvbSIsInZlciI6MSwiaXNzIjoiaHR0cHM6Ly9kZXYtc2VjdXJlLmxhenVyZGUuY29tL29hdXRoMi9kZWZhdWx0IiwiYXVkIjoiMG9hcjk1MG15T1hmcUpUVkM2OTYiLCJpYXQiOjE2NjAyMTgyMDgsImV4cCI6MTY2MDIyMTgwOCwianRpIjoiSUQub1JmTFFKaTNNZlJGM243NEUzeTRodGFSWlUyNVZTSF94UFRMdXB4MTgxayIsImFtciI6WyJwd2QiXSwiaWRwIjoiMDBva3VlZGc4aVhONzAyUGM2OTYiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJzd2FzaDk5QGdtYWlsLmNvbSIsImF1dGhfdGltZSI6MTY2MDIxMDM4MCwiYXRfaGFzaCI6ImFibFRDbDJnMkdYc19VSUpwTkh1OEEifQ.B2U5DOtrt7I75Sc_HtFPfhOJEr7IIqWX51qVhw_7YL7p3NZIt7bI6SdvQsHN__0554iEobhIFtMYmp8tYDCwIMY-_ZijbbBQ-N_cT1wLxZ-LlGOtk9-pFQq0Y_Ei9PEB_DEWhfYw6qoMteZsAx37ZgLmXxPngF2PvF6hcS5ectNeTV9mTuUWi5bTT07OZ_44fbCi2gp-WxoYddSMd4ppNfrZmiplibf9J1EDg8PxS-Sj7SG5rwwQSpMS8U55l3uKUVEpInBZPILBP2EUv-wtViHu3ENTO1p3vtBpRVV7UnRvJqR0Nh1Bd-Ucj_k7YT9717K2rP7DVGn0PxIZMy4aFQ",
+  refresh_token: "K2hDUdME89Z_dJVQXTtJSv-OZ5j_4YXmEces0Yy1PPo",
+  scope: "offline_access email profile openid",
+  token_type: "Bearer",
+};
+
+test("render payment methods", async () => {
+  localStorage.setItem("user_info", JSON.stringify(payload));
+  localStorage.setItem("auth_tokens", JSON.stringify(accessToken));
+  await waitFor(async () => {
+    render(
+      <QueryClientProvider client={queryClient}>
+        <ContextProvider>
+          <PaymentMethod />
+        </ContextProvider>
+      </QueryClientProvider>
+    );
+  });
+});
+
+test("no user info test", async () => {
+  localStorage.setItem("auth_tokens", JSON.stringify(accessToken));
+  await waitFor(async () => {
+    render(
+      <QueryClientProvider client={queryClient}>
+        <ContextProvider>
+          <PaymentMethod />
+        </ContextProvider>
+      </QueryClientProvider>
+    );
+  });
+});
+
+test("create payment function", async () => {
+  localStorage.setItem("user_info", JSON.stringify(payload));
+  localStorage.setItem("auth_tokens", JSON.stringify(accessToken));
+  await waitFor(async () => {
+    render(
+      <QueryClientProvider client={queryClient}>
+        <ContextProvider>
+          <PaymentMethod />
+        </ContextProvider>
+      </QueryClientProvider>
+    );
+    // const editButton = await screen.findByText(/AddNewMethod/i);
+    // expect(editButton).toBeInTheDocument();
+    // fireEvent.click(editButton);
+    // const firstName = screen.getByRole("firstName");
+    // const lastName = screen.getByRole("lastName");
+    // const cardNumber = screen.getByRole("cardNumber");
+    // const expDate = screen.getByRole("expDate");
+    // const cvv = screen.getByRole("cvv");
+    // fireEvent.change(firstName, {
+    //   target: { value: "John" },
+    // });
+    // fireEvent.change(lastName, {
+    //   target: { value: "Doe" },
+    // });
+    // fireEvent.change(cardNumber, {
+    //   target: { value: "4242424242424242" },
+    // });
+    // fireEvent.change(expDate, {
+    //   target: { value: "05/2044" },
+    // });
+    // fireEvent.change(cvv, {
+    //   target: { value: "100" },
+    // });
+
+    // fireEvent.click(screen.getByTestId("addButton"));
+    // fireEvent.click(screen.getByTestId("addButton"));
+  });
+});
+
+test("edit address function", async () => {
+  localStorage.setItem("user_info", JSON.stringify(payload));
+  localStorage.setItem("auth_tokens", JSON.stringify(accessToken));
+  await waitFor(async () => {
+    render(
+      <QueryClientProvider client={queryClient}>
+        <ContextProvider>
+          <PaymentMethod />
+        </ContextProvider>
+      </QueryClientProvider>
+    );
+    // const editButton = await screen.queryAllByTestId(/edit-button/i)[0];
+    // expect(editButton).toBeInTheDocument();
+    // fireEvent.click(editButton);
+    // const firstName = screen.getByRole("firstName");
+    // const lastName = screen.getByRole("lastName");
+    // const expDate = screen.getByRole("expDate");
+    // fireEvent.change(firstName, {
+    //   target: { value: "John" },
+    // });
+    // fireEvent.change(lastName, {
+    //   target: { value: "Doe" },
+    // });
+
+    // fireEvent.change(expDate, {
+    //   target: { value: "05/2044" },
+    // });
+
+    // fireEvent.click(screen.getByTestId("editButton"));
+    // fireEvent.click(screen.getByTestId("editButton"));
+  });
+});
+
+test("delete address function", async () => {
+  localStorage.setItem("user_info", JSON.stringify(payload));
+  localStorage.setItem("auth_tokens", JSON.stringify(accessToken));
+  await waitFor(async () => {
+    render(
+      <QueryClientProvider client={queryClient}>
+        <ContextProvider>
+          <PaymentMethod />
+        </ContextProvider>
+      </QueryClientProvider>
+    );
+    // const editButton = await screen.queryAllByTestId(/edit-button/i)[0];
+    // expect(editButton).toBeInTheDocument();
+    // fireEvent.click(editButton);
+
+    // fireEvent.click(screen.getByTestId("showDelete"));
+    // fireEvent.click(screen.getByTestId("cancelDelete"));
+    // fireEvent.click(screen.getByTestId("showDelete"));
+    // fireEvent.click(screen.getByTestId("acceptDelete"));
+  });
+});
+
+// test("test without props", () => {
+//   render(
+//     <ContextProvider>
+//       <PaymentMethod/>
+//     </ContextProvider>
+//   );
+//   expect(
+//     screen.getByText(
+//       /You currently don’t have any saved payment methods. Add a payment method here to be prefilled for quicker checkout./i
+//     )
+//   ).toBeInTheDocument();
+// });
+
+test("render arabic version", async () => {
+  localStorage.setItem("user_info", JSON.stringify(payload));
+  localStorage.setItem("auth_tokens", JSON.stringify(accessToken));
+  await waitFor(async () => {
+    render(
+      <QueryClientProvider client={queryClient}>
+        <AppContext.Provider value={{ appState: { lang: "ar" } }}>
+          <PaymentMethod />
+        </AppContext.Provider>
+      </QueryClientProvider>
+    );
+  });
+});

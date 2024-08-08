@@ -1,0 +1,14 @@
+@import "/styles/variables.scss";
+
+.store-list-main {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  margin-top: 16px;
+  max-height: 290px;
+
+  @media (min-width: $breakPoint-desktop) {
+    margin-top: 0px;
+    max-height: 700px;
+  }
+}

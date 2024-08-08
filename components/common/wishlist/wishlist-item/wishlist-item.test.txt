@@ -1,0 +1,71 @@
+/* eslint-disable react/display-name */
+import * as React from "react";
+import WishListItems from "./wishlist-Item";
+import { act, fireEvent, render, screen } from "@testing-library/react";
+import { AppContext } from "lib/context";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+const queryClient = new QueryClient();
+jest.mock("axios");
+
+const item: any = null;
+const appState = "";
+const removeWishListItem = jest.fn();
+const handleAddToBag = jest.fn();
+const renderSpinner = jest.fn();
+const adding = false;
+
+const renderComponent = async () => {
+  await act(async () => {
+    render(
+      <QueryClientProvider client={queryClient}>
+        <AppContext.Provider
+          value={{
+            appState: { lang: "en" },
+          }}
+        >
+          <WishListItems
+            item={item}
+            removeWishListItem={removeWishListItem}
+            renderSpinner={renderSpinner}
+            adding={adding}
+          />
+        </AppContext.Provider>
+      </QueryClientProvider>
+    );
+  });
+};
+
+const renderComponentAR = async () => {
+  await act(async () => {
+    render(
+      <QueryClientProvider client={queryClient}>
+        <AppContext.Provider
+          value={{
+            appState: { lang: "ar" },
+          }}
+        >
+          <WishListItems
+            item={item}
+            removeWishListItem={removeWishListItem}
+            renderSpinner={renderSpinner}
+            adding={adding}
+          />
+        </AppContext.Provider>
+      </QueryClientProvider>
+    );
+  });
+};
+
+test("wishlist items testing", async () => {
+  await renderComponent();
+
+  const cartImg = screen.getByRole("cart-img");
+  expect(cartImg).toBeInTheDocument();
+
+  const heading = screen.getByRole("heading");
+  expect(heading).toBeInTheDocument();
+});
+
+test("wishlist items arabic testing", async () => {
+  await renderComponentAR();
+});

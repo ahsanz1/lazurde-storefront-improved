@@ -1,0 +1,85 @@
+@import "/styles/variables.scss";
+
+.insta-page-wrapper {
+  width: 100%;
+  padding: 40px 24px;
+
+  .heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+
+    p {
+      margin: 0;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 28.8px;
+      letter-spacing: 0em;
+      color: $black-color;
+
+      @media (min-width: $breakPoint-desktop) {
+        font-size: 34px;
+        line-height: 38.8px;
+      }
+    }
+  }
+
+  .posts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 8px;
+
+    @media (min-width: $breakPoint-desktop) {
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+    .single-post {
+      position: relative;
+      cursor: pointer;
+
+      &:hover {
+        .hover-content {
+          opacity: 1;
+        }
+      }
+    }
+
+    .hover-content {
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.2s ease-in-out;
+
+      .bg_color {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, #922840 0%, #e7b48f 100%);
+        opacity: 0.7;
+      }
+
+      .content {
+        z-index: 1;
+        text-align: center;
+      }
+
+      .title {
+        margin: 0;
+        margin-bottom: 8px;
+        color: $white-color;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 21.6px;
+        letter-spacing: 0em;
+        text-align: center;
+      }
+    }
+  }
+}

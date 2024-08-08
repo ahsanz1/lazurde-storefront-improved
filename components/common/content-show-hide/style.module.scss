@@ -1,0 +1,20 @@
+@import "/styles/variables.scss";
+
+.content-div {
+  @media (min-width: $breakPoint-desktop) {
+    width: 100%;
+  }
+
+  h2 {
+    display: inline;
+  }
+
+  button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    text-decoration: underline;
+    color: #000;
+    font-weight: 500;
+  }
+}

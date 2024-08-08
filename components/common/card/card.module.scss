@@ -1,0 +1,310 @@
+@import "/styles/variables.scss";
+
+// .card {
+//   cursor: pointer;
+// }
+
+.category-slider-card {
+  .card-title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.2px;
+    letter-spacing: 0em;
+    text-transform: capitalize;
+    text-align: center;
+    padding-inline: 5px;
+
+    @media (min-width: $breakPoint-desktop) {
+      text-align: start;
+    }
+  }
+
+  @media (max-width: $breakPoint-mobile) {
+    .img-wrapper {
+      & > span {
+        min-height: 178px !important;
+      }
+    }
+  }
+}
+
+.card-description {
+  margin: 0;
+  margin-block-start: 8px;
+  padding: 0;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 15.6px;
+  letter-spacing: 0em;
+  text-align: start;
+
+  @media (min-width: $breakPoint-desktop) {
+    margin-block-end: 8px;
+    font-size: 14px;
+    line-height: 16.8px;
+  }
+}
+
+.image-section {
+  position: relative;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+body {
+  .fav-icon {
+    span {
+      height: 20px !important;
+    }
+  }
+}
+.fav-icon {
+  position: absolute;
+  top: 13px;
+  inset-inline-end: 13px;
+  width: 16px;
+  height: 15px;
+  z-index: 10;
+
+  @media (min-width: $breakPoint-desktop) {
+    display: none;
+  }
+}
+
+.plp-card {
+  width: 100%;
+  height: 100%;
+}
+
+.img-wrapper {
+  position: relative;
+
+  .img-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.2);
+  }
+}
+
+.review-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-block: 8px;
+
+  .review-stars {
+    padding-inline-end: 10px;
+  }
+  .review-count {
+    font-size: 11px;
+  }
+}
+
+.best-slider-card {
+  .card-content {
+    padding: 16px;
+    padding-inline-start: 0;
+  }
+
+  .card-title {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 16.8px;
+    letter-spacing: 0em;
+    text-transform: capitalize;
+
+    @media (min-width: $breakPoint-desktop) {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 18px;
+    }
+    span {
+      font-size: 14px;
+      @media (min-width: $breakPoint-desktop) {
+        font-size: 15px;
+      }
+    }
+  }
+  .card-description {
+    font-size: 15px;
+    @media (max-width: $breakPoint-mobile) {
+      font-size: 14px;
+    }
+  }
+}
+
+.bambuser-slider-card {
+  .card-title {
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.8px;
+    letter-spacing: 0em;
+    text-transform: capitalize;
+
+    @media (min-width: $breakPoint-desktop) {
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 18px;
+    }
+  }
+
+  .card-description {
+    font-weight: 400;
+    margin-top: 8px;
+    margin-bottom: 24px;
+  }
+}
+
+.card {
+  &.cart-page-card {
+    .card-content {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.card-img,
+.card-image {
+  aspect-ratio: 1/1;
+}
+
+html[dir="rtl"] {
+  .card-description {
+    @media (min-width: $breakPoint-desktop) {
+      line-height: 18.2px;
+    }
+  }
+
+  .review-section {
+    height: 10px;
+    direction: ltr;
+    justify-content: flex-end;
+  }
+}
+
+.heritage-slider-card {
+  flex: 90%;
+  flex-shrink: 0;
+  display: inline-block;
+  margin-inline-end: 8px;
+  padding-block-start: 0;
+  white-space: normal;
+  scroll-snap-align: start;
+
+  @media (min-width: $breakPoint-desktop) {
+    flex: 25%;
+    flex-shrink: 0;
+  }
+
+  &:last-child {
+    margin-inline-end: 0;
+  }
+
+  .card-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 120%;
+    margin-bottom: 0;
+  }
+  .card-description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    margin-block-end: 14px;
+  }
+  .image-section {
+    background: rgba(0, 0, 0, 0.02);
+    margin: 16px 0;
+  }
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+.exclusive_tag {
+  z-index: 1;
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  padding: 4px 0;
+  background-color: $primary-color;
+  color: $black-color;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15.6px;
+  letter-spacing: 0em;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $breakPoint-desktop) {
+    padding: 4px 0 5px 0;
+    font-size: 14px;
+    line-height: 16.8px;
+  }
+}
+.sale_price {
+  color: #da0059;
+  margin-inline-start: 2px;
+}
+.plp-card {
+  .card-content {
+    .card-title {
+      font-size: 14px;
+      margin-bottom: 8px;
+      margin-top: 8px;
+      color: rgb(0, 0, 0);
+      @media (min-width: $breakPoint-desktop) {
+        font-size: 15px;
+        font-weight: 500;
+        margin-bottom: 0px;
+        margin-top: 16px;
+      }
+    }
+  }
+}
+
+.brand-card {
+  .card-content {
+    .card-title {
+      color: $black-color;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 17px;
+      letter-spacing: 0em;
+      margin-top: 16px;
+      margin-bottom: 64px;
+      text-align: start;
+
+      @media (min-width: $breakPoint-desktop) {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 19px;
+        margin-top: 16px;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+.div-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  inset: -2px;
+  background: #0000000b;
+}

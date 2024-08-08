@@ -1,0 +1,374 @@
+@import "/styles/variables.scss";
+
+.w-100 {
+  width: 100%;
+  height: auto;
+}
+.hero-banner-block {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  column-gap: 8px;
+  background-color: $white-color;
+  overflow: hidden;
+  cursor: pointer;
+
+  @media (min-width: $breakPoint-desktop) {
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: $white-color;
+    overflow: hidden;
+    &.block-spacing {
+      width: 100%;
+    }
+  }
+}
+.hero-banner-container {
+  cursor: pointer;
+  width: 100%;
+  height: 455px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-inline-start: 24px;
+  padding-block-start: 24px;
+  background: linear-gradient(to bottom right, gray, $white-color);
+
+  @media (min-width: 380px) and (max-width: 450px) {
+    height: 500px;
+  }
+
+  &.block-divison {
+    width: 100%;
+    margin-left: auto;
+    margin-inline-end: auto;
+    &:nth-child(1) {
+      margin-bottom: 8px;
+    }
+  }
+
+  @media (min-width: $breakPoint-desktop) {
+    padding: 76px 50px 50px 80px;
+    height: 700px;
+
+    &.block-divison {
+      width: 100%;
+      margin-bottom: 0;
+
+      &:nth-child(1) {
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
+
+.banner-multi-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  flex: 0;
+  // justify-content: center;
+  // width: 675px;
+
+  @media (max-width: $breakPoint-mobile) {
+    width: 100%;
+  }
+}
+
+.banner-text-div {
+  pointer-events: none;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+
+  p {
+    margin: 0;
+  }
+
+  @media (max-width: $breakPoint-mobile) {
+    margin-bottom: 15px;
+  }
+}
+
+.banner-text-section {
+  z-index: 1;
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  width: 100%;
+  height: 100%;
+
+  &.bg-overlay {
+    &::before {
+      content: "";
+      position: absolute;
+      inset-block: 0;
+      inset-inline: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  &[data-show-data="true"] {
+    background-color: rgb(50 50 50 / 50%);
+    backdrop-filter: blur(10px);
+  }
+}
+
+.banner-image {
+  width: 100%;
+  position: relative;
+}
+
+.welcome-message {
+  width: 50%;
+  padding: 10px;
+  align-items: center;
+  justify-content: left;
+}
+
+.welcome-message-h {
+  font-size: 50px;
+}
+
+.welcome-message-p {
+  font-size: 20px;
+  margin-inline-start: 20px;
+}
+
+.button-1 {
+  background-color: $black-color;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: $white-color;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-1:hover,
+.button-1:focus {
+  background-color: gray;
+}
+
+.trending-h {
+  margin: 20px;
+}
+
+.whats-trending-section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.banner-text {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 43px;
+  letter-spacing: 0em;
+  margin-top: 0;
+  margin-bottom: 0px;
+  padding-bottom: 24px;
+  color: $white-color;
+
+  @media (min-width: $breakPoint-desktop) and (max-width: 1439px) {
+    font-size: clamp(36px, 4vw, 64px);
+  }
+
+  @media (min-width: $breakPoint-fourteen-fourty) {
+    font-size: 64px;
+    font-weight: 500;
+    // line-height: 77px;
+    letter-spacing: 0em;
+    margin-bottom: 0px;
+    padding-bottom: 32px;
+  }
+}
+
+.sample-text {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  margin-top: 0;
+  margin-bottom: 0px;
+  padding-bottom: 24px;
+  color: white;
+
+  @media (min-width: $breakPoint-desktop) {
+    font-size: 32px;
+    line-height: 29px;
+    margin-bottom: 0px;
+    padding-bottom: 32px;
+  }
+}
+
+// html[dir="rtl"] {
+//   .bg-image {
+//     transform: scaleX(-1);
+//   }
+// }
+
+.top-spacing,
+.waves-spacing {
+  width: 100%;
+  padding-inline: 8px;
+
+  @media (min-width: $breakPoint-desktop) {
+    margin-top: 0;
+    padding-inline: 16px;
+  }
+}
+
+.top-spacing {
+  .content-wrapper {
+    cursor: pointer;
+    @media (max-width: $breakPoint-mobile) {
+      padding: 32px;
+    }
+  }
+}
+
+.plp-collection {
+  .banner-text {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 120%;
+    padding-bottom: 10px;
+  }
+
+  .sample-text {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 120%;
+    padding-bottom: 20px;
+  }
+
+  .content-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .banner-text-div {
+      padding-top: 0;
+    }
+  }
+}
+
+.center-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .banner-text-div {
+    padding-top: 0;
+  }
+}
+
+.content-wrapper {
+  height: 100%;
+  padding: 24px;
+  display: flex;
+  justify-content: flex-start;
+
+  @include banner-text-position;
+
+  @media (min-width: $breakPoint-desktop) {
+    padding-block: 76px;
+    padding-inline: 80px;
+  }
+
+  .content-div {
+    @media (min-width: $breakPoint-desktop) {
+      width: 40%;
+    }
+  }
+  .multi-btns-div {
+    @media (min-width: $breakPoint-desktop) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .timer-div {
+    @media (min-width: $breakPoint-desktop) {
+      width: 40%;
+    }
+  }
+}
+
+.video-wrapper {
+  position: relative;
+  cursor: pointer;
+
+  .video-content-div {
+    position: absolute;
+    inset-block: 0;
+    inset-inline: 0;
+    width: 100%;
+    padding: 24px;
+    display: flex;
+    justify-content: flex-start;
+
+    &[data-show-data="true"] {
+      background-color: rgb(50 50 50 / 50%);
+      backdrop-filter: blur(10px);
+    }
+
+    @include banner-text-position;
+
+    @media (min-width: $breakPoint-desktop) {
+      padding-block: 76px;
+      padding-inline: 80px;
+    }
+
+    .content-wrapper {
+      padding: 0;
+
+      @media (max-width: $breakPoint-mobile) {
+        .banner-text {
+          font-size: 24px;
+          line-height: 28.8px;
+          padding-bottom: 5px;
+          font-weight: 600;
+        }
+
+        .sample-text {
+          padding-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+.hero-banner-skeleton {
+  padding: 24px;
+  aspect-ratio: 390/500;
+  background: white;
+
+  @media (min-width: $breakPoint-desktop) {
+    padding-block: 76px;
+    padding-inline: 80px;
+    aspect-ratio: 1060/520;
+  }
+}

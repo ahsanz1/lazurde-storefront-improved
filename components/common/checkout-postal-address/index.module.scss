@@ -1,0 +1,48 @@
+@import "/styles/variables.scss";
+
+.div-left {
+  flex: 1;
+
+  p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 120%;
+    color: rgba(0, 0, 0, 0.6);
+    margin-block: 3px;
+
+    @media (min-width: $breakPoint-desktop) {
+      font-size: 14px;
+    }
+  }
+
+  .tab-address-heading {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 120%;
+    margin: 0;
+    color: #000000;
+    margin-block-end: 8px;
+  }
+}
+.div-right {
+  .div-edit-button {
+    display: flex;
+    cursor: pointer;
+
+    button {
+      width: 100%;
+      padding: 0;
+      display: flex;
+      align-items: end;
+
+      @media (min-width: $breakPoint-desktop) {
+        padding-inline-start: 0;
+      }
+    }
+  }
+}
+body .checkout-address-modal {
+  overflow: auto;
+}

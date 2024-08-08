@@ -1,0 +1,141 @@
+@import "/styles/variables.scss";
+
+.collection-wrapper {
+  margin: 0;
+  padding-inline: 16px;
+  padding-block: 32px;
+  width: 100%;
+
+  @media (min-width: $breakPoint-desktop) {
+    padding: 80px 80px 0;
+  }
+  .blocks {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &[data-card-gap="3"] {
+      gap: 8px;
+
+      // @media (min-width: $breakPoint-desktop) {
+      //   min-height: 484px;
+      // }
+    }
+    &[data-card-gap="4"] {
+      gap: 32px;
+    }
+
+    &[data-is-errorpage="true"] {
+      gap: 18px;
+    }
+
+    @media (min-width: $breakPoint-desktop) {
+      flex-direction: row;
+    }
+
+    .promotion-anmi-wrapper {
+      width: 100%;
+
+      @media (min-width: $breakPoint-desktop) {
+        width: 33%;
+      }
+      .image-section {
+        position: relative;
+        height: 100%;
+        display: flex;
+
+        @include banner-text-position;
+        @media (max-width: $breakPoint-mobile) {
+          &[data-content-position="Bottom Right"] {
+            justify-content: flex-end;
+            align-items: flex-end;
+            text-align: end;
+          }
+        }
+
+        .collection-content {
+          z-index: 1;
+          padding: 20px 8px;
+          width: 100%;
+          position: absolute;
+          inset-inline-start: 0;
+
+          @media (min-width: $breakPoint-desktop) and (max-width: 1200px) {
+            padding: 20px 8px;
+            width: 100%;
+          }
+
+          .collection-title {
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 29px;
+            margin: 0;
+            color: $white-color;
+            text-transform: capitalize;
+
+            @media (min-width: 999px) and (max-width: 1200px) {
+              font-size: 20px;
+            }
+          }
+          .collection-text {
+            font-size: 18px;
+            font-style: normal;
+            line-height: 22px;
+            color: $white-color;
+            margin-block: 32px;
+
+            @media (min-width: $breakPoint-desktop) {
+              font-size: 18px;
+              line-height: 120%;
+              min-height: 90px;
+            }
+
+            @media (min-width: 999px) and (max-width: 1200px) {
+              font-size: 15px;
+              line-height: 120%;
+              min-height: 70px;
+            }
+          }
+          .collection-button {
+            cursor: pointer;
+          }
+
+          .inner-logo-img {
+            margin-bottom: 11px;
+
+            span {
+              width: auto !important;
+              height: auto !important;
+            }
+          }
+        }
+        span,
+        img {
+          position: static !important;
+          width: 100% !important;
+          height: 100% !important;
+          // aspect-ratio: 358/423;
+
+          @media (min-width: $breakPoint-desktop) {
+            // aspect-ratio: 170/285;
+          }
+        }
+      }
+    }
+    .cards-heading {
+      margin: 0;
+      margin-bottom: 32px;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 28.8px;
+      letter-spacing: 0em;
+      text-align: start;
+      text-transform: capitalize;
+      color: #000000;
+    }
+  }
+}
+.no-data {
+  display: none;
+}

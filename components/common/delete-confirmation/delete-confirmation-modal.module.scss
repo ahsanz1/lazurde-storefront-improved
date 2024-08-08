@@ -1,0 +1,72 @@
+@import "/styles/variables.scss";
+.delete-modal {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  padding: 24px;
+  position: relative;
+
+  @media (min-width: $breakPoint-desktop) {
+    padding: 48px;
+
+    &.delete-modal {
+      padding: 40px;
+    }
+  }
+
+  .div-form-heading {
+    display: flex;
+    align-self: center;
+    margin-bottom: 40px;
+
+    h2 {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 120%;
+      margin: 0;
+      padding: 0;
+    }
+
+    @media (min-width: $breakPoint-desktop) {
+      margin-bottom: 18px;
+    }
+  }
+
+  .div-button {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    row-gap: 16px;
+
+    @media (min-width: $breakPoint-desktop) {
+      display: block;
+      text-align: end;
+    }
+  }
+
+  .address-input {
+    width: 100%;
+  }
+
+  .div-two-columns {
+    display: flex;
+    column-gap: 16px;
+  }
+
+  .div-gap {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+  }
+
+  .update_pw {
+    .div-form-heading {
+      margin-top: 50px;
+    }
+  }
+}
+
+.content-wrapper {
+  height: 100%;
+}

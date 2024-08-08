@@ -1,0 +1,40 @@
+@import "/styles/variables.scss";
+
+.sec-header {
+  padding: 24px;
+  margin-bottom: 8px;
+  background-color: $white-color;
+
+  @media (min-width: $breakPoint-desktop) {
+    padding: 40px;
+  }
+
+  .order-id-heading {
+    margin: 0;
+    margin-top: 8px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.8px;
+    letter-spacing: 0em;
+    text-align: start;
+  }
+}
+
+.return-orders-btn {
+  width: 100%;
+  padding: 24px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  background-color: $white-color;
+  text-align: end;
+
+  @media (min-width: $breakPoint-desktop) {
+    margin-bottom: 0;
+    padding: 40px;
+  }
+
+  &.disable-btn {
+    opacity: 0.2;
+    pointer-events: none;
+  }
+}

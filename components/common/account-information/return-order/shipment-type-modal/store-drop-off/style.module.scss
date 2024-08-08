@@ -1,0 +1,39 @@
+@import "/styles/variables.scss";
+
+.store-input-container {
+  margin-top: 8px;
+
+  .store-div-input {
+    .store-input {
+      pointer-events: all;
+    }
+  }
+}
+
+.calendar-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 100px;
+  color: rgba(0, 0, 0, 0.6);
+  text-transform: capitalize;
+  padding: 9px 16px 9px 20px;
+}
+
+.label {
+  display: block;
+  margin-inline-start: 20px;
+  margin-block-start: 8px;
+  margin-block-end: 4px;
+  line-height: 120%;
+  font-size: 11px;
+  color: rgba(0, 0, 0, 0.6);
+
+  @media (min-width: $breakPoint-desktop) {
+    font-size: 12px;
+    line-height: 15.6px;
+  }
+}

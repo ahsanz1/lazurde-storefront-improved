@@ -1,0 +1,92 @@
+@import "/styles/variables.scss";
+
+.promobar {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  padding-block: 10px;
+  font-size: 13px;
+  color: $black-color;
+  overflow: hidden;
+  background-color: #c3a856;
+
+  @media (min-width: $breakPoint-desktop) {
+    height: 40px;
+    font-size: 14px;
+
+    .title {
+      padding-inline-start: 24px;
+    }
+  }
+
+  &[data-visible="true"] {
+    padding: 0;
+    height: 0;
+    transition: height 0.2s cubic-bezier(0, 0, 0.2, 1),
+      padding 0.2s cubic-bezier(0, 0, 0.2, 1);
+  }
+
+  .title {
+    flex: 1;
+    text-align: center;
+  }
+
+  .link-text {
+    color: $black-color;
+    font-weight: 500;
+    // text-decoration: underline;
+    cursor: pointer;
+  }
+
+  button.closeButton {
+    position: absolute;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    line-height: 0;
+    inset-inline-end: 16px;
+    width: max-content;
+    width: 20px;
+    height: auto;
+
+    @media (min-width: $breakPoint-desktop) {
+      inset-inline-end: 24px;
+      width: 20px;
+      height: 20px;
+    }
+
+    svg {
+      width: 12px;
+      height: 12px;
+
+      @media (min-width: $breakPoint-desktop) {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
+
+.text-with-timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: $breakPoint-desktop) {
+    flex-direction: row;
+  }
+
+  .timer-text {
+    margin-inline-end: 0;
+
+    @media (min-width: $breakPoint-desktop) {
+      margin-inline-end: 10px;
+    }
+  }
+}

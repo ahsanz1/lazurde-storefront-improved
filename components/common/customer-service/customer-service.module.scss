@@ -1,0 +1,179 @@
+@import "/styles/variables.scss";
+
+.text-section {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  padding: 16px;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  @include banner-text-position;
+  @media (min-width: $breakPoint-desktop) {
+    padding: 50px;
+  }
+}
+
+.services_search-section {
+  position: relative;
+
+  p {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+
+    @media (min-width: $breakPoint-desktop) {
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 38px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+  }
+}
+
+.heading {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.search-bar {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 100px;
+  padding-inline: 20px;
+
+  .search-icon {
+    display: inline-flex;
+  }
+
+  input {
+    border: none;
+    margin-inline-start: 14px;
+    outline: none;
+  }
+}
+
+.title {
+  margin-block: 16px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: center;
+
+  @media (min-width: $breakPoint-desktop) {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: start;
+    margin-top: 88px;
+    margin-bottom: 48px;
+  }
+}
+
+.service-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 8px;
+  cursor: pointer;
+  pointer-events: none;
+
+  @media (min-width: $breakPoint-desktop) {
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 24px;
+    column-gap: 48px;
+    margin-bottom: 104px;
+  }
+}
+
+.icon-title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: start;
+  margin-inline-start: 23px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.icon-text {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: start;
+  margin-top: 13.5px;
+  margin-bottom: 0;
+  padding-inline-end: 40px;
+}
+
+.icon-block {
+  display: flex;
+  align-items: center;
+}
+
+.service-block {
+  min-height: 164px;
+  background-color: #f2f2f2;
+  padding-block-start: 44px;
+  padding-inline-start: 40px;
+  pointer-events: all;
+
+  @media (min-width: $breakPoint-desktop) {
+    padding-inline-start: 46px;
+    padding-block-start: 44px;
+  }
+}
+
+.services-container {
+  width: 100%;
+  padding: 0;
+
+  @media (min-width: $breakPoint-desktop) {
+    padding-inline: 80px;
+  }
+}
+
+.button {
+  display: none;
+
+  @media (min-width: $breakPoint-desktop) {
+    padding-block: 16px;
+    padding-inline: 40px;
+    background-color: #922840;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border: none;
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0em;
+    color: white;
+    margin-bottom: 24px;
+    margin-left: auto;
+    cursor: pointer;
+
+    p {
+      margin-left: 10px;
+      margin-top: 0;
+      margin-bottom: 0;
+      text-decoration: underline;
+    }
+  }
+}

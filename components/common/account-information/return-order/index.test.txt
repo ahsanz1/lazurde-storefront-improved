@@ -1,0 +1,92 @@
+import { fireEvent, render, screen, waitFor } from "@testing-library/react";
+import React from "react";
+import ReturnOrder from "./index";
+import ContextProvider, { AppContext } from "lib/context";
+
+jest.mock('react', () => ({
+  ...jest.requireActual('react') as object,
+  useLayoutEffect: jest.requireActual('react').useEffect,
+}));
+
+const orderDetail = {
+  orderId: "677-078889-0987",
+  items: [
+    {
+      itemId: "233",
+      "Title": "title goes here",
+    },
+    {
+      itemId: "234",
+      "Title": "title goes here",
+    },
+    {
+      itemId: "235",
+      "Title": "title goes here",
+    },
+  ],
+};
+const setCurrentCompActive = jest.fn();
+const setMyReturnComponentActive = jest.fn();
+const setSelectedOrderData = jest.fn();
+const setIsStaticContentModal = jest.fn();
+const isStaticContentModal = {
+  isCourierCollection: false,
+  isStoreDropOff: false,
+  isGiftCard: false,
+  isTabbyModal: false,
+  isPaypalModal: false,
+  isCodModal: false,
+};
+const selectedOrderData = {
+  181: {
+    id: "244",
+    imageSrc: "/dummy.png",
+    brand: "missL",
+    orderLineItemId: "11",
+    returnQuantity: "23",
+    reasonCode: "",
+    subReasonCode: "",
+    policyOveride: false,
+    returnAmount: "1100",
+  },
+  182: {
+    id: "243",
+    imageSrc: "/dummy.png",
+    brand: "Waves",
+    orderLineItemId: "1",
+    returnQuantity: "2",
+    reasonCode: "",
+    subReasonCode: "",
+    policyOveride: false,
+    returnAmount: "1100",
+  },
+};
+
+jest.mock("axios");
+const renderComponent = () => {
+  render(
+    <ContextProvider>
+      <ReturnOrder
+        // orderDetail={orderDetail}
+        setCurrentCompActive={setCurrentCompActive}
+        setMyReturnComponentActive={setMyReturnComponentActive}
+        selectedOrderData={selectedOrderData}
+        setSelectedOrderData={setSelectedOrderData}
+        setIsStaticContentModal={setIsStaticContentModal}
+        isStaticContentModal={isStaticContentModal}
+      />
+    </ContextProvider>
+  );
+};
+
+test("return order Test", async () => {
+  await waitFor(() => {
+    renderComponent();
+  });
+
+  // const heading = screen.getByTestId("heading");
+  // expect(heading).toBeInTheDocument();
+  const returnBtn = screen.getByTestId("return-btn");
+  expect(returnBtn).toBeInTheDocument();
+  fireEvent.click(returnBtn);
+});

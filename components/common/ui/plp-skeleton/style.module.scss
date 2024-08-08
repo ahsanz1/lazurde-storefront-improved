@@ -1,0 +1,130 @@
+@import "/styles/variables.scss";
+
+.user-navbar {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 40px;
+  padding-block: 0;
+  font-size: 13px;
+  background-color: $black-color;
+  color: white;
+
+  @media (min-width: $breakPoint-desktop) {
+    font-size: 14px;
+  }
+
+  .left_div {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 100%;
+    & > div {
+      display: flex;
+      margin-inline-start: 16px;
+      align-items: center;
+
+      &:first-child {
+        margin-inline-start: 16px;
+      }
+    }
+
+    .wrapper_brands {
+      height: 100%;
+      .brand-tab {
+        z-index: 1;
+        background: transparent;
+        height: 100%;
+        cursor: pointer;
+        svg {
+          padding: 10px 8px;
+          fill: white;
+        }
+      }
+    }
+  }
+
+  .right_div {
+    display: flex;
+    flex-direction: row;
+
+    @media (min-width: $breakPoint-desktop) {
+      height: 100%;
+    }
+
+    & > a,
+    & > div {
+      cursor: pointer;
+      display: flex;
+      margin-inline-end: 18px;
+      align-items: center;
+
+      &:last-child {
+        margin-inline-end: 16px;
+
+        @media (min-width: $breakPoint-desktop) {
+          padding-inline: 16px 24px;
+          margin: 0;
+        }
+      }
+    }
+
+    .divider {
+      margin: 0;
+    }
+
+    .link {
+      .name {
+        cursor: auto;
+        color: $white-color;
+        margin: 0;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: 0em;
+        text-align: start;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+
+html[dir="rtl"] {
+  .right_div {
+    & > a,
+    & > div {
+      margin-inline-end: 24px;
+      &:last-child {
+        margin-inline-end: 16px;
+
+        @media (min-width: $breakPoint-desktop) {
+          margin-inline-end: 24px;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+.rightside-drawer {
+  position: fixed;
+  top: 100%;
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  overflow-y: hidden;
+  z-index: 30;
+  height: 100vh;
+  opacity: 1;
+  pointer-events: none;
+  // transition: height 0.2s;
+  // transition-delay: 0.15s;
+  overflow: hidden;
+
+  @media (min-width: $breakPoint-desktop) {
+    position: absolute;
+  }
+}

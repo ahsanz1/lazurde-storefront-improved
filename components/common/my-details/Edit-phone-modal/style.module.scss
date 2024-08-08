@@ -1,0 +1,160 @@
+@import "/styles/variables.scss";
+.edit-phone-modal {
+  padding: 24px;
+  @media (min-width: $breakPoint-desktop) {
+    padding: 48px;
+  }
+
+  .phone_main {
+    width: 100%;
+    background: #f2f2f2;
+
+    .input-wrapper {
+      width: initial;
+      flex: 1;
+    }
+
+    .phone_main_section {
+      margin: 0 auto;
+      padding-bottom: 48px;
+      background: #ffffff;
+    }
+    .phone_reset {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 120%;
+      color: #000000;
+      margin-bottom: 32px;
+      margin-top: 0px;
+    }
+
+    .phone_reset_para {
+      width: 466px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 120%;
+      color: #000000;
+      margin: 0px;
+      @media (max-width: $breakPoint-desktop) {
+        width: 327px;
+        font-size: 13px;
+      }
+    }
+    .sigin-form {
+      margin-top: 24px;
+    }
+    .phone_signIn_Label {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 130%;
+      color: rgba(0, 0, 0, 0.6);
+      margin-left: 20px;
+      margin-right: 20px;
+      @media (max-width: $breakPoint-desktop) {
+        font-size: 11px;
+      }
+    }
+    .phone_signIn_Input {
+      font-size: 14px;
+      width: 466px;
+      //  border: 1px solid rgba(0, 0, 0, 0.2);
+      border-radius: 100px;
+      height: 20px;
+      color: black;
+
+      @media (max-width: $breakPoint-desktop) {
+        width: 327px;
+        font-size: 13px;
+      }
+    }
+    .div-submit-button {
+      display: flex;
+      margin-top: 24px;
+      justify-content: center;
+      width: 100%;
+      @media (min-width: $breakPoint-desktop) {
+        margin-top: 39px;
+      }
+    }
+    .phone_button_div {
+      padding: 0;
+      // color: white;
+    }
+    .phone_checkbox_div {
+      padding: 0px;
+      border: none;
+      width: 20px;
+      height: 20px;
+    }
+    .submit-button {
+      width: 200px !important;
+      height: 51px;
+    }
+    .phone_input2 {
+      margin-bottom: 24px;
+    }
+
+    .div-phone-input {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 16px;
+      align-items: flex-end;
+      column-gap: 8px;
+
+      @media (min-width: $breakPoint-desktop) {
+        margin-bottom: 24px;
+      }
+
+      .send-button {
+        width: 72px;
+
+        @media (min-width: $breakPoint-desktop) {
+          width: 111px;
+        }
+      }
+    }
+
+    .information_para {
+      width: 466px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 120%;
+      color: #000000;
+      margin: 0px;
+      margin-bottom: 24px;
+      @media (max-width: $breakPoint-desktop) {
+        width: 327px;
+        margin-top: 8px;
+        font-size: 13px;
+      }
+    }
+    .Checkbox {
+      display: flex;
+      align-items: center;
+
+      input {
+        width: 20px;
+        height: 20px;
+        margin-left: 0px;
+      }
+
+      input[type="checkbox"] {
+        accent-color: #000;
+      }
+
+      p {
+        margin: 0px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 120%;
+        color: #000000;
+        margin-left: 16px;
+        margin-right: 16px;
+        @media (max-width: $breakPoint-desktop) {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}

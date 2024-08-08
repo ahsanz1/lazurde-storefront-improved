@@ -1,0 +1,102 @@
+@import "/styles/variables.scss";
+
+.wrapper {
+  width: 100%;
+  padding: 80px 16px;
+
+  @media (min-width: $breakPoint-desktop) {
+    padding: 80px;
+  }
+
+  .note {
+    margin: 0;
+    margin-bottom: 5px;
+    padding-inline-start: 20px;
+
+    span {
+      padding: 0 5px;
+      font-weight: 600;
+      background-color: rgba(0, 0, 0, 0.04);
+    }
+  }
+
+  .form-wrapper {
+    width: 100%;
+    margin: 0 auto;
+
+    @media (min-width: $breakPoint-desktop) {
+      width: 50%;
+    }
+  }
+
+  .input-wrapper {
+    display: flex;
+    align-items: center;
+
+    .token-input-div {
+      min-height: 51px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    .submit-btn {
+      button {
+        cursor: pointer;
+        min-height: 51px;
+        border: 0;
+        border-radius: 0;
+        border-top-right-radius: 40px;
+        border-bottom-right-radius: 40px;
+        background-color: $black-color;
+        color: $white-color;
+        text-transform: capitalize;
+        font-weight: 500;
+
+        @media (min-width: $breakPoint-desktop) {
+          min-width: 138px;
+        }
+      }
+    }
+  }
+
+  .auth-token {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+
+    @media (min-width: $breakPoint-desktop) {
+      width: 50%;
+    }
+
+    .note {
+      padding-inline-start: 0;
+    }
+
+    .copied-text {
+      margin: 0;
+      margin-top: 20px;
+      text-transform: capitalize;
+      color: green;
+    }
+
+    textarea {
+      width: 100%;
+      max-width: 100%;
+      min-height: 100px;
+      max-height: 100px;
+      padding: 11px;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      background-color: rgba(0, 0, 0, 0.04);
+      color: $black-color;
+    }
+
+    .copy-btn {
+      width: 138px;
+      height: 51px;
+      margin-top: 20px;
+    }
+  }
+}

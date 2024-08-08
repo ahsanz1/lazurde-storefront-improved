@@ -1,0 +1,199 @@
+.notification-container {
+  font-size: 14px;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 999999;
+}
+
+.top-center {
+  inset-block-start: 20px;
+  inset-inline-end: 0;
+  inset-block-end: auto;
+  inset-inline-start: 0;
+  animation: toast-in-top 0.2s;
+}
+.top-center.removeToast {
+  animation: toast-out-top 0.2s forwards;
+}
+
+.top-right {
+  inset-block-start: 12px;
+  inset-inline-end: 12px;
+  animation: toast-in-right 0.2s;
+}
+
+.top-right.removeToast {
+  animation: toast-out-right 0.4s forwards;
+}
+
+.bottom-right {
+  inset-block-end: 12px;
+  inset-inline-end: 12px;
+  animation: toast-in-right 0.2s;
+}
+
+.bottom-right.removeToast {
+  animation: toast-out-right 0.2s forwards;
+}
+
+.top-left {
+  inset-block-start: 12px;
+  inset-inline-start: 12px;
+  animation: toast-in-left 0.2s;
+}
+
+.top-left.removeToast {
+  animation: toast-out-left 0.2s forwards;
+}
+
+.bottom-left {
+  inset-block-end: 12px;
+  inset-inline-start: 12px;
+  animation: toast-in-left 0.2s;
+}
+
+.bottom-left.removeToast {
+  animation: toast-out-left 0.2s forwards;
+}
+
+.top-center {
+  .notification {
+    margin-inline-end: auto;
+    margin-inline-start: auto;
+  }
+}
+
+.notification {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background: #fff;
+  pointer-events: auto;
+  overflow: hidden;
+  margin: 0;
+  margin-bottom: 10px;
+  width: max-content;
+  border-radius: 3px 3px 3px 3px;
+  box-shadow: 0 0 10px #5d5d5d;
+  color: #000;
+  transition: height 0.5s ease-in-out;
+}
+
+.notification .divider {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 1px;
+  height: 25px;
+  margin-inline: 10px;
+}
+
+.close-btn {
+  display: flex;
+  padding-inline-end: 15px;
+  flex: 1;
+  align-items: center;
+}
+
+.inner-content {
+  display: flex;
+  align-items: center;
+  padding-block: 15px;
+  padding-inline-start: 10px;
+}
+
+.notification-title {
+  font-weight: 700;
+  font-size: 16px;
+  text-align: start;
+  margin: 0;
+  width: 100%;
+}
+
+.notification-message {
+  margin: 0;
+  text-align: start;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 215px;
+  @media (min-width: $breakPoint-desktop) {
+    max-width: 500px;
+  }
+}
+
+.notification-image img {
+  width: 30px;
+  height: 30px;
+}
+
+.toast {
+  color: #000;
+}
+
+.notification-container button {
+  position: relative;
+  font-weight: 700;
+  color: #fff;
+  outline: none;
+  border: none;
+  text-shadow: 0 1px 0 #fff;
+  opacity: 0.8;
+  line-height: 1;
+  font-size: 16px;
+  padding: 0;
+  cursor: pointer;
+  background: 0 0;
+  border: 0;
+}
+
+@keyframes toast-in-top {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes toast-out-top {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes toast-in-right {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes toast-out-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(110%);
+    height: 0px;
+    padding: 0px;
+    margin: 0px;
+  }
+}
+
+@keyframes toast-in-left {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes toast-out-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

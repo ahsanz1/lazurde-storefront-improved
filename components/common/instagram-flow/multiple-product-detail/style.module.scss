@@ -1,0 +1,141 @@
+@import "/styles/variables.scss";
+
+.insta-product-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  // gap: 8px;
+  column-gap: 8px;
+  row-gap: 8px;
+}
+
+.price-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+  margin-bottom: 16px;
+
+  @media (min-width: $breakPoint-desktop) {
+    margin-top: 8;
+    margin-bottom: 16px;
+  }
+
+  .base-price {
+    margin: 0;
+    margin-inline-end: 4px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0em;
+    color: $black-color;
+  }
+
+  .discount {
+    margin: 0;
+    margin-inline-end: 4px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    color: $black-color;
+
+    @media (min-width: $breakPoint-desktop) {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 17px;
+      letter-spacing: 0em;
+      text-align: start;
+    }
+  }
+
+  .final-price {
+    margin: 0;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0em;
+
+    @media (min-width: $breakPoint-desktop) {
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 18px;
+      letter-spacing: 0em;
+    }
+  }
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.error-msg {
+  margin: 0;
+  width: 100%;
+  display: block;
+  color: red;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 15.6px;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.content {
+  .title {
+    margin: 0;
+    margin-top: 16px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.8px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-transform: capitalize;
+
+    @media (min-width: $breakPoint-desktop) {
+      font-size: 15px;
+      line-height: 18px;
+    }
+  }
+}
+
+.addtobtn {
+  text-align: center;
+
+  &[data-loading="true"] {
+    display: block;
+    opacity: 1;
+    pointer-events: none;
+  }
+}
+
+.insta-product-card {
+  &:hover {
+    .wishlist-icon {
+      @media (min-width: $breakPoint-desktop) {
+        display: block;
+      }
+    }
+  }
+}
+
+.img_wrapper {
+  position: relative;
+}
+
+.wishlist-icon {
+  position: absolute;
+  top: 10px;
+  inset-inline-end: 11px;
+  inset-inline-start: auto;
+  z-index: 2;
+  cursor: pointer;
+
+  &.set-zindex {
+    z-index: unset;
+  }
+
+  @media (min-width: $breakPoint-desktop) {
+    display: none;
+  }
+}

@@ -1,0 +1,310 @@
+@import "/styles/variables.scss";
+
+.items-wrapper {
+  padding: 24px;
+  background-color: $white-color;
+
+  @media (min-width: $breakPoint-desktop) {
+    padding: 40px 40px 64px;
+  }
+
+  .sec-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    .heading {
+      margin: 0;
+      color: $black-color;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 19.2px;
+      letter-spacing: 0em;
+      text-align: start;
+
+      @media (min-width: $breakPoint-desktop) {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 28.8px;
+      }
+    }
+  }
+}
+
+.signle-item-wrapper {
+  position: relative;
+  margin-top: 32px;
+
+  @media (min-width: $breakPoint-desktop) {
+    margin-top: 64px;
+  }
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  .returned-label {
+    position: absolute;
+    top: 0;
+    inset-inline-end: 0;
+    bottom: 0;
+    inset-inline-start: auto;
+    display: inline-flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: #ff0000;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14.4px;
+    letter-spacing: 0em;
+
+    @media (min-width: $breakPoint-desktop) {
+      align-items: center;
+      font-size: 13px;
+      line-height: 15.6px;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+}
+
+.single-item-content {
+  display: flex;
+  justify-content: space-between;
+
+  &.returned-item {
+    opacity: 0.2;
+    pointer-events: none;
+  }
+
+  .left-side {
+    display: flex;
+
+    @media (min-width: $breakPoint-desktop) {
+      width: 80%;
+    }
+  }
+
+  .right-side {
+    position: relative;
+
+    @media (min-width: $breakPoint-desktop) {
+      width: 20%;
+      text-align: end;
+    }
+
+    .return-order-checkbox {
+      margin: 0;
+    }
+
+    .checkbox {
+      input {
+        display: none;
+      }
+
+      .checkbox-icon {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .item-details {
+    @media (min-width: $breakPoint-desktop) {
+      padding-inline-start: 16px;
+      padding-inline-end: 16px;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .item-category {
+      margin: 8px 0;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 16.8px;
+      letter-spacing: 0em;
+      text-align: start;
+      color: $black-color;
+
+      @media (min-width: $breakPoint-desktop) {
+        font-size: 15px;
+        line-height: 18px;
+      }
+    }
+
+    .heading,
+    .price {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 16.8px;
+      letter-spacing: 0em;
+      text-align: start;
+
+      @media (min-width: $breakPoint-desktop) {
+        font-size: 15px;
+        line-height: 18px;
+      }
+    }
+
+    .price {
+      margin-top: 8px;
+      margin-bottom: 8px;
+
+      .label {
+        margin-inline-end: 4px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.8px;
+        letter-spacing: 0em;
+        text-align: start;
+        color: $black-color;
+      }
+
+      .line-through {
+        text-decoration: line-through;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16.8px;
+      }
+      .discount-price {
+        margin-inline-start: 4px;
+        color: #da0059;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16.8px;
+
+        @media (max-width: $breakPoint-mobile) {
+          font-size: 15px;
+          line-height: 18px;
+        }
+      }
+    }
+
+    .size,
+    .color {
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 15.6px;
+      letter-spacing: 0em;
+      text-align: start;
+
+      @media (min-width: $breakPoint-desktop) {
+        font-size: 14px;
+        line-height: 16.8px;
+      }
+    }
+    .quantity {
+      & > span:first-child {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 120%;
+        color: rgba(0, 0, 0, 0.6);
+
+        @media (max-width: 500px) {
+          font-size: 13px;
+          color: rgba(0, 0, 0, 0.6);
+        }
+
+        input {
+          width: 35px;
+          height: 20px;
+          border: 1px solid rgba(0, 0, 0, 0.2);
+          border-radius: 20px;
+          color: rgba(0, 0, 0, 0.6);
+          -webkit-text-fill-color: rgba(0, 0, 0, 0.6);
+          font-family: "Roboto";
+          text-align: center;
+          margin-inline-start: 5px;
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+          /* display: none; <- Crashes Chrome on hover */
+          -webkit-appearance: none;
+          margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+        }
+
+        input::-webkit-text-fill-color {
+          color: rgba(0, 0, 0, 0.6) !important;
+        }
+
+        input[type="number"] {
+          -moz-appearance: textfield; /* Firefox */
+        }
+      }
+    }
+    .qty-error {
+      font-size: 14px;
+      color: #ff0000;
+    }
+  }
+}
+
+.reasons-dropdown-wrapper {
+  padding-top: 16px;
+  width: 100%;
+
+  @media (min-width: $breakPoint-desktop) {
+    width: 40%;
+    position: absolute;
+    top: 85%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin-inline-start: auto;
+    padding-top: 0;
+  }
+
+  .reason-dropdown-heading {
+    margin: 0;
+    margin-bottom: 4px;
+    padding-inline-start: 20px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: start;
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .selected {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15.6px;
+    letter-spacing: 0em;
+    text-align: start;
+
+    &-default {
+      color: rgba(0, 0, 0, 0.4);
+    }
+
+    &-option {
+      color: rgba(0, 0, 0, 1);
+    }
+
+    @media (min-width: $breakPoint-desktop) {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 16.8px;
+    }
+  }
+
+  .reasons-dropdown-option-ul {
+    max-height: 374px;
+
+    .reasons-dropdown-option-li {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 19.2px;
+      letter-spacing: 0em;
+      text-align: start;
+      color: rgba(0, 0, 0, 0.8);
+    }
+  }
+}

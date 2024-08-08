@@ -1,0 +1,126 @@
+@import "/styles/variables.scss";
+
+.div-form-heading {
+  display: flex;
+  margin-bottom: 32px;
+
+  h2 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (min-width: $breakPoint-desktop) {
+    margin-bottom: 0px;
+    h2 {
+      margin-block: 0px;
+    }
+  }
+}
+
+.main-store-locator {
+  display: grid;
+  height: 100%;
+  grid-template-areas:
+    "search"
+    "tabs"
+    "map"
+    "list";
+  grid-template-columns: 1fr;
+  grid-template-rows: max-content max-content 0.5fr 1fr;
+  overflow: hidden;
+
+  &[data-display="false"] {
+    grid-template-areas:
+      "map "
+      "details";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr max-content;
+  }
+
+  @media (min-width: $breakPoint-desktop) {
+    grid-template-areas:
+      "search  map "
+      "tabs  map"
+      "list  map"
+      "list details";
+    grid-template-columns: 0.72fr 1fr;
+    grid-template-rows: max-content max-content 1fr auto;
+    column-gap: 40px;
+
+    &[data-display="false"] {
+      grid-template-areas:
+        "map  map "
+        "map  map"
+        "details details";
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr max-content;
+    }
+  }
+
+  .div-store-search {
+    grid-area: search;
+    @media (min-width: $breakPoint-desktop) {
+      margin-block-start: 24px;
+    }
+  }
+
+  .div-store-tabs {
+    overflow: hidden;
+    grid-area: tabs;
+
+    &[data-hide="true"] {
+      opacity: 0;
+    }
+
+    .store-locator-tabs {
+      margin: 0px;
+      margin-bottom: 16px;
+      & > div > div {
+        justify-content: unset;
+        margin: 0;
+        button {
+          margin-inline-end: 40px;
+        }
+      }
+      @media (min-width: $breakPoint-desktop) {
+        margin-bottom: 24px;
+      }
+    }
+  }
+  .div-store-list {
+    grid-area: list;
+    overflow: auto;
+  }
+
+  .div-store-map {
+    grid-area: map;
+    &[data-display="true"] {
+      @media (min-width: $breakPoint-desktop) {
+        margin-block-start: 3px;
+      }
+    }
+    &[data-display="false"] {
+      display: block;
+    }
+  }
+
+  & :is(*[data-display="false"]) {
+    display: none;
+  }
+
+  .div-store-details {
+    grid-area: details;
+    display: none;
+    overflow: auto;
+
+    &[data-display="false"] {
+      display: block;
+    }
+    @media (min-width: $breakPoint-desktop) {
+      display: block;
+    }
+  }
+}

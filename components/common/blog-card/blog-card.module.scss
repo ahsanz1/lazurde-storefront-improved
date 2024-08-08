@@ -1,0 +1,106 @@
+@import "/styles/variables.scss";
+
+.card {
+  // cursor: pointer;
+  width: 200px;
+  text-align: center;
+  margin: 20px 0;
+
+  @media (min-width: $breakPoint-desktop) {
+    margin: auto;
+  }
+
+  .card-title {
+    font-weight: 600;
+  }
+
+  .card-description {
+    margin-bottom: 8px;
+    p {
+      margin: 0;
+      margin-block-start: 8px;
+      padding: 0;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 15.6px;
+      letter-spacing: 0em;
+      text-align: center;
+
+      @media (min-width: $breakPoint-desktop) {
+        margin-block-end: 8px;
+        font-size: 14px;
+        line-height: 16.8px;
+      }
+    }
+  }
+}
+
+.category-slider-card {
+  .card-title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.2px;
+    letter-spacing: 0em;
+    text-transform: capitalize;
+    text-align: center;
+    padding-inline: 5px;
+
+    @media (min-width: $breakPoint-desktop) {
+      text-align: start;
+    }
+  }
+
+  @media (max-width: $breakPoint-mobile) {
+    .img-wrapper {
+      & > span {
+        min-height: 178px !important;
+      }
+    }
+  }
+}
+
+.image-section {
+  position: relative;
+  margin-bottom: 16px;
+  cursor: pointer;
+
+  .img-wrapper {
+    & > span {
+      border-radius: 50%;
+    }
+  }
+}
+
+.shape {
+  width: 100px;
+  text-align: center;
+  margin: 20px 0;
+
+  @media (min-width: $breakPoint-desktop) {
+    margin: auto;
+    width: 125px;
+  }
+
+  .card-title {
+    font-weight: 600;
+  }
+
+  .card-description {
+    p {
+      margin: 0;
+      margin-block-start: 8px;
+      padding: 0;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 15.6px;
+      letter-spacing: 0em;
+      text-align: center;
+
+      @media (min-width: $breakPoint-desktop) {
+        margin-block-end: 8px;
+        font-size: 14px;
+        line-height: 16.8px;
+      }
+    }
+  }
+}

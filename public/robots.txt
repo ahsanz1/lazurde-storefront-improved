@@ -1,0 +1,57 @@
+User-agent: *
+Disallow: */account/
+Disallow: */cart/
+Disallow: */checkout/
+Disallow: */sign-in/
+Disallow: */sign-up/
+Disallow: */page/
+Disallow: */cart
+Disallow: */checkout/shipping-address
+Disallow: */online-payment-details
+Disallow: */checkout/
+Disallow: */c/order-confirmation
+Disallow: */customer/
+Disallow: */default/
+Disallow: *?gclid=
+Disallow: *&utm_campaign=
+Disallow: ?utm_source=
+Disallow: *?sortCode
+Disallow: *?query=
+Disallow: *?yoReviews
+Disallow: *?viewall=
+Disallow: *?sortid=
+Disallow: *?product
+Disallow:  /brg_dyn_
+Disallow: *?gift
+Disallow: *?collections
+Disallow: *?p
+Disallow: *?occassion
+Disallow: *?price
+Disallow: *?cat
+Disallow: */undefined/
+Disallow: *?___
+Disallow: *?brand
+Disallow: *?fbclid
+Disallow: *?metal
+Disallow: *?type
+Disallow: *?gad_source
+Disallow: *?page
+Disallow: *?filter
+Disallow: *?___from_
+Disallow: *?product_sku
+
+User-agent: *
+Allow: /
+Sitemap: https://lazurde.com/en-sa/sitemap.xml
+Sitemap: https://lazurde.com/ar-sa/sitemap.xml
+Sitemap: https://lazurde.com/en-ae/sitemap.xml
+Sitemap: https://lazurde.com/ar-ae/sitemap.xml
+Sitemap: https://lazurde.com/en-eg/sitemap.xml
+Sitemap: https://lazurde.com/ar-eg/sitemap.xml
+
+Products Sitemap: https://lazurde.com/en-sa/product-sitemap.xml
+Products Sitemap: https://lazurde.com/ar-sa/product-sitemap.xml
+Products Sitemap: https://lazurde.com/en-ae/product-sitemap.xml
+Products Sitemap: https://lazurde.com/ar-ae/product-sitemap.xml
+Products Sitemap: https://lazurde.com/en-eg/product-sitemap.xml
+Products Sitemap: https://lazurde.com/ar-eg/product-sitemap.xml

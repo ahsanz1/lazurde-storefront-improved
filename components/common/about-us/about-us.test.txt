@@ -1,0 +1,53 @@
+import React from "react";
+import AboutUs from "./index";
+import { render, screen, waitFor } from "@testing-library/react";
+
+describe("AboutUs component", () => {
+  const mockComponent = {
+    getContent: jest.fn(() => ({
+      banner: {
+        title: "Banner Text",
+        image: "banner-image-ref",
+      },
+      contentSectionOne: "section-one",
+      contentSectionTwo: "section-two",
+      contentSectionThree: "section-three",
+      sliderSection: {
+        sectionHeading: "Slider Heading",
+        slider: [],
+      },
+    })),
+  };
+
+  const mockPage = {
+    getContent: jest.fn((ref) => ({
+      getOriginal: jest.fn(() => ({
+        getUrl: jest.fn(() => "/path/to/image.jpg"),
+      })),
+    })),
+  };
+
+  beforeEach(() => {
+    jest.clearAllMocks();
+  });
+
+  test("renders the component with data", () => {
+    waitFor(() => {
+      render(<AboutUs component={mockComponent} page={mockPage} />);
+      expect(screen.getByTestId("banner-text")).toHaveTextContent(
+        "Banner Text"
+      );
+      expect(screen.getByText("Section One Title")).toBeInTheDocument();
+      expect(screen.getByText("Section One Content")).toBeInTheDocument();
+      expect(screen.getByText("Section Two Title")).toBeInTheDocument();
+      expect(screen.getByText("Section Two Content")).toBeInTheDocument();
+      expect(screen.getByText("Slider Heading")).toBeInTheDocument();
+      expect(screen.getByText("Section Three Title")).toBeInTheDocument();
+      expect(screen.getByText("Section Three Content")).toBeInTheDocument();
+      expect(screen.getByAltText("hero banner")).toHaveAttribute(
+        "src",
+        "/image.jpg"
+      );
+    });
+  });
+});

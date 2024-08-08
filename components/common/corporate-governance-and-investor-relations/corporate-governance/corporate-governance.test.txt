@@ -1,0 +1,223 @@
+import React from "react";
+import CorporateGovernance from "./index";
+import { render, screen, fireEvent } from "@testing-library/react";
+import ContextProvider, { AppContext } from "lib/context";
+
+jest.mock('react', () => ({
+  ...jest.requireActual('react') as object,
+  useLayoutEffect: jest.requireActual('react').useEffect,
+}));
+
+const currentObjectGC = {
+  executive: [
+    {
+      heading: "heading",
+      text: "text",
+      executiveArabic: [
+        {
+          heading: "ARheading",
+          text: "ARtext",
+        },
+      ],
+    },
+  ],
+  members: [
+    {
+      heading: "broad",
+      text: "board text",
+      membersArabic: [
+        {
+          heading: "ARheading",
+          text: "ARtext",
+        },
+      ],
+    },
+  ],
+  moreContent: [
+    {
+      heading: "Group Calls",
+      text: "text",
+      image: {
+        url: "/",
+        altText: "img",
+      },
+      imageTitle: "image",
+      pdfUrl: "url",
+    },
+    {
+      heading: "Group Calls",
+      text: "text",
+      image: {
+        url: "/",
+        altText: "img",
+      },
+      imageTitle: "image",
+      pdfUrl: "url",
+    },
+  ],
+};
+
+const currentObjectBC = {
+  executive: [
+    {
+      heading: "heading",
+      text: "text",
+      executiveArabic: [
+        {
+          heading: "ARheading",
+          text: "ARtext",
+        },
+      ],
+    },
+  ],
+  members: [
+    {
+      heading: "broad",
+      text: "board text",
+      membersArabic: [
+        {
+          heading: "ARheading",
+          text: "ARtext",
+        },
+      ],
+    },
+  ],
+  moreContent: [
+    {
+      heading: "Bylaw of the company",
+      text: "text",
+      image: {
+        url: "/",
+        altText: "img",
+      },
+      imageTitle: "image",
+      pdfUrl: "url",
+    },
+    {
+      heading: "Bylaw of the company",
+      text: "text",
+      image: {
+        url: "/",
+        altText: "img",
+      },
+      imageTitle: "image",
+      pdfUrl: "url",
+    },
+  ],
+};
+
+const currentObjectGP = {
+  executive: [
+    {
+      heading: "heading",
+      text: "text",
+      executiveArabic: [
+        {
+          heading: "ARheading",
+          text: "ARtext",
+        },
+      ],
+    },
+  ],
+  members: [
+    {
+      heading: "broad",
+      text: "board text",
+      membersArabic: [
+        {
+          heading: "ARheading",
+          text: "ARtext",
+        },
+      ],
+    },
+  ],
+  moreContent: [
+    {
+      heading: "Governance policies",
+      text: "text",
+      image: {
+        url: "/",
+        altText: "img",
+      },
+      imageTitle: "image",
+      pdfUrl: "url",
+    },
+    {
+      heading: "Governance policies",
+      text: "text",
+      image: {
+        url: "/",
+        altText: "img",
+      },
+      imageTitle: "image",
+      pdfUrl: "url",
+    },
+  ],
+};
+const renderComponentGP = () => {
+  render(
+    <AppContext.Provider value={{ appState: { lang: "en" } }}>
+      <CorporateGovernance
+        currentObject={currentObjectGP}
+        intState={"Governance policies"}
+      />
+    </AppContext.Provider>
+  );
+};
+
+const renderComponentGC = () => {
+  render(
+    <AppContext.Provider value={{ appState: { lang: "en" } }}>
+      <CorporateGovernance
+        currentObject={currentObjectGC}
+        intState={"Group Calls"}
+      />
+    </AppContext.Provider>
+  );
+};
+
+const renderComponentBC = () => {
+  render(
+    <AppContext.Provider value={{ appState: { lang: "en" } }}>
+      <CorporateGovernance
+        currentObject={currentObjectBC}
+        intState={"Bylaw of the company"}
+      />
+    </AppContext.Provider>
+  );
+};
+
+const renderComponentAR = () => {
+  render(
+    <AppContext.Provider value={{ appState: { lang: "ar" } }}>
+      <CorporateGovernance />
+    </AppContext.Provider>
+  );
+};
+
+describe("CorporateGovernance TESTING", () => {
+  test("CorporateGovernance Group Calls testing", () => {
+    renderComponentGC();
+
+    const grpImg = screen.getAllByRole("grp-img");
+    expect(grpImg[0]).toBeInTheDocument();
+  });
+
+  test("CorporateGovernance By Law of the Company testing", () => {
+    renderComponentBC();
+
+    const byLawImg = screen.getAllByRole("byLaw-img");
+    expect(byLawImg[0]).toBeInTheDocument();
+  });
+
+  test("CorporateGovernance Governance policies testing", () => {
+    renderComponentGP();
+
+    const policiesImg = screen.getAllByRole("policies-img");
+    expect(policiesImg[0]).toBeInTheDocument();
+  });
+
+  test("CorporateGovernance arabic testing", () => {
+    renderComponentAR();
+  });
+});

@@ -1,0 +1,195 @@
+@import "/styles/variables.scss";
+
+$month-dropdown-width: 96px;
+$year-dropdown-width: 99px;
+
+.calendar-wrapper {
+  z-index: 1;
+  display: none;
+  position: absolute;
+  top: 100px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  width: 299px;
+  min-height: 427px;
+  padding: 24px 32px;
+  background: #ffffff;
+  box-shadow: 0px 30px 84px rgba(19, 10, 46, 0.08),
+    0px 8px 32px rgba(19, 10, 46, 0.07), 0px 3px 14px rgba(19, 10, 46, 0.03),
+    0px 1px 3px rgba(19, 10, 46, 0.13);
+  border-radius: 12px;
+
+  @media (min-width: $breakPoint-desktop) {
+    width: 438px;
+  }
+
+  &[data-open="true"] {
+    display: block;
+  }
+}
+
+.month-year-dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .wrapper-select {
+    .calneder-ul-list {
+      max-height: 361px;
+      padding: 12px 0;
+      overflow: hidden;
+
+      &:hover {
+        overflow: auto;
+      }
+
+      .calneder-ul-option {
+        padding-top: 6px;
+        padding-bottom: 6px;
+        text-transform: capitalize;
+
+        &[data-selected="true"] {
+          background-color: #c3a956;
+          color: $white-color;
+        }
+
+        a {
+          padding-inline-start: 16px;
+          padding-inline-end: 16px;
+        }
+      }
+    }
+  }
+
+  .dropdown {
+    &-month {
+      width: $month-dropdown-width;
+      min-width: $month-dropdown-width;
+      max-width: $month-dropdown-width;
+      margin-inline-end: 8px;
+
+      &[data-open="true"] {
+        .m-option {
+          background-color: #f2f2f2;
+          color: #c3a956;
+        }
+        .month-arrow {
+          svg {
+            path {
+              fill: #c3a956;
+            }
+          }
+        }
+      }
+
+      .wrapper-select {
+        min-width: $month-dropdown-width;
+        max-width: $month-dropdown-width;
+      }
+    }
+    &-year {
+      width: $year-dropdown-width;
+      min-width: $year-dropdown-width;
+      max-width: $year-dropdown-width;
+
+      .wrapper-select {
+        min-width: $year-dropdown-width;
+        max-width: $year-dropdown-width;
+      }
+    }
+  }
+}
+
+.days {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  div {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+
+  .date {
+    cursor: pointer;
+    width: 33.57px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (min-width: $breakPoint-desktop) {
+      width: 100%;
+    }
+
+    &.disable-date {
+      color: rgba(0, 0, 0, 0.2);
+      pointer-events: none;
+    }
+
+    &.selectable-date {
+      color: $black-color;
+      pointer-events: all;
+
+      &.disable-sunday,
+      &.disable-next-day {
+        color: rgba(0, 0, 0, 0.2);
+        pointer-events: none;
+      }
+    }
+
+    &.disable-second-day {
+      color: rgba(0, 0, 0, 0.2);
+      pointer-events: none;
+    }
+
+    &.active {
+      pointer-events: all;
+      background-color: #c3a956;
+      color: $black-color;
+      border-radius: 40px;
+    }
+
+    &.first-date {
+      pointer-events: all;
+      color: $black-color;
+    }
+
+    &.de-active {
+      background-color: transparent;
+      // color: $black-color;
+    }
+
+    &.selectable-date {
+      pointer-events: all;
+    }
+
+    &:hover {
+      background-color: #f2f2f2;
+      border-radius: 40px;
+      color: #c3a956;
+    }
+  }
+}
+
+.btns-div {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  @media (min-width: $breakPoint-desktop) {
+    justify-content: space-between;
+  }
+}

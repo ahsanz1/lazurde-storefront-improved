@@ -1,0 +1,47 @@
+@import "/styles/variables.scss";
+
+.main-wrapper {
+  padding: 80px 76px;
+
+  @media (max-width: $breakPoint-mobile) {
+    padding: 20px 16px 136px;
+  }
+
+  .upper-border {
+    border-top: 1px solid #e5e5e5;
+    color: var(--dark-60, rgba(0, 0, 0, 0.6));
+  }
+}
+.wrapper {
+  margin-bottom: 40px;
+
+  .div-content {
+    width: fit-content;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    .content-manage-link {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+    }
+  }
+
+  .custom-content {
+    padding-inline-start: 0;
+    padding-bottom: 0 !important;
+    text-align: start;
+    display: none;
+    color: var(--dark-60, rgba(0, 0, 0, 0.6));
+
+    ul {
+      padding-top: 25px;
+      text-decoration: none;
+    }
+
+    &[data-opened="true"] {
+      display: block;
+    }
+  }
+}

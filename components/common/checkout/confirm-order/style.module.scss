@@ -1,0 +1,318 @@
+@import "/styles/variables.scss";
+
+.confirm-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px 24px;
+  gap: 40px;
+  width: 100%;
+  background: #ffffff;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: auto;
+  margin-block-end: 8px;
+
+  &::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #fff;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  @media (min-width: $breakPoint-desktop) {
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px;
+    gap: 48px;
+    width: 692px;
+    background: #ffffff;
+    overflow-y: scroll;
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: auto;
+  }
+
+  .main-heading {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+    color: #000000;
+
+    @media (min-width: $breakPoint-desktop) {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 120%;
+      color: #000000;
+    }
+  }
+
+  .order-details {
+    .order-num {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 120%;
+      color: #000000;
+      margin-block-end: 8px;
+
+      @media (min-width: $breakPoint-desktop) {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 120%;
+        color: #000000;
+      }
+    }
+
+    .order-msg {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 120%;
+      color: rgba(0, 0, 0, 0.6);
+
+      @media (min-width: $breakPoint-desktop) {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 120%;
+        color: rgba(0, 0, 0, 0.6);
+      }
+    }
+  }
+
+  .div-main {
+    display: flex;
+    width: 100%;
+
+    .div-left {
+      width: 90%;
+
+      p {
+        margin-block: 3px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 120%;
+        color: rgba(0, 0, 0, 0.6);
+
+        @media (min-width: $breakPoint-desktop) {
+          margin-block: 3px;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 120%;
+          color: rgba(0, 0, 0, 0.6);
+        }
+      }
+
+      .tab-address-heading {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 120%;
+        margin: 0;
+        color: #000000;
+        margin-block-end: 8px;
+
+        @media (min-width: $breakPoint-desktop) {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 120%;
+          margin: 0;
+          color: #000000;
+        }
+      }
+
+      .delivery-est {
+        width: 90%;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 120%;
+        color: #000000;
+        margin-block-start: 8px;
+
+        @media (min-width: $breakPoint-desktop) {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 120%;
+          color: #000000;
+          margin-block-start: 8px;
+        }
+      }
+    }
+
+    .div-right {
+      display: block;
+      width: 100%;
+
+      .purchase-heading {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 120%;
+        margin: 0;
+        color: #000000;
+        margin-block-end: 8px;
+
+        @media (min-width: $breakPoint-desktop) {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 120%;
+          margin: 0;
+          color: #000000;
+        }
+      }
+
+      .payment-method {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 120%;
+        color: rgba(0, 0, 0, 0.6);
+
+        @media (min-width: $breakPoint-desktop) {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 120%;
+          color: rgba(0, 0, 0, 0.6);
+        }
+      }
+    }
+  }
+}
+
+.save-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px 24px;
+  gap: 8px;
+  width: 100%;
+  background: #ffffff;
+
+  @media (min-width: $breakPoint-desktop) {
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px;
+    gap: 8px;
+    width: 692px;
+    background: #ffffff;
+  }
+
+  .main-heading {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+    color: #000000;
+    margin-block-start: 8px;
+
+    @media (min-width: $breakPoint-desktop) {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 120%;
+      color: #000000;
+      margin-block-start: 8px;
+    }
+  }
+
+  .main-points {
+    margin: 0;
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+
+    ul.order-steps {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 120%;
+      color: rgba(0, 0, 0, 0.6);
+
+      @media (min-width: $breakPoint-desktop) {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 120%;
+        color: rgba(0, 0, 0, 0.6);
+      }
+
+      li {
+        margin-block-start: 8px;
+      }
+    }
+  }
+
+  .div-main {
+    display: block;
+    width: 100%;
+    padding: 24px 0 0;
+  }
+
+  .create-acc-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .div-checkbox-main {
+    display: block;
+    margin: 10px auto;
+
+    .div-checkbox-data {
+      display: flex;
+
+      .check-box {
+        margin: 10px 0;
+      }
+    }
+  }
+
+  .privacy-note {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    color: rgba(0, 0, 0, 0.6);
+    margin: auto;
+
+    .privacy-note-click {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 120%;
+      text-decoration-line: underline;
+      text-transform: capitalize;
+      color: #000000;
+    }
+  }
+
+  .checkout-btns {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    margin-block-start: 24px;
+  }
+}

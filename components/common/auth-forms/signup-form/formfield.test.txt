@@ -1,0 +1,119 @@
+/* eslint-disable react/display-name */
+import * as React from "react";
+import {
+  act,
+  render,
+  waitFor,
+  fireEvent,
+  screen,
+} from "@testing-library/react";
+import ContextProvider, { AppContext } from "lib/context";
+import FormFields from "./form-field";
+
+jest.mock("axios");
+
+const index = 0;
+const titleOptions = [
+  {
+    label: "Mr.",
+    value: "Mr.",
+  },
+  {
+    label: "Mrs.",
+    value: "Mrs.",
+  },
+];
+const values = {
+  fName: "first name",
+  lName: "last name",
+  dob: "12/12/2222",
+  anniversaryDate: "12/12/2222",
+  phoneNumber: "03425678976",
+  email: "ali@gmail.com",
+  password: "12345678",
+  confirmPassword: "12345678",
+};
+const errors = {
+  fName: "first name",
+  lName: "last name",
+  dob: "12/12/2222",
+  anniversaryDate: "12/12/2222",
+  phoneNumber: "03425678976",
+  email: "ali@gmail.com",
+  password: "12345678",
+  confirmPassword: "12345678",
+};
+const setFieldValue = jest.fn();
+const fields = {
+  label: "Anniversary Date (Optional)",
+  bottomLabel:
+    "We will be sending you gift vouchers on your birthday/anniversary.",
+  name: "anniversaryDate",
+  type: "date",
+  placeholder: "11-16-96",
+  dropdown: false,
+  masked: false,
+  hasIcon: true,
+  icon: "calendar",
+};
+const handleChange = jest.fn();
+const touched = {
+  fName: "first name",
+  lName: "last name",
+  dob: "12/12/2222",
+  anniversaryDate: "12/12/2222",
+  phoneNumber: "03425678976",
+  email: "ali@gmail.com",
+  password: "12345678",
+  confirmPassword: "12345678",
+};
+
+const renderComponent = async () => {
+  await act(async () => {
+    render(
+      <ContextProvider>
+        <FormFields
+          index={index}
+          titleOptions={titleOptions}
+          values={values}
+          errors={errors}
+          fields={fields}
+          handleChange={handleChange}
+          touched={touched}
+        />
+      </ContextProvider>
+    );
+  });
+};
+
+const renderComponentAR = () => {
+  render(
+    <AppContext.Provider value={{ appState: { lang: "ar" } }}>
+      <FormFields
+        index={index}
+        titleOptions={titleOptions}
+        values={values}
+        errors={errors}
+        fields={fields}
+        handleChange={handleChange}
+        touched={touched}
+      />
+    </AppContext.Provider>
+  );
+};
+
+test("update password form testing", async () => {
+  await waitFor(() => {
+    renderComponent();
+
+    fireEvent.change(screen.getByRole(/input/i), {
+      target: { value: "ali@gmail.com" },
+    });
+  });
+});
+
+test("update password form Arabic testing", async () => {
+  await waitFor(() => {
+    renderComponentAR();
+  });
+});

@@ -1,0 +1,296 @@
+@import "/styles/variables.scss";
+.order-container {
+  @media (min-width: $breakPoint-desktop) {
+    width: 100%;
+  }
+}
+
+.order-section {
+  background-color: white;
+  padding: 24px;
+  margin-bottom: 8px;
+}
+.order-history {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-delivery {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-sent {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: start;
+  margin-top: 0;
+  margin-bottom: 8px !important;
+
+  @media (min-width: $breakPoint-desktop) {
+    font-size: 15px;
+  }
+}
+
+.delivery-estimate {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15.6px;
+  letter-spacing: 0em;
+  text-align: start;
+  margin: 0;
+
+  @media (min-width: $breakPoint-desktop) {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    letter-spacing: 0em;
+    text-align: start;
+  }
+}
+
+.order-text {
+  margin-block: 0;
+  margin-top: 16px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15.6px;
+  letter-spacing: 0em;
+  text-align: start;
+
+  @media (min-width: $breakPoint-desktop) {
+    margin-top: 8px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: start;
+  }
+}
+
+.order-image {
+  display: flex;
+  overflow-x: auto;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  gap: 8px;
+
+  @media (max-width: $breakPoint-mobile) {
+    margin-inline-end: -24px;
+  }
+
+  @media (min-width: $breakPoint-desktop) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+
+.order-main {
+  background-color: white;
+  padding: 24px;
+  margin-bottom: 0;
+
+  @media (min-width: $breakPoint-desktop) {
+    margin-bottom: 8px;
+    padding: 40px 24px 24px;
+  }
+
+  .inner-sec {
+    @media (min-width: $breakPoint-desktop) {
+      padding: 0 16px;
+    }
+
+    .order-heading {
+      margin: 0;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 28.8px;
+      letter-spacing: 0em;
+      text-align: start;
+      margin-top: 16px;
+
+      @media (min-width: $breakPoint-desktop) {
+        margin-top: 8px;
+      }
+    }
+  }
+}
+
+.order-date {
+  display: flex;
+  align-items: flex-start;
+}
+
+.order-date-text {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: start;
+  margin-block: 0 9px;
+  margin-inline-start: 9.5px;
+
+  @media (min-width: $breakPoint-desktop) {
+    margin-block: 0 10px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: start;
+  }
+
+  span {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: start;
+
+    @media (min-width: $breakPoint-desktop) {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 17px;
+      letter-spacing: 0em;
+      text-align: start;
+    }
+  }
+}
+
+.order-number-text {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: start;
+  margin-block: 0 9px;
+  margin-inline-start: 9.5px;
+
+  @media (min-width: $breakPoint-desktop) {
+    margin-block: 0 10px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: start;
+  }
+
+  span {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15.6px;
+    letter-spacing: 0em;
+    text-align: start;
+
+    @media (min-width: $breakPoint-desktop) {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16.8px;
+      letter-spacing: 0em;
+      text-align: start;
+    }
+  }
+}
+
+.order-link {
+  margin-inline-start: 9.5px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: start;
+  color: black;
+  text-decoration: underline;
+}
+
+.view-button {
+  width: 74px !important;
+  height: 34px !important;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center;
+
+  @media (min-width: $breakPoint-desktop) {
+    width: 138px !important;
+    height: 40px !important;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+}
+
+.no-order {
+  margin-top: 16px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15.6px;
+  letter-spacing: 0em;
+  text-align: start;
+  opacity: 0.8;
+
+  @media (min-width: $breakPoint-desktop) {
+    opacity: 1;
+    margin-top: 64px;
+    font-size: 14px;
+    line-height: 16.8px;
+  }
+}
+
+.start-shopping {
+  width: 200px;
+  height: 51px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+
+  @media (max-width: $breakPoint-mobile) {
+    margin-top: 40px;
+  }
+}
+
+.order-count {
+  padding: 24px;
+  background-color: $white-color;
+
+  @media (min-width: $breakPoint-desktop) {
+    padding: 24px 40px;
+  }
+
+  p {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15.6px;
+    letter-spacing: 0em;
+    text-align: start;
+    color: $black-color;
+
+    @media (min-width: $breakPoint-desktop) {
+      font-size: 15px;
+      line-height: 18px;
+    }
+  }
+}
+.order-details-link {
+  display: inline-block;
+  margin-inline-start: 10px;
+  color: $black-color;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 16.8px;
+  font-weight: 500;
+  text-decoration: underline;
+
+  a {
+    color: black;
+  }
+}

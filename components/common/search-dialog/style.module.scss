@@ -1,0 +1,383 @@
+@import "/styles/variables.scss";
+
+.search-dialog {
+  display: none;
+  flex-direction: column;
+  background: $white-color;
+  z-index: 1;
+  transition: height 0.2s ease-in-out 0.1s;
+  overflow: hidden;
+  overflow-y: auto;
+  padding: 16px 24px 80px 24px;
+  width: 100%;
+  opacity: 1;
+  pointer-events: all;
+
+  &[data-opened="true"] {
+    display: block;
+    height: 90vh;
+    padding: 24px;
+    padding-bottom: 100px;
+
+    @media (min-width: $breakPoint-desktop) {
+      height: 545px;
+      padding: 24px;
+    }
+  }
+}
+
+.search-bar {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  justify-content: space-between;
+  gap: 14px;
+  align-items: center;
+
+  @media (min-width: $breakPoint-desktop) {
+    gap: 88px;
+    grid-template-columns: auto 1fr;
+  }
+
+  .brand-icon {
+    display: none;
+
+    @media (min-width: $breakPoint-desktop) {
+      display: block;
+      padding: 8px 0px 0px 0px;
+    }
+  }
+
+  .search-bar-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+
+    .search-input-div {
+      display: flex;
+      align-items: center;
+      height: 40px;
+      background: $white-color;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 120%;
+      color: rgba(0, 0, 0, 0.4);
+      position: relative;
+      width: 100%;
+      padding: 10px 0px 10px 0px;
+
+      @media (min-width: $breakPoint-desktop) {
+        width: 89%;
+      }
+
+      &[data-visible="true"] {
+        .search-div-input {
+          border-bottom: none;
+          border-radius: 24px;
+          border-end-end-radius: 0;
+          border-end-start-radius: 0;
+        }
+      }
+
+      .search-input-container {
+        z-index: 3;
+
+        .search-div-input {
+          padding: 9px 18px 9px 20px;
+          height: 40px;
+          flex-direction: row-reverse;
+
+          input {
+            margin-inline-start: 14px;
+          }
+        }
+      }
+
+      .search-input {
+        border: 0px solid gray;
+        padding: 0px;
+        width: 100%;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 120%;
+        border-radius: 0px;
+
+        // @media (max-width: $breakPoint-tablet) {
+        //   width: 110%;
+        // }
+      }
+
+      .search-icon {
+        margin: 8px 14px 2px 2px;
+        @media (min-width: $breakPoint-desktop) {
+          margin: 1px 14px 1px 2px;
+        }
+      }
+
+      .div-search-dropdown {
+        position: absolute;
+        top: 88%;
+        z-index: 2;
+        background-color: white;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-end-end-radius: 8px;
+        border-end-start-radius: 8px;
+        border-top: none;
+        padding: 12px 10px;
+        pointer-events: none;
+        opacity: 0;
+        right: 0;
+        left: 0;
+        padding-top: 5px;
+
+        &[data-visible="true"] {
+          opacity: 1;
+          pointer-events: initial;
+        }
+
+        h2 {
+          font-size: 16px;
+          color: $black-color;
+        }
+
+        .div-query-suggestions {
+          display: flex;
+          flex-direction: column;
+          color: $black-color;
+          padding-top: 10px;
+          gap: 12px;
+          list-style: none;
+          text-decoration: none;
+          cursor: pointer;
+          border-top: 1px solid rgba(0, 0, 0, 0.2);
+
+
+
+          li {
+            position: relative;
+            width: max-content;
+          }
+
+          li:after {
+            content: "";
+            position: absolute;
+            width: 0px;
+            height: 1px;
+            top: 100%;
+            left: 0;
+            background-color: #000000;
+            transition: width ease-in-out 0.15s;
+          }
+
+          li:hover:after {
+            width: 100%;
+          }
+        }
+
+        .div-suggested-products {
+          display: flex;
+          flex-direction: column;
+          margin-top: 10px;
+          row-gap: 10px;
+
+          .list-suggested-products {
+            display: flex;
+            gap: 10px;
+            align-items: flex-start;
+            overflow-x: auto;
+
+            .suggested-product {
+              min-width: clamp(80px, 100%, 120px);
+              @media (min-width: $breakPoint-desktop) {
+                min-width: clamp(100px, 100%, 160px);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .cross-icon {
+      margin: 0;
+      margin-inline-start: 16px;
+      cursor: pointer;
+
+      @media (min-width: $breakPoint-desktop) {
+        margin-left: 68.51px;
+        margin-top: 5px;
+      }
+    }
+  }
+}
+
+.category-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  gap: 48px;
+  flex-direction: column;
+
+  @media (min-width: $breakPoint-desktop) {
+    gap: 48px;
+    flex-wrap: initial;
+    flex-direction: row;
+  }
+
+  .popular-search-terms-div {
+    margin-top: 40px;
+    margin-inline-start: 0px;
+    margin-inline-end: auto;
+
+    @media (min-width: $breakPoint-desktop) {
+      margin-inline-start: 80px;
+    }
+
+    .popular-search-terms-heading {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 120%;
+      text-transform: capitalize;
+      color: rgba(0, 0, 0, 0.8);
+      margin: 0;
+    }
+
+    .popular-search-terms-list {
+      list-style-type: none;
+      margin-top: 32px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 120%;
+      color: rgba(0, 0, 0, 0.8);
+      cursor: pointer;
+
+      li {
+        position: relative;
+        margin-top: 16px;
+        width: max-content;
+      }
+      li:after {
+        content: "";
+        position: absolute;
+        width: 0px;
+        height: 1px;
+        top: 100%;
+        left: 0;
+        background-color: #000000;
+        transition: width ease-in-out 0.15s;
+      }
+
+      li:hover:after {
+        width: 100%;
+      }
+    }
+  }
+
+  .popular-search-products-div {
+    width: 100%;
+    margin-top: 0px;
+    overflow: hidden;
+
+    @media (min-width: $breakPoint-desktop) {
+      margin-top: 40px;
+      overflow-x: scroll;
+    }
+
+    .popular-search-products-heading {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 120%;
+      color: $black-color;
+      margin: 0;
+
+      @media (min-width: $breakPoint-desktop) {
+        font-weight: 500;
+        font-size: 24px;
+      }
+    }
+
+    .popular-products {
+      display: flex;
+      margin-top: 24px;
+      flex-direction: row;
+      padding-block-end: 10px;
+      overflow: hidden;
+      overflow-x: auto;
+      column-gap: 8px;
+
+      .product-card {
+        min-width: 184px;
+
+        @media (min-width: $breakPoint-desktop) {
+          width: 40%;
+        }
+      }
+    }
+  }
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  width: 100vw;
+  height: 0;
+  inset-inline-end: 0;
+  z-index: -1;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  opacity: 0;
+  transition: opacity 3s 4s;
+  display: none;
+  pointer-events: none;
+
+  &[data-opened="true"] {
+    height: 200vh;
+    opacity: 1;
+    display: block;
+    pointer-events: inital;
+  }
+}
+
+.row-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.query-heading {
+  font-weight: 600;
+  margin-block: 10px;
+  font-size: 16px;
+  color: black
+}
+
+.blur-overlay {
+  background-color: rgb(50 50 50 / 10%);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 545px;
+    position: absolute;
+    z-index: 9;
+    padding: 0;
+
+    @media (max-width: $breakPoint-mobile) {
+      height: 100vh;
+    }
+
+    .spinner {
+      display: flex;
+      position: relative;
+      top: 40%;
+      margin: auto;
+
+      @media (max-width: $breakPoint-mobile) {
+        top: 20%;
+      }
+    }
+}
+

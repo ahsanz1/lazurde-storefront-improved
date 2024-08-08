@@ -1,0 +1,221 @@
+@import "/styles/variables.scss";
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  min-width: 137px;
+  outline: 0;
+
+  &[data-disabled="true"] {
+    pointer-events: none;
+  }
+
+  .label {
+    margin-inline-start: 20px;
+    margin-block-end: 4px;
+    line-height: 120%;
+    font-size: 11px;
+    color: rgba(0, 0, 0, 0.6);
+
+    @media (min-width: $breakPoint-desktop) {
+      font-size: 12px;
+    }
+  }
+
+  .container-select {
+    position: relative;
+    width: 100%;
+    min-width: 137px;
+  }
+
+  .select {
+    display: flex;
+    align-items: center;
+    padding: 11px 16px 11px 20px;
+    background: $white-color;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 100px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 115%;
+    color: #000;
+    outline: 0;
+
+    &.read-only {
+      pointer-events: none;
+      color: rgba(0, 0, 0, 0.5);
+    }
+
+    span {
+      // width: 86%;
+      display: block;
+      // overflow: hidden;
+      text-overflow: ellipsis;
+      text-transform: capitalize;
+
+      &[data-white-space="true"] {
+        white-space: nowrap;
+      }
+
+      &[data-placeholder="true"] {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 120%;
+        color: rgba(0, 0, 0, 0.4);
+
+        @media (min-width: $breakPoint-desktop) {
+          font-size: 13px;
+        }
+      }
+    }
+
+    @media (min-width: $breakPoint-desktop) {
+      font-size: 14px;
+    }
+  }
+
+  img {
+    margin-inline-start: 5px;
+  }
+
+  .options-ul {
+    display: none;
+    position: absolute;
+    width: 100%;
+    max-height: 200px;
+    overflow: auto;
+    list-style-type: none;
+    background: $white-color;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 12px 16px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+    z-index: 10;
+
+    &[data-position="top"] {
+      bottom: 100%;
+    }
+
+    .option {
+      font-size: 14px;
+      line-height: 115%;
+      cursor: pointer;
+      color: #000;
+      padding-block: 8px;
+
+      a {
+        display: flex;
+        cursor: pointer;
+      }
+
+      &[data-selected="true"] {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 115%;
+      }
+    }
+
+    &:hover::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar {
+      width: 3px;
+    }
+
+    &::-webkit-scrollbar-track {
+      margin-block: 5px;
+      background-color: $white-color;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $white-color;
+
+      outline: 0;
+    }
+  }
+
+  .select-arrow {
+    position: absolute;
+    top: 16px;
+    inset-inline-end: 20px;
+    line-height: 0;
+    transform: rotateZ(0);
+    transform-origin: center;
+    pointer-events: none;
+  }
+
+  &[data-open="true"] {
+    .select {
+      border: 1px solid rgba(0, 0, 0, 0.8);
+    }
+
+    & .options-ul {
+      display: block;
+      opacity: 1;
+      pointer-events: initial;
+    }
+
+    .select-arrow {
+      transform: rotateZ(-180deg);
+      transform-origin: center;
+    }
+  }
+
+  .error-msg {
+    position: absolute;
+    top: 100%;
+    margin-top: 5px;
+    width: 100%;
+    display: block;
+    padding-inline-start: 20px;
+    color: red;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 15.6px;
+    pointer-events: none;
+  }
+}
+
+.selected-img,
+.dropdown-flag {
+  margin-inline-start: 5px !important;
+}
+
+html[dir="rtl"] {
+  .dropdown {
+    outline: 0;
+
+    &:focus {
+      outline: 0;
+    }
+    .select {
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 120%;
+      direction: ltr;
+      justify-content: flex-end;
+      outline: 0;
+      &:focus {
+        outline: 0;
+      }
+
+      @media (min-width: $breakPoint-desktop) {
+        font-size: 14px;
+      }
+    }
+
+    .option {
+      display: flex;
+      direction: ltr;
+      justify-content: flex-end;
+      margin-inline-end: 0 !important;
+    }
+  }
+}

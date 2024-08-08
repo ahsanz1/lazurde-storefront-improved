@@ -1,0 +1,11 @@
+@import "/styles/variables.scss";
+
+ .inner-wrapper {
+  @media (max-width: $breakPoint-mobile) {
+    width: 692px;
+  }
+
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+}

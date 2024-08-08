@@ -1,0 +1,61 @@
+import * as React from "react";
+import { render, screen, fireEvent, waitFor } from "@testing-library/react";
+import ReviewForm from "components/common/reviews/write-review/review-form/review-form";
+import ContextProvider, { AppContext } from "lib/context";
+
+const productData = {
+  itemId: "281",
+  sku: "234kkm7u-ksa",
+  "Image URL": "/dummy.png",
+  "Title": "Title",
+};
+
+test("review form Testing", async () => {
+  await waitFor(() => {
+    render(
+      <ContextProvider>
+        <ReviewForm
+          rating={2}
+          productData={productData}
+          onClose={jest.fn()}
+          isRatingError={false}
+          setIsRatingError={jest.fn()}
+          setRatingIndex={jest.fn()}
+        />
+      </ContextProvider>
+    );
+
+    const review = screen.getByRole("review");
+    const firstName = screen.getByRole("firstName");
+    const lastName = screen.getByRole("lastName");
+    const email = screen.getByRole("email");
+    const phoneNumber = screen.getByRole("phoneNumber");
+
+    fireEvent.change(review, {
+      target: { value: "review goes here" },
+    });
+    fireEvent.change(firstName, {
+      target: { value: "John" },
+    });
+    fireEvent.change(lastName, {
+      target: { value: "Dee" },
+    });
+    fireEvent.change(email, {
+      target: { value: "John@gmail.co" },
+    });
+    fireEvent.change(phoneNumber, {
+      target: { value: "03096568918" },
+    });
+    fireEvent.click(screen.getByText(/post review/i));
+  });
+});
+
+test("review form Arabic Version", async () => {
+  await waitFor(() => {
+    render(
+      <AppContext.Provider value={{ appState: { lang: "ar" } }}>
+        <ReviewForm />
+      </AppContext.Provider>
+    );
+  });
+});

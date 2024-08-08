@@ -1,0 +1,41 @@
+:where(.splash-container) {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  inset-inline-start: 0;
+  inset-inline-end: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  background-color: #ffffff9c;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  // pointer-events: none;
+  // transition: opacity 0.3s;
+  // opacity: 0;
+
+  &[data-is-loading="true"] {
+    // transition: opacity 0.3s;
+    display: flex;
+    // opacity: 1;
+    top: -10px;
+    bottom: -10px;
+    inset-inline-start: -10px;
+    inset-inline-end: -10px;
+  }
+
+  .div-spinner-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .div-spinner {
+      margin-inline-end: 10px;
+    }
+    .div-loading-text {
+      font-size: 18px;
+      line-height: 120%;
+    }
+  }
+}

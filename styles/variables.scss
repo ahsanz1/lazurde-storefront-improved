@@ -1,0 +1,50 @@
+$primary-color: #f2f2f2;
+$black-color: #000000;
+$white-color: #ffffff;
+$waves-color: #94a9cb;
+$disabled-background: #a9a9a9;
+$disabled-color: #565656;
+
+/*---BreakPoints----*/
+
+$breakPoint-desktop: 1024px;
+$breakPoint-mobile: 1023px;
+$breakPoint-tablet: 768px;
+$breakPoint-fourteen-fourty: 1440px;
+
+$fs-13-16: clamp(13px, 1.111vw, 16px);
+$plp-wrapper-padding: 5.56vw;
+
+@mixin banner-text-position {
+  &[data-content-position="Top Left"] {
+    justify-content: flex-start;
+  }
+
+  &[data-content-position="Top Right"] {
+    justify-content: flex-end;
+  }
+
+  &[data-content-position="Bottom Left"] {
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+
+  &[data-content-position="Bottom Right"] {
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  &[data-content-position="Center"] {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  &[data-content-position="Center Left"] {
+    justify-content: flex-start;
+    align-items: center;
+  }
+  &[data-content-position="Center Right"] {
+    justify-content: flex-end;
+    align-items: center;
+  }
+}

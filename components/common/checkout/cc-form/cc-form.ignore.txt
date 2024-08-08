@@ -1,0 +1,83 @@
+import React from "react";
+import CCForm from "./index";
+import { screen, render, fireEvent, waitFor } from "@testing-library/react";
+import ContextProvider, { AppContext } from "lib/context";
+
+const paymentMethod = {
+  cardNumber: "",
+  firstName: "",
+  lastName: "",
+  expDate: "",
+  cvv: "",
+};
+
+const setIsOpen = jest.fn();
+
+const renderComponent = () => {
+  render(
+    <AppContext.Provider value={{ appState: { lang: "en" } }}>
+      <ContextProvider>
+        <CCForm
+          isOpen={true}
+          paymentMethod={paymentMethod}
+          isEditAddress={false}
+          isLoginUser={true}
+          setIsOpen={setIsOpen}
+        />
+      </ContextProvider>
+    </AppContext.Provider>
+  );
+};
+
+const renderComponentAR = () => {
+  render(
+    <AppContext.Provider value={{ appState: { lang: "ar" } }}>
+      <CCForm
+        isOpen={true}
+        isEditAddress={false}
+        isLoginUser={true}
+        paymentMethod={paymentMethod}
+        setIsOpen={setIsOpen}
+      />
+    </AppContext.Provider>
+  );
+};
+
+test("CC Form Testing", () => {
+  renderComponent();
+  const firstName = screen.getByRole("firstName");
+  expect(firstName).toBeInTheDocument();
+  fireEvent.blur(firstName);
+  const lastName = screen.getByRole("lastName");
+  expect(lastName).toBeInTheDocument();
+  fireEvent.blur(lastName);
+  const cardNumber = screen.getByRole("cardNumber");
+  expect(cardNumber).toBeInTheDocument();
+  fireEvent.blur(cardNumber);
+  const expDate = screen.getByRole("expDate");
+  expect(expDate).toBeInTheDocument();
+  fireEvent.blur(expDate);
+  const cvv = screen.getByRole("cvv");
+  expect(cvv).toBeInTheDocument();
+  fireEvent.blur(cvv);
+
+  fireEvent.change(firstName, {
+    target: { value: "John" },
+  });
+  fireEvent.change(lastName, {
+    target: { value: "Dee" },
+  });
+  fireEvent.change(cardNumber, {
+    target: { value: "4242424242424242" },
+  });
+  fireEvent.change(expDate, {
+    target: { value: "02/2025" },
+  });
+  fireEvent.change(cvv, {
+    target: { value: "100" },
+  });
+});
+
+test("CC Form Arabic Version", async () => {
+  renderComponentAR;
+});

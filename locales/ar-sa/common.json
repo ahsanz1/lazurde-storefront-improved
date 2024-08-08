@@ -1,0 +1,3362 @@
+{
+  "alreadyInUse": "قيد الإستخدام",
+  "DeleteWishListItem": "حذف عنصر قائمة الرغبات",
+  "DeleteWishListContent": "هل أنت متأكد أنك تريد حذف هذا البند؟ لا يمكن التراجع عن هذا الإجراء.",
+  "resetPwSessionExpireContent": "لقد انتهت فترة إعادة تغيير كلمة المرور الخاصة بك",
+  "back": "خلف",
+  "registeredCustomers": "العملاء المسجلين",
+  "guestNewCustomers": "الضيوف والعملاء الجدد",
+  "Invalid expiry date": "تاريخ الاستحقاق غير صحيح",
+  "Invalid cvv": "السيرة الذاتية غير صحيح",
+  "Invalid card number": "رقم البطاقة غير صحيح",
+  "Card has expired": "انتهت صلاحية البطاقة",
+  "Confirm New Password": "كلمة مرور جديدة",
+  "newsletterText": "الاشتراك في النشرة الإخبارية",
+  "alreadyAmember": "لديك حساب؟",
+  "outOfStockkk": "غير متوفر الآن",
+  "nowOutOfStock": "الآن من المخزون",
+  "confirmPassword": "يجب أن يكون تأكيد كلمة المرور هو نفس كلمة المرور",
+  "New here?": "جديد هنا؟",
+  "Send Password Reset Link": "ارسال رابط إعادة ضبط كلمة المرور",
+  "input": "الإدخال",
+  "Please enter your email address": "الرجاء إدخال عنوان بريدك الإلكتروني أدناه لتلقي رابط إعادة ضبط كلمة المرور",
+  "Reset Password": "إعادة ضبط كلمة المرور",
+  "required": "مطلوب",
+  "forgetPassword": "نسيت كلمة المرور؟",
+  "emailNumberErrorMsg": "أدخل البريد الإلكتروني",
+  "Email or Phone": "بريد الكتروني او هاتف",
+  "deliveryAddress": "عنوان التسليم",
+  "loadingShippingAdd": "تحميل عنوان الشحن",
+  "registerModalText": "من أجل إضافة عناصر إلى قائمة الرغبات الخاصة بك ، يجب عليك التسجيل أو تسجيل الدخول",
+  "404Title": "يصيح، لدينا سيئة :(",
+  "404notFoundContent": "لم يتم العثور على المحتوى الذي طلبته.",
+  "404goback": "عُد",
+  "MonthlyArchive": "الأرشيف الشهري",
+  "404previousPage": "إلى الصفحة السابقة.",
+  "404linkDetail": "اتبع هذه الروابط لتحصل على العودة إلى المسار الصحيح",
+  "404StoreHome": "مخزن البيت",
+  "Collection Point Details": "تفاصيل نقطة التجميع",
+  "Find a Collection Point": "البحث عن نقطة تجميع",
+  "Input Address": "عنوان الإدخال",
+  "View All Stores": "عرض جميع المتاجر",
+  "Search by Address": "البحث بالعنوان",
+  "No stores found": "لم يتم العثور على متاجر",
+  "lazurde": "لازوردي",
+  "missl": "مس أل",
+  "waves": "ويڤز",
+  "instagram": "انستغرام",
+  "AskAnExpert": "أسأل خبير",
+  "Title": "الصفة",
+  "Password": "الرقم السري",
+  "dateOfBirth": "تاريخ الميلاد",
+  "city": "المدينة",
+  "Governorate": "المحافظة",
+  "Area": "منطقة",
+  "Country": "الدولة",
+  "PostalCode": "الرمز البريدي",
+  "edit": "تعديل",
+  "sendCode": "أرسل الرمز",
+  "Enter first name": "أدخل الاسم الأول",
+  "Enter last name": "أدخل الاسم الأخير",
+  "Invalid email": "عنوان البريد الإلكتروني خاطىء",
+  "Enter valid email": "يرجى إدخال عنوان البريد الإلكتروني المسجل",
+  "Phone number is not valid": "رقم الهاتف غير صحيح",
+  "Hi": "مرحبا",
+  "validPassword": "قم بإدخال كلمة مرور جديدة",
+  "Password changed": "تم تغيير كلمة المرور بنجاح",
+  "phoneNumberr": "رقم الموبايل",
+  "EditPassword": "تعديل كلمة المرور",
+  "CurrentPassword": "كلمة المرور الحالية",
+  "valid password": "لرجاء إدخال كلمة السر الصحيحة",
+  "NewPassword": "كلمة مرور جديدة",
+  "requirements": "متطلبات كلمة المرور",
+  "Minimum": "8 أحرف على الأقل",
+  "Uppercase": "الأحرف الكبيرة والأحرف الصغيرة ورقم واحد",
+  "verify": "تحقق من رقم هاتفك",
+  "security": "لمزيد من الأمان ، نحتاج إلى إرسال رمز التحقق مرة واحدة لك لضمان وصول منتجاتنا إلى أيدي عملائنا بشكل أفضل.",
+  "EnterCode": "أدخل الرمز",
+  "send": "إرسال",
+  "verifyInformation": "ستتلقى الرمز الخاص بك على الفور. قد تواجه تأخيرًا في حال وجود مشكلات مع مزود الخدمة اللاسلكية. قد يتم تطبيق أسعار الرسائل والبيانات. إذا كنت قد ألغيت الاشتراك مسبقًا ، فأرسل START إلى 73067 لإعادة الاشتراك في خدمة التحقق عبر الهاتف المحمول.",
+  "agree": "أوافق على استلام رسالة نصية واحدة للتحقق من جهازي ومن شركة لازوردي",
+  "Continue": "تابع",
+  "MyDetails": "المعلومات الشخصية",
+  "becomeMember": "سجل عضويتك في لازوردي لتتمتع بشحن سريع ومجاني",
+  "dummyText": "نموذج نص لوريم ايسبوم دولار سيت",
+  "helpCenter": "مركز المساعدة",
+  "needHelp": "هل تحتاج إلى مساعدة؟",
+  "yourWishList": "قائمتك المفضلة",
+  "orContinueWith": "أو تواصل مع",
+  "checkout": "الدفع",
+  "totalToPay": "إجمالي المبلغ المراد دفعه",
+  "totalPaid": "إجمالي المبلغ المدفوع",
+  "vatTax": "ضريبة القيمة المضافة",
+  "estimatedShipping": "الشحن المقدر",
+  "subTotal": "المجموع الفرعي (شامل ضريبة القيمة المضافة)",
+  "subTotalForEgypt": "الإجمالي الفرعي",
+  "summary": "الإجمالي",
+  "noCartDataFound": "لا يوجد بيانات في عربة التسوق",
+  "noWishlistItemsFound": "إضافة منتجك المفضل",
+  "loading": "التحميل",
+  "bag": "حقيبة التسوق",
+  "freeMember": "كن عضوا في لازوردي للحصول على شحن سريع ومجاني. انضم إلينا أو قم بتسجيل الدخول",
+  "freeShipping": "الشحن مجاني للأعضاء",
+  "InThePress": "في الصحافة",
+  "shopAll": "تسوق في المتجر كله",
+  "bannerHeading": "اختيار المشاهير",
+  "customerHeading": "ىانيدل تاضيفختلا عيمج قوست",
+  "search": "ابحث",
+  "customerTitle": "ىانيدل تاضيفختلا عيمج قوست",
+  "notFound": "لا توجد نتائج متطابقة",
+  "haveAQuestion": "هل لديك أي أسئلة؟",
+  "addToCartBtnText": "أضف إلى السلة",
+  "onlineExclusiveTag": " جديد أونلاين",
+  "Delete": "احذف",
+  "Save": "احفظ",
+  "Posting": "نشر",
+  "Cancel": "إلغاء",
+  "Add": "أضف",
+  "Edit": "تعديل",
+  "bestSellers": "الأكثر مبيعا",
+  "AddNewAddress": "أضف عنوان جديد",
+  "AddNewMethod": "أضف طريقة جديدة",
+  "CustomerAlsoBuy": "العملاء يشترون أيضا",
+  "YouWillAlsoLike": "سوف يعجبك أيضًا",
+  "YouMightAlsoLike": "سوف يعجبك أيضًا",
+  "YouMayAlsoLike": "ربما يعجبك أيضا",
+  "AddressBook": "قائمة العناوين",
+  "PaymentMethods": "طرق الدفع",
+  "CheckBoxShipping": " اجعل هذا عنوان الشحن الافتراضي الخاص بي",
+  "DeleteAddressMessage": "هل أنت متأكد أنك ترغب في حذف هذا العنوان؟ لا يمكن التراجع عن هذا الإجراء.",
+  "DeletePaymentMessage": "هل أنت متأكد أنك ترغب في حذف طريقة الدفع لا يمكن التراجع عن هذا الإجراء.",
+  "CheckBoxPayment": " اجعل هذه طريقة الدفع الافتراضية الخاصة بي",
+  "NoMethodMessage": " ليس لديك حاليًا أي طرق دفع محفوظة. أضف طريقة دفع هنا ليتم تعبئتها مسبقًا للدفع بشكل أسرع.",
+  "signOut": "تسجيل الخروج",
+  "signUp": "إنشاء حساب",
+  "RegisterForNewsletter": "التسجيل في النشرة الإخبارية",
+  "LoadMore": "عرض المزيد",
+  "of": "من",
+  "product": "منتج",
+  "Riyadh": "بالرياض ",
+  "Cairo": "في القاهرة",
+  "signIn": "تسجيل الدخول",
+  "whatIsThis": "ما هذا؟",
+  "cvvToolTip": "رقم الأمان الموجود على بطاقتك الائتمانية أو بطاقة الخصم  CVV هو الرقم المكون من 3 أرقام والموجود على بطاقة الفيزا والماستر كارد وبطاقات الائتمان وبطاقات الخصم التي تحمل اسم العلامة التجارية Discover، بينما يأتي مكونًا من 4 أرقام على بطاقات الائتمان وبطاقات الخصم التي تحمل اسم العلامة التجارية أمريكان اكسبريس.",
+  "cvvError": "​​أدخل رقم الأمان الخاص بالبطاقة",
+  "expDateMatchError": " تاريخ الاستحقاق غير صحيح",
+  "loadingPaymentMethods": "تحميل طرق الدفع",
+  "shopOurInstagram": "تسوق الانستغرام لدينا",
+  "instaSubDetail": "كن جزءًا من عائلة L’Azurde واستعرض مجوهرات فف باستخدام الهاستاج:",
+  "shopTheLook": "تسوق من مجموعة تسوق الإطلالة",
+  "loadMore": "عرض المزيد",
+  "outOfStock": "غير متوفر حاليا",
+  "outOfStockk": "سيتوفر قريبًا",
+  "onlyFewLeftTag" : "كمية محدودة",
+  "noItemFound": "لا توجد أي منتجات",
+  "translateToArabic": "الترجمة إلى العربية",
+  "giftMessage": "جميع المنتجات تأتي مع ظرف وبطاقة رسائل هدايا فارغة.",
+  "translateToEnglish": " الترجمة إلى الإنجليزية",
+  "Change": "تغيير",
+  "Checkout": "الدفع",
+  "backToBag": "الرجوع إلى حقيبة التسوق",
+  "shippingAddress": "عنوان الشحن",
+  "postalAddress": "العنوان البريدي",
+  "clickCollect": "اضغط واستلم",
+  "shippingMethod": "طريقة الشحن",
+  "paymant": "الدفع",
+  "giftCardVoucherPromoCode": "بطاقة هدايا أو قسيمة شراء أو كود خصم",
+  "giftMessageHeading": "رسالة الهدايا",
+  "contactInfo": "معلومات الاتصال",
+  "Free": "يوم مجانا",
+  "continueWith": "تابع مع",
+  "CreditCard": "البطاقة الائتمانية",
+  "PayInInstallements": "الدفع على أقساط",
+  "CashOnDelivery": "الدفع نقدًا عند الاستلام",
+  "customiseMyGiftMsg": "تخصيص رسالة هديتي",
+  "contactInfoText": "نحتاج إلى معلومات الاتصال الخاصة بك كي نتمكن من إرسال التحديثات المتعلقة بطلبك.",
+  "accCreateText": "قم بإنشاء حساب لحفظ معلوماتك",
+  "signUpText": "قم بالتسجيل لاستلام رسائلنا الإلكترونية الحصرية",
+  "summaryHeading": "الإجمالي",
+  "Remove": "احذف",
+  "estimatedShippingHandeling": "الشحن والتسليم المقدر",
+  "taxVat": "ضريبة القيمة المضافة",
+  "standardBussinessDay": " 7 - 14 يوم عمل) عادي)",
+  "estimatedDelivery": "تاريخ التسليم التقديري، 22 فبراير 2022 - 29 فبراير 2022",
+  "creditCardChargeMsg": "سيتم خصم المبلغ من بطاقتك الائتمانية عند شحن طلبك.",
+  "completePurchase": "أكمل عملية الشراء",
+  "Email": "البريد الإلكرتوني",
+  "phoneNum": "رقم الهاتف",
+  "dataUnavailable": "البيانات غير متوفرة",
+  "acceptTermsCondition": "وافق على الشروط والأحكام",
+  "termsAndConditions": "الأحكام والشروط",
+  "cardNumPlaceHolder": "أدخل رقم بطاقتك",
+  "Apply": "تطبيق",
+  "giftMsgNotice": "يمكنك إضافة رسالة الهدايا على كل منتج في طلبك.",
+  "addMsgBtn": "أضف رسالة",
+  "removeMsgBtn": "امسح الرسالة",
+  "giftMsgLabel": "أدخل نص رسالة الهدايا",
+  "textAreaNotice": "يجب أن لا تتجاوز الرسائل النصية 8 سطور و35 حرف لكل سطر",
+  "Removing": "...إزالة",
+  "orderConfirmMain": "تهانينا! تم تأكيد الطلب",
+  "receiptNotice": "ستتلقى على الفور بريدًا إلكترونيًا يفيد الاستلام",
+  "shippingTo": "الشحن إلى",
+  "purchaseWith": "الشراء باستخدام",
+  "whatNext": "ما التالي؟",
+  "GoHomePageBtnText": "الرجوع إلى الصفحة الرئيسية",
+  "accountPage": "حسابي",
+  "managePaymentPreference": "حدد طرق الدفع المفضلة لكك",
+  "createAddressBook": "أنشأ قائمة العناوين",
+  "bookAppointment": "موعد الكتاب",
+  "joinTheShow": "انضم إلى العرض",
+  "orderStatusView": "شاهد حالة الطلب",
+  "createAccBtn": "أنشأ حساب",
+  "savePaymentDetails": "حفظ تفاصيل الدفع",
+  "savedDetails": "احفظ بياناتك لضمان عملية دفع أسرع",
+  "accBrands": "حساب واحد. ثلاث علامات تجارية",
+  "ThankYou": "شكرا لك",
+  "accCreatedMsg": "لقد قمت بإنشاء حساب على موقع لازوردي. يرجى التحقق من بريدك الإلكتروني لتفعيل حسابك.",
+  "defaultShippingAdd": "خطأ في عنوان الشحن",
+  "defaultPaymentMethod": "خطأ في طريقة الدفع",
+  "collectionText": "متاح غدًا للتسليم. سنرسل لك بريدًا إلكترونيًا عندما يكون المنتج جاهزًا للتسليم",
+  "itemNotAvailabletag": "هذا المنتج غير متوفر في منطقتك",
+  "Ring Size": "مقاس الخاتم",
+  "Earring Size": "مقاس الحلق",
+  "Bracelet Size": "مقاس السوار",
+  "Anklet Size": "مقاس الخلخال",
+  "Enter address": "أدخل العنوان",
+  "Select title": "أختر الصفة",
+  "Enter city": "أدخل المدينة",
+  "Select governorate": "اختر المحافظة",
+  "Select country": "اختر البلد",
+  "Enter postal code": "أدخل الرمز البريدي",
+  "Enter nick name": "أدخل اللقب",
+  "Enter phone number": "أدخل رقم المحمول/ الجوال",
+  "Enter card number": "أدخل رقم البطاقة",
+  "personal data": "نتعامل مع بياناتك الشخصية بعناية من خلال عرضن",
+  "Privacy Notice Here.": "إشعار الخصوصية هنا",
+  "Enter expiration date": "أدخل تاريخ الانتهاء",
+  "CODNote": "ملاحظة: يتحمل السائقون أقل من 20 دولار عند تبديل المنتج، والشيكات غير مقبولة لطلبات الأونلاين. هل أنت شخص سخي؟ يمكنك إعطاء إكرامية للسائق عند توصيل الطلب.",
+  "Quantity:": "الكمية ",
+  "home": "الصفحة الرئيسية",
+  "off": "خصم",
+  "Enter feedback": "اترك تعليقك",
+  "Enter phone #": "أدخل رقم المحمول/ الجوال",
+  "adding": "إضافة",
+  "treat your personal": "نعامل بياناتك الشخصية بعناية بالغة",
+  "select": "تحديد",
+  "setDate": "تحديد التاريخ",
+  "write review": "أكتب مراجعة",
+  "Please Add Rating": "اترك تقييمك",
+
+  "titleOptions": [
+    {
+      "label": "السيد",
+      "value": "Mr."
+    },
+    {
+      "label": "السيدة",
+      "value": "Mrs."
+    }
+  ],
+
+  "countryOptions": [
+    {
+      "label": "السعودية العربية",
+      "value": "SA"
+    },
+    {
+      "label": "الإمارات العربية المتحدة",
+      "value": "AE"
+    },
+    {
+      "label": "مصر",
+      "value": "EG"
+    }
+  ],
+
+  "noAddressesMessage": "ليس لديك حاليًا أي عناوين تسليم محفوظة. أضف عنوانًا هنا ليتم تعبئته مسبقًا والدفع بشكل أسرع.",
+  "loadingAddresses": " تحميل العناوين",
+
+  "formHeadings": {
+    "NickName": " اللقب",
+    "Title": "الصفة",
+    "FirstName": "الاسم الأول",
+    "LastName": "الاسم الأخير",
+    "StreetAddress": "عنوان الشارع",
+    "City": "المدينة",
+    "Area": "المنطقة",
+    "Governorate": "المحافظة",
+    "Country": "الدولة",
+    "PostalCode": "الرمز البريدي",
+    "phoneNumber": "رقم الهاتف"
+  },
+
+  "paymentFormHeadings": {
+    "title": "الصفة",
+    "firstName": "الاسم الأول",
+    "lastName": "الاسم الأخير",
+    "cardNumber": "رقم البطاقة",
+    "expDate": "تاريخ الانتهاء",
+    "cvv": " رقم الأمان على البطاقة "
+  },
+
+  "addressBookHeading": {
+    "add": "أضف",
+    "edit": "تعديل العنوان",
+    "delete": "احذف"
+  },
+
+  "paymentModalHeading": {
+    "add": "أضف طريقة دفع جديدة",
+    "edit": "حصريا على الانترنت",
+    "delete": "احذف"
+  },
+  "back-button": "الرجوع",
+  "termTitle": "ىكل رخدي",
+  "sampleTranslationText": "يوضح هذا النص تغييرًا للغة الترجمة عند تغيير الموقع. هذا النص لم يتم طرحه بصيغة XM، حيث أن هذه الصيغة لا تدعم الصفحات متعددة اللغات حتى الآن.",
+  "promoBarTitle": "ىكل رخدي",
+  "promoBarLinkTitle": "انيدل تاضيفختلا عيمج قوست",
+  "bannerBodyText": "يوضح هذا النص ترجمة اللغة عند تغيير اللغة. هذا ليس نصًا تم إنشاؤه بواسطة XM ، لا يدعم XM الصفحات متعددة اللغات حتى الآن.",
+  "bannerText": "ىكل رخدي نآلا 50٪ مصخ",
+  "buttonText": "نآلا قوست",
+  "footerHeading": " 10٪مصخ ىلع لصحاو لجس",
+  "footerSubHeading": "ديزملاو ةيجيورت ضورع ، يف ديدج ، عيبلل ركبم لوصو ىلع لوصحلل كرتشا",
+  "signUpBtnText": "انضم إلينا",
+  "or": " او",
+  "passwordChanged": "تمت إعادة تعيين كلمة المرور بنجاح",
+  "passwordResetFailed": "!فشلت إعادة تعيين كلمة المرور",
+  "subscriptionText": "قوف رقنا ، كارتشالا ءاغلإل. انب ةصاخلا ةيصوصخلا ةسايسو ماكحألاو طورشلا ىلع قفاوت كنإف ، كارتشالاب .انب ةصاخلا ينورتكلإلا ديربلا لئاسر لفسأ",
+  "socialIconText": "هسفن ملألا",
+  "userNavBarTitle": "تسوق وفق الماركة",
+  "cardHeading": "ةيراجتلا انتامالع فشتكا",
+  "NavbarLangSelectorTitle": "اختر الموقع واللغة المفضلة لديك",
+  "navbarBackBtn": "الرجوع إلى لازوردي",
+  "langSelectorBtnTxt": "تابع",
+  "Loading Shipping Data": "تحميل بيانات الشحن",
+  "View All Saved Products": "عرض كافة المنتجات المحفوظة",
+  "Processing": "قيد التنفيذ",
+  "loading images": "...تحميل الصور",
+  "loadingDetails": "تحميل بياناتي",
+  "no items found": "نفذ العرض، انتظر عروضنا المقبلة",
+  "customerCareText": "خدمة العملاء",
+  "bookAnAppointmentText": "احجز موعدًا",
+  "myAccountText": "حسابي",
+  "storeLocatorText": "موقع المتجر",
+  "signInBtnText": "تسجيل الدخول",
+  "signOutBtnText": "خروج",
+  "bannerTitle": "خواتم",
+  "bannerSubTitle": "الألم بحد ذاته هو حب الألم ، المشاكل البيئية الرئيسية ، لكني أعطي هذا النوع من الوقت للتراجع ، بحيث يكون هناك بعض الألم والألم العظيمين.",
+  "plpCategoryTitle": "استكشف جميع الفئات",
+  "plpCategoryText": "تعتمد مجوهراتنا على إرث يمتد لأكثر من 180 عامًا من الحرفية الخبيرة مع قلادات ودلايات وأساور وخواتم ومصممة بشكل جميل وغير ذلك.  تُظهر أحدث مجوهراتنا إبداع لازوردي وتصميمه الذي لا مثيل له في أفضل حالاته.",
+  "textShow": "عرض",
+  "textOf": "من",
+  "textViewAll": "عرض الجميع",
+  "feedbackHeading": "لكلا ةدهاشم",
+  "firstName": "الاسم الأول",
+  "lastName": "الاسم الأخير",
+  "phoneNumber": "رقم الهاتف",
+  "feedback": "الرأي",
+  "email": "لكلا ةدهاشم",
+  "sent": "لكلا ةدهاشم",
+  "helpHeading": "لكلا ةدهاشم",
+  "save": "احفظ",
+  "Newsletter Subscriptions": "الاشتراك في خدمة النشرة البريدية",
+  "All Subscriptions": "جميع الاشتراكات",
+  "subscribeForNewsletter": "الإشتراك في النشرة البريدية",
+  "L’azurde Subscriptions": "اشتراكات لازوردي",
+  "Miss L ‘ Subscriptions": "اشتراكات مس أل",
+  "InStyle Subscriptions": "اشتراكات إنستايل",
+  "wavesSubscriptions": "اشتراكات ويفز",
+  "sortingFilter": [
+    {
+      "label": "الأكثر مشاهدة",
+      "value": "most_viewed"
+    },
+    {
+      "label": "السعر - من الأقل إلى الأعلى",
+      "value": "price-asc"
+    },
+    {
+      "label": "السعر - من الأعلى إلى الأقل",
+      "value": "price-desc"
+    },
+    {
+      "label": "الأكثر مبيعًا",
+      "value": "best_seller"
+    },
+    {
+      "label": "وصل حديثا",
+      "value": "new_in"
+    },
+    {
+      "label": "الأكثر توفيرًا",
+      "value": "biggest_save"
+    }
+  ],
+  "accountTitle": "تادالق",
+  "firstname": "الاسم الأول",
+  "lastname": "الاسم الأخير",
+  "reviewText": "هناك الكثير من المنتجات يمكنك تقيمها، قم بتقييم المنتجات للحصول على فرصة لاسترداد قيمة طلبك.",
+  "welcome": "مرحبا بك",
+  "detailsProps": [
+    {
+      "accounts": [
+        {
+          "text": "نظرة عامة على الحساب"
+        }
+      ]
+    },
+    {
+      "accounts": [
+        {
+          "text": "طلباتي"
+        },
+        {
+          "text": "مرتجعات"
+        },
+        {
+          "text": "التقييمات"
+        },
+        {
+          "text": "القائمة المفضلة"
+        }
+      ]
+    },
+    {
+      "accounts": [
+        {
+          "text": "تفاصيلي"
+        },
+        {
+          "text": "العناوين المسجلة"
+        },
+        {
+          "text": "طرق الدفع"
+        },
+        {
+          "text": "بطاقات الهدايا الخاصة بي"
+        }
+      ]
+    },
+    {
+      "accounts": [
+        {
+          "text": "الاشتراك بالنشرة البريدية،"
+        },
+        {
+          "text": "تحتاج مساعدة؟"
+        }
+      ]
+    },
+    {
+      "accounts": [
+        {
+          "text": "خروج"
+        }
+      ]
+    }
+  ],
+  "Subscribe": "اشترك",
+  "Year": "سنة",
+  "pdpTag-arabic": "لمكي",
+  "pdpTitle-arabic": "تيفاني تي خاتم ذهب ألماس",
+  "pdpButton-arabic": "أكتب مراجعة",
+  "addCartButton": "أضف إلى سلة التسوق",
+  "notifyButton": "أخطرني في حال توفر المنتج",
+  "writeAreview": "أكتب مراجعة",
+  "addToCart": "أضف الى الحقيبة",
+  "buyNow": "اشتري الآن",
+  "NextDeliveryCairo": "التسليم في اليوم التالي متاح فقط في القاهرة، وإذا كنت تدفع باستخدام أي من طرق الدفع الرقمية لدينا",
+  "NextDeliveryUAE": "يتوفر خيار التسليم في نفس اليوم للطلبات المقدمة قبل الساعة 11 صباحًا في دبي والشارقة وأبو ظبي.",
+  "NextDeliveryRiyadh": "يتوفر خيار التوصيل في اليوم التالي للطلبات المقدمة قبل الساعة 11 صباحًا في الرياض فقط.",
+  "OrdersWeekendNotification": "لا يتم تسليم الطلبات في عطلات نهاية الأسبوع أو العطلات الرسمية.",
+  "StandardOrdersDeliveryNotification": "سيتم تسليم الطلبات القياسية خلال 2 إلى 5 أيام عمل.",
+  "RandomOrdersDeliveryNotification": "سيتم تسليم الطلبات من السبت إلى الخميس بعد تأكيد الطلب.",
+  "added": "إضافة",
+  "buying": "شراء",
+  "notifyMeWhenAvailable": "اعلمني عندما تكون متاحة",
+  "appointmentButton-arabic": "حجز موعد",
+  "Expected Delivery": "تاريخ التسليم المتوقع",
+  "FreeDelivery": "توصيل مجاني لجميع الطلبات",
+  "BuyNowPayLater": "اشترِ الآن وادفع لاحقًا باستخدام",
+  "valUNotificationOne": "اختر valU كطريقة دفع من قائمة خيارات الدفع.",
+  "valUNotificationTwo": "أدخل رقم هاتفك المسجل في حساب valU الخاص بك.",
+  "valUNotificationThree": "ستصلك رسالة نصية تحتوي على كلمة المرور لمرة واحدة لتأكيد عملية الشراء.",
+  "valUNotificationFour": "اختر خطة التقسيط المناسبة لك",
+  "returnNotificationOneSA": "يمكنك إرجاع أي منتج إلى لازوردي خلال 15 يومًا من تاريخ استلامه.",
+  "returnNotificanOneEG": "يمكنك إرجاع أي منتج إلى لازوردي خلال 30 يومًا من تاريخ استلامه.",
+  "retrunNotificationFour": "يُرجى التأكد من أن السلعة (المنتجات) التي تقوم بإرجاعها في حالة ممتازة وغير مستخدمة وفي صندوقها الأصلي وعبوتها الأصلية مع سلامة العلامات والعلامات.",
+  "retrunNotificationFive": "لا يمكن إرجاع او استبدال أي قطعة (قطع) للعملات الذهب او السبائك.",
+  "retrunNotificationThree": "يجب أن تكون السلعة (المنتجات) مصحوبة بأي ملحقات جاءت معها والفاتورة الأصلية.",
+  "retrunNotificationTwo": "إذا كانت السلعة (العناصر) التي تقوم بإرجاعها جزءًا من حزمة ترويجية، فيجب إرجاع الحزمة بأكملها من أجل معالجة عملية استرداد الأموال.",
+  "DeliveryWeekendNotification": "لا تتم عمليات التسليم في عطلات نهاية الأسبوع أو العطلات الرسمية.",
+  "BuyNowPayLaterTamara": "تمارا تتيح لك تقسيم مشترياتك إلى 3 دفعات بدون فوائد، دفعات تمارا قابلة للتطبيق على الطلبات التي تبلغ قيمتها القصوى 4000 ريال سعودي.",
+  "BuyNowPayLaterTabby": "تابي يتيح لك تقسيم مشترياتك إلى 4 دفعات بدون فوائد، دفعات تابي قابلة للتطبيق على الطلبات التي تبلغ قيمتها القصوى 5000 ريال سعودي.",
+  "SameDayFreeDelivery": "توصيل مجاني في نفس اليوم",
+  "UAEregion": "دبي والشارقة وأبو ظبي",
+  "NextDayFreeDeliveryae": "توصيل </b>مجاني في نفس <b>اليوم",
+  "NextDayFreeDelivery": "توصيل مجاني في اليوم التالي",
+  "Click and collect": "اضغط واستلم",
+  "Available": "متوفر",
+  "30 day return": "الاسترجاع خلال 30 يوم",
+  "daysReturn": "ارجاع خلال مدة",
+  "Have a question?": "لدي سؤال؟",
+  "productUnavailable": "المنتج غير متوفر حاليا. يرجى التواصل مع خدمة العملاء لمزيد من المعلومات",
+  "Designer’s Notes": "ملاحظات المصمم",
+  "productDetails": "أطواق متدلية من الذهب عيار 18 قيراط على شكل أشكال مستطيلة موقعة بحواف مستديرة. مضاءة بماسات عيار 0.2 قيراط تدور حول المركز بحيث تزيد كل زاوية من لمعانها الجميل. تتميز الأطواق بإبزيم سهل غير قابل للفتح يسمح لك بإضافة المزيد من التعويذات المضمونة لجذب الإطراء.",
+  "Product Details": "تفاصيل المنتج",
+  "unavailable-arabic": "المنتج غير متوفر حاليا. يرجى الاتصال بخدمة العملاء لمزيد من المعلومات",
+  "designerNote": "ملاحظات المصمم",
+  "productDetailsH": "تفاصيل المنتج",
+  "metal": "معدن",
+  "metalDetails-arabic": "ذهب أبيض عيار 18 قيراط",
+  "diamond": "ألماس",
+  "diamondDetails-arabic": "ذهب أبيض عيار 18 قيراط",
+  "stone": "الحجر",
+  "stoneDetails-arabic": "ذهب أبيض عيار 18 قيراط",
+  "Pendant Size": "مقاس الدلاية",
+  "charm Size": "مقاس الدلاية",
+  "Chain Length": "طول السلسلة",
+  "Brand": "العلامة التجارية",
+  "Style Number": "رقم الموديل",
+  "brandDetails-arabic": "لازوردي",
+  "collection": "التشكيلة",
+  "Select Size": "أختر المقاس",
+  "Sizing Chart": "مخطط التحجيم",
+  "Select Color": "إختر لون",
+  "customer reviews": "تعليقات العميل",
+  "rating": "التقييم",
+  "write a review": "اكتب تعليقًا",
+  "Overall rating": "التقييم الكلي",
+  "reviewtabs": [
+    {
+      "label": "مؤخرًا"
+    },
+    {
+      "label": "خاصية"
+    },
+    {
+      "label": "الأعلى"
+    },
+    {
+      "label": "أدنى"
+    }
+  ],
+  "My Orders": "طلباتي",
+  "Displaying": "العرض",
+  "Orders": "الطلبات",
+  "We’ve Sent It!": "لقد أرسلناها",
+  "We’re Processing!": "الطلب قيد التنفيذ",
+  "We’ve Cancelled!": "لقد ألغيناها",
+  "Status": "الحالة",
+  "Delivered": "تم التوصيل",
+  "Accepted": "قبلت",
+  "Dispatched": "مُرسَل",
+  "Cancelled": "ألغيت",
+  "CancelledCustomerRequest": "تم إلغاء طلب العميل",
+  "CancelledOutofStock": "تم الإلغاء نفاد المخزون",
+  "Estimated Delivery": "تاريخ التسليم التقديري",
+  "Track Parcel": "تتبع الطرود",
+  "Order Date": "تاريخ الطلب",
+  "Order Number": "رقم الطلب",
+  "View Digital Receipt & Warranty": "انظر الفاتورة الإلكترونية والضمان",
+  "View Order": "عرض الطلب",
+  "View": "اعرض",
+  "Back To My Account": "الرجوع إلى حسابي",
+  "reviewFormData": {
+    "reviewLabel": " رأيك في المنتج",
+    "firstName": "الاسم الاول",
+    "lastName": "الاسم الأخير",
+    "email": "البريد الإلكتروني",
+    "phoneNumber": "رقم الهاتف",
+    "submitBtnText": "ارسل رأيك"
+  },
+  "notifyModal": {
+    "heading": "المنتج غير متوفر",
+    "subHeading": "سنخطرك عندما يصبح هذا المنتج متاحًا.",
+    "inputLabel": "بريد الكتروني او هاتف",
+    "required": "مطلوب",
+    "checkboxLabel": "سجل في النشرة الإخبارية لدينا",
+    "submitbtn": "أشعرني، أعلمني، بلغني"
+  },
+
+  "noOrderNote": "ليس لديك حاليا أي طلبات. يمكنك العثور على الطلبات هنا بعد إتمام عملية الشراء.",
+  "Start shopping": "تاريخ التسليم",
+  "SelectStore": "ابدأ التسوق",
+  "dropOfDate": "اختر المتجر",
+  "pickUpDate": "تاريخ التسليم",
+  "Order Details": "تفاصيل الطلب",
+  "thanksForOrderNote": "شكرا لطلبك! تحقق من التفاصيل أدناه.",
+  "Order No": "رقم الطلب",
+  "Order Date:": "تاريخ الطلب:",
+  "Return Order": "طلب الاسترجاع",
+  "Delivery Address": "عنوان التسليم",
+  "Click & Collect Order": "اضغط واستلم الطلب",
+  "We’ve Delivered It!": "تمت عملية التسليم",
+  "Items": "العناصر",
+  "Tracking Number": "رقم تتبع الشحنة",
+  "Estimated Collection": " تاريخ الاستلام التقديري",
+  "Delivery Date": "تاريخ التسليم",
+  "Delivery": "التوصيل",
+  "Leave Review": "شاركنا رأيك",
+  "Color": "اللون",
+  "Size": "المقاس",
+  "ChooseGiftAmount": "اختر مبلغ الهدية",
+  "Quantity": "الكمية",
+  "Payment Details": "تفاصيل الدفع",
+  "Order Total": "إجمالي قيمة الطلب",
+  "Sub-Total": "الإجمالي الفرعي",
+  "sub-totalVAT": "المجموع الفرعي (شامل ضريبة القيمة المضافة)",
+  "Discount": "الخصم",
+  "Total": "الإجمالي",
+  "Enter reviews": "اترك تعليق",
+  "any items ": "ليس لديك حاليًا أي منتج  في القائمة المفضلة.",
+  "phone  number is not valid": "​​رقم الهاتف غير صحيح",
+  "Back to L’azurde": "الرجوع إلى لازوردي",
+  "Contact Us ": "اتصل بنا",
+  "lazurdeStory": "قصة لازوردي",
+  "BestSeller": "الأكثر مبيعًا",
+  "Days": "أيام",
+  "Hours": "ساعات",
+  "Minutes": "دقائق",
+  "Seconds": "ثواني",
+  "Customer Service ": "أو اتصل على رقم خدمة العملاء 800 843 3269  ",
+  "Start Shopping": "تسوق الآن",
+  "accountReviewData": {
+    "myReviewHeading": "التقييمات",
+    "yourNextReviewHeading": "مراجعتك القادمة في انتظار",
+    "myPastReviews": "تقييمي السابق",
+    "myWishlistHeading": "القائمة المفضلة"
+  },
+  "miniCartArabicData": {
+    "addToBag": "أضف الى الحقيبة",
+    "ShoppingBag": "حقيبة التسوق",
+    "YourShoppingBagIsEmpty": "حقيبة التسوق الخاصة بك فارغة",
+    "checkoutBtnText": "الدفع",
+    "totalText": "الإجمالي",
+    "viewBag": "عرض الحقيبة",
+    "signOut": "خروج",
+    "signUp": "إنشاء حساب",
+    "signIn": "تسجيل الدخول"
+  },
+  "removeAll": "حذف الكل",
+  "wishlistArabicData": {
+    "wishList": "المفضلة",
+    "emptyNote": "تألقي مع مجموعة مجوهراتك العصرية الخاصة بك,وبناء تصاميم المجوهرات الساحرة الخاصة بك وإرسال تلميحات",
+    "signOut": "خروج",
+    "signUp": "إنشاء حساب",
+    "signIn": "تسجيل الدخول"
+  },
+  "accountSideBarData": {
+    "heading": "تسجيل الدخول أو إنشاء حساب",
+    "subHeading": "عند إنشاء حسابك الخاص، ستتمكن من إجراء عملية الدفع بشكل أسرع والاطلاع على تاريخ طلباتك عبر الانترنت مع إمكانية الوصول إلى حقيبة تسوقك أو المنتجات التي قمت بحفظها من أي جهاز",
+    "accountSideBarLinks": [
+      {
+        "label": "اذهب إلى حسابي"
+      },
+      {
+        "label": "طلباتي"
+      },
+      {
+        "label": "مرتجعات"
+      },
+      {
+        "label": "ملاحظاتي"
+      },
+      {
+        "label": "قائمة امنياتي"
+      },
+      {
+        "label": "تفاصيلي"
+      },
+      {
+        "label": "العناوين المسجلة"
+      },
+      {
+        "label": "طرق الدفع"
+      },
+      {
+        "label": "بطاقات الهدايا الخاصة بي"
+      },
+      {
+        "label": "اشتراك الرسائل الإخبارية"
+      },
+      {
+        "label": "تحتاج مساعدة؟"
+      }
+    ]
+  },
+  "faqQuestion": "في انتظار استلام البريد السريع",
+  "faqAnswer": "في انتظار استلام البريد السريعفي انتظار استلام البريد السريع",
+  "statusReturnedFailed": "الحالة، غير قابل للاسترجاع",
+  "statusDelivered": " الحالة، تم التسليم",
+  "statusReturned": "الحالة، تم الاسترجاع",
+  "statusPending": "الحالة، معلقة على الاستلام من الساعي",
+  "close": "أغلقه",
+  "seeMore": "شاهد المزيد",
+  "exit": "خروج",
+  "submit": "إرسال",
+  "order": "اطلب",
+  "return": "إرجاع",
+  "commonDummyTitle": "استكشف جميع الفئات",
+  "Scheduled": "تحديد الموعد",
+  "Reschedule": "إعادة تحديد الموعد",
+  "My Returns": "مرتجعاتي",
+  "return all": "إرجاع الجميع",
+  "Returned": "تم الاسترجاع",
+  "ReturnedIt": "لقد رددناها",
+  "ReturnInitiated": "بدء العودة",
+  "PendingReturn": "في انتظار العودة",
+  "PartialReturn": "عودة جزئية",
+  "InitiatedtheReturn": "لقد بدأنا العودة",
+  "read more": "اقرأ المزيد",
+  "Need Help?": "هل تحتاج إلى مساعدة؟",
+  "Shop": "تسوق",
+  "Popular Search Terms": " المصطلحات الشائعة في البحث",
+  "Popular Search Products": "المنتجات الأكثر بحثًا",
+  "Jewelry": "المجوهرات",
+  "Rings": "الخواتم",
+  "Gold": "ذهب",
+  "Waves": "ويفز",
+  "Sort By": "ترتيب حسب",
+  "Clear All Filters": "احذف جميع العناصر",
+  "Filter": "التصفية",
+  "toLazurde Store:": "إلى متجر لازوردي",
+  "Attempted Collection:": "محاولة التسليم",
+  "Reschedule Return Date": "إعادة تحديد تاريخ الإرجاع",
+  "What would you like to return?": "ما الذي ترغب في إرجاعه؟",
+  "Voucher Applied:": "تم طبيق قسيمة الشراء",
+  "Promo Applied:": "تم تطبيق كود الخصم",
+  "Reason for Return": "سبب الاسترجاع",
+  "How do you want to return this item?": "كيف تريد إرجاع هذا المنتج؟",
+  "Courier Collection": "التسليم بواسطة ساعي البريد",
+  "CourierSubPara": "حدد موعد للاستلام من الساعي",
+  "orderReturnFailedNote": "تم إرجاع الطلب ولكن لم يتم قبوله، حيث أنه تبين في عملية الفحص أن المنتج لا يحتفظ بنفس الحالة التي تم إرسالها عليه. سيتم شحن طلبك وإرجاعه إليك إليك في غضون 10 أيام عمل مجانًا.",
+  "orderColelctionFailedNote": "اختر متجرًأ وحدد موعدًا للاستلام من المتجر.",
+  "timeFrameOutNote": "لم يتمكن الساعي من استلام الطلب المرتجع نظرًأ لعدم تواجد أحد بالمنزل. قم بتحديد موعد آخر أدناه",
+  "Store Drop-Off": "تم مرور الوقت الزمني المحدد لإرجاع الطلب الآن",
+  "storedropoffSubPara": "اختر متجرًأ وحدد موعدًا للاستلام من المتجر",
+  "Exit Returns": "عالخروج من صفحة المرتجعات",
+  "ExitDetail": "هل أنت متأكد أنك تريد الخروج من صفحة المرتجعات؟ ستفقد جميع التغييرات.",
+  "modalHeading": "تم تقديم طلب الإرجاع",
+  "pricenote": "سيتم رده إلى بطاقتك",
+  "storeDropOfModalContent": "يرجى إعادة المنتج (المنتجات) الأصلي إلى المتجر المعني في تاريخ التسليم حتى نتمكن من استكمال عملية الاسترجاع.",
+  "courierModalContent": "بعد أن يستلم الساعي المنتج الخاص بك ، قد يستغرق الأمر ما يصل إلى أسبوعين حتى نستلم مرتجعاتك. نقوم عادةً بمعالجة المرتجعات في غضون 3-5 أيام عمل بعد أن يقوم الساعي بتسليم المنتج إلى مركز المرتجعات الخاص بنا  حتى نتمكن من استكمال عملية الاسترجاع.",
+  "tabbyModalContent": "بعد أن يستلم الساعي المنتج الخاص بك ، قد يستغرق الأمر ما يصل إلى أسبوعين حتى نستلم مرتجعاتك. نقوم عادةً بمعالجة المرتجعات في غضون 3-5 أيام عمل بعد أن يقوم الساعي بتسليم المنتج إلى مركز المرتجعات الخاص بنا، حيث أنك قمت بشراء طلبك باستخدام خدمة تابي وكي نتمكن من استكمال عملية الاسترجاع.",
+  "paypalModalConten": "بعد أن يستلم الساعي المنتج الخاص بك ، قد يستغرق الأمر ما يصل إلى أسبوعين حتى نستلم مرتجعاتك. نقوم عادةً بمعالجة المرتجعات في غضون 3-5 أيام عمل بعد أن يقوم الساعي بتسليم المنتج إلى مركز المرتجعات الخاص بنا، حيث أنك قمت بشراء طلبك باستخدام خدمة باي بال وكي نتمكن من استكمال عملية الاسترجاع.",
+  "codModalContent": "بعد أن يستلم الساعي المنتج الخاص بك ، قد يستغرق الأمر ما يصل إلى أسبوعين حتى نستلم مرتجعاتك. نقوم عادةً بمعالجة المرتجعات في غضون 3-5 أيام عمل بعد أن يقوم الساعي بتسليم المنتج إلى مركز المرتجعات الخاص بنا، حتى نتمكن من استكمال عملية الاسترجاع وتستلم أموالك.",
+  "verifyEmail": "عليك التحقق من بريدك الإلكتروني قبل تسجيل الدخول",
+  "unableCreateCustomer": ".غير قادر على إنشاء العميل. يرجى المحاولة مرة أخرى في وقت لاحق",
+  "emailVerified": "تم التحقق من البريد الإلكتروني بنجاح",
+  "verificationLinkSent": "تم إرسال رابط التحقق إلى عنوان بريدك الإلكتروني. الرجاء الضغط على الرابط للتحقق من بريدك الإلكتروني ومتابعة عملية التسجيل",
+  "verificationLinkExpired": "انتهت صلاحية رابط التحقق",
+  "click": "اضغط",
+  "here": "هنا",
+  "resendVerificationEmail": ".لإعادة إرسال رسالة التحقق بالبريد الإلكتروني",
+  "invalidCredentials": ".البيانات غير صحيحة. حاول مرة اخرى",
+  "quantityExceeds": "يبدوا ان القطعة التي تريد شرائها ليست متاحة في الوقت الحالي.",
+  "oneOutOfStockNow": "يبدوا ان القطعة التي تريد شرائها ليست متاحة في الوقت الحالي.",
+  "emailDoesnotExist": "البريد الإلكتروني غير موجود. حاول مرة اخرى",
+  "manyOutOfStockNow": "هذه العناصر هي الآن من المخزون",
+  "LGDlearn": "تعرف أكثر على ألماس المختبرات",
+  "LGD": "ألماس المختبرات",
+  "learnMore": "يتعلم أكثر",
+  "shopNow": "تسوقي الآن",
+  "eterna": "إتيرنا",
+  "price": "السعر",
+
+  "SaudiGovernorate": [
+    {
+      "label": "الباحة",
+      "value": "Al-Bahah"
+    },
+    {
+      "label": "الجوف",
+      "value": "Al-Jawf"
+    },
+    {
+      "label": "القسيم",
+      "value": "Al-Qassim"
+    },
+    {
+      "label": "عسير",
+      "value": "Asir"
+    },
+    {
+      "label": "المنطقة الشرقية",
+      "value": "Eastern"
+    },
+    {
+      "label": "حائل",
+      "value": "Hail"
+    },
+    {
+      "label": "جازان",
+      "value": "Jazan"
+    },
+    {
+      "label": "المدينة",
+      "value": "Madinah"
+    },
+    {
+      "label": "مكة",
+      "value": "Makkah"
+    },
+    {
+      "label": "نجران",
+      "value": "Najran"
+    },
+    {
+      "label": "الحدود الشمالية",
+      "value": "Northern Borders"
+    },
+    {
+      "label": "الرياض",
+      "value": "Riyadh"
+    },
+    {
+      "label": "تبوك",
+      "value": "Tabuk"
+    }
+  ],
+
+  "UAEGovernorate": [
+    {
+      "label": "أبو ظبي",
+      "value": "Abu Dhabi"
+    },
+    {
+      "label": "عجمان",
+      "value": "Ajman"
+    },
+    {
+      "label": "دبي",
+      "value": "Dubai"
+    },
+    {
+      "label": "الفجيرة",
+      "value": "Fujairah"
+    },
+    {
+      "label": "الشارقة",
+      "value": "Sharjah"
+    },
+    {
+      "label": "أم القيوين",
+      "value": "Umm Al Quwain"
+    },
+    {
+      "label": "رأس الخيمة",
+      "value": "Ras Al Khaimah"
+    }
+  ],
+
+  "EgyptGovernorate": [
+    {
+      "label": "الإسكندرية",
+      "value": "Alexandria"
+    },
+    {
+      "label": "أسوان",
+      "value": "Aswan"
+    },
+    {
+      "label": "أسيوط",
+      "value": "Assiut"
+    },
+    {
+      "label": "البحيرة",
+      "value": "Beheira"
+    },
+    {
+      "label": "بني سويف",
+      "value": "Beni Suef"
+    },
+    {
+      "label": "القاهرة",
+      "value": "Cairo"
+    },
+    {
+      "label": "الدقهلية",
+      "value": "Dakahlia"
+    },
+    {
+      "label": "دمياط",
+      "value": "Damietta"
+    },
+    {
+      "label": "الفيوم",
+      "value": "Fayoum"
+    },
+    {
+      "label": "الغربية",
+      "value": "Gharbiya"
+    },
+    {
+      "label": "الجيزة",
+      "value": "Giza"
+    },
+    {
+      "label": "الإسماعيلية",
+      "value": "Ismailia"
+    },
+    {
+      "label": "كفر الشيخ",
+      "value": "Kafr Al Sheikh"
+    },
+    {
+      "label": "الأقصر",
+      "value": "Luxor"
+    },
+    {
+      "label": "مطروح",
+      "value": "Matrouh"
+    },
+    {
+      "label": "المنيا",
+      "value": "Minya"
+    },
+    {
+      "label": "المنوفية",
+      "value": "Menofia"
+    },
+    {
+      "label": "الوادي الجديد",
+      "value": "New Valley"
+    },
+    {
+      "label": "شمال سيناء",
+      "value": "North Sinai"
+    },
+    {
+      "label": "بورسعيد",
+      "value": "Port Said"
+    },
+    {
+      "label": "القليوبية",
+      "value": "Qaliubiya"
+    },
+    {
+      "label": "قنا",
+      "value": "Qena"
+    },
+    {
+      "label": "البحر الأحمر",
+      "value": "Red Sea"
+    },
+    {
+      "label": "الشرقية",
+      "value": "Sharkia"
+    },
+    {
+      "label": "سوهاج",
+      "value": "Sohag"
+    },
+    {
+      "label": "شمال سيناء",
+      "value": "South Sinai"
+    },
+    {
+      "label": "السويس",
+      "value": "Suez"
+    }
+  ],
+
+  "SaudiCityData": {
+    "Al-Bahah": [
+      {
+        "label": "الباحة",
+        "value": "Al Bahah"
+      },
+      {
+        "label": "بلجرشي",
+        "value": "Baljurashi"
+      },
+      {
+        "label": "المندق",
+        "value": "Al Mandaq"
+      },
+      {
+        "label": "المخواة",
+        "value": "Al Makhwah"
+      },
+      {
+        "label": "العقيق",
+        "value": "Al Aqiq"
+      },
+      {
+        "label": "قلوة",
+        "value": "Qilwah"
+      },
+      {
+        "label": "القرى",
+        "value": "Al Qara"
+      }
+    ],
+    "Makkah": [
+      {
+        "label": "مكة",
+        "value": "Makkah"
+      },
+      {
+        "label": "جدة",
+        "value": "Jeddah"
+      },
+      {
+        "label": "الطائف",
+        "value": "Ta'if"
+      },
+      {
+        "label": "القنفذة",
+        "value": "Al Qunfudhah"
+      },
+      {
+        "label": "القنفذة",
+        "value": "Al Qunfudhah"
+      },
+      {
+        "label": "رابغ",
+        "value": "Rabigh"
+      },
+      {
+        "label": "الجموم",
+        "value": "Al Jumum"
+      },
+      {
+        "label": "خليص",
+        "value": "Khulays"
+      },
+      {
+        "label": "الكامل",
+        "value": "Al Kamil"
+      },
+      {
+        "label": "الكرمة",
+        "value": "Al Khurmah"
+      },
+      {
+        "label": "رنية",
+        "value": "Ranyah"
+      },
+      {
+        "label": "تربة",
+        "value": "Turubah"
+      }
+    ],
+    "Riyadh": [
+      {
+        "label": "الرياض",
+        "value": "Riyadh"
+      },
+      {
+        "label": "الدرعية",
+        "value": "Diriyah"
+      },
+      {
+        "label": "الخرج",
+        "value": "Al-Kharj"
+      },
+      {
+        "label": "الدوادمي",
+        "value": "Dawadmi"
+      },
+      {
+        "label": "المجمعة",
+        "value": "Al Majma'ah"
+      },
+      {
+        "label": "القويعية",
+        "value": "Al-Quway'iyah"
+      },
+      {
+        "label": "وادي الدواسر",
+        "value": "Wadi ad-Dawasir"
+      },
+      {
+        "label": "الأفلاج",
+        "value": "Al Aflaj"
+      },
+      {
+        "label": "الزليفة",
+        "value": "Al Zulfi"
+      },
+      {
+        "label": "الشقراء",
+        "value": "Shaqraa"
+      },
+      {
+        "label": "حوطة بني تميم",
+        "value": "Hotat Bani Tamim"
+      },
+      {
+        "label": "عفيف",
+        "value": "Afif"
+      },
+      {
+        "label": "السليل",
+        "value": "As Sulayyil"
+      },
+      {
+        "label": "ضرما",
+        "value": "Dhurma"
+      },
+      {
+        "label": "المزاحمية",
+        "value": "Al-Muzahmiyya"
+      },
+      {
+        "label": "رماح",
+        "value": "Rumah"
+      },
+      {
+        "label": "ثادق",
+        "value": "Thadig"
+      },
+      {
+        "label": "حريملاء",
+        "value": "Huraymila"
+      },
+      {
+        "label": "الحريق",
+        "value": "Al Hariq"
+      },
+      {
+        "label": "الغاط",
+        "value": "Al-Ghat"
+      }
+    ],
+    "Eastern": [
+      {
+        "label": "الدمام",
+        "value": "Dammam"
+      },
+      {
+        "label": "الإحساء",
+        "value": "Al Ahsa"
+      },
+      {
+        "label": "حفر الباطن",
+        "value": "Hafar al-Batin"
+      },
+      {
+        "label": "جبيل",
+        "value": "Jubail"
+      },
+      {
+        "label": "القطيف",
+        "value": "Qatif"
+      },
+      {
+        "label": "الخبر",
+        "value": "Khobar"
+      },
+      {
+        "label": "الخفجي",
+        "value": "Khafji"
+      },
+      {
+        "label": "رأس تنورة",
+        "value": "Ras Tanura"
+      },
+      {
+        "label": "بقيق",
+        "value": "Abqaiq"
+      },
+      {
+        "label": "النعيرية",
+        "value": "Al Nairyah"
+      },
+      {
+        "label": "قرية العليا",
+        "value": "Qaryat al-Ulya"
+      }
+    ],
+    "Asir": [
+      {
+        "label": "أبها",
+        "value": "Abha"
+      },
+      {
+        "label": "خميس مشيط",
+        "value": "Khamis Mushait"
+      },
+      {
+        "label": "بيشة",
+        "value": "Bisha"
+      },
+      {
+        "label": "النماص",
+        "value": "Al-Namas"
+      },
+      {
+        "label": "محايل",
+        "value": "Muhayil"
+      },
+      {
+        "label": "سراة عبيدة",
+        "value": "Sarat Abidah"
+      },
+      {
+        "label": "تثليث",
+        "value": "Tathlith"
+      },
+      {
+        "label": "رجال",
+        "value": "Rojal"
+      },
+      {
+        "label": "أحد رفيدة",
+        "value": "Ahad Rafidah"
+      },
+      {
+        "label": "ظهران الجنوب",
+        "value": "Dhahran Al Janub"
+      },
+      {
+        "label": "بلقرن",
+        "value": "Balqarn"
+      },
+      {
+        "label": "المجاردة",
+        "value": "Al Majaridah"
+      }
+    ],
+    "Jazan": [
+      {
+        "label": "جيزان",
+        "value": "Jizan"
+      },
+      {
+        "label": "صبيا",
+        "value": "Sabya"
+      },
+      {
+        "label": "أبو عريش",
+        "value": "Abu `Arish"
+      },
+      {
+        "label": "الحرث",
+        "value": "Al Harth"
+      },
+      {
+        "label": "ضمد",
+        "value": "Damad"
+      },
+      {
+        "label": "الريث",
+        "value": "Al Reeth"
+      },
+      {
+        "label": "بيش",
+        "value": "Baish"
+      },
+      {
+        "label": "فرسان",
+        "value": "Farasan"
+      },
+      {
+        "label": "الدائر",
+        "value": "Al Dayer"
+      },
+      {
+        "label": "أحد المسارحة",
+        "value": "Ahad al Masarihah"
+      },
+      {
+        "label": "العيدابي",
+        "value": "Al Edabi"
+      },
+      {
+        "label": "العارضة",
+        "value": "Al Aridhah"
+      },
+      {
+        "label": "الدرب",
+        "value": "Al Darb"
+      }
+    ],
+    "Madinah": [
+      {
+        "label": "المدينة",
+        "value": "Madinah"
+      },
+      {
+        "label": "ينبع",
+        "value": "Yanbu"
+      },
+      {
+        "label": "العلا",
+        "value": "Al-'Ula"
+      },
+      {
+        "label": "مهد الذهب",
+        "value": "Mahd adh Dhahab"
+      },
+      {
+        "label": "بدر",
+        "value": "Badr"
+      },
+      {
+        "label": "خيبر",
+        "value": "Khaybar"
+      },
+      {
+        "label": "الحناكية",
+        "value": "Al Hinakiyah"
+      }
+    ],
+    "Al-Qassim": [
+      {
+        "label": "بريدة",
+        "value": "Buraidah"
+      },
+      {
+        "label": "عنيزة",
+        "value": "Unaizah"
+      },
+      {
+        "label": "الرس",
+        "value": "Ar Rass"
+      },
+      {
+        "label": "المذنب",
+        "value": "Al Mithnab"
+      },
+      {
+        "label": "البكيرية",
+        "value": "Al Bukayriyah"
+      },
+      {
+        "label": "البدائع",
+        "value": "Al Badayea"
+      },
+      {
+        "label": "النبهانية",
+        "value": "Al Nabhaniyah"
+      },
+      {
+        "label": "عيون الجواء",
+        "value": "Uyun AlJiwa"
+      },
+      {
+        "label": "رياض الخبراء",
+        "value": "Riyadh Al Khabra"
+      },
+      {
+        "label": "الشماسية",
+        "value": "Al Shimasiyah"
+      }
+    ],
+    "Tabuk": [
+      {
+        "label": "تبوك",
+        "value": "Tabuk"
+      },
+      {
+        "label": "الوجه",
+        "value": "Al Wajh"
+      },
+      {
+        "label": "ضبا",
+        "value": "Duba"
+      },
+      {
+        "label": "تيماء",
+        "value": "Tayma"
+      },
+      {
+        "label": "املج",
+        "value": "Umluj"
+      },
+      {
+        "label": "حقل",
+        "value": "Haql"
+      }
+    ],
+    "Hail": [
+      {
+        "label": "حائل",
+        "value": "Ha'il"
+      },
+      {
+        "label": "بقعاء",
+        "value": "Baqaa"
+      },
+      {
+        "label": "الغزالة",
+        "value": "Al Khazaiah"
+      },
+      {
+        "label": "الشنان",
+        "value": "Al Shinan"
+      }
+    ],
+    "Najran": [
+      {
+        "label": "نجران",
+        "value": "Najran"
+      },
+      {
+        "label": "شرورة",
+        "value": "Sharurah"
+      },
+      {
+        "label": "حبونا",
+        "value": "Hubuna"
+      },
+      {
+        "label": "بدر الجنوب",
+        "value": "Badr Al Janub"
+      },
+      {
+        "label": "يدمة",
+        "value": "Yadamah"
+      },
+      {
+        "label": "ثار",
+        "value": "Thar"
+      },
+      {
+        "label": "خباش",
+        "value": "Khubash"
+      },
+      {
+        "label": "الخرخير",
+        "value": "Al Kharkhir"
+      }
+    ],
+    "Al-Jawf": [
+      {
+        "label": "سكاكا",
+        "value": "Sakakah"
+      },
+      {
+        "label": "القريات",
+        "value": "Qurayyat"
+      },
+      {
+        "label": "دومة الجندل",
+        "value": "Dumat al-Jandal"
+      }
+    ],
+    "Northern Borders": [
+      {
+        "label": "عرعر",
+        "value": "Arar"
+      },
+      {
+        "label": "رفحاء",
+        "value": "Rafha"
+      },
+      {
+        "label": "طريف",
+        "value": "Turaif"
+      }
+    ],
+    "Abu Dhabi": [
+      {
+        "label": "أبو ظبي",
+        "value": "Abu Dhabi "
+      },
+      {
+        "label": "العين",
+        "value": "Al Ain "
+      },
+      {
+        "label": "مددينة زايد",
+        "value": "Madinat Zayed "
+      },
+      {
+        "label": "الرويس ",
+        "value": "Ruwais "
+      },
+      {
+        "label": "واحة ليوا",
+        "value": "Liwa Oasis "
+      },
+      {
+        "label": "غياثي",
+        "value": "Ghayathi"
+      }
+    ],
+    "Dubai": [
+      {
+        "label": "دبي",
+        "value": "Dubai"
+      },
+      {
+        "label": "​​جبل علي",
+        "value": "Jebel Ali"
+      },
+      {
+        "label": "حتا",
+        "value": "Hatta"
+      }
+    ],
+    "Sharjah": [
+      {
+        "label": "الشارقة",
+        "value": "Sharjah"
+      },
+      {
+        "label": "خور فكان",
+        "value": "Khor Fakkan"
+      },
+      {
+        "label": "كلباء",
+        "value": "Kalba"
+      },
+      {
+        "label": "الذيد",
+        "value": "Dhaid"
+      },
+      {
+        "label": "دبا الحصن",
+        "value": "Dibba Al-Hisn"
+      },
+      {
+        "label": "المدام",
+        "value": "Al Madam"
+      }
+    ],
+    "Ajman": [
+      {
+        "label": "عجمان",
+        "value": "Ajman"
+      }
+    ],
+    "Umm Al Quwain": [
+      {
+        "label": "أم القيوين",
+        "value": "Umm al-Quwain"
+      }
+    ],
+    "Ras Al Khaimah": [
+      {
+        "label": "رأس الخيمة",
+        "value": "Ras Al Khaimah"
+      },
+      {
+        "label": "الرمس",
+        "value": "Ar-Rams"
+      }
+    ],
+    "Fujairah": [
+      {
+        "label": "الفجيرة",
+        "value": "Fujairah"
+      },
+      {
+        "label": "دبا الفجيرة",
+        "value": "Dibba Al-Fujairah"
+      }
+    ],
+    "Cairo": [
+      {
+        "label": "15 مايو",
+        "value": "15th of May"
+      },
+      {
+        "label": "الازبكية",
+        "value": "Al Azbakeyah"
+      },
+      {
+        "label": "البساتين",
+        "value": "Al Basatin"
+      },
+      {
+        "label": "التبين",
+        "value": "Tebin"
+      },
+      {
+        "label": "الخليفة",
+        "value": "El-Khalifa"
+      },
+
+      {
+        "label": "الدراسة",
+        "value": "El darrasa"
+      },
+      {
+        "label": "الدرب الاحمر",
+        "value": "Aldarb Alahmar"
+      },
+      {
+        "label": "الزاوية الحمراء",
+        "value": "Zawya al-Hamra"
+      },
+
+      {
+        "label": "الزيتون",
+        "value": "El-Zaytoun"
+      },
+
+      {
+        "label": "الساحل",
+        "value": "Sahel"
+      },
+      {
+        "label": "السلام",
+        "value": "El Salam"
+      },
+      {
+        "label": "السيدة زينب",
+        "value": "Sayeda Zeinab"
+      },
+      {
+        "label": "الشرابية",
+        "value": "El Sharabeya"
+      },
+
+      {
+        "label": "مدينة الشروق",
+        "value": "Shorouk"
+      },
+
+      {
+        "label": "الظاهر",
+        "value": "El Daher"
+      },
+      {
+        "label": "العتبة",
+        "value": "Ataba"
+      },
+      {
+        "label": "القاهرة الجديدة",
+        "value": "New Cairo"
+      },
+      {
+        "label": "المرج",
+        "value": "El Marg"
+      },
+      {
+        "label": "عزبة النخل",
+        "value": "Ezbet el Nakhl"
+      },
+      {
+        "label": "المطرية",
+        "value": "Matareya"
+      },
+
+      {
+        "label": "المعادى",
+        "value": "Maadi"
+      },
+
+      {
+        "label": "المعصرة",
+        "value": "Maasara"
+      },
+
+      {
+        "label": "المقطم",
+        "value": "Mokattam"
+      },
+      {
+        "label": "المنيل",
+        "value": "Manyal"
+      },
+
+      {
+        "label": "الموسكى",
+        "value": "Mosky"
+      },
+
+      {
+        "label": "النزهة",
+        "value": "Nozha"
+      },
+
+      {
+        "label": "الوايلى",
+        "value": "Waily"
+      },
+      {
+        "label": "باب الشعرية",
+        "value": "Bab al-Shereia"
+      },
+      {
+        "label": "بولاق",
+        "value": "Bolaq"
+      },
+      {
+        "label": "جاردن سيتى",
+        "value": "Garden City"
+      },
+      {
+        "label": "حدائق القبة",
+        "value": "Hadayek El-Kobba"
+      },
+      {
+        "label": "حلوان",
+        "value": "Helwan"
+      },
+      {
+        "label": "دار السلام",
+        "value": "Dar Al Salam"
+      },
+      {
+        "label": "شبرا",
+        "value": "Shubra"
+      },
+
+      {
+        "label": "طره",
+        "value": "Tura"
+      },
+      {
+        "label": "عابدين",
+        "value": "Abdeen"
+      },
+      {
+        "label": "عباسية",
+        "value": "Abaseya"
+      },
+      {
+        "label": "عين شمس",
+        "value": "Ain Shams"
+      },
+      {
+        "label": "مدينة نصر",
+        "value": "Nasr City"
+      },
+
+      {
+        "label": "مصر الجديدة",
+        "value": "New Heliopolis"
+      },
+      {
+        "label": "مصر القديمة",
+        "value": "Masr Al Qadima"
+      },
+      {
+        "label": "منشية ناصر",
+        "value": "Mansheya Nasir"
+      },
+      {
+        "label": "مدينة بدر",
+        "value": "Badr City"
+      },
+      {
+        "label": "مدينة العبور",
+        "value": "Obour City"
+      },
+      {
+        "label": "وسط البلد",
+        "value": "Cairo Downtown"
+      },
+      {
+        "label": "الزمالك",
+        "value": "Zamalek"
+      },
+      {
+        "label": "قصر النيل",
+        "value": "Kasr El Nile"
+      },
+      {
+        "label": "الرحاب",
+        "value": "Rehab"
+      },
+      {
+        "label": "القطامية",
+        "value": "Katameya"
+      },
+      {
+        "label": "مدينتي",
+        "value": "Madinty"
+      },
+      {
+        "label": "روض الفرج",
+        "value": "Rod Alfarag"
+      },
+
+      {
+        "label": "شيراتون",
+        "value": "Sheraton"
+      },
+
+      {
+        "label": "الجمالية",
+        "value": "El-Gamaleya"
+      },
+      {
+        "label": "العاشر من رمضان",
+        "value": "10th of Ramadan City"
+      },
+      {
+        "label": "الحلمية",
+        "value": "Helmeyat Alzaytoun"
+      },
+      {
+        "label": "النزهة الجديدة",
+        "value": "New Nozha"
+      },
+
+      {
+        "label": "العاصمة الإدارية",
+        "value": "Capital New"
+      }
+    ],
+    "Giza": [
+      {
+        "label": "الجيزة",
+        "value": "Giza"
+      },
+      {
+        "label": "السادس من أكتوبر",
+        "value": "Sixth of October"
+      },
+      {
+        "label": "الشيخ زايد",
+        "value": "Cheikh Zayed"
+      },
+      {
+        "label": "الحوامدية",
+        "value": "Hawamdiyah"
+      },
+      {
+        "label": "البدرشين",
+        "value": "Al Badrasheen"
+      },
+      {
+        "label": "الصف",
+        "value": "Saf"
+      },
+      {
+        "label": "أطفيح",
+        "value": "Atfih"
+      },
+      {
+        "label": "العياط",
+        "value": "Al Ayat"
+      },
+      {
+        "label": "الباويطي",
+        "value": "Al-Bawaiti"
+      },
+      {
+        "label": "منشأة القناطر",
+        "value": "ManshiyetAl Qanater"
+      },
+
+      {
+        "label": "أوسيم",
+        "value": "Oaseem"
+      },
+
+      {
+        "label": "كرداسة",
+        "value": "Kerdasa"
+      },
+      {
+        "label": "أبو النمرس",
+        "value": "Abu Nomros"
+      },
+      {
+        "label": "كفر غطاطي",
+        "value": "Kafr Ghati"
+      },
+      {
+        "label": "منشأة البكاري",
+        "value": "Manshiyet Al Bakari"
+      },
+      {
+        "label": "الدقى",
+        "value": "Dokki"
+      },
+      {
+        "label": "العجوزة",
+        "value": "Agouza"
+      },
+      {
+        "label": "الهرم",
+        "value": "Haram"
+      },
+      {
+        "label": "الوراق",
+        "value": "Warraq"
+      },
+      {
+        "label": "امبابة",
+        "value": "Imbaba"
+      },
+      {
+        "label": "بولاق الدكرور",
+        "value": "Boulaq Dakrour"
+      },
+      {
+        "label": "الواحات البحرية",
+        "value": "Al Wahat Al Baharia"
+      },
+      {
+        "label": "العمرانية",
+        "value": "Omraneya"
+      },
+      {
+        "label": "المنيب",
+        "value": "Moneeb"
+      },
+      {
+        "label": "بين السرايات",
+        "value": "Bin Alsarayat"
+      },
+      {
+        "label": "الكيت كات",
+        "value": "Kit Kat"
+      },
+      {
+        "label": "المهندسين",
+        "value": "Mohandessin"
+      },
+      {
+        "label": "فيصل",
+        "value": "Faisal"
+      },
+      {
+        "label": "أبو رواش",
+        "value": "Abu Rawash"
+      },
+
+      {
+        "label": "حدائق الأهرام",
+        "value": "Hadayek Alahram"
+      },
+      {
+        "label": "الحرانية",
+        "value": "Haraneya"
+      },
+      {
+        "label": "حدائق اكتوبر",
+        "value": "Hadayek October"
+      },
+      {
+        "label": "صفط اللبن",
+        "value": "Saft Allaban"
+      },
+      {
+        "label": "القرية الذكية",
+        "value": "Smart Village"
+      },
+      {
+        "label": "ارض اللواء",
+        "value": "Ard Ellwaa"
+      }
+    ],
+    "Alexandria": [
+      {
+        "label": "ابو قير",
+        "value": "Abu Qir"
+      },
+      {
+        "label": "الابراهيمية",
+        "value": "Al Ibrahimeyah"
+      },
+      {
+        "label": "الأزاريطة",
+        "value": "Azarita"
+      },
+      {
+        "label": "الانفوشى",
+        "value": "Anfoushi"
+      },
+      {
+        "label": "الدخيلة",
+        "value": "Dekheila"
+      },
+      {
+        "label": "السيوف",
+        "value": "El Soyof"
+      },
+      {
+        "label": "العامرية",
+        "value": "Ameria"
+      },
+      {
+        "label": "اللبان",
+        "value": "El Labban"
+      },
+      {
+        "label": "المفروزة",
+        "value": "Al Mafrouza"
+      },
+      {
+        "label": "المنتزه",
+        "value": "El Montaza"
+      },
+      {
+        "label": "المنشية",
+        "value": "Mansheya"
+      },
+      {
+        "label": "الناصرية",
+        "value": "Naseria"
+      },
+      {
+        "label": "امبروزو",
+        "value": "Ambrozo"
+      },
+      {
+        "label": "باب شرق",
+        "value": "Bab Sharq"
+      },
+      {
+        "label": "برج العرب",
+        "value": "Bourj Alarab"
+      },
+      {
+        "label": "ستانلى",
+        "value": "Stanley"
+      },
+      {
+        "label": "سموحة",
+        "value": "Smouha"
+      },
+      {
+        "label": "سيدى بشر",
+        "value": "Sidi Bishr"
+      },
+      {
+        "label": "شدس",
+        "value": "Shads"
+      },
+      {
+        "label": "غيط العنب",
+        "value": "Gheet Alenab"
+      },
+      {
+        "label": "فلمينج",
+        "value": "Fleming"
+      },
+      {
+        "label": "فيكتوريا",
+        "value": "Victoria"
+      },
+      {
+        "label": "كامب شيزار",
+        "value": "Camp Shizar"
+      },
+      {
+        "label": "كرموز",
+        "value": "Karmooz"
+      },
+      {
+        "label": "محطة الرمل",
+        "value": "Mahta Alraml"
+      },
+      {
+        "label": "مينا البصل",
+        "value": "Mina El-Basal"
+      },
+      {
+        "label": "العصافرة",
+        "value": "Asafra"
+      },
+      {
+        "label": "العجمي",
+        "value": "Agamy"
+      },
+      {
+        "label": "بكوس",
+        "value": "Bakos"
+      },
+      {
+        "label": "بولكلي",
+        "value": "Boulkly"
+      },
+      {
+        "label": "كليوباترا",
+        "value": "Cleopatra"
+      },
+      {
+        "label": "جليم",
+        "value": "Glim"
+      },
+      {
+        "label": "المعمورة",
+        "value": "Al Mamurah"
+      },
+      {
+        "label": "المندرة",
+        "value": "Al Mandara"
+      },
+      {
+        "label": "محرم بك",
+        "value": "Moharam Bek"
+      },
+      {
+        "label": "الشاطبي",
+        "value": "Elshatby"
+      },
+      {
+        "label": "سيدي جابر",
+        "value": "Sidi Gaber"
+      },
+      {
+        "label": "الساحل الشمالي",
+        "value": "North Coast/sahel"
+      },
+      {
+        "label": "الحضرة",
+        "value": "Alhadra"
+      },
+      {
+        "label": "العطارين",
+        "value": "Alattarin"
+      },
+      {
+        "label": "سيدي كرير",
+        "value": "Sidi Kerir"
+      },
+      {
+        "label": "الجمرك",
+        "value": "Elgomrok"
+      },
+      {
+        "label": "المكس",
+        "value": "Al Max"
+      },
+      {
+        "label": "مارينا",
+        "value": "Marina"
+      }
+    ],
+    "Dakahlia": [
+      {
+        "label": "المنصورة",
+        "value": "Mansoura"
+      },
+      {
+        "label": "طلخا",
+        "value": "Talkha"
+      },
+      {
+        "label": "ميت غمر",
+        "value": "Mitt Ghamr"
+      },
+      {
+        "label": "دكرنس",
+        "value": "Dekernes"
+      },
+      {
+        "label": "أجا",
+        "value": "Aga"
+      },
+      {
+        "label": "منية النصر",
+        "value": "Menia El Nasr"
+      },
+      {
+        "label": "السنبلاوين",
+        "value": "Sinbillawin"
+      },
+      {
+        "label": "الكردي",
+        "value": "El Kurdi"
+      },
+      {
+        "label": "بني عبيد",
+        "value": "Bani Ubaid"
+      },
+      {
+        "label": "المنزلة",
+        "value": "Al Manzala"
+      },
+      {
+        "label": "تمي الأمديد",
+        "value": "Tami al'amdid"
+      },
+      {
+        "label": "الجمالية",
+        "value": "Aljamalia"
+      },
+      {
+        "label": "شربين",
+        "value": "Sherbin"
+      },
+      {
+        "label": "المطرية",
+        "value": "Mataria"
+      },
+      {
+        "label": "بلقاس",
+        "value": "Belqas"
+      },
+      {
+        "label": "ميت سلسيل",
+        "value": "Meet Salsil"
+      },
+      {
+        "label": "جمصة",
+        "value": "Gamasa"
+      },
+      {
+        "label": "محلة دمنة",
+        "value": "Mahalat Damana"
+      },
+      {
+        "label": "نبروه",
+        "value": "Nabroh"
+      }
+    ],
+    "Red Sea": [
+      {
+        "label": "الغردقة",
+        "value": "Hurghada"
+      },
+      {
+        "label": "رأس غارب",
+        "value": "Ras Ghareb"
+      },
+      {
+        "label": "سفاجا",
+        "value": "Safaga"
+      },
+      {
+        "label": "القصير",
+        "value": "El Qusiar"
+      },
+      {
+        "label": "مرسى علم",
+        "value": "Marsa Alam"
+      },
+      {
+        "label": "الشلاتين",
+        "value": "Shalatin"
+      },
+      {
+        "label": "حلايب",
+        "value": "Halaib"
+      },
+      {
+        "label": "الدهار",
+        "value": "Aldahar"
+      }
+    ],
+    "Beheira": [
+      {
+        "label": "دمنهور",
+        "value": "Damanhour"
+      },
+      {
+        "label": "كفر الدوار",
+        "value": "Kafr El Dawar"
+      },
+      {
+        "label": "رشيد",
+        "value": "Rashid"
+      },
+      {
+        "label": "إدكو",
+        "value": "Edco"
+      },
+      {
+        "label": "أبو المطامير",
+        "value": "Abu al-Matamir"
+      },
+      {
+        "label": "أبو حمص",
+        "value": "Abu Homs"
+      },
+      {
+        "label": "الدلنجات",
+        "value": "Delengat"
+      },
+      {
+        "label": "المحمودية",
+        "value": "Mahmoudiyah"
+      },
+      {
+        "label": "الرحمانية",
+        "value": "Rahmaniyah"
+      },
+      {
+        "label": "إيتاي البارود",
+        "value": "Itai Baroud"
+      },
+      {
+        "label": "حوش عيسى",
+        "value": "Housh Eissa"
+      },
+      {
+        "label": "شبراخيت",
+        "value": "Shubrakhit"
+      },
+      {
+        "label": "كوم حمادة",
+        "value": "Kom Hamada"
+      },
+      {
+        "label": "بدر",
+        "value": "Badr"
+      },
+      {
+        "label": "وادي النطرون",
+        "value": "Wadi Natrun"
+      },
+      {
+        "label": "النوبارية الجديدة",
+        "value": "New Nubaria"
+      },
+      {
+        "label": "النوبارية",
+        "value": "Alnoubareya"
+      }
+    ],
+    "Fayoum": [
+      {
+        "label": "الفيوم",
+        "value": "Fayoum"
+      },
+      {
+        "label": "الفيوم الجديدة",
+        "value": "Fayoum El Gedida"
+      },
+      {
+        "label": "طامية",
+        "value": "Tamiya"
+      },
+      {
+        "label": "سنورس",
+        "value": "Snores"
+      },
+      {
+        "label": "إطسا",
+        "value": "Etsa"
+      },
+      {
+        "label": "إبشواي",
+        "value": "Epschway"
+      },
+      {
+        "label": "يوسف الصديق",
+        "value": "Yusuf El Sediaq"
+      },
+      {
+        "label": "الحادقة",
+        "value": "Hadqa"
+      },
+      {
+        "label": "اطسا",
+        "value": "Atsa"
+      },
+      {
+        "label": "الجامعة",
+        "value": "Algamaa"
+      },
+      {
+        "label": "السيالة",
+        "value": "Sayala"
+      }
+    ],
+    "Gharbiya": [
+      {
+        "label": "طنطا",
+        "value": "Tanta"
+      },
+      {
+        "label": "المحلة الكبرى",
+        "value": "Al Mahalla Al Kobra"
+      },
+      {
+        "label": "كفر الزيات",
+        "value": "Kafr El Zayat"
+      },
+      {
+        "label": "زفتى",
+        "value": "Zefta"
+      },
+      {
+        "label": "السنطة",
+        "value": "El Santa"
+      },
+      {
+        "label": "قطور",
+        "value": "Qutour"
+      },
+      {
+        "label": "بسيون",
+        "value": "Basion"
+      },
+      {
+        "label": "سمنود",
+        "value": "Samannoud"
+      }
+    ],
+    "Ismailia": [
+      {
+        "label": "الإسماعيلية",
+        "value": "Ismailia"
+      },
+      {
+        "label": "فايد",
+        "value": "Fayed"
+      },
+      {
+        "label": "القنطرة شرق",
+        "value": "Qantara Sharq"
+      },
+      {
+        "label": "القنطرة غرب",
+        "value": "Qantara Gharb"
+      },
+      {
+        "label": "التل الكبير",
+        "value": "El Tal El Kabier"
+      },
+      {
+        "label": "أبو صوير",
+        "value": "Abu Sawir"
+      },
+      {
+        "label": "القصاصين الجديدة",
+        "value": "Kasasien El Gedida"
+      },
+      {
+        "label": "نفيشة",
+        "value": "Nefesha"
+      },
+      {
+        "label": "الشيخ زايد",
+        "value": "Sheikh Zayed"
+      }
+    ],
+    "Menofia": [
+      {
+        "label": "شبين الكوم",
+        "value": "Shbeen El Koom"
+      },
+      {
+        "label": "مدينة السادات",
+        "value": "Sadat City"
+      },
+      {
+        "label": "منوف",
+        "value": "Menouf"
+      },
+      {
+        "label": "سرس الليان",
+        "value": "Sars El-Layan"
+      },
+      {
+        "label": "أشمون",
+        "value": "Ashmon"
+      },
+      {
+        "label": "الباجور",
+        "value": "Al Bagor"
+      },
+      {
+        "label": "قويسنا",
+        "value": "Quesna"
+      },
+      {
+        "label": "بركة السبع",
+        "value": "Berkat El Saba"
+      },
+      {
+        "label": "تلا",
+        "value": "Tala"
+      },
+      {
+        "label": "الشهداء",
+        "value": "Al Shohada"
+      }
+    ],
+    "Minya": [
+      {
+        "label": "المنيا",
+        "value": "Minya"
+      },
+      {
+        "label": "المنيا الجديدة",
+        "value": "Minya El Gedida"
+      },
+      {
+        "label": "العدوة",
+        "value": "El Adwa"
+      },
+      {
+        "label": "مغاغة",
+        "value": "Magagha"
+      },
+      {
+        "label": "بني مزار",
+        "value": "Bani Mazar"
+      },
+      {
+        "label": "مطاي",
+        "value": "Mattay"
+      },
+      {
+        "label": "سمالوط",
+        "value": "Samalut"
+      },
+      {
+        "label": "المدينة الفكرية",
+        "value": "Madinat El Fekria"
+      },
+      {
+        "label": "ملوي",
+        "value": "Meloy"
+      },
+      {
+        "label": "دير مواس",
+        "value": "Deir Mawas"
+      },
+      {
+        "label": "ابو قرقاص",
+        "value": "Abu Qurqas"
+      },
+      {
+        "label": "ارض سلطان",
+        "value": "Ard Sultan"
+      }
+    ],
+    "Qaliubiya": [
+      {
+        "label": "بنها",
+        "value": "Banha"
+      },
+      {
+        "label": "قليوب",
+        "value": "Qalyub"
+      },
+      {
+        "label": "شبرا الخيمة",
+        "value": "Shubra Al Khaimah"
+      },
+      {
+        "label": "القناطر الخيرية",
+        "value": "Al Qanater Charity"
+      },
+      {
+        "label": "الخانكة",
+        "value": "Khanka"
+      },
+      {
+        "label": "كفر شكر",
+        "value": "Kafr Shukr"
+      },
+      {
+        "label": "طوخ",
+        "value": "Tukh"
+      },
+      {
+        "label": "قها",
+        "value": "Qaha"
+      },
+      {
+        "label": "العبور",
+        "value": "Obour"
+      },
+      {
+        "label": "الخصوص",
+        "value": "Khosous"
+      },
+      {
+        "label": "شبين القناطر",
+        "value": "Shibin Al Qanater"
+      },
+      {
+        "label": "مسطرد",
+        "value": "Mostorod"
+      }
+    ],
+    "New Valley": [
+      {
+        "label": "الخارجة",
+        "value": "El Kharga"
+      },
+      {
+        "label": "باريس",
+        "value": "Paris"
+      },
+      {
+        "label": "موط",
+        "value": "Mout"
+      },
+      {
+        "label": "الفرافرة",
+        "value": "Farafra"
+      },
+      {
+        "label": "بلاط",
+        "value": "Balat"
+      },
+      {
+        "label": "الداخلة",
+        "value": "Dakhla"
+      }
+    ],
+    "Suez": [
+      {
+        "label": "السويس",
+        "value": "Suez"
+      },
+      {
+        "label": "الجناين",
+        "value": "Alganayen"
+      },
+      {
+        "label": "عتاقة",
+        "value": "Ataqah"
+      },
+      {
+        "label": "العين السخنة",
+        "value": "Ain Sokhna"
+      },
+      {
+        "label": "فيصل",
+        "value": "Faysal"
+      }
+    ],
+    "Aswan": [
+      {
+        "label": "أسوان",
+        "value": "Aswan"
+      },
+      {
+        "label": "أسوان الجديدة",
+        "value": "Aswan El Gedida"
+      },
+      {
+        "label": "دراو",
+        "value": "Drau"
+      },
+      {
+        "label": "كوم أمبو",
+        "value": "Kom Ombo"
+      },
+      {
+        "label": "نصر النوبة",
+        "value": "Nasr Al Nuba"
+      },
+      {
+        "label": "كلابشة",
+        "value": "Kalabsha"
+      },
+      {
+        "label": "إدفو",
+        "value": "Edfu"
+      },
+      {
+        "label": "الرديسية",
+        "value": "Al-Radisiyah"
+      },
+      {
+        "label": "البصيلية",
+        "value": "Al Basilia"
+      },
+      {
+        "label": "السباعية",
+        "value": "Al Sibaeia"
+      },
+      {
+        "label": "ابوسمبل السياحية",
+        "value": "Abo Simbl Al Siyahia"
+      },
+      {
+        "label": "مرسى علم",
+        "value": "Marsa Alam"
+      }
+    ],
+    "Assiut": [
+      {
+        "label": "أسيوط",
+        "value": "Assiut"
+      },
+      {
+        "label": "أسيوط الجديدة",
+        "value": "Assiut El Gedida"
+      },
+      {
+        "label": "ديروط",
+        "value": "Dayrout"
+      },
+      {
+        "label": "منفلوط",
+        "value": "Manfalut"
+      },
+      {
+        "label": "القوصية",
+        "value": "Qusiya"
+      },
+      {
+        "label": "أبنوب",
+        "value": "Abnoub"
+      },
+      {
+        "label": "أبو تيج",
+        "value": "Abu Tig"
+      },
+      {
+        "label": "الغنايم",
+        "value": "El Ghanaim"
+      },
+      {
+        "label": "ساحل سليم",
+        "value": "Sahel Selim"
+      },
+      {
+        "label": "البداري",
+        "value": "El Badari"
+      },
+      {
+        "label": "صدفا",
+        "value": "Sidfa"
+      }
+    ],
+    "Beni Suef": [
+      {
+        "label": "بني سويف",
+        "value": "Bani Sweif"
+      },
+      {
+        "label": "بني سويف الجديدة",
+        "value": "Beni Suef El Gedida"
+      },
+      {
+        "label": "الواسطى",
+        "value": "Al Wasta"
+      },
+      {
+        "label": "ناصر",
+        "value": "Naser"
+      },
+      {
+        "label": "إهناسيا",
+        "value": "Ehnasia"
+      },
+      {
+        "label": "ببا",
+        "value": "Beba"
+      },
+      {
+        "label": "الفشن",
+        "value": "Fashn"
+      },
+      {
+        "label": "سمسطا",
+        "value": "Somasta"
+      },
+      {
+        "label": "الاباصيرى",
+        "value": "Alabbaseri"
+      },
+      {
+        "label": "مقبل",
+        "value": "Mokbel"
+      }
+    ],
+    "Port Said": [
+      {
+        "label": "بورسعيد",
+        "value": "PorSaid"
+      },
+      {
+        "label": "بورفؤاد",
+        "value": "Port Fouad"
+      },
+      {
+        "label": "العرب",
+        "value": "Alarab"
+      },
+      {
+        "label": "حى الزهور",
+        "value": "Zohour"
+      },
+      {
+        "label": "حى الشرق",
+        "value": "Alsharq"
+      },
+      {
+        "label": "حى الضواحى",
+        "value": "Aldawahi"
+      },
+      {
+        "label": "حى المناخ",
+        "value": "Almanakh"
+      },
+      {
+        "label": "حى مبارك",
+        "value": "Mubarak"
+      }
+    ],
+    "Damietta": [
+      {
+        "label": "دمياط",
+        "value": "Damietta"
+      },
+      {
+        "label": "دمياط الجديدة",
+        "value": "New Damietta"
+      },
+      {
+        "label": "رأس البر",
+        "value": "Ras El Bar"
+      },
+      {
+        "label": "فارسكور",
+        "value": "Faraskour"
+      },
+      {
+        "label": "الزرقا",
+        "value": "Zarqa"
+      },
+      {
+        "label": "السرو",
+        "value": "Alsaru"
+      },
+      {
+        "label": "الروضة",
+        "value": "Alruwda"
+      },
+      {
+        "label": "كفر البطيخ",
+        "value": "Kafr El-Batikh"
+      },
+      {
+        "label": "عزبة البرج",
+        "value": "Azbet Al Burg"
+      },
+      {
+        "label": "ميت أبو غالب",
+        "value": "Meet Abou Ghalib"
+      },
+      {
+        "label": "كفر سعد",
+        "value": "Kafr Saad"
+      }
+    ],
+    "Sharkia": [
+      {
+        "label": "الزقازيق",
+        "value": "Zagazig"
+      },
+      {
+        "label": "العاشر من رمضان",
+        "value": "Al Ashr Men Ramadan"
+      },
+      {
+        "label": "منيا القمح",
+        "value": "Minya Al Qamh"
+      },
+      {
+        "label": "بلبيس",
+        "value": "Belbeis"
+      },
+      {
+        "label": "مشتول السوق",
+        "value": "Mashtoul El Souq"
+      },
+      {
+        "label": "القنايات",
+        "value": "Qenaiat"
+      },
+      {
+        "label": "أبو حماد",
+        "value": "Abu Hammad"
+      },
+      {
+        "label": "القرين",
+        "value": "El Qurain"
+      },
+      {
+        "label": "ههيا",
+        "value": "Hehia"
+      },
+      {
+        "label": "أبو كبير",
+        "value": "Abu Kabir"
+      },
+      {
+        "label": "فاقوس",
+        "value": "Faccus"
+      },
+      {
+        "label": "الصالحية الجديدة",
+        "value": "El Salihia El Gedida"
+      },
+      {
+        "label": "الإبراهيمية",
+        "value": "Al Ibrahimiyah"
+      },
+      {
+        "label": "ديرب نجم",
+        "value": "Deirb Negm"
+      },
+      {
+        "label": "كفر صقر",
+        "value": "Kafr Saqr"
+      },
+      {
+        "label": "أولاد صقر",
+        "value": "Awlad Saqr"
+      },
+      {
+        "label": "الحسينية",
+        "value": "Husseiniya"
+      },
+      {
+        "label": "صان الحجر القبلية",
+        "value": "San Alhajar Alqablia"
+      },
+      {
+        "label": "منشأة أبو عمر",
+        "value": "Manshayat Abu Omar"
+      }
+    ],
+    "South Sinai": [
+      {
+        "label": "الطور",
+        "value": "Al Toor"
+      },
+      {
+        "label": "شرم الشيخ",
+        "value": "Sharm El-Shaikh"
+      },
+      {
+        "label": "دهب",
+        "value": "Dahab"
+      },
+      {
+        "label": "نويبع",
+        "value": "Nuweiba"
+      },
+      {
+        "label": "طابا",
+        "value": "Taba"
+      },
+      {
+        "label": "سانت كاترين",
+        "value": "Saint Catherine"
+      },
+      {
+        "label": "أبو رديس",
+        "value": "Abu Redis"
+      },
+      {
+        "label": "أبو زنيمة",
+        "value": "Abu Zenaima"
+      },
+      {
+        "label": "رأس سدر",
+        "value": "Ras Sidr"
+      }
+    ],
+    "Kafr Al Sheikh": [
+      {
+        "label": "كفر الشيخ",
+        "value": "Kafr El Sheikh"
+      },
+      {
+        "label": "وسط البلد كفر الشيخ",
+        "value": "Kafr El Sheikh Downtown"
+      },
+      {
+        "label": "دسوق",
+        "value": "Desouq"
+      },
+      {
+        "label": "فوه",
+        "value": "Fooh"
+      },
+      {
+        "label": "مطوبس",
+        "value": "Metobas"
+      },
+      {
+        "label": "برج البرلس",
+        "value": "Burg Al Burullus"
+      },
+      {
+        "label": "بلطيم",
+        "value": "Baltim"
+      },
+      {
+        "label": "مصيف بلطيم",
+        "value": "Masief Baltim"
+      },
+      {
+        "label": "الحامول",
+        "value": "Hamol"
+      },
+      {
+        "label": "بيلا",
+        "value": "Bella"
+      },
+      {
+        "label": "الرياض",
+        "value": "Riyadh"
+      },
+      {
+        "label": "سيدي سالم",
+        "value": "Sidi Salm"
+      },
+      {
+        "label": "قلين",
+        "value": "Qellen"
+      },
+      {
+        "label": "سيدي غازي",
+        "value": "Sidi Ghazi"
+      }
+    ],
+    "Matrouh": [
+      {
+        "label": "مرسى مطروح",
+        "value": "Marsa Matrouh"
+      },
+      {
+        "label": "الحمام",
+        "value": "El Hamam"
+      },
+      {
+        "label": "العلمين",
+        "value": "Alamein"
+      },
+      {
+        "label": "الضبعة",
+        "value": "Dabaa"
+      },
+      {
+        "label": "النجيلة",
+        "value": "Al-Nagila"
+      },
+      {
+        "label": "سيدي براني",
+        "value": "Sidi Brani"
+      },
+      {
+        "label": "السلوم",
+        "value": "Salloum"
+      },
+      {
+        "label": "سيوة",
+        "value": "Siwa"
+      },
+      {
+        "label": "مارينا",
+        "value": "Marina"
+      },
+      {
+        "label": "الساحل الشمالى",
+        "value": "North Coast"
+      }
+    ],
+    "Luxor": [
+      {
+        "label": "الأقصر الجديدة",
+        "value": "Luxor"
+      },
+      {
+        "label": "الأقصر الجديدة",
+        "value": "New Luxor"
+      },
+      {
+        "label": "إسنا",
+        "value": "Esna"
+      },
+      {
+        "label": "طيبة الجديدة",
+        "value": "New Tiba"
+      },
+      {
+        "label": "الزينية",
+        "value": "Al Ziynia"
+      },
+      {
+        "label": "البياضية",
+        "value": "Al Bayadieh"
+      },
+      {
+        "label": "القرنة",
+        "value": "Al Qarna"
+      },
+      {
+        "label": "أرمنت",
+        "value": "Armant"
+      },
+      {
+        "label": "الطود",
+        "value": "Al Tud"
+      }
+    ],
+    "Qena": [
+      {
+        "label": "قنا",
+        "value": "Qena"
+      },
+      {
+        "label": "قنا الجديدة",
+        "value": "New Qena"
+      },
+      {
+        "label": "ابو طشت",
+        "value": "Abu Tesht"
+      },
+      {
+        "label": "نجع حمادي",
+        "value": "Nag Hammadi"
+      },
+      {
+        "label": "دشنا",
+        "value": "Deshna"
+      },
+      {
+        "label": "الوقف",
+        "value": "Alwaqf"
+      },
+      {
+        "label": "قفط",
+        "value": "Qaft"
+      },
+      {
+        "label": "نقادة",
+        "value": "Naqada"
+      },
+      {
+        "label": "فرشوط",
+        "value": "Farshout"
+      },
+      {
+        "label": "قوص",
+        "value": "Quos"
+      }
+    ],
+    "North Sinai": [
+      {
+        "label": "العريش",
+        "value": "Arish"
+      },
+      {
+        "label": "الشيخ زويد",
+        "value": "Sheikh Zowaid"
+      },
+      {
+        "label": "نخل",
+        "value": "Nakhl"
+      },
+      {
+        "label": "رفح",
+        "value": "Rafah"
+      },
+      {
+        "label": "بئر العبد",
+        "value": "Bir al-Abed"
+      },
+      {
+        "label": "الحسنة",
+        "value": "Al Hasana"
+      }
+    ],
+    "Sohag": [
+      {
+        "label": "سوهاج",
+        "value": "Sohag"
+      },
+      {
+        "label": "سوهاج الجديدة",
+        "value": "Sohag El Gedida"
+      },
+      {
+        "label": "أخميم",
+        "value": "Akhmeem"
+      },
+      {
+        "label": "أخميم الجديدة",
+        "value": "Akhmim El Gedida"
+      },
+      {
+        "label": "البلينا",
+        "value": "Albalina"
+      },
+      {
+        "label": "المراغة",
+        "value": "El Maragha"
+      },
+      {
+        "label": "المنشأة",
+        "value": "Almunsha'a"
+      },
+      {
+        "label": "دار السلام",
+        "value": "Dar AISalaam"
+      },
+      {
+        "label": "جرجا",
+        "value": "Gerga"
+      },
+      {
+        "label": "جهينة الغربية",
+        "value": "Jahina Al Gharbia"
+      },
+      {
+        "label": "ساقلته",
+        "value": "Saqilatuh"
+      },
+      {
+        "label": "طما",
+        "value": "Tama"
+      },
+      {
+        "label": "طهطا",
+        "value": "Tahta"
+      },
+      {
+        "label": "الكوثر",
+        "value": "Alkawthar"
+      }
+    ]
+  },
+  "signUpFormFields": [
+    {
+      "label": "الصفة",
+      "name": "title",
+      "type": "select",
+      "dropdown": true,
+      "masked": false,
+      "hasIcon": false
+    },
+    {
+      "label": "الاسم الأول",
+      "name": "fName",
+      "type": "text",
+      "placeholder": "",
+      "dropdown": false,
+      "masked": false,
+      "hasIcon": false
+    },
+    {
+      "label": "الاسم الأخير",
+      "name": "lName",
+      "type": "text",
+      "placeholder": "",
+      "dropdown": false,
+      "masked": false,
+      "hasIcon": false
+    },
+    {
+      "label": "تاريخ الميلاد",
+      "name": "dob",
+      "type": "date",
+      "placeholder": "11-16-96",
+      "dropdown": false,
+      "masked": false,
+      "hasIcon": true,
+      "icon": "calendar"
+    },
+    {
+      "label": "رقم الهاتف",
+      "name": "phoneNumber",
+      "type": "number",
+      "placeholder": "",
+      "dropdown": false,
+      "masked": false
+    },
+    {
+      "label": "البريد الإلكتروني",
+      "name": "email",
+      "type": "email",
+      "placeholder": "jane@gmail.com",
+      "dropdown": false,
+      "masked": false
+    },
+    {
+      "label": "الرقم السري",
+      "name": "password",
+      "type": "password",
+      "placeholder": "••••••••••••",
+      "dropdown": false,
+      "masked": false,
+      "hasIcon": true,
+      "icon": "password",
+      "onIconClick": true
+    },
+    {
+      "label": "تأكيد كلمة المرور",
+      "name": "confirmPassword",
+      "type": "password",
+      "placeholder": "••••••••••••",
+      "dropdown": false,
+      "masked": false,
+      "hasIcon": true,
+      "icon": "password",
+      "onIconClick": true
+    },
+    {
+      "label": "تاريخ عيد الزواج (اختياري)",
+      "name": "anniversaryDate",
+      "type": "date",
+      "placeholder": "11-16-96",
+      "dropdown": false,
+      "masked": false,
+      "hasIcon": true,
+      "icon": "calendar"
+    }
+  ],
+  "resetEmailSentNote": "تم إرسال بريد إلكتروني بإرشادات إعادة تعيين كلمة المرور إلى عنوان بريدك الإلكتروني.",
+  "errorMessage": {
+    "name": "أدخل الاسم",
+    "dateOfBirth": "أدخل تاريخ الميلاد",
+    "email": "أدخل البريد الإلكتروني",
+    "phone": "أدخل رقم المحمول اوالجوال",
+    "anniversaryDate": "الرجاء إدخال تاريخ ذكرى صالح",
+    "postalCode": "الرجاء إدخال رمز بريدي صالح",
+    "password": "كلمة المرور",
+    "passwordMinChars": "يجب أن تتكون كلمة المرور من 8 أحرف كحد أدنى",
+    "passwordSameAsConfirm": "يجب أن يكون تأكيد كلمة المرور مُطابقًا لكلمة المرور الجديدة",
+    "passwordMatch": "تأكيد كلمة المرور يجب أن تكون نفس كلمة المرور الجديدة",
+    "passwordContainNumber": "كلمة المرور يجب أن تحتوي على رقم",
+    "passwordContainLowercaseLetter": "يجب أن تتضمن كلمة المرور حرف صغير",
+    "passwordContainUppercaseLetter": "يجب أن يحتوي على كلمة أحرف كبيرة",
+    "passwordIsInvalid": "أدخل كلمة المرور"
+  },
+  "Contact our customer service": "اتصل بخدمة العملاء",
+  "returnData": "نأمل أن تكون سعيدًا بعملية الشراء من لازوردي. ومع ذلك، إذا لم تكن راضيًا تمامًا، فيمكنك ارجاع المنتج/ النتجات لمدة 15 يوم مجاني على ان تكون في حالتها الأصلية.",
+  "payment": "قسط",
+  "tamaraPoint": "ادفع على 3 دفعات بدون فوائد مع",
+  "tabbyPoint": "ادفع على 4 دفعات بدون فوائد مع",
+  "TamaraTabby": "تابي او تمارا",
+  "valuPoint": "اختر خطة التقسيط المناسبة لك",
+  "Buy with": "اشتري بواسطة",
+  "olduserMessage": "مرحبًا بك في الموقع الإلكتروني الجديد لشركة لازوردي. لقد قمنا ببعض التعديلات على موقعنا الإلكتروني، وبناءً عليه، نطلب منك إعادة ضبط كلمة السر لتسجيل الدخول إلى حسابك. اضغط على 'إعادة ضبط كلمة السر' الموجودة في الأسفل لتغيير كلمة السر الخاصة بك.",
+  "customeFieldsPDP": {
+    "Brand": "العلامة التجارية",
+    "Collection": "التشكيلة",
+    "Metal": "معدن",
+    "Diamond": "الألماس",
+    "Ring Size": "مقاس الخاتم",
+    "Stone": "حجر",
+    "Chain Length": "طول السلسلة",
+    "Bracelet Size": "حجم السوار",
+    "Bracelet Length": "طول الأسورة",
+    "Earring Size": "حجم القرط",
+    "Pendant Size": "حجم القلادة",
+    "Charm Size": "حجم السحر",
+    "Gold": "الوزن"
+  },
+  "Help the community decide": "مساعدة المجتمع على اتخاذ القرار",
+  "continueShopping": "حقيبة التسوق الخاصة بك فارغة.",
+  "toContinue": "لمتابعة التسوق",
+  "width": "عرض",
+  "depth": "عمق",
+  "length": "طول",
+  "Pendant Dimensions": "أبعاد القلادة",
+  "Earring Dimensions": "أبعاد القرط",
+  "Chain Dimensions": "أبعاد السلسلة",
+  "Ring Dimensions": "أبعاد الخاتم",
+  "Bracelet Dimensions": "أبعاد السوار",
+  "Dimensions": "أبعاد",
+  "Popular Categories": "أكثر الفئات المطلوبة",
+  "language": "اللغة",
+  "Buy": "تسوقي",
+  "onlinein": "أونلاين في",
+  "pdpSeoDesc": "تسوقي مع التوصيل المجاني والإرجاع المجاني وخيارات الشراء الآن والدفع لاحقًا.",
+  "returnnote": "نأمل أن تكون سعيدًا بعملية الشراء من لازوردي. ومع ذلك، إذا لم تكن راضيًا تمامًا، فيمكنك ارجاع المنتج/ النتجات لمدة 15 يوم مجاني على ان تكون في حالتها الأصلية.",
+  "more": "المزيد",
+  "less": "أقل",
+  "mobilePhone": "رقم الهاتف",
+  "feedbackSubmitSuccess": "تم إرسال التعليقات بنجاح",
+  "somethingWentWrong": "هناك خطأ ما",
+  "sendFeedbackHeading": "ارسل رأيك"
+}

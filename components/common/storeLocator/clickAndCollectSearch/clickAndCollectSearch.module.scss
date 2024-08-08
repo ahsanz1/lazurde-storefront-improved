@@ -1,0 +1,63 @@
+@import "/styles/variables.scss";
+
+.click-and-collect-heading {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 120%;
+  padding: 0;
+  margin: 0;
+  margin-block-end: 24px;
+}
+
+body .click-and-collect-single {
+  padding: 0;
+  & > div {
+    justify-content: space-between;
+
+    & > div {
+      max-width: 303px;
+    }
+  }
+}
+
+.store-locator-modal-main {
+  flex-direction: column;
+  height: unset;
+  overflow: hidden;
+  z-index: 200;
+  @media (min-width: $breakPoint-desktop) {
+    padding: 9.56vh 7.222vw;
+
+    &.details-modal {
+      padding: 14.5vh 24.792vw;
+    }
+  }
+
+  .store-locator-modal-body {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100%;
+    padding: 24px;
+
+    @media (min-width: $breakPoint-desktop) {
+      padding: 48px;
+    }
+
+    & > div:first-child {
+      margin-bottom: 32px;
+
+      @media (min-width: $breakPoint-desktop) {
+        margin-bottom: 0;
+      }
+    }
+
+    .store-locator-inner-body {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      height: 100%;
+    }
+  }
+}

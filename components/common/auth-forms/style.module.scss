@@ -1,0 +1,152 @@
+@import "/styles/variables.scss";
+
+.auth-form-wrapper {
+  padding: 0;
+  @media (min-width: $breakPoint-desktop) {
+    padding: 11.458vw 22.431vw;
+  }
+  background-color: #f2f2f2;
+  .auth-form-modal {
+
+    background-color: white;
+    padding: 24px;
+
+    @media (min-width: $breakPoint-desktop) {
+    padding: 32px 59px 15.347vw;
+  }
+    .auth-modal {
+      &-overlay,
+      &-container {
+        z-index: 102;
+      }
+    }
+
+    .signin-signout {
+      &_modals {
+        backdrop-filter: blur(5px);
+      }
+    }
+
+    .tabs {
+      display: flex;
+      align-items: center;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+      margin-bottom: 24px;
+
+      @media (min-width: $breakPoint-desktop) {
+        margin-bottom: 40px;
+        // margin-left: 38px;
+        // margin-right: 38px;
+      }
+
+      .tab {
+        cursor: pointer;
+        position: relative;
+        margin-inline-end: 40px;
+        padding-bottom: 8px;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: 0em;
+        color: rgba(0, 0, 0, 0.8);
+
+        @media (min-width: $breakPoint-desktop) {
+          font-size: 16px;
+          line-height: 19.2px;
+        }
+
+        &.active {
+          color: $black-color;
+
+          &::after {
+            content: "";
+            position: absolute;
+            inset-block-start: auto;
+            inset-inline-end: 0;
+            inset-block-end: -2px;
+            inset-inline-start: 0;
+            width: 100%;
+            height: 2px;
+            background-color: $black-color;
+          }
+        }
+
+        &:last-child {
+          margin-inline-end: 0;
+        }
+      }
+    }
+
+    .auth-modal {
+      &.sign-up {
+        .tabs {
+          margin-bottom: 24px;
+        }
+      }
+
+      .auth-modal-top-bar {
+        margin-bottom: 48px;
+
+        @media (min-width: $breakPoint-desktop) {
+          margin-bottom: 14px;
+          // padding: 0 38px;
+        }
+      }
+    }
+
+    .auth-modal {
+      padding: 24px;
+
+      @media (min-width: $breakPoint-desktop) {
+        padding: 54px 10px 48px;
+      }
+    }
+
+    .signin-tabs {
+      margin-bottom: 24px;
+
+      @media (min-width: $breakPoint-desktop) {
+        margin-bottom: 40px;
+      }
+
+      .signin-heading {
+        margin: 0;
+
+        button {
+          margin-inline-end: 40px;
+          padding: 8px 0;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 19.2px;
+          letter-spacing: 0em;
+          text-align: start;
+
+          &:last-child {
+            margin-inline-end: 0;
+          }
+        }
+      }
+    }
+
+    .olduser-modal-content {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+
+      @media (min-width: $breakPoint-desktop) {
+        justify-content: space-between;
+      }
+
+      .heading {
+        font-size: 16px;
+        line-height: 22px;
+        text-transform: lowercase;
+        color: $black-color;
+
+        &::first-letter {
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

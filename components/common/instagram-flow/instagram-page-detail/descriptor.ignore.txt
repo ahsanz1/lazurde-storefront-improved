@@ -1,0 +1,12 @@
+const { Types } = require("@teamfabric/xpm");
+
+exports.default = Types.Component({
+  id: "InstagramPageDetail",
+  label: "Instagram Page Detail",
+  description: ``,
+
+  attributes: {
+    heading: Types.String({ label: "Section Heading" }),
+    testerCode: Types.String({ label: "Tester Code (For Authorization)" }),
+  },
+});

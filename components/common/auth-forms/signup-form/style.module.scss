@@ -1,0 +1,130 @@
+@import "/styles/variables.scss";
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .form-inner-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $breakPoint-desktop) {
+      // height: 455px;
+      width: 100%;
+      overflow: visible;
+      box-sizing: border-box;
+    }
+
+    .div-top {
+      @media (min-width: $breakPoint-desktop) {
+        overflow-y: auto;
+        overflow-x: hidden;
+        width: 100%;
+      }
+
+      &::-webkit-scrollbar {
+        width: 4.16px;
+        border-radius: 100px;
+      }
+
+      &::-webkit-scrollbar-track {
+        border-radius: 100px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        border-radius: 100px;
+        background-color: transparent;
+      }
+
+      &:hover::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+    }
+
+    .div-bottom {
+      padding-top: 24px;
+      text-align: center;
+
+      @media (min-width: $breakPoint-desktop) {
+        box-shadow: 0 -100px 150px 10px #fff;
+      }
+    }
+  }
+
+  .input-field {
+    margin-bottom: 16px;
+
+    @media (min-width: $breakPoint-tablet) and (max-width: $breakPoint-desktop) {
+      margin-bottom: 30px;
+    }
+
+    @media (min-width: $breakPoint-desktop) {
+      margin-bottom: 24px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:nth-child(2) {
+      margin-inline-end: 4%;
+    }
+
+    &.row {
+      width: 48%;
+      display: inline-block;
+    }
+
+    .password-icon {
+      cursor: pointer;
+      pointer-events: all;
+    }
+
+    .signup-inputs {
+      &.empty {
+        color: rgba(0, 0, 0, 0.4);
+      }
+    }
+
+    .signup-error-div {
+      @media (max-width: $breakPoint-mobile) {
+        margin-top: 1px;
+      }
+    }
+
+    .pointor-none {
+      position: absolute;
+      inset-inline-end: 18px;
+      pointer-events: none;
+    }
+  }
+
+  .signup-newsletter-checkbox {
+    margin-bottom: 0;
+  }
+
+  .bottom-note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+
+    span {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16.8px;
+      letter-spacing: 0em;
+      margin: 0 2px;
+    }
+  }
+  .signup-errors {
+    color: red;
+    padding: 0 0 4px 0;
+  }
+  .additional-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,32 @@
+.pdp-tamara {
+  cursor: pointer;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  text-align: left;
+  padding-inline: 16px 122px!important;
+  direction: ltr;
+  line-height: 22px;
+  color: rgb(0, 0, 0);
+  min-width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 10px;
+  border-color: rgb(229, 229, 229);
+  border-style: solid;
+  border-width: 1px;
+  margin-block: 20px;
+
+  img {
+    inset-inline-end: 10px!important;
+  }
+
+  
+}
+
+html[dir="rtl"] {
+.pdp-tamara {
+    padding-inline: 16px 106px !important;
+}
+
+}
+

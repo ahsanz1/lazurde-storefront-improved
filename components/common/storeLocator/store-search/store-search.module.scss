@@ -1,0 +1,36 @@
+@import "/styles/variables.scss";
+
+.main-store-search {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-bottom: 16px;
+  @media (min-width: $breakPoint-desktop) {
+    margin-bottom: 24px;
+  }
+
+  .div-input {
+    flex: 1;
+    margin-inline-end: 8px;
+
+    @media (min-width: $breakPoint-desktop) {
+      margin-inline-end: 16px;
+    }
+  }
+
+  .div-button {
+    margin-block-end: 3px;
+
+    @media (min-width: $breakPoint-desktop) {
+      margin-block-end: 0px;
+    }
+    button {
+      @media (max-width: $breakPoint-mobile) {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 120%;
+      }
+    }
+  }
+}

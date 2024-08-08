@@ -1,0 +1,547 @@
+/* eslint-disable react/display-name */
+import * as React from "react";
+import {
+  render,
+  screen,
+  fireEvent,
+  waitFor,
+} from "@testing-library/react";
+import Cart from "./index";
+import { AppContext } from "lib/context";
+import { fetchProductsByItemId } from "lib/utils/product";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+const queryClient = new QueryClient();
+
+jest.mock("react", () => ({
+  ...(jest.requireActual("react") as object),
+  useLayoutEffect: jest.requireActual("react").useEffect,
+}));
+
+const fetchProductsByItemIdPayload: any = {
+  pageSize: 1,
+  totalSize: 1,
+  pages: 1,
+  products: [
+    {
+      _id: "627e2722d3b2af071d40bef4",
+      sku: "21047140018-ksa",
+      itemId: 233,
+      children: [],
+      type: "ITEM",
+      status: true,
+      bundleItems: [],
+      categories: [
+        {
+          id: "626103bfaab0128347415575",
+          name: "Bracelets",
+          breadcrumbs: [
+            {
+              id: "621eb491b76704034b82e600",
+              name: "PRIMARY",
+              attributes: [],
+            },
+            {
+              id: "621f26d3c13c506d0c875232",
+              name: "L'azurde",
+              attributes: [],
+            },
+          ],
+        },
+      ],
+      attributes: [
+        {
+          id: "621dcb3408cf020009caf6dc",
+          name: "Title",
+          description: "",
+          mapping: "title",
+          type: "TEXT",
+          value: "Rotating Flower Bracelet, in 18K Yellow Gold",
+        },
+        {
+          id: "621dcaa308cf020009caf6ca",
+          name: "Image URL",
+          description: "",
+          mapping: "image",
+          type: "TEXT",
+          value:
+            "https://cdn.lazurde.com/media/catalog/product/1/1/111304180048_1.jpg",
+        },
+        {
+          id: "621dcb8508cf020009caf6e5",
+          name: "Variant",
+          description: "",
+          mapping: "isVariant",
+          type: "DECIMAL",
+          value: "0",
+        },
+        {
+          id: "625dcafe091c56000935ad61",
+          name: "isAnklet",
+          description: "description",
+          type: "BOOLEAN",
+          value: "false",
+        },
+        {
+          id: "625dcafe091c56000935ad5f",
+          name: "Anklet Size",
+          description: "description",
+          type: "TEXT",
+          value: "None",
+        },
+        {
+          id: "625dcafe091c56000935ad5d",
+          name: "Bracelet Size",
+          description: "description",
+          type: "TEXT",
+          value: "14",
+        },
+        {
+          id: "625dcafd091c56000935ad22",
+          name: "isBracelet",
+          description: "description",
+          type: "BOOLEAN",
+          value: "true",
+        },
+        {
+          id: "625dcafd091c56000935ad12",
+          name: "Chain Length",
+          description: "description",
+          type: "TEXT",
+          value: "21",
+        },
+        {
+          id: "625dcafd091c56000935ad10",
+          name: "isCharm",
+          description: "description",
+          type: "BOOLEAN",
+          value: "false",
+        },
+        {
+          id: "625dcafd091c56000935ad14",
+          name: "Charm Size",
+          description: "description",
+          type: "TEXT",
+          value: "None",
+        },
+        {
+          id: "625dcafd091c56000935ad0a",
+          name: "Bracelets and Anklets",
+          description: "description",
+          type: "TEXT",
+          value: "Bracelets",
+        },
+        {
+          id: "622b498b8e7b2900099e0806",
+          name: "Type",
+          description: "description",
+          type: "TEXT",
+          value: "Enamel",
+        },
+        {
+          id: "621dca6708cf020009caf6b4",
+          name: "Stone Carat",
+          description: "description",
+          type: "TEXT",
+          value: "18k L'azurde Gold",
+        },
+        {
+          id: "625dcaf8091c56000935ac98",
+          name: "Stone Cut",
+          description: "description",
+          type: "TEXT",
+          value: "Refined",
+        },
+        {
+          id: "625dcaf8091c56000935ac9a",
+          name: "hasColoredGemstone",
+          description: "description",
+          type: "BOOLEAN",
+          value: "true",
+        },
+        {
+          id: "625dcaf9091c56000935aca3",
+          name: "Last Chance",
+          description: "description",
+          type: "BOOLEAN",
+          value: "true",
+        },
+        {
+          id: "625dcaf9091c56000935aca1",
+          name: "Online Exclusive",
+          description: "description",
+          type: "BOOLEAN",
+          value: "false",
+        },
+        {
+          id: "625dcaf9091c56000935ac9f",
+          name: "New In",
+          description: "description",
+          type: "BOOLEAN",
+          value: "true",
+        },
+        {
+          id: "625dcaf8091c56000935ac9d",
+          name: "Best Seller",
+          description: "description",
+          type: "BOOLEAN",
+          value: "true",
+        },
+        {
+          id: "622b4a3c8e7b2900099e083c",
+          name: "Stone",
+          description: "",
+          type: "TEXT",
+          value: "Pearl",
+        },
+        {
+          id: "622b49ff8e7b2900099e082a",
+          name: "Diamond Cut",
+          description: "",
+          type: "TEXT",
+          value: "None",
+        },
+        {
+          id: "622b4a2a8e7b2900099e0833",
+          name: "Diamond Carat",
+          description: "",
+          type: "TEXT",
+          value: "0.2",
+        },
+        {
+          id: "622b49e58e7b2900099e0821",
+          name: "Collection",
+          description: "",
+          type: "TEXT",
+          value: "La'zurde",
+        },
+        {
+          id: "622b49ac8e7b2900099e0818",
+          name: "Gemstone",
+          description: "",
+          type: "TEXT",
+          value: "Yes",
+        },
+        {
+          id: "622b499a8e7b2900099e080f",
+          name: "Metal",
+          description: "",
+          type: "TEXT",
+          value: "Silver",
+        },
+        {
+          id: "622b49308e7b2900099e07e5",
+          name: "Brand",
+          description: "",
+          type: "TEXT",
+          value: "L'azurde",
+        },
+        {
+          id: "621dca8908cf020009caf6c1",
+          name: "Weight",
+          description: "",
+          type: "DECIMAL",
+          value: "2.26",
+        },
+        {
+          id: "621dcac008cf020009caf6d3",
+          name: "Description",
+          description: "",
+          type: "TEXT",
+          value: "There is none.",
+        },
+        {
+          id: "621dcb9c08cf020009caf6ee",
+          name: "Active",
+          description: "",
+          mapping: "active",
+          type: "BOOLEAN",
+          value: "true",
+        },
+        {
+          id: "628b604dc869c20009b801fc",
+          name: "isLazurde",
+          description: "",
+          type: "BOOLEAN",
+          value: "true",
+        },
+        {
+          id: "628b605ec869c20009b8021e",
+          name: "isMissL",
+          description: "",
+          type: "BOOLEAN",
+          value: "false",
+        },
+        {
+          id: "628b606bc869c20009b80227",
+          name: "isWaves",
+          description: "",
+          type: "BOOLEAN",
+          value: "false",
+        },
+        {
+          id: "628f3564cbaa46000945233b",
+          name: "Tax Code",
+          description: "",
+          type: "TEXT",
+          value: "FR20000",
+        },
+      ],
+      variants: [],
+      dependents: [],
+      createdOn: "2022-05-13T09:38:42.614Z",
+      modifiedOn: "2022-06-09T07:10:05.606Z",
+    },
+  ],
+};
+
+jest.mock("lib/utils/product", () => ({
+  ...(jest.requireActual("lib/utils/product") as object),
+  fetchProductsByItemId: jest.fn().mockImplementation(() =>
+    Promise.resolve({
+      data: fetchProductsByItemIdPayload,
+      status: 200,
+    })
+  ),
+  fetchProductPriceByItemId: jest.fn().mockImplementation(() =>
+    Promise.resolve({
+      data: [
+        {
+          priceList: "100000",
+          itemId: 233,
+          lineId: null,
+          offers: {
+            price: {
+              sale: null,
+              base: 649,
+              finalPrice: 649,
+              currency: "USD" || "SAR",
+              totalPrice: 584.1,
+            },
+            kind: "BASE",
+            channel: 12,
+            discounts: [
+              {
+                amount: 64.9,
+                value: 10,
+                groupId: "62eb8162e235a30009a41cbd",
+                promotionId: "62eb8162e235a30009a41cbd",
+                priority: 1,
+                stackable: true,
+                title: "new promo",
+                itemKey: "233",
+                lineId: 0,
+                quantity: 1,
+                promotionType: "PRODUCT",
+                discountType: "PERCENTAGE",
+                cartShipping: false,
+              },
+            ],
+            additionalAttributes: null,
+          },
+        },
+      ],
+      status: 200,
+    })
+  ),
+}));
+
+jest.mock("lib/utils/cart", () => ({
+  __esModule: true,
+  ...(jest.requireActual("lib/utils/cart") as object),
+  addProductToCart: jest.fn().mockImplementation(() => true),
+}));
+
+const fetchProductsByItemIdMock: any = fetchProductsByItemId;
+
+describe("Cart  page ", () => {
+  test("cart page test: empty allWishListProducts prop", async () => {
+    await waitFor(async () => {
+      render(
+        <QueryClientProvider client={queryClient}>
+          <AppContext.Provider
+            value={{
+              appState: { lang: "en" },
+              allWishListProducts: [],
+              setAllWishListProducts: jest.fn(),
+              isMiniCartUpdateFromCartPage: false,
+              cartId: "fd919ce1-97da-4065-99a7-23351da9d3ba",
+            }}
+          >
+            <Cart />
+          </AppContext.Provider>
+        </QueryClientProvider>
+      );
+    });
+  });
+
+  test("cart page testing", async () => {
+    await waitFor(async () => {
+      render(
+        <QueryClientProvider client={queryClient}>
+          <AppContext.Provider
+            value={{
+              appState: { lang: "en" },
+              allWishListProducts: [233],
+              setAllWishListProducts: jest.fn(),
+              isMiniCartUpdateFromCartPage: true,
+              cartId: "fd919ce1-97da-4065-99a7-23351da9d3ba",
+            }}
+          >
+            <Cart />
+          </AppContext.Provider>
+        </QueryClientProvider>
+      );
+    });
+    const freeShipping = screen.getByRole("free-shipping");
+    expect(freeShipping).toBeInTheDocument();
+    const needhelpLabel = screen.getByRole("needhelp");
+    expect(needhelpLabel).toBeInTheDocument();
+    const points = screen.getAllByRole("points");
+    // expect(points[0]).toBeInTheDocument();
+    const mainHeading = screen.getByRole("main-heading");
+    expect(mainHeading).toBeInTheDocument();
+    const bagHeading = screen.getByRole("bag-heading");
+    expect(bagHeading).toBeInTheDocument();
+    const summaryHeading = screen.getByRole("summary-heading");
+    expect(summaryHeading).toBeInTheDocument();
+    const helpCenterLink = screen.getByRole("help-center-link");
+    expect(helpCenterLink).toBeInTheDocument();
+    const subHeading = screen.getByRole("subHeading");
+    expect(subHeading).toBeInTheDocument();
+    const shppingText = screen.getByRole("shpping-text");
+    expect(shppingText).toBeInTheDocument();
+    const tax = screen.getByRole("tax");
+    expect(tax).toBeInTheDocument();
+    const totalPay = screen.getByRole("totalPay");
+    expect(totalPay).toBeInTheDocument();
+    // const checkoutBtn = screen.getByRole("checkoutBtn");
+    // expect(checkoutBtn).toBeInTheDocument();
+    // const continueText = screen.getByRole("continueText");
+    // expect(continueText).toBeInTheDocument();
+    // const image = screen.getByAltText("paypal-image");
+    // expect(image).toBeInTheDocument();
+    // expect(image).toHaveAttribute("alt", "paypal-image");
+    const crossBtn = screen.getByRole("crossBtn");
+    expect(crossBtn).toBeInTheDocument();
+    fireEvent.click(crossBtn);
+  });
+
+  test("cart page test change item quantity", async () => {
+    await waitFor(async () => {
+      render(
+        <QueryClientProvider client={queryClient}>
+          <AppContext.Provider
+            value={{
+              appState: { lang: "en" },
+              allWishListProducts: [233],
+              setAllWishListProducts: jest.fn(),
+              cartId: "fd919ce1-97da-4065-99a7-23351da9d3ba",
+            }}
+          >
+            <Cart />
+          </AppContext.Provider>
+        </QueryClientProvider>
+      );
+      // const itemInput = await screen.findAllByRole(/quantityInput/i);
+      // expect(itemInput[0]).toBeInTheDocument();
+      // fireEvent.change(itemInput[0], {
+      //   target: { value: "100" },
+      // });
+
+      // fireEvent.blur(itemInput[0]);
+      // fireEvent.blur(itemInput[0]);
+    });
+  });
+
+  test("cart page test remove item", async () => {
+    await waitFor(async () => {
+      render(
+        <QueryClientProvider client={queryClient}>
+          <AppContext.Provider
+            value={{
+              appState: { lang: "en" },
+              allWishListProducts: [233],
+              setAllWishListProducts: jest.fn(),
+              cartId: "fd919ce1-97da-4065-99a7-23351da9d3ba",
+            }}
+          >
+            <Cart />
+          </AppContext.Provider>
+        </QueryClientProvider>
+      );
+      // const removeBtn = screen.getAllByRole(/removeBtn/i);
+      // // screen.debug(undefined, 300000);
+      // const wishlistRemoveBtn = screen.getAllByRole(/wishlistRemoveBtn/i);
+      // expect(removeBtn[0]).toBeInTheDocument();
+      // expect(wishlistRemoveBtn[0]).toBeInTheDocument();
+      // fireEvent.click(removeBtn[0]);
+      // fireEvent.click(wishlistRemoveBtn[0]);
+    });
+  });
+
+  test("cart page test add wishlist item", async () => {
+    await waitFor(async () => {
+      render(
+        <QueryClientProvider client={queryClient}>
+          <AppContext.Provider
+            value={{
+              appState: { lang: "en" },
+              allWishListProducts: [233],
+              setAllWishListProducts: jest.fn(),
+              cartId: "fd919ce1-97da-4065-99a7-23351da9d3ba",
+            }}
+          >
+            <Cart />
+          </AppContext.Provider>
+        </QueryClientProvider>
+      );
+      // const removeBtn = await screen.findAllByRole(/addtocart/i);
+      // expect(removeBtn[0]).toBeInTheDocument();
+      // fireEvent.click(removeBtn[0]);
+    });
+  });
+
+  test("cart page arabic version", async () => {
+    await waitFor(async () => {
+      render(
+        <QueryClientProvider client={queryClient}>
+          <AppContext.Provider
+            value={{
+              appState: { lang: "ar" },
+              allWishListProducts: [233],
+              setAllWishListProducts: jest.fn(),
+              cartId: "fd919ce1-97da-4065-99a7-23351da9d3ba",
+            }}
+          >
+            <Cart />
+          </AppContext.Provider>
+        </QueryClientProvider>
+      );
+    });
+  });
+
+  test("cart page test: empty fetchProductPriceByItemId api status 400", async () => {
+    fetchProductsByItemIdMock.mockImplementation(() =>
+      Promise.resolve({
+        data: fetchProductsByItemIdPayload,
+        status: 400,
+      })
+    );
+    await waitFor(async () => {
+      render(
+        <QueryClientProvider client={queryClient}>
+          <AppContext.Provider
+            value={{
+              appState: { lang: "en" },
+              allWishListProducts: [233],
+              setAllWishListProducts: jest.fn(),
+              cartId: "fd919ce1-97da-4065-99a7-23351da9d3ba",
+            }}
+          >
+            <Cart />
+          </AppContext.Provider>
+        </QueryClientProvider>
+      );
+    });
+  });
+});

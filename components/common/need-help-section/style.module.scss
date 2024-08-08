@@ -1,0 +1,120 @@
+@import "/styles/variables.scss";
+
+.need-help-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $breakPoint-desktop) {
+    padding-top: 32px;
+  }
+
+  @media (max-width: $breakPoint-mobile) {
+    padding: 40px 24px 0;
+  }
+
+  .bold-line {
+    margin: 0;
+    height: 0px;
+    width: 100%;
+    border-top: 4px solid #c3a956;
+  }
+  .need-help-heading {
+    span {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 19.2px;
+      letter-spacing: 0em;
+      text-align: start;
+      color: rgba(0, 0, 0, 0.8);
+
+      @media (min-width: $breakPoint-desktop) {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 21.8px;
+        letter-spacing: 0em;
+        text-align: start;
+      }
+    }
+
+    a {
+      color: #000;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 120%;
+      text-decoration-line: underline;
+      text-transform: capitalize;
+    }
+
+    h6 {
+      margin: 0px;
+    }
+  }
+
+  .static-content-wrapper {
+    margin-top: 0;
+
+    .need-help-point {
+      margin-bottom: 0;
+
+      h2 {
+        margin: 0;
+        margin-bottom: 10px;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: start;
+        text-transform: capitalize;
+      }
+
+      a {
+        // text-decoration: underline;
+        font-weight: 700 !important;
+      }
+
+      p {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      a,
+      p {
+        margin: 0;
+        margin-bottom: 8px;
+        color: rgba(0, 0, 0, 0.8);
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%;
+        text-transform: inherit;
+
+        @media (min-width: $breakPoint-desktop) {
+          font-size: 14px;
+        }
+
+        figure {
+          margin: 0;
+          margin-inline-start: 10px;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.empty-cart-style {
+  padding-top: 0;
+
+  hr {
+    display: none;
+  }
+
+  .static-content-wrapper {
+    margin-top: 0;
+  }
+}

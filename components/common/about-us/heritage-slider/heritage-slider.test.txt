@@ -1,0 +1,76 @@
+/* eslint-disable react/display-name */
+import * as React from "react";
+import HeritageSlider from "./index";
+import { act, fireEvent, render, screen } from "@testing-library/react";
+import ContextProvider, { AppContext } from "lib/context";
+
+const cards = [
+  {
+    titleContent: { title: "title", content: { value: "value" } },
+    description: "description goes here",
+    imageLink: "/image.png",
+  },
+];
+const className = "heritage-main";
+const sectionHeading = "mainHeading";
+const bgColor = "#fff";
+const testId = "00";
+const text = "heritage";
+
+const renderComponent = async () => {
+  await act(async () => {
+    render(
+      <ContextProvider>
+        <AppContext.Provider value={{ appState: { lang: "en" } }}>
+          <HeritageSlider
+            cards={cards}
+            className={className}
+            sectionHeading={sectionHeading}
+            bgColor={bgColor}
+            text={text}
+            testId={testId}
+          />
+        </AppContext.Provider>
+      </ContextProvider>
+    );
+  });
+};
+
+const renderComponentAR = () => {
+  render(
+    <AppContext.Provider value={{ appState: { lang: "ar" } }}>
+      <HeritageSlider
+        cards={cards}
+        className={className}
+        sectionHeading={sectionHeading}
+        bgColor={bgColor}
+        text={text}
+        testId={testId}
+      />
+    </AppContext.Provider>
+  );
+};
+
+test("HeritageSlider testing", async () => {
+  await renderComponent();
+  const freeShipping = screen.getByRole("card-slider");
+  expect(freeShipping).toBeInTheDocument();
+  fireEvent.click(screen.getByTestId("click-btn"));
+  const heritageHeading = screen.getByRole("heritage-heading");
+  expect(heritageHeading).toBeInTheDocument();
+
+  expect(screen.getByRole("main-cards")).toBeInTheDocument();
+  const onCLick = screen.getByRole("main-cards");
+
+  fireEvent.mouseDown(onCLick);
+  fireEvent.mouseUp(onCLick);
+  fireEvent.mouseLeave(onCLick);
+  fireEvent.mouseMove(onCLick);
+
+  const mainCards = screen.getByRole("main-cards");
+  expect(mainCards).toBeInTheDocument();
+});
+
+test("HeritageSlider Arabic testing", async () => {
+  await renderComponentAR();
+});

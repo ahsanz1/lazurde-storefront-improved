@@ -1,0 +1,114 @@
+@import "/styles/variables.scss";
+
+.store-detail-main {
+  display: flex;
+  column-gap: 24px;
+  opacity: 1;
+  flex-direction: column;
+  margin-block-start: 16px;
+
+  @media (min-width: $breakPoint-desktop) {
+    margin-block-start: 40px;
+    flex-direction: row;
+  }
+
+  &[data-show-details="false"] {
+    opacity: 0;
+  }
+
+  .div-left {
+    flex: 1;
+  }
+
+  .div-right {
+    flex: 1;
+    margin-block-start: 24px;
+
+    @media (min-width: $breakPoint-desktop) {
+      margin-block-start: 0;
+    }
+
+    &[data-hide="true"] {
+      opacity: 0;
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .div-heading {
+      display: flex;
+      color: #000;
+      margin-block-end: 6px;
+
+      .div-icon {
+        display: flex;
+        width: 20px;
+        margin-inline-end: 12px;
+      }
+      .store-name {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 120%;
+
+        @media (min-width: $breakPoint-desktop) {
+          font-size: 15px;
+        }
+      }
+    }
+
+    .div-store-details {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      margin-inline-start: 32px;
+      color: #000;
+      // margin-block-end: 24px;
+
+      .store-address {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 120%;
+
+        @media (min-width: $breakPoint-desktop) {
+          font-size: 15px;
+        }
+      }
+
+      .distance {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 130%;
+        color: rgba(0, 0, 0, 0.6);
+      }
+
+      .div-map-link {
+        display: flex;
+        margin-block: 8px;
+        cursor: pointer;
+      }
+
+      .div-opening-hours {
+        display: flex;
+        margin-block-start: 8px;
+
+        .div-days {
+          flex: 1;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 120%;
+          color: rgba(0, 0, 0, 0.6);
+          margin-inline-end: 5px;
+        }
+        .div-hours {
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 120%;
+          color: rgba(0, 0, 0, 0.8);
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,666 @@
+@import "/styles/variables.scss";
+
+.history-container {
+  @media (min-width: $breakPoint-desktop) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.section-first {
+  @media (min-width: $breakPoint-desktop) {
+    padding-block: 42px 40px;
+    padding-inline: 40px;
+  }
+  background-color: white;
+  margin-bottom: 8px;
+  padding: 24px;
+}
+
+.section-first-title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: start;
+  margin-top: 8px;
+  margin-bottom: 16px;
+
+  @media (min-width: $breakPoint-desktop) {
+    margin-bottom: 8px;
+  }
+}
+
+.section-first-text {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: start;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @media (min-width: $breakPoint-desktop) {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: start;
+  }
+}
+
+.section-second {
+  background-color: white;
+  margin-bottom: 8px;
+  padding: 24px;
+
+  @media (min-width: $breakPoint-desktop) {
+    padding: 40px;
+  }
+}
+
+.section-second-first {
+  margin-bottom: 24px;
+
+  @media (min-width: $breakPoint-desktop) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.history-barcode {
+  text-align: center;
+  margin-top: 17px;
+
+  @media (min-width: $breakPoint-desktop) {
+    text-align: start;
+    margin-top: 0;
+  }
+}
+
+.section-second-first-block {
+  display: flex;
+  align-items: center;
+
+  p {
+    margin-block: 0;
+    margin-inline-start: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: start;
+  }
+
+  .order-details-link {
+    display: inline-block;
+    margin-inline-start: 10px;
+    color: $black-color;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 16.8px;
+    font-weight: 500;
+    text-decoration: underline;
+
+    a {
+      color: black;
+    }
+  }
+
+  .order-details-text {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: start;
+
+    @media (max-width: $breakPoint-mobile) {
+      font-size: 14px;
+    }
+  }
+  .order-details-span {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15.6px;
+    letter-spacing: 0em;
+    text-align: start;
+  }
+}
+
+.section-third {
+  background-color: white;
+  margin-bottom: 8px;
+  padding: 24px;
+
+  @media (min-width: $breakPoint-desktop) {
+    padding: 40px;
+  }
+}
+
+.section-third-title {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: start;
+  margin-top: 0;
+  margin-bottom: 8px;
+
+  @media (max-width: $breakPoint-mobile) {
+    font-size: 14px;
+  }
+}
+
+.section-third-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: start;
+  margin-block: 0;
+  color: rgba(0, 0, 0, 0.6);
+
+  @media (max-width: $breakPoint-mobile) {
+    font-size: 13px;
+  }
+}
+
+.section-forth {
+  background-color: white;
+  padding: 24px;
+
+  @media (min-width: $breakPoint-desktop) {
+    padding: 40px;
+  }
+}
+
+.section-forth-first {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+
+  @media (min-width: $breakPoint-desktop) {
+    flex-direction: row;
+  }
+
+  .item-left-div {
+    display: flex;
+
+    @media (min-width: $breakPoint-desktop) {
+      width: 60%;
+    }
+  }
+
+  .item-right-div {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    letter-spacing: 0em;
+    color: $black-color;
+
+    @media (min-width: $breakPoint-desktop) {
+      width: 40%;
+      text-align: end;
+    }
+
+    span {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .reschedule-return-btn {
+      // margin-top: 8px;
+      padding: 0;
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.product-details {
+  p {
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+}
+
+.reviews-section {
+  cursor: pointer;
+  display: flex;
+  margin-top: 16px;
+  align-items: center;
+
+  p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: start;
+    margin-block: 0;
+    margin-inline-start: 4px;
+    text-decoration: underline;
+  }
+}
+
+.section-forth-title {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: start;
+  margin-block: 0;
+  color: $black-color;
+}
+
+.image {
+  position: relative;
+  height: fit-content;
+  margin-inline-end: 16px;
+}
+
+.section-forth-text {
+  margin: 0;
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15.6px;
+  letter-spacing: 0em;
+  text-align: start;
+  margin-block: 0;
+}
+
+.heading {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: start;
+
+  @media (min-width: $breakPoint-desktop) {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: start;
+  }
+}
+.sub-detail {
+  .para {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: start;
+
+    @media (min-width: $breakPoint-desktop) {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 18px;
+      letter-spacing: 0em;
+      text-align: start;
+    }
+  }
+}
+.section-forth-detail {
+  margin: 16px 0;
+
+  .sub-detail {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: start;
+
+    @media (min-width: $breakPoint-desktop) {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 18px;
+      letter-spacing: 0em;
+      text-align: start;
+    }
+
+    .t-number {
+      font-weight: 500;
+      color: #1a73e8;
+      text-decoration: underline;
+    }
+  }
+}
+
+.sec-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+}
+
+.section-forth-description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  letter-spacing: 0em;
+  text-align: start;
+  margin-top: 16px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  color: $black-color;
+}
+
+.delivery-date {
+  margin: 0;
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  letter-spacing: 0em;
+  text-align: start;
+  color: $black-color;
+}
+
+.delivery-address {
+  p {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15.6px;
+    letter-spacing: 0em;
+    text-align: start;
+    color: rgba(0, 0, 0, 0.6);
+
+    @media (min-width: $breakPoint-desktop) {
+      font-size: 14px;
+      line-height: 16.8px;
+    }
+  }
+}
+
+.section-fifth {
+  background-color: white;
+  padding: 24px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+
+  @media (min-width: $breakPoint-desktop) {
+    padding: 40px;
+  }
+}
+
+.section-fifth-title {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: start;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 0;
+}
+
+.order-details-span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  letter-spacing: 0em;
+  text-align: start;
+}
+
+.order-details-text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: start;
+}
+
+.section-fifth-second {
+  padding-top: 24px;
+
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: start;
+    color: rgba(0, 0, 0, 0.6);
+    margin: 0;
+  }
+}
+
+.section-six {
+  background-color: white;
+  padding: 24px;
+
+  @media (min-width: $breakPoint-desktop) {
+    padding: 40px;
+  }
+}
+
+.sec-header {
+  margin: 0 0 24px 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.8px;
+  letter-spacing: 0em;
+  text-align: start;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  color: $black-color;
+
+  @media (min-width: $breakPoint-desktop) {
+    font-size: 15px;
+    line-height: 18px;
+  }
+}
+
+.section-six-first {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: start;
+  margin-block: 0;
+  padding-bottom: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+  @media (min-width: $breakPoint-desktop) {
+    margin-block: 0 24px;
+    padding-bottom: 24px;
+  }
+}
+
+.history-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  p {
+    margin: 0;
+    border: 0;
+  }
+}
+
+.price-title {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: start;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.price-text {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15.6px;
+  letter-spacing: 0em;
+  text-align: start;
+  color: $black-color;
+
+  @media (min-width: $breakPoint-desktop) {
+    font-size: 14px;
+    line-height: 16.8px;
+  }
+}
+
+.history-price {
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.discount-price {
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+}
+
+.section-seven {
+  background-color: white;
+  padding: 24px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+
+  @media (max-width: $breakPoint-mobile) {
+    margin-bottom: 0;
+  }
+
+  .section-seven-heading {
+    margin-block: 0 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    p {
+      margin: 0;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 16.8px;
+      letter-spacing: 0em;
+      text-align: start;
+      color: $black-color;
+
+      @media (min-width: $breakPoint-desktop) {
+        font-size: 15px;
+        line-height: 18px;
+      }
+    }
+  }
+
+  .order-acc-heading {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: start;
+    color: $black-color;
+  }
+}
+
+.divider {
+  margin-bottom: 24px;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 1px;
+}
+
+.disable-btn {
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.return-timeout-div {
+  .content {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 24px;
+    padding: 12px;
+    background: rgba(255, 0, 0, 0.05);
+
+    .img {
+      margin-inline-end: 12px;
+      opacity: 0.6;
+    }
+
+    .detail {
+      .label {
+        margin: 0;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 14.4px;
+        letter-spacing: 0em;
+        text-align: start;
+        color: rgba(0, 0, 0, 0.6);
+
+        @media (min-width: $breakPoint-desktop) {
+          font-size: 13px;
+          line-height: 15.6px;
+        }
+      }
+
+      .readmore-link {
+        margin-top: 8px;
+        color: $black-color;
+        font-size: 11px;
+        font-weight: 500;
+        line-height: 13.2px;
+        letter-spacing: 0em;
+        text-align: start;
+
+        @media (min-width: $breakPoint-desktop) {
+          font-size: 14px;
+          line-height: 16.8px;
+        }
+      }
+    }
+  }
+}
+
+.price-with-promo {
+  .label {
+    margin-inline-end: 4px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    letter-spacing: 0em;
+    text-align: start;
+    color: $black-color;
+  }
+
+  .line-through {
+    text-decoration: line-through;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.8px;
+  }
+  .discount-price {
+    margin-inline-start: 4px;
+    color: #da0059;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.8px;
+
+    @media (max-width: $breakPoint-mobile) {
+      font-size: 15px;
+      line-height: 18px;
+    }
+  }
+}
+
+.delivery-price {
+  margin-top: 16px;
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+  .section-six-first {
+    margin: 0;
+    padding: 0;
+  }
+}

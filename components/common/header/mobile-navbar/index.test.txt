@@ -1,0 +1,69 @@
+import * as React from "react";
+import { render, screen } from "@testing-library/react";
+import MobileNavBar from "./index";
+import ContextProvider, { AppContext } from "lib/context";
+import { brandSideBarForTesting, menuDataForTesting } from "lib/mock-data/data";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+
+const queryClient = new QueryClient();
+const headerId = "lazurdeHeader";
+const siteLogoUrl = "site logo url";
+const siteLogo = {
+  url: "/img",
+  altText: "alt",
+};
+
+const mockIntersectionObserver = jest.fn();
+mockIntersectionObserver.mockReturnValue({
+  observe: (): any => null,
+  unobserve: (): any => null,
+  disconnect: (): any => null,
+});
+window.IntersectionObserver = mockIntersectionObserver;
+
+jest.mock("lib/utils/cart", () => ({
+  __esModule: true,
+  ...(jest.requireActual("lib/utils/cart") as object),
+  addProductToCart: jest.fn().mockImplementation(() => true),
+}));
+
+test("Mobile Header testing", () => {
+  jest.mock("next/router");
+
+  render(
+    <QueryClientProvider client={queryClient}>
+      <ContextProvider>
+        <MobileNavBar
+          headerDiv={"header"}
+          headerId={headerId}
+          siteLogoUrl={siteLogoUrl}
+          siteLogo={siteLogo}
+          brandSideBar={brandSideBarForTesting}
+          menuData={menuDataForTesting}
+          setOpenSearchDialog={() => {}}
+        />
+      </ContextProvider>
+    </QueryClientProvider>
+  );
+});
+
+const renderComponentAR = () => {
+  render(
+    <QueryClientProvider client={queryClient}>
+      <AppContext.Provider value={{ appState: { lang: "ar" } }}>
+        <MobileNavBar
+          headerId={headerId}
+          siteLogoUrl={siteLogoUrl}
+          siteLogo={siteLogo}
+          brandSideBar={brandSideBarForTesting}
+          menuData={menuDataForTesting}
+          setOpenSearchDialog={() => {}}
+        />
+      </AppContext.Provider>
+    </QueryClientProvider>
+  );
+
+  test("render arabic version", () => {
+    renderComponentAR();
+  });
+};

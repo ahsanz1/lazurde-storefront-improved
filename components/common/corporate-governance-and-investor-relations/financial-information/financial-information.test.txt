@@ -1,0 +1,365 @@
+import React from "react";
+import FinancialInformation from "./index";
+import { render, screen } from "@testing-library/react";
+import { AppContext } from "lib/context";
+
+const currentObject = {
+  executive: [
+    {
+      heading: "heading",
+      text: "text",
+      executiveArabic: [
+        {
+          heading: "ARheading",
+          text: "ARtext",
+        },
+      ],
+    },
+  ],
+  members: [
+    {
+      heading: "broad",
+      text: "board text",
+      membersArabic: [
+        {
+          heading: "ARheading",
+          text: "ARtext",
+        },
+      ],
+    },
+  ],
+  moreContent: [
+    {
+      heading: "Quarterly Financial Statements",
+      text: "text",
+      image: {
+        url: "/",
+        altText: "img",
+      },
+      imageTitle: "image",
+      pdfUrl: "url",
+    },
+    {
+      heading: "Quarterly Financial Statements",
+      text: "text",
+      image: {
+        url: "/",
+        altText: "img",
+      },
+      imageTitle: "image",
+      pdfUrl: "url",
+    },
+  ],
+};
+
+const currentObjectAR = {
+  executive: [
+    {
+      heading: "heading",
+      text: "text",
+      executiveArabic: [
+        {
+          heading: "ARheading",
+          text: "ARtext",
+        },
+      ],
+    },
+  ],
+  members: [
+    {
+      heading: "broad",
+      text: "board text",
+      membersArabic: [
+        {
+          heading: "ARheading",
+          text: "ARtext",
+        },
+      ],
+    },
+  ],
+  moreContent: [
+    {
+      heading: "Annual Report",
+      text: "text",
+      image: {
+        url: "/",
+        altText: "img",
+      },
+      imageTitle: "image",
+      pdfUrl: "url",
+    },
+    {
+      heading: "Annual Report",
+      text: "text",
+      image: {
+        url: "/",
+        altText: "img",
+      },
+      imageTitle: "image",
+      pdfUrl: "url",
+    },
+  ],
+};
+
+const currentObjectM = {
+  executive: [
+    {
+      heading: "heading",
+      text: "text",
+      executiveArabic: [
+        {
+          heading: "ARheading",
+          text: "ARtext",
+        },
+      ],
+    },
+  ],
+  members: [
+    {
+      heading: "broad",
+      text: "board text",
+      membersArabic: [
+        {
+          heading: "ARheading",
+          text: "ARtext",
+        },
+      ],
+    },
+  ],
+  moreContent: [
+    {
+      heading: "Minutes of General Assembly Meetings",
+      text: "text",
+      image: {
+        url: "/",
+        altText: "img",
+      },
+      imageTitle: "image",
+      pdfUrl: "url",
+    },
+    {
+      heading: "Minutes of General Assembly Meetings",
+      text: "text",
+      image: {
+        url: "/",
+        altText: "img",
+      },
+      imageTitle: "image",
+      pdfUrl: "url",
+    },
+  ],
+};
+
+const currentObjectArabic = {
+  executive: [
+    {
+      heading: "heading",
+      text: "text",
+      executiveArabic: [
+        {
+          heading: "ARheading",
+          text: "ARtext",
+        },
+      ],
+    },
+  ],
+  members: [
+    {
+      heading: "broad",
+      text: "board text",
+      membersArabic: [
+        {
+          heading: "ARheading",
+          text: "ARtext",
+        },
+      ],
+    },
+  ],
+  moreContent: [
+    {
+      heading: "تقرير سنوي",
+      text: "text",
+      image: {
+        url: "/",
+        altText: "img",
+      },
+      imageTitle: "image",
+      pdfUrl: "url",
+    },
+    {
+      heading: "تقرير سنوي",
+      text: "text",
+      image: {
+        url: "/",
+        altText: "img",
+      },
+      imageTitle: "image",
+      pdfUrl: "url",
+    },
+  ],
+};
+
+const currentObjectArabicOne = {
+  executive: [
+    {
+      heading: "heading",
+      text: "text",
+      executiveArabic: [
+        {
+          heading: "ARheading",
+          text: "ARtext",
+        },
+      ],
+    },
+  ],
+  members: [
+    {
+      heading: "broad",
+      text: "board text",
+      membersArabic: [
+        {
+          heading: "ARheading",
+          text: "ARtext",
+        },
+      ],
+    },
+  ],
+  moreContent: [
+    {
+      heading: "محاضر اجتماعات الجمعية العمومية",
+      text: "text",
+      image: {
+        url: "/",
+        altText: "img",
+      },
+      imageTitle: "image",
+      pdfUrl: "url",
+    },
+    {
+      heading: "محاضر اجتماعات الجمعية العمومية",
+      text: "text",
+      image: {
+        url: "/",
+        altText: "img",
+      },
+      imageTitle: "image",
+      pdfUrl: "url",
+    },
+  ],
+};
+
+const renderComponent = () => {
+  render(
+    <AppContext.Provider value={{ appState: { lang: "en" } }}>
+      <FinancialInformation
+        currentObject={currentObject}
+        intState={"Quarterly Financial Statements"}
+      />
+    </AppContext.Provider>
+  );
+};
+
+const renderComponentR = () => {
+  render(
+    <AppContext.Provider value={{ appState: { lang: "en" } }}>
+      <FinancialInformation
+        currentObject={currentObjectAR}
+        intState={"Annual Report"}
+      />
+    </AppContext.Provider>
+  );
+};
+
+const renderComponentM = () => {
+  render(
+    <AppContext.Provider value={{ appState: { lang: "en" } }}>
+      <FinancialInformation
+        currentObject={currentObjectM}
+        intState={"Minutes of General Assembly Meetings"}
+      />
+    </AppContext.Provider>
+  );
+};
+
+const renderComponentIFrame = () => {
+  render(
+    <AppContext.Provider value={{ appState: { lang: "en" } }}>
+      <FinancialInformation
+        currentObject={currentObject}
+        intState={"Annual Key Figures"}
+      />
+    </AppContext.Provider>
+  );
+};
+
+const renderComponentArabic = () => {
+  render(
+    <AppContext.Provider value={{ appState: { lang: "ar" } }}>
+      <FinancialInformation
+        currentObject={currentObjectArabic}
+        inStateArabic={"تقرير سنوي"}
+      />
+    </AppContext.Provider>
+  );
+};
+
+const renderComponentArabicOne = () => {
+  render(
+    <AppContext.Provider value={{ appState: { lang: "ar" } }}>
+      <FinancialInformation
+        currentObject={currentObjectArabicOne}
+        inStateArabic={"محاضر اجتماعات الجمعية العمومية"}
+      />
+    </AppContext.Provider>
+  );
+};
+
+const renderComponentAR = () => {
+  render(
+    <AppContext.Provider value={{ appState: { lang: "ar" } }}>
+      <FinancialInformation />
+    </AppContext.Provider>
+  );
+};
+
+describe("FinancialInformation TESTING", () => {
+  test("FinancialInformation testing", () => {
+    renderComponent();
+    const quarterlyImage = screen.getAllByRole("qfs-pdf");
+    expect(quarterlyImage[0]).toBeInTheDocument();
+  });
+
+  test("FinancialInformation Annual Reports testing", () => {
+    renderComponentR();
+    const annualImage = screen.getAllByRole("annual-pdf");
+    expect(annualImage[0]).toBeInTheDocument();
+  });
+
+  test("FinancialInformation Minutes Reports testing", () => {
+    renderComponentM();
+    const minutesImage = screen.getAllByRole("minutes-pdf");
+    expect(minutesImage[0]).toBeInTheDocument();
+  });
+
+  test("FinancialInformation iFrame testing", () => {
+    renderComponentIFrame();
+    const annualIframe = screen.getAllByRole("annual-iframe");
+    expect(annualIframe[0]).toBeInTheDocument();
+  });
+
+  test("FinancialInformation Arabic Div testing", () => {
+    renderComponentArabic();
+    const arabicPdf = screen.getAllByRole("arabic-pdf");
+    expect(arabicPdf[0]).toBeInTheDocument();
+  });
+
+  test("FinancialInformation Arabic One testing", () => {
+    renderComponentArabicOne();
+    const arabicPdfOne = screen.getAllByRole("arabic-pdfOne");
+    expect(arabicPdfOne[0]).toBeInTheDocument();
+  });
+
+  test("FinancialInformation arabic testing", () => {
+    renderComponentAR();
+  });
+});

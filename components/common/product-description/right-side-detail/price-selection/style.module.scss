@@ -1,0 +1,56 @@
+@import "/styles/variables.scss";
+
+
+.price-heading {
+  margin: 0;
+  padding-bottom: 8px;
+  color: $black-color;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.2px;
+  letter-spacing: 0em;
+  text-align: start;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.product-prices {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  gap: 12px;
+
+  .product-price {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 32px;
+    padding-top: 3px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    color: $black-color;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15.6px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    @media (min-width: $breakPoint-desktop) {
+      font-size: 14px;
+      line-height: 16.8px;
+    }
+
+    &.active {
+      color: $white-color;
+      background-color: $black-color;
+    }
+
+    &:last-child {
+      margin-inline-end: 0;
+    }
+  }
+}
+

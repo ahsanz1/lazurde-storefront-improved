@@ -1,0 +1,376 @@
+import React, { useEffect, useState, useContext, Key } from "react";
+import { CardNumber, Cvv, ExpiryDate, Frames } from "frames-react";
+import { CHECKOUT_PUBLIC_KEY } from "general-config";
+import styles from "./cc-form.module.scss";
+import useTranslation from "next-translate/useTranslation";
+import Input from "components/common/ui/Input";
+import useWindowSize from "lib/utils/useWindowSize";
+import { AppContext } from "lib/context";
+import CvvIcon from "components/icons/CvvIcon";
+import CardNumberIcon from "components/icons/CardNumberIcon";
+
+type formHeadingPayload = {
+  title?: string;
+  name?: string;
+  cardNumber?: string;
+  creditCardNumber?: string;
+  firstName?: string;
+  lastName?: string;
+  expDate?: string;
+  expiry_month?: string;
+  expiry_year?: string;
+  cvv?: string;
+  isDefault?: boolean;
+};
+
+type paymentModalHeadingProps = {
+  add: string;
+  edit: string;
+  delete: string;
+};
+
+const CCForm = ({
+  paymentMethod = {},
+  isOpened,
+  isCardDetailsEditForm = false,
+  selectedPaymentInstrument,
+}: any) => {
+  const [userName, setUserName] = useState({
+    firstName: isCardDetailsEditForm
+      ? paymentMethod?.account_holder?.first_name
+      : "",
+    lastName: isCardDetailsEditForm
+      ? paymentMethod?.account_holder?.last_name
+      : "",
+    default:
+      typeof paymentMethod?.isDefault == "boolean"
+        ? paymentMethod?.isDefault
+        : true,
+    expDate: isCardDetailsEditForm
+      ? `${paymentMethod?.expiry_month}/${paymentMethod?.expiry_year}`
+      : "",
+  });
+  const [formErrors, setFormErrors] = useState({
+    firstName: null,
+    lastName: null,
+    card: null,
+    expDate: null,
+    cvv: null,
+  });
+  const { t } = useTranslation("common");
+
+  const paymentFormHeadings: formHeadingPayload = t(
+    "paymentFormHeadings",
+    {},
+    { returnObjects: true }
+  );
+  selectedPaymentInstrument.current.instrument = {};
+  selectedPaymentInstrument.current["getToken"] = async () => {
+    Frames.enableSubmitForm();
+    if (Frames.isCardValid()) {
+      const response = await Frames.submitCard();
+      return response;
+    }
+    setFormErrors({
+      ...formErrors,
+      card: formErrors?.card !== false ? true : false,
+      expDate: formErrors?.expDate !== false ? true : false,
+      cvv: formErrors?.cvv !== false ? true : false,
+      firstName: formErrors?.firstName !== false ? true : false,
+      lastName: formErrors?.lastName !== false ? true : false,
+    });
+    return {};
+  };
+
+  // useEffect(() => {
+  //   setButtonLoading(true);
+  //   token && createPaymentPayload(token, userName?.default);
+  // }, [token]);
+
+  useEffect(() => {
+    if (!isOpened) {
+      setUserName({
+        firstName: "",
+        lastName: "",
+        default: false,
+        expDate: "",
+      });
+      setFormErrors({
+        firstName: null,
+        lastName: null,
+        card: null,
+        expDate: null,
+        cvv: null,
+      });
+    }
+    isOpened &&
+      setUserName({
+        firstName: isCardDetailsEditForm
+          ? paymentMethod?.account_holder?.first_name
+          : "",
+        lastName: isCardDetailsEditForm
+          ? paymentMethod?.account_holder?.last_name
+          : "",
+        default:
+          typeof paymentMethod?.isDefault == "boolean"
+            ? paymentMethod?.isDefault
+            : true,
+        expDate: isCardDetailsEditForm
+          ? `${paymentMethod?.expiry_month}/${paymentMethod?.expiry_year}`
+          : "",
+      });
+  }, [isOpened]);
+
+  return (
+    <>
+      <div className={styles["payment-form-wrapper"]}>
+        <div className={styles["row-wrapper"]}>
+          <Input
+            label={t(paymentFormHeadings.firstName)}
+            labelClassName={styles["name-label"]}
+            divInputClass={styles["name-input"]}
+            onChange={(e) => {
+              if (!e.target.value) {
+                setFormErrors({ ...formErrors, firstName: true });
+                return;
+              }
+              formErrors?.firstName !== false &&
+                setFormErrors({ ...formErrors, firstName: false });
+            }}
+            onBlur={(e) => {
+              setUserName((prev) => {
+                return { ...prev, firstName: e.target.value };
+              });
+            }}
+            defaultValue={
+              isCardDetailsEditForm
+                ? paymentMethod?.account_holder?.first_name
+                : ""
+            }
+            error={formErrors.firstName ? "First name required" : ""}
+          />
+          <Input
+            label={t(paymentFormHeadings.lastName)}
+            labelClassName={styles["name-label"]}
+            divInputClass={styles["name-input"]}
+            onChange={(e) => {
+              if (!e.target.value) {
+                setFormErrors({ ...formErrors, lastName: true });
+                return;
+              }
+              formErrors?.lastName !== false &&
+                setFormErrors({ ...formErrors, lastName: false });
+            }}
+            onBlur={(e) => {
+              setUserName((prev) => {
+                return { ...prev, lastName: e.target.value };
+              });
+            }}
+            defaultValue={
+              isCardDetailsEditForm
+                ? paymentMethod?.account_holder?.last_name
+                : ""
+            }
+            error={formErrors.lastName ? "Last name required" : ""}
+          />
+        </div>
+        <CardFrame
+          userName={userName}
+          formErrors={formErrors}
+          setFormErrors={setFormErrors}
+        />
+      </div>
+    </>
+  );
+};
+
+export default CCForm;
+
+interface CardFrameProps {
+  userName: { [key: string]: any };
+  setToken?: Function;
+  setButtonLoading?: Function;
+  formErrors: { [key: string]: any };
+  setFormErrors: Function;
+}
+
+const CardFrame = ({
+  userName,
+  setToken,
+  setButtonLoading,
+  formErrors,
+  setFormErrors,
+}: CardFrameProps): JSX.Element => {
+  const [isFrameReady, setIsFrameReady] = useState(false);
+  const { t } = useTranslation("common");
+  const [width] = useWindowSize();
+  const { appState } = useContext(AppContext);
+  const paymentFormHeadings: formHeadingPayload = t(
+    "paymentFormHeadings",
+    {},
+    { returnObjects: true }
+  );
+  return (
+    <div className={styles["frames-wrapper"]}>
+      <Frames
+        config={{
+          debug: true,
+          publicKey: CHECKOUT_PUBLIC_KEY,
+          localization: {
+            cardNumberPlaceholder: "**** **** **** ****",
+            expiryMonthPlaceholder: "MM",
+            expiryYearPlaceholder: "YY",
+            cvvPlaceholder: "***",
+          },
+          style: {
+            base: {
+              fontSize: "14px",
+              fontFamily: "Roboto, sans-serif",
+              lineHeight: "120%",
+              border: "1px solid rgba(0, 0, 0, 0.2)",
+              borderRadius: "100px",
+              padding: "9px 16px 9px 20px",
+              letterSpacing: "initial",
+              color: "#000",
+              direction: appState?.lang === "en" ? "ltr" : "rtl",
+            },
+            invalid: {
+              border: "1px solid red",
+            },
+          },
+          cardholder: {
+            name: `${userName?.firstName} ${userName?.lastName}`,
+          },
+        }}
+        ready={() => {
+          setIsFrameReady(true);
+        }}
+        frameValidationChanged={(e: any) => {
+          if (e.element === "card-number") {
+            setFormErrors((prev: any) => {
+              return { ...prev, card: !e.isValid };
+            });
+          } else if (e.element === "expiry-date") {
+            setFormErrors((prev: any) => {
+              return { ...prev, expDate: !e.isValid };
+            });
+          } else if (e.element === "cvv") {
+            setFormErrors((prev: any) => {
+              return { ...prev, cvv: !e.isValid };
+            });
+          }
+        }}
+        cardTokenized={(tokenizedCard: any) => {
+          // setToken(tokenizedCard);
+        }}
+        cardTokenizationFailed={(error: any) => {
+          // setButtonLoading(false);
+          console.log("Card tokenization failed: ", error);
+        }}
+      >
+        <div className={styles["row-wrapper"]}>
+          <div
+            className={`${styles["input-wrapper"]} ${
+              styles[
+                `${
+                  appState?.lang === "en"
+                    ? "cvv-field-card"
+                    : "cvv-field-card-ar"
+                }`
+              ]
+            }`}
+          >
+            <label className={styles["label"]}>
+              {t(paymentFormHeadings.creditCardNumber)}
+            </label>
+            <Input
+              showLabel={false}
+              className={`${styles["card-number"]} ${styles["dummy-input"]}`}
+              divInputClass={`${styles["dummy-input"]}`}
+              placeHolder={"****-****-****-****"}
+              wrapperStyle={{
+                display: isFrameReady ? "none" : "block",
+              }}
+            />
+            <CardNumber
+              className={styles["card-number"]}
+              style={{
+                display: isFrameReady ? "block" : "none",
+              }}
+            />
+            <CardNumberIcon />
+            <div
+              className={`${styles["error-msg"]} ${
+                formErrors.card ? "div-error-msg" : ""
+              }`}
+              data-show-error={formErrors.card}
+            >
+              {t("Invalid card number")}
+            </div>
+          </div>
+        </div>
+
+        <div className={styles["row-wrapper"]}>
+          <div className={styles["input-wrapper"]}>
+            <label className={styles["label"]}>
+              {t(paymentFormHeadings.expDate)}
+            </label>
+            <Input
+              showLabel={false}
+              className={`${styles["exp"]} ${styles["dummy-input"]}`}
+              divInputClass={`${styles["dummy-input"]}`}
+              placeHolder={"MM/YY"}
+              wrapperStyle={{
+                display: isFrameReady ? "none" : "block",
+              }}
+            />
+            <ExpiryDate
+              className={styles["exp"]}
+              style={{
+                display: isFrameReady ? "block" : "none",
+              }}
+            />
+            <div
+              className={`${styles["error-msg"]} ${
+                formErrors.expDate ? "div-error-msg" : ""
+              }`}
+              data-show-error={formErrors.expDate}
+            >
+              {t("Invalid expiry date")}
+            </div>
+          </div>
+
+          <div className={`${styles["input-wrapper"]} ${styles["cvv-field"]}`}>
+            <label className={styles["label"]}>
+              {t(paymentFormHeadings.cvv)}
+            </label>
+            <Input
+              showLabel={false}
+              className={`${styles["cvv"]} ${styles["dummy-input"]}`}
+              divInputClass={`${styles["dummy-input"]}`}
+              placeHolder={"***"}
+              wrapperStyle={{
+                display: isFrameReady ? "none" : "block",
+              }}
+            />
+            <Cvv
+              className={styles["cvv"]}
+              style={{
+                display: isFrameReady ? "block" : "none",
+              }}
+            />
+            <CvvIcon />
+            <div
+              className={`${styles["error-msg"]} ${
+                formErrors.cvv ? "div-error-msg" : ""
+              }`}
+              data-show-error={formErrors.cvv}
+            >
+              {t("Invalid cvv")}
+            </div>
+          </div>
+        </div>
+      </Frames>
+    </div>
+  );
+};

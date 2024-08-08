@@ -1,0 +1,169 @@
+@import "/styles/variables.scss";
+
+.div-heading {
+  display: flex;
+  align-items: flex-start;
+  color: #000;
+
+  .div-icon {
+    width: 20px;
+    margin-inline-end: 8px;
+  }
+  .store-name {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    margin-bottom: 2px;
+    margin-top: 0px;
+
+    @media (min-width: $breakPoint-desktop) {
+      font-size: 15px;
+    }
+  }
+}
+
+.div-store-list-single {
+  display: flex;
+  padding: 16px 20px;
+  flex-direction: column;
+  transition: background-color 0.3s;
+
+  &[data-selected="true"] {
+    background: rgba(0, 0, 0, 0.05);
+  }
+
+  .div-store-address-details {
+    display: flex;
+
+    .div-details {
+      flex: 1;
+      cursor: pointer;
+    }
+  }
+
+  .div-store-details {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    color: #000;
+    margin-inline-end: 8px;
+
+    .store-address {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 120%;
+      margin-inline-start: 28px;
+      margin-block-start: 8px;
+
+      @media (min-width: $breakPoint-desktop) {
+        font-size: 15px;
+      }
+    }
+  }
+
+  .store-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 80px;
+    height: 52.38px;
+
+    .distance {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 130%;
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    .div-map-link {
+      display: flex;
+      cursor: pointer;
+    }
+  }
+}
+
+.opening-hour-wrapper {
+  display: none;
+  flex-direction: column;
+  margin-top: 40px;
+
+  &[data-show="true"] {
+    display: flex;
+  }
+
+  .div-heading {
+    margin-bottom: 8px;
+  }
+  .div-store-details {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-inline-start: 32px;
+    color: #000;
+
+    .div-opening-hours {
+      display: flex;
+
+      .div-days {
+        flex: 1;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 120%;
+        color: rgba(0, 0, 0, 0.6);
+        margin-inline-end: 5px;
+      }
+      .div-hours {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 120%;
+        color: rgba(0, 0, 0, 0.8);
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+.div-button {
+  width: 40px;
+  height: 17px;
+  margin-top: 8px;
+  margin-inline-start: 28px;
+
+  @media (min-width: $breakPoint-desktop) {
+    margin-top: 0;
+  }
+  button {
+    height: 100%;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+  }
+
+  &[data-hide="true"] {
+    display: none;
+  }
+}
+
+.div-chevron {
+  display: block;
+  transform: rotateZ(0);
+  transform-origin: center;
+
+  &[data-show="true"] {
+    transform: rotateZ(-180deg);
+    transform-origin: center;
+  }
+
+  &[data-hide="true"] {
+    display: none;
+  }
+}
+
+.div-store-list-single {
+  & :is(*[data-display="false"]) {
+    display: none;
+  }
+}

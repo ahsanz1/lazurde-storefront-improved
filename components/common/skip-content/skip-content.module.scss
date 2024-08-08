@@ -1,0 +1,15 @@
+.skip-to-content {
+  position: fixed;
+  background-color: #000;
+  color: #fff;
+  padding: 11px 20px;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.skip-to-content.visible {
+  display: block;
+  outline: 3px double #C6A94D;
+}

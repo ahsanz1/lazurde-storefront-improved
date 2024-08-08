@@ -1,0 +1,120 @@
+@import "/styles/variables.scss";
+
+.post-container {
+  display: block;
+  position: relative;
+
+  .post-wrapper {
+    width: 100%;
+    margin-bottom: 8px;
+    position: relative;
+
+    .post-text {
+      position: absolute;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 120%;
+      z-index: 1;
+      color: #ffffff;
+      bottom: 24px;
+      left: 24px;
+      right: 31px;
+
+      @media (min-width: $breakPoint-desktop) {
+        position: absolute;
+        right: 56px;
+        bottom: 41px;
+        left: 44px;
+        z-index: 1;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 120%;
+        color: #ffffff;
+      }
+    }
+    .date-box {
+      z-index: 1;
+      background: #000;
+      display: flex;
+      flex-direction: column;
+      align-items: normal;
+      padding: 8px 14px;
+      position: absolute;
+      inset-inline-start: 24px;
+      top: 32px;
+
+      @media (min-width: $breakPoint-desktop) {
+        position: absolute;
+        z-index: 1;
+      }
+
+      .post-date {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 120%;
+        color: #fff;
+
+        @media (min-width: $breakPoint-desktop) {
+          display: block;
+          color: #fff;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 32px;
+          line-height: 120%;
+        }
+      }
+      .post-month {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 120%;
+        color: #fff;
+
+        @media (min-width: $breakPoint-desktop) {
+          display: block;
+          color: #fff;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 120%;
+          text-align: center;
+        }
+      }
+    }
+    .post-img {
+      display: block;
+    }
+  }
+}
+.archive-container {
+  display: block;
+
+  .archive-heading {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    margin-block-end: 8px;
+  }
+
+  .archive-wrapper {
+    display: block;
+    margin-block-end: 10px;
+
+    .archive-details {
+      display: flex;
+      align-items: center;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 120%;
+
+      .archive-date {
+        padding-inline-start: 8px;
+      }
+    }
+  }
+}

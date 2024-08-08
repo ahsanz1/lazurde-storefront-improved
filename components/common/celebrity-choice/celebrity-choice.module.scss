@@ -1,0 +1,165 @@
+@import "/styles/variables.scss";
+
+.celebrity-container {
+  width: 100%;
+  padding: 0;
+  // max-width: 1440px;
+
+  @media (min-width: $breakPoint-desktop) {
+    padding-inline: 80px;
+  }
+
+  .banner-heading-container {
+    position: relative;
+    text-align: center;
+    color: $white-color;
+
+    .heading-div {
+      position: absolute;
+      z-index: 10;
+      inset-block: 0;
+      inset-inline: 0;
+      display: flex;
+      padding: 16px;
+      @include banner-text-position;
+
+      @media (min-width: $breakPoint-desktop) {
+        padding: 50px;
+      }
+    }
+
+    .banner-heading {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 120%;
+      color: $white-color;
+      margin: 0;
+    }
+  }
+
+  .celebrities-wrapper {
+    display: flex;
+    gap: 8px;
+    margin-top: 80px;
+    justify-content: center;
+
+    @media (min-width: $breakPoint-tablet) and (max-width: $breakPoint-desktop) {
+      padding-inline: 16px;
+    }
+
+    @media (max-width: $breakPoint-tablet) {
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 40px;
+      padding: 0 16px;
+      gap: 16px;
+    }
+
+    .celebrity-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+    }
+  }
+
+  .details-wrapper {
+    display: flex;
+    padding-block-end: 80px;
+
+    @media (min-width: $breakPoint-tablet) and (max-width: $breakPoint-desktop) {
+      padding-inline: 16px;
+    }
+
+    @media (max-width: $breakPoint-tablet) {
+      margin-top: 0;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+      margin: 0px;
+      font-size: 32px;
+      text-align: start;
+
+      @media (max-width: $breakPoint-tablet) {
+        font-size: 24px;
+        text-align: center;
+      }
+    }
+
+    .details-heading {
+      width: 50%;
+      h2 {
+        font-size: 32px;
+        margin: 0px;
+        @media (max-width: $breakPoint-tablet) {
+          padding: 0px;
+          padding-inline: 16px;
+          font-size: 24px;
+          text-align: center;
+        }
+      }
+      @media (max-width: $breakPoint-tablet) {
+        width: 100%;
+      }
+    }
+    .details-description {
+      width: 50%;
+      margin: 0px;
+      font-size: 14px;
+
+      @media (max-width: $breakPoint-tablet) {
+        width: 100%;
+        padding-top: 0px;
+        padding-inline: 16px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .shop-all-btn {
+        margin-top: 24px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 16px;
+        width: 200px;
+        height: 51px;
+        background: #000000;
+        border: 0;
+        border-radius: 100px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 120%;
+        color: $white-color;
+        cursor: pointer;
+
+        @media (max-width: $breakPoint-tablet) {
+          margin-top: 48px;
+        }
+      }
+    }
+  }
+}
+
+.divider {
+  margin-top: 56px;
+  margin-bottom: 48px;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 90%;
+  height: 1px;
+  border: 0;
+
+  @media (min-width: $breakPoint-desktop) {
+    width: 100%;
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+}

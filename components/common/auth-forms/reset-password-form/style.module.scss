@@ -1,0 +1,126 @@
+@import "/styles/variables.scss";
+
+.Reset-form-wrapper {
+  // @media (min-width: $breakPoint-desktop) {
+  //   padding: 0 38px;
+  // }
+
+  .form-input {
+    position: relative;
+    width: 100%;
+    margin-top: 4px;
+    margin-bottom: 24px;
+
+    input {
+      width: 100%;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-radius: 100px;
+      color: $black-color;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 15.6px;
+      letter-spacing: 0em;
+      text-align: start;
+
+      @media (min-width: $breakPoint-desktop) {
+        font-size: 14px;
+        line-height: 16.8px;
+      }
+
+      &::placeholder {
+        color: rgba(0, 0, 0, 0.4);
+      }
+    }
+  }
+
+  .input-label {
+    margin: 0;
+    padding-inline-start: 20px;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 13.2px;
+    letter-spacing: 0em;
+    text-align: start;
+    color: rgba(0, 0, 0, 0.6);
+    padding-bottom: 4px;
+
+    @media (min-width: $breakPoint-desktop) {
+      font-size: 12px;
+      line-height: 15.6px;
+    }
+  }
+
+  .error-msg {
+    position: absolute;
+    bottom: -19px;
+    width: 100%;
+    display: block;
+    padding-inline-start: 20px;
+    color: red;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 15.6px;
+  }
+  .reset-password-form {
+    h1 {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 28.8px;
+      margin: 0;
+      @media (max-width: $breakPoint-desktop) {
+        margin: 0;
+        padding-top: 4px;
+        padding-bottom: 16px;
+      }
+    }
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16.8px;
+      padding-top: 16px;
+      padding-bottom: 40px;
+      margin: 0px;
+      @media (max-width: $breakPoint-desktop) {
+        padding-bottom: 24px;
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+.submit-btn {
+  margin-top: 69px;
+  text-align: center;
+  @media (max-width: $breakPoint-desktop) {
+    margin-top: 58px;
+    button {
+      width: 255px;
+    }
+  }
+}
+
+.reset-password-btn {
+  display: flex;
+  margin-top: 24px;
+  justify-content: center;
+
+  .signup-label {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    padding-inline: 4px;
+    margin: 0;
+    @media (max-width: $breakPoint-desktop) {
+      font-size: 13px;
+    }
+  }
+}
+
+.update-pw-err {
+  color: red;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15.6px;
+  text-align: start;
+  padding-inline-start: 20px;
+}

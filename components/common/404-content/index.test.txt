@@ -1,0 +1,53 @@
+/* eslint-disable react/display-name */
+import * as React from "react";
+import {
+  act,
+  render,
+  waitFor,
+  fireEvent,
+  screen,
+} from "@testing-library/react";
+import ContextProvider, { AppContext } from "lib/context";
+import PageNotFoundContent from "./index";
+
+jest.mock("axios");
+
+const renderComponent = async () => {
+  await act(async () => {
+    render(
+      <ContextProvider>
+        <PageNotFoundContent />
+      </ContextProvider>
+    );
+  });
+};
+
+const renderComponentAR = () => {
+  render(
+    <AppContext.Provider value={{ appState: { lang: "ar" } }}>
+      <PageNotFoundContent />
+    </AppContext.Provider>
+  );
+};
+
+test("404 page testing", async () => {
+  await waitFor(() => {
+    renderComponent();
+
+    const goBackBtn = screen.getByRole("go-back-btn");
+    expect(goBackBtn).toBeInTheDocument();
+    fireEvent.pointerDown(goBackBtn);
+
+    const heading = screen.getByTestId("heading");
+    expect(heading).toBeInTheDocument();
+    const image = screen.getByAltText("404 icon");
+    expect(image).toBeInTheDocument();
+    expect(image).toHaveAttribute("alt", "404 icon");
+  });
+});
+
+test("404 page Arabic testing", async () => {
+  await waitFor(() => {
+    renderComponentAR();
+  });
+});

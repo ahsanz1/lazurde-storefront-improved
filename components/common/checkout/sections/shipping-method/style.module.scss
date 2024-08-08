@@ -1,0 +1,74 @@
+@import "/styles/variables.scss";
+
+.bag-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px 24px;
+  width: 100%;
+  background: #ffffff;
+  margin-block-end: 8px;
+
+  &::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #fff;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  @media (min-width: $breakPoint-desktop) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px;
+    width: 692px;
+    background: #ffffff;
+    overflow-y: scroll;
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: auto;
+    margin-block-end: 16px;
+  }
+
+  &.loading-div {
+    font-size: 20px;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+  }
+
+  .main-heading {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+    color: #000000;
+  }
+
+  .radio-box {
+    display: flex;
+    width: 100%;
+    margin-block-start: 24px;
+
+    .price-opt {
+      display: block;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 120%;
+      width: 20%;
+
+      @media (min-width: $breakPoint-desktop) {
+        display: block;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 120%;
+        width: 10%;
+      }
+    }
+  }
+}

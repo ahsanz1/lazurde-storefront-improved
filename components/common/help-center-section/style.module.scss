@@ -1,0 +1,56 @@
+@import "/styles/variables.scss";
+
+.need-help-wrapper {
+  width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @media (min-width: 1024px) {
+    margin-top: 32px;
+  }
+
+  @media (max-width: 500px) {
+    width: 100%;
+    padding: 24px 24px 48px;
+  }
+
+  .bold-line {
+    height: 0px;
+    width: 100%;
+    border-top: 4px solid #c3a956;
+  }
+  .need-help-heading {
+    display: flex;
+    justify-content: space-between;
+
+    span {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 19.2px;
+      letter-spacing: 0em;
+      text-align: start;
+      color: rgba(0, 0, 0, 0.8);
+
+      @media (min-width: $breakPoint-desktop) {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 21.8px;
+        letter-spacing: 0em;
+        text-align: start;
+      }
+    }
+
+    a {
+      color: #000000;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 120%;
+      text-decoration-line: underline;
+      text-transform: capitalize;
+    }
+    h6 {
+      margin: 0px;
+    }
+  }
+}

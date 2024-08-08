@@ -1,0 +1,168 @@
+@import "/styles/variables.scss";
+
+.div-modal-main {
+  :where(&) {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    // height: 100vh;
+    width: 100vw;
+    z-index: 100;
+    // transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    // overflow-y: auto;
+    :where(&) {
+      padding: 0;
+      height: 100%;
+    }
+
+    @media (min-width: $breakPoint-desktop) {
+      z-index: 101;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .modal-body {
+      background: $white-color;
+      background-color: #fff;
+      overflow: auto;
+
+      @media (min-width: $breakPoint-desktop) {
+        box-shadow: 0 4px 40px 0 rgb(0 0 0 / 5%);
+      }
+
+      :where(&) {
+        height: 100%;
+        position: relative;
+      }
+
+      .div-top-bar {
+        display: flex;
+        width: 100%;
+        margin-bottom: 45px;
+
+        @media (min-width: $breakPoint-desktop) {
+          margin-bottom: 0;
+        }
+
+        .div-left {
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 120%;
+          color: #000000;
+          margin-bottom: 3px;
+          flex: 1;
+        }
+
+        .div-right {
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+        }
+      }
+
+      .div-modal-body {
+        flex: 1;
+        @media (min-width: $breakPoint-desktop) {
+          height: 100%;
+        }
+      }
+
+      @media (min-width: $breakPoint-desktop) {
+        overflow: hidden;
+      }
+    }
+    :where(.modal-body) {
+      overflow-y: auto;
+      padding: 38px 20px 40px;
+
+      @media (min-width: $breakPoint-desktop) {
+        border-radius: 8px;
+        padding: 38px 40px 40px;
+      }
+    }
+
+    @media (max-width: $breakPoint-desktop) {
+      &[data-open="true"] {
+        transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+        transform: translateY(0);
+      }
+
+      &[data-open="false"] {
+        transform: translateY(100%);
+        opacity: 0;
+      }
+    }
+
+    @media (min-width: $breakPoint-desktop) {
+      &[data-open="true"] {
+        transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+        opacity: 1;
+      }
+
+      &[data-open="false"] {
+        opacity: 0;
+        pointer-events: none;
+      }
+    }
+  }
+}
+
+.overlay {
+  :where(&) {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    height: 100vh;
+    width: 100vw;
+    z-index: 100;
+    padding: 0;
+    display: none;
+    transition: opacity 0.2s ease-in-out;
+    height: 100%;
+
+    @media (min-width: $breakPoint-desktop) {
+      &[data-is-blurry="true"] {
+        display: block;
+        background-color: rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+      }
+
+      &[data-open="true"] {
+        opacity: 1;
+      }
+
+      &[data-open="false"] {
+        opacity: 0;
+        pointer-events: none;
+      }
+    }
+  }
+}
+
+.register-modal {
+  @media (min-width: $breakPoint-desktop) {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+}
+
+html[dir="rtl"] {
+  @media (max-width: $breakPoint-desktop) {
+    .div-modal-main {
+      &[data-open="true"] {
+        transform: translateX(0);
+        opacity: 1;
+      }
+
+      &[data-open="false"] {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+    }
+  }
+}

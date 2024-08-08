@@ -1,0 +1,41 @@
+/* eslint-disable react/display-name */
+import * as React from "react";
+import {
+  act,
+  render,
+  waitFor,
+  fireEvent,
+  screen,
+} from "@testing-library/react";
+import ContextProvider, { AppContext } from "lib/context";
+import AuthForms from "./index";
+
+jest.mock("axios");
+
+const renderComponent = async () => {
+  render(
+    <ContextProvider>
+      <AuthForms />
+    </ContextProvider>
+  );
+};
+
+const renderComponentAR = () => {
+  render(
+    <AppContext.Provider value={{ appState: { lang: "ar" } }}>
+      <AuthForms />
+    </AppContext.Provider>
+  );
+};
+
+test("auth form testing", async () => {
+  renderComponent();
+
+  // const authForm = screen.getByRole("auth-form-modal");
+  // expect(authForm).toBeInTheDocument();
+  // fireEvent.pointerDown(authForm);
+});
+
+test("auth form Arabic testing", async () => {
+  renderComponentAR();
+});

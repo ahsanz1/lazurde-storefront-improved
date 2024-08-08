@@ -1,0 +1,463 @@
+@import "/styles/variables.scss";
+
+.apple-pay-button {
+  width: 100%;
+  height: 40px;
+  display: inline-block;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  -webkit-appearance: -apple-pay-button;
+  appearance: none;
+  -apple-pay-button-type: "buy";
+  -apple-pay-button-style: white-outline;
+}
+
+// .apple-pay-button-white {
+//   -apple-pay-button-style: white;
+// }
+
+.cart-wrapper {
+  padding: 40px 144px;
+  // max-width: 1250px;
+  margin: auto;
+
+  @media (max-width: $breakPoint-mobile) {
+    max-width: 100%;
+    min-width: 100%;
+    padding: 0 0 40px 0;
+  }
+
+  .flex-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    column-gap: 0;
+    row-gap: 8px;
+
+    @media (min-width: $breakPoint-desktop) {
+      flex-direction: row;
+      column-gap: 40px;
+      justify-content: unset;
+    }
+
+    .inner-wrapper {
+      @media (max-width: $breakPoint-mobile) {
+        width: 100%;
+      }
+
+      @media (min-width: $breakPoint-desktop) {
+        &:first-child {
+          flex: 2;
+          width: 60%;
+        }
+        &:last-child {
+          flex: 1;
+          width: 40%;
+        }
+      }
+    }
+
+    .shipping-column {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .free-shipping-card {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 24px;
+
+      width: 100%;
+      height: 76px;
+      background: rgba(255, 255, 255, 0.6);
+
+      @media (max-width: 600px) {
+        width: 100%;
+        height: 89px;
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        span {
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 120%;
+          @media (max-width: 500px) {
+            font-size: 14px;
+          }
+
+          a {
+            color: #000000;
+          }
+        }
+        .para {
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 15.6px;
+          color: #000000;
+
+          a {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 16.8px;
+            color: #000000;
+          }
+        }
+      }
+    }
+
+    .bag-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 40px;
+      // gap: 40px;
+
+      width: 100%;
+      // min-height: 521px;
+      // max-height: 521px;
+      background: #ffffff;
+      overflow-y: scroll;
+      -ms-overflow-style: none; /* Internet Explorer 10+ */
+      scrollbar-width: auto;
+
+      .div-cart-heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+      }
+
+      &::-webkit-scrollbar {
+        width: 3px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: #fff;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.2);
+      }
+
+      @media (max-width: 600px) {
+        padding: 40px 24px;
+        width: 100%;
+        // min-height: 429px;
+      }
+
+      @media (min-width: 1023px) {
+        max-height: 700px;
+      }
+
+      .wishlist-wrap {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      .main-heading {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 120%;
+        color: #000000;
+      }
+
+      hr {
+        width: 100%;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        margin-block-start: 40px;
+      }
+      .btn-disable {
+        margin-top: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        button {
+          pointer-events: none;
+          border: none;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 120%;
+          text-decoration-line: underline;
+          text-transform: capitalize;
+          color: #999999;
+          cursor: default;
+          background: #fff;
+          padding-left: 9px;
+        }
+      }
+      .add-to-bag-btn {
+        margin-top: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        button {
+          border: none;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 120%;
+          text-decoration-line: underline;
+          text-transform: capitalize;
+          color: #000000;
+          cursor: pointer;
+          background: #fff;
+          padding-left: 9px;
+
+          @media (max-width: $breakPoint-mobile) {
+            padding-left: 5px;
+          }
+        }
+      }
+      .wishlist-stock-error {
+        font-size: 13px;
+        color: red;
+        display: flex;
+        justify-content: end;
+      }
+    }
+
+    .summary-card {
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 40px;
+      gap: 24px;
+      background: #ffffff;
+      width: 100%;
+      // height: 474px;
+
+      @media (max-width: 1023px) {
+        width: 100%;
+      }
+
+      @media (max-width: 600px) {
+        width: 100%;
+        height: 450px;
+        padding: 40px 24px;
+      }
+
+      span {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 120%;
+        color: #000000;
+      }
+      .order-details {
+        width: 100%;
+        div {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 8px;
+
+          span {
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 120%;
+            color: #000000;
+
+            @media (max-width: 500px) {
+              font-size: 14px;
+            }
+
+            &[data-amount="true"] {
+              font-weight: 500;
+            }
+          }
+        }
+
+        .discount-value {
+          color: red;
+        }
+      }
+      .checkout-button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 16px;
+        width: 100%;
+        height: 51px;
+        background: #000000;
+        border-radius: 100px;
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 120%;
+        text-transform: capitalize;
+        cursor: pointer;
+      }
+      .half-divider {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 6px;
+
+        hr {
+          width: 110px;
+          height: 0px;
+          border: 1px solid rgba(0, 0, 0, 0.2);
+
+          @media (min-width: $breakPoint-desktop) {
+            width: 118.5px;
+          }
+        }
+
+        span {
+          &[data-divider="true"] {
+            font-weight: 400;
+            font-size: 11px;
+            line-height: 130%;
+            text-align: center;
+            color: rgba(0, 0, 0, 0.6);
+
+            @media (min-width: $breakPoint-desktop) {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+      .external-btns {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 12px;
+
+        @media (max-width: 1023px) {
+          flex-direction: column;
+          justify-content: center;
+          width: 100%;
+        }
+
+        .apple-pay-btn {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 0px;
+          gap: 10px;
+          width: 164px;
+          height: 40px;
+          background: #ffffff;
+          border: 1px solid rgba(0, 0, 0, 0.4);
+          cursor: pointer;
+          border-radius: 10000px;
+
+          @media (max-width: 1023px) {
+            width: 100%;
+          }
+        }
+        .paypal-btn {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 0px;
+          gap: 10px;
+          width: 164px;
+          height: 40px;
+          background: #f7c557;
+          border: 1px solid #f7c557;
+          border-radius: 100px;
+          cursor: pointer;
+
+          @media (max-width: 1023px) {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .horizontal-divider {
+    width: 100%;
+    height: 0px;
+
+    /* Dark/20 */
+    margin: 0;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  .free-shipping-content {
+    a {
+      text-decoration: underline;
+    }
+    @media (max-width: $breakPoint-mobile) {
+      padding-inline-end: 20px;
+    }
+  }
+
+  .cartpage-items {
+    .item-details {
+      .item-title {
+        span {
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 16.8px;
+          letter-spacing: 0em;
+          text-align: start;
+
+          @media (min-width: $breakPoint-desktop) {
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  .need-help-points {
+    p {
+      margin: 0;
+      margin-bottom: 16px;
+      color: rgba(0, 0, 0, 0.8);
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 18px;
+      letter-spacing: 0em;
+      text-align: start;
+
+      &:last-child {
+        margin: 0;
+      }
+
+      @media (min-width: $breakPoint-desktop) {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19.2px;
+      }
+    }
+  }
+}
+
+.checkout-error {
+  position: static;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.empty-cart-note {
+  display: flex;
+  flex-direction: column;
+
+  span {
+    margin-top: 10px;
+    margin-bottom: 0;
+
+    a {
+      text-transform: lowercase;
+    }
+  }
+}

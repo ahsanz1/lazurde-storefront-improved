@@ -1,0 +1,703 @@
+@import "/styles/variables.scss";
+
+.bag-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px 24px;
+  width: 100%;
+  background: #ffffff;
+  margin-block-end: 8px;
+
+  &::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #fff;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  @media (min-width: $breakPoint-desktop) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px;
+    width: 692px;
+    background: #ffffff;
+    overflow-y: scroll;
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: auto;
+    margin-block-end: 16px;
+  }
+
+  .main-heading {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+    color: #000000;
+  }
+
+  .tabs-wrapper {
+    display: flex;
+    margin-block-start: 32px;
+    width: 100%;
+
+    .checkout-tabs {
+      display: block;
+      width: 100%;
+      margin: auto auto 8px;
+
+      .tabs-heading {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+
+        button {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .div-click-and-collect {
+    width: 100%;
+
+    .collection-text {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 120%;
+      color: #000000;
+      margin-block-start: 40px;
+    }
+  }
+
+  .contact-info-text {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+    color: #000000;
+    margin-bottom: 8px;
+  }
+  .radio-box {
+    display: flex;
+    width: 100%;
+    margin-block-start: 24px;
+
+    .price-opt {
+      display: block;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 120%;
+
+      @media (min-width: $breakPoint-desktop) {
+        display: block;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 120%;
+      }
+    }
+  }
+
+  .radio-box-payment {
+    display: block;
+    width: 100%;
+    padding: 24px 0 0 0;
+
+    &[data-region="true"] {
+      display: none;
+    }
+
+    .checkout-multi-icons {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      width: 65%;
+
+      @media (min-width: $breakPoint-desktop) {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        justify-content: flex-end;
+        gap: 10px;
+      }
+    }
+
+    .div-cc-data {
+      display: flex;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 120%;
+      color: rgba(0, 0, 0, 0.6);
+      margin: 10px;
+
+      p {
+        margin-block: 3px;
+      }
+      .div-left {
+        display: block;
+        width: 100%;
+
+        .div-cc-heading {
+          display: block;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 120%;
+          margin: 10px 0;
+          color: #000000;
+        }
+      }
+      .div-right {
+        display: flex;
+        width: 16%;
+        align-items: center;
+
+        @media (min-width: $breakPoint-desktop) {
+          width: 10%;
+        }
+      }
+
+      .payment-checkbox {
+        margin: 0;
+      }
+    }
+    .div-cod-notice {
+      display: block;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px 0px 0px 28px;
+      gap: 24px;
+      width: 100%;
+
+      .error-notice {
+        width: 100%;
+        height: 77px;
+        background: rgba(0, 0, 0, 0.02);
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        padding: 12px;
+        gap: 12px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 120%;
+        color: rgba(0, 0, 0, 0.6);
+
+        @media (min-width: $breakPoint-desktop) {
+          width: 100%;
+          height: 77px;
+          background: rgba(0, 0, 0, 0.02);
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          padding: 12px;
+          gap: 12px;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 120%;
+          color: rgba(0, 0, 0, 0.6);
+        }
+
+        p {
+          display: block;
+          width: 100%;
+          margin: 0;
+
+          @media (min-width: $breakPoint-desktop) {
+            display: block;
+            width: 405px;
+          }
+        }
+      }
+    }
+  }
+
+  .payment-box {
+    margin-block-start: 0;
+    width: 100%;
+
+    @media (min-width: $breakPoint-desktop) {
+      display: block;
+      margin-block-start: 24px;
+    }
+
+    .half-divider {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      gap: 6px;
+      margin-block-start: 24px;
+      margin-block-end: 20px;
+
+      @media (min-width: $breakPoint-desktop) {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 6px;
+        margin-block-start: 0;
+        margin-block-end: 24px;
+      }
+
+      hr {
+        width: 40%;
+        height: 0px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+
+        @media (min-width: $breakPoint-desktop) {
+          width: 245px;
+          height: 0px;
+          border: 1px solid rgba(0, 0, 0, 0.2);
+        }
+      }
+      span {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 18px;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.6);
+
+        @media (min-width: $breakPoint-desktop) {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .half-divider-inc {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      margin-bottom: 6px;
+
+      hr {
+        width: 50%;
+        height: 0px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+
+        @media (min-width: $breakPoint-desktop) {
+          width: 280px;
+        }
+      }
+      span {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 18px;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.6);
+
+        @media (min-width: $breakPoint-desktop) {
+          font-size: 12px;
+        }
+      }
+    }
+    .external-btns {
+      margin: 24px 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 12px;
+
+      .apple-pay-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 10px;
+        width: 100%;
+        height: 40px;
+        background: #ffffff;
+        border: 1px solid rgba(0, 0, 0, 0.4);
+        cursor: pointer;
+        border-radius: 10000px;
+
+        &[data-region="true"] {
+          display: none;
+        }
+
+        @media (max-width: 1023px) {
+          width: 100%;
+        }
+      }
+      .paypal-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 10px;
+        width: 100%;
+        height: 40px;
+        background: #f7c557;
+        border: 1px solid #f7c557;
+        border-radius: 100px;
+        cursor: pointer;
+
+        @media (max-width: 1023px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .gift-box {
+    .gift-text {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 120%;
+      color: rgba(0, 0, 0, 0.8);
+      margin-block-start: 16px;
+      margin-block-end: 24px;
+
+      @media (min-width: $breakPoint-desktop) {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 120%;
+        color: rgba(0, 0, 0, 0.8);
+        margin-block-start: 16px;
+        margin-block-end: 24px;
+      }
+    }
+    .gift-msg-opt {
+      display: flex;
+      padding-block-end: 24px;
+
+      p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 120%;
+        color: rgba(0, 0, 0, 0.8);
+        margin: 0 10px 0 0;
+
+        @media (min-width: $breakPoint-desktop) {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .div-gift-box {
+      .gift-item-detail {
+        display: flex;
+        margin-block-start: 8px;
+        margin-block-end: 16px;
+
+        @media (min-width: $breakPoint-desktop) {
+          display: flex;
+          margin-block-start: 8px;
+        }
+
+        .item-img {
+          display: flex;
+        }
+        .item-title {
+          display: flex;
+          align-items: start;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 120%;
+          margin: auto 16px;
+          flex-direction: column;
+
+          .link-box {
+            display: flex;
+            justify-content: start;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 120%;
+            cursor: pointer;
+            text-decoration-line: underline;
+            margin-block-start: 8px;
+            padding: 0;
+          }
+        }
+      }
+
+      .gift-msg-area {
+        .gift-msg-label {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 11px;
+          line-height: 130%;
+          color: rgba(0, 0, 0, 0.6);
+
+          @media (min-width: $breakPoint-desktop) {
+            font-size: 12px;
+          }
+
+          p {
+            margin: 0 0 0 20px;
+            padding: 0;
+          }
+        }
+        .gift-msg-notice {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 11px;
+          line-height: 130%;
+          color: rgba(0, 0, 0, 0.6);
+
+          @media (min-width: $breakPoint-desktop) {
+            font-size: 12px;
+          }
+
+          p {
+            margin: 5px 0 16px 20px;
+            padding: 0;
+
+            @media (min-width: $breakPoint-desktop) {
+              margin: 0 0 0 20px;
+              padding: 0;
+            }
+          }
+        }
+        .textarea-btn {
+          display: flex;
+          justify-content: flex-end;
+
+          button {
+            font-size: 15px;
+          }
+        }
+      }
+      .half-divider-light {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 6px;
+
+        hr {
+          width: 100%;
+
+          @media (min-width: $breakPoint-desktop) {
+            width: 600px;
+            height: 0px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+          }
+        }
+      }
+    }
+    .link-box {
+      display: block;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 120%;
+      cursor: pointer;
+      text-decoration-line: underline;
+    }
+  }
+  .contact-main-heading {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+    color: #000000;
+  }
+  .contact-info {
+    width: 100%;
+    margin-block-start: 24px;
+    margin-block-end: 10px;
+
+    .contact-input {
+      display: block;
+      width: 80%;
+    }
+
+    .div-contact-data {
+      display: flex;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 120%;
+      color: rgba(0, 0, 0, 0.6);
+      margin: 10px;
+
+      .link-box {
+        color: #000000;
+        text-decoration: none;
+      }
+
+      .contact-checkbox {
+        margin: 0;
+      }
+    }
+  }
+
+  .purchase-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    width: 279px;
+    height: 51px;
+    background: #000000;
+    border-radius: 100px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    text-transform: capitalize;
+    cursor: pointer;
+    margin: auto;
+  }
+
+  .contact-des {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 130%;
+    color: #000000;
+    margin-block-start: 8px;
+
+    @media (min-width: $breakPoint-desktop) {
+      font-size: 14px;
+    }
+  }
+
+  .contact-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 130%;
+    color: rgba(0, 0, 0, 0.8);
+    margin: auto;
+    margin-block-start: 16px;
+
+    @media (min-width: $breakPoint-desktop) {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 130%;
+      color: rgba(0, 0, 0, 0.8);
+      margin: auto;
+      margin-block-start: 16px;
+    }
+  }
+  hr {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  .wrapper-addresses {
+    display: flex;
+    flex-direction: column;
+
+    .div-address-single {
+      background-color: $white-color;
+      row-gap: 20px;
+      margin-block-start: 8px;
+
+      .div-address-heading {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 120%;
+
+        p {
+          margin: 0;
+          margin-bottom: 8px;
+        }
+      }
+
+      .div-address-data {
+        display: flex;
+        flex-direction: row;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 120%;
+        color: rgba(0, 0, 0, 0.6);
+
+        .div-left {
+          flex: 1;
+
+          p {
+            margin-block: 3px;
+          }
+        }
+        .div-right {
+          .div-edit-button {
+            display: flex;
+            cursor: pointer;
+            button {
+              height: 20px;
+              width: max-content;
+              padding-inline-start: 0;
+            }
+
+            .div-edit-icon {
+              width: 20px;
+              height: 20px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+    .div-loader {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      span {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 120%;
+      }
+    }
+  }
+  .div-discount-box {
+    display: flex;
+    width: 100%;
+    padding: 12px 0;
+
+    .discount-input {
+      display: flex;
+      width: 100%;
+      padding: 0 8px;
+    }
+    .discount-btn {
+      display: flex;
+      align-items: center;
+      margin: 20px 0px;
+
+      .apply-btn {
+        font-size: 15px;
+      }
+    }
+  }
+}
+.country-check-modal {
+  .notification-heading {
+    margin-block: 20px;
+  }
+  .notification-text {
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+  .verify-btns {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    @media (min-width: $breakPoint-desktop) {
+      flex-direction: row-reverse;
+    }
+  }
+}

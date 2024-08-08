@@ -1,0 +1,131 @@
+@import "/styles/variables.scss";
+
+.promotion-timer {
+  display: flex;
+  justify-content: start;
+  align-items: baseline;
+  flex-direction: column;
+  text-align: center;
+  font-size: 18px;
+  padding: 25px 0;
+
+  h2 {
+    font-size: 36px;
+    color: #fff;
+    font-weight: 500;
+
+    @media (min-width: $breakPoint-desktop) {
+      font-size: 64px;
+    }
+
+    @media (min-width: $breakPoint-desktop) and (max-width: 1200px) {
+      font-size: 50px;
+      margin: 16px;
+    }
+  }
+
+  .countdown {
+    display: flex;
+    gap: 16px;
+
+    @media (min-width: $breakPoint-desktop) {
+      gap: 32px;
+    }
+
+    .countdown-block {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .countdown-value {
+      font-size: 24px;
+      font-weight: 500;
+      color: #fff;
+      display: inline-block;
+      padding: 10px;
+      background-color: #922840;
+      border-radius: 16px;
+      border: 3px solid;
+      width: auto;
+      height: auto;
+
+      @media (min-width: $breakPoint-desktop) {
+        font-size: 64px;
+        font-weight: 500;
+        color: #fff;
+        display: inline-block;
+        padding: 10px;
+        background-color: #922840;
+        border-radius: 24px;
+        border: 5px solid;
+        width: auto;
+        height: auto;
+      }
+
+      @media (min-width: $breakPoint-desktop) and (max-width: 1200px) {
+        font-size: 40px;
+      }
+    }
+
+    .countdown-label {
+      font-size: 15px;
+      margin-top: 5px;
+      color: #fff;
+      font-weight: 700;
+
+      @media (min-width: $breakPoint-desktop) {
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+.mini-promotion-timer {
+  display: flex;
+  justify-content: start;
+  align-items: baseline;
+  flex-direction: column;
+  text-align: center;
+  font-size: 18px;
+  padding: 5px 0;
+
+  @media (min-width: $breakPoint-desktop) {
+    padding: 25px 0;
+  }
+
+  .countdown {
+    display: flex;
+    margin: auto;
+
+    .countdown-block {
+      display: flex;
+      gap: 2px;
+    }
+
+    .countdown-value {
+      font-size: 11px;
+      font-weight: 500;
+      color: #fff;
+      margin: 0 3px;
+      padding: 3px;
+      background-color: #922840;
+      border-radius: 4px;
+      border: 3px solid #fff;
+      width: auto;
+      height: auto;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .countdown-label {
+      font-size: 11px;
+      color: #000;
+      font-weight: 500;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

@@ -1,0 +1,87 @@
+/* eslint-disable react/display-name */
+import { fireEvent, render, screen, waitFor } from "@testing-library/react";
+import React from "react";
+import MyReturns from "./index";
+import ContextProvider, { AppContext } from "lib/context";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+const queryClient = new QueryClient();
+jest.mock('react', () => ({
+  ...jest.requireActual('react') as object,
+  useLayoutEffect: jest.requireActual('react').useEffect,
+}));
+
+jest.mock("@react-pdf/renderer", () => ({
+  __esModule: true,
+  BlobProvider: () => {
+    return <div></div>;
+  },
+}));
+
+jest.mock("components/common/order-invoice", () => ({
+  __esModule: true,
+  default: (): null => {
+    return null;
+  },
+}));
+jest.mock("axios");
+const orderObject = {
+  orderId: "677-078889-0987",
+};
+const setOrderObject = jest.fn();
+const setActiveComponent = jest.fn();
+const setIsOrderHistoryActive = jest.fn();
+const setUpdateOrderComp = jest.fn();
+const updateOrderComp = false;
+const setIsReturnItems = jest.fn();
+const myReturnTabActive = jest.fn();
+const setIsStaticContentModal = jest.fn();
+const isStaticContentModal = {
+  isCourierCollection: false,
+  isStoreDropOff: false,
+  isGiftCard: false,
+  isTabbyModal: false,
+  isPaypalModal: false,
+  isCodModal: false,
+};
+const renderComponent = () => {
+  render(
+    <QueryClientProvider client={queryClient}>
+    <ContextProvider>
+      <MyReturns
+        orderObject={orderObject}
+        setOrderObject={setOrderObject}
+        setActiveComponent={setActiveComponent}
+        setIsOrderHistoryActive={setIsOrderHistoryActive}
+        setUpdateOrderComp={setUpdateOrderComp}
+        updateOrderComp={updateOrderComp}
+        setIsReturnItems={setIsReturnItems}
+        myReturnTabActive={myReturnTabActive}
+        setIsStaticContentModal={setIsStaticContentModal}
+        isStaticContentModal={isStaticContentModal}
+      />
+    </ContextProvider>
+    </QueryClientProvider>
+  );
+};
+
+const renderComponentAR = () => {
+  render(
+    <QueryClientProvider client={queryClient}>
+    <AppContext.Provider value={{ appState: { lang: "ar" } }}>
+      <MyReturns />
+    </AppContext.Provider>
+    </QueryClientProvider>
+  );
+};
+
+test("my return order Test", async () => {
+  waitFor(() => {
+    renderComponent();
+  });
+});
+
+test("render arabic version", async () => {
+  waitFor(() => {
+    renderComponentAR();
+  });
+});
